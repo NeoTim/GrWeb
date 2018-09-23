@@ -5,6 +5,7 @@ node_modules/
 #releases/
 .DS_Store
 Thumbs.db
+thumbs.db
 
 ### Node ###
 # Logs
