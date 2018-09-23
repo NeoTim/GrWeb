@@ -1,29 +1,29 @@
 <HTML>
 <HEAD>
-<TITLE>eWebEditor ё╨ ╠Йв╪╣Всцй╬юЩ</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<TITLE>eWebEditor О©╫О©╫ О©╫О©╫в╪О©╫О©╫О©╫О©╫й╬О©╫О©╫</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
 <link rel='stylesheet' type='text/css' href='example.css'>
 </HEAD>
 <BODY>
 
-<p><b>╣╪╨╫ ё╨ <a href="default.asp">й╬юЩйврЁ</a> &gt; ╠Йв╪╣Всцй╬юЩ</b></p>
-<p>╢кюЩящй╬акeWebEditor╣д╠Йв╪╣Всц╥╫╥╗ё╛р╡йгвНЁёсц╣д╣Всц╥╫╥╗║ё</p>
-<p>╠╬яЫй╫й╧сцо╣мЁ╣дд╛хояЫй╫(coolblue)ё╛вН╪я╣Всц©М╤х550pxё╛вН╪я╣Всц╦ъ╤х350px║ё</p>
+<p><b>О©╫О©╫О©╫О©╫ О©╫О©╫ <a href="default.asp">й╬О©╫О©╫О©╫О©╫рЁ</a> &gt; О©╫О©╫в╪О©╫О©╫О©╫О©╫й╬О©╫О©╫</b></p>
+<p>О©╫О©╫О©╫О©╫О©╫О©╫й╬О©╫О©╫eWebEditorО©╫д╠О©╫в╪О©╫О©╫О©╫ц╥О©╫О©╫О©╫О©╫О©╫р╡О©╫О©╫О©╫НЁёО©╫ц╣д╣О©╫О©╫ц╥О©╫О©╫О©╫О©╫О©╫</p>
+<p>О©╫О©╫О©╫О©╫й╫й╧О©╫О©╫о╣мЁО©╫О©╫д╛О©╫О©╫О©╫О©╫й╫(coolblue)О©╫О©╫О©╫О©╫я╣О©╫О©╫ц©О©╫О©╫550pxО©╫О©╫О©╫О©╫я╣О©╫О©╫ц╦ъ╤О©╫350pxО©╫О©╫</p>
 
 
 <FORM method="post" name="myform" action="retrieve.asp">
 <TABLE border="0" cellpadding="2" cellspacing="1">
 <TR>
-	<TD>╠Ю╪╜дзхщё╨</TD>
+	<TD>О©╫Ю╪╜О©╫О©╫О©╫щёО©╫</TD>
 	<TD>
 		<%
-		' ╤╗рЕ╠Да©
+		' О©╫О©╫О©╫О©╫О©╫О©╫О©╫
 		Dim html
-		' ╦Ёж╣ё╛хГ╢сйЩ╬щ©Бх║ж╣
+		' О©╫О©╫ж╣О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫щ©О©╫х║ж╣
 		' html = rs("field")
-		html = "<P align=center><FONT color=#ff0000><FONT face='Arial Black' size=7><STRONG>eWeb<FONT color=#0000ff>Editor</FONT><FONT color=#000000><SUP>TM</SUP></FONT></STRONG></FONT></FONT></P><P align=right><FONT style='BACKGROUND-COLOR: #ffff00' color=#ff0000><STRONG>eWebEditor V5.5 for ASP ╪РлЕжпндилр╣╟Ф</STRONG></FONT></P><P>╠╬яЫй╫н╙о╣мЁд╛хояЫй╫ё╗coolblueё╘ё╛вН╪я╣Всц©М╤х550pxё╛╦ъ╤х350pxё║</P><P>╩╧спр╩п╘╦ъ╪╤╣Всц╧╕дэ╣дюЩвсё╛дЦ©иртм╗╧Щ╣╪╨╫╫ЬхКй╬юЩйврЁ╡И©╢║ё</P><P><B><TABLE borderColor=#ff9900 cellSpacing=2 cellPadding=3 align=center bgColor=#ffffff border=1><TBODY><TR><TD bgColor=#00ff00><STRONG>©╢╣╫уБп╘дзхщё╛грц╩сп╢МнСлАй╬ё╛к╣цВ╟╡в╟ря╬╜уЩх╥мЙЁиё║</STRONG></TD></TR></TBODY></TABLE></B></P>"
-		' вж╥Шв╙╩╩ё╛жВр╙уК╤т╣╔к╚рЩ╨е╣хльйБвж╥Ш
-		' ж╩сптз╦Ь╠Ю╪╜фВ╦Ёж╣й╠╡есп╠ьр╙й╧сц╢квж╥Шв╙╩╩╨╞йЩё╛хК©Б╪╟ЁЖ©Ботй╬╤╪╡╩пХр╙й╧сц╢к╨╞йЩ
+		html = "<P align=center><FONT color=#ff0000><FONT face='Arial Black' size=7><STRONG>eWeb<FONT color=#0000ff>Editor</FONT><FONT color=#000000><SUP>TM</SUP></FONT></STRONG></FONT></FONT></P><P align=right><FONT style='BACKGROUND-COLOR: #ffff00' color=#ff0000><STRONG>eWebEditor V5.5 for ASP О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫р╣О©╫О©╫</STRONG></FONT></P><P>О©╫О©╫О©╫О©╫й╫н╙о╣мЁд╛О©╫О©╫О©╫О©╫й╫О©╫О©╫coolblueО©╫О©╫О©╫О©╫О©╫О©╫я╣О©╫О©╫ц©О©╫О©╫550pxО©╫О©╫О©╫ъ╤О©╫350pxО©╫О©╫</P><P>О©╫О©╫О©╫О©╫р╩п╘О©╫ъ╪О©╫О©╫О©╫О©╫ц╧О©╫О©╫э╣О©╫О©╫О©╫О©╫сёО©╫О©╫О©╫О©╫О©╫О©╫м╗О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫й╬О©╫О©╫О©╫О©╫рЁО©╫И©╢О©╫О©╫</P><P><B><TABLE borderColor=#ff9900 cellSpacing=2 cellPadding=3 align=center bgColor=#ffffff border=1><TBODY><TR><TD bgColor=#00ff00><STRONG>О©╫О©╫О©╫О©╫О©╫О©╫п╘О©╫О©╫О©╫щёО©╫О©╫О©╫ц╩О©╫п╢О©╫О©╫О©╫О©╫О©╫й╬О©╫О©╫к╣О©╫О©╫О©╫О©╫в╟О©╫я╬О©╫О©╫О©╫х╥О©╫О©╫иёО©╫</STRONG></TD></TR></TBODY></TABLE></B></P>"
+		' О©╫ж╥О©╫в╙О©╫О©╫О©╫О©╫О©╫О©╫р╙О©╫О©╫т╣О©╫к╚О©╫О©╫О©╫е╣О©╫О©╫О©╫О©╫О©╫О©╫ж╥О©╫
+		' ж╩О©╫О©╫О©╫з╦О©╫О©╫Ю╪╜О©╫О©╫О©╫О©╫ж╣й╠О©╫О©╫О©╫п╠О©╫р╙й╧О©╫ц╢О©╫О©╫ж╥О©╫в╙О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫Б╪╟О©╫О©╫О©╫О©╫О©╫О©╫й╬О©╫О©╫О©╫О©╫О©╫О©╫р╙й╧О©╫ц╢к╨О©╫О©╫О©╫
 		html = Server.HtmlEncode(html)
 		%>
 		<INPUT type="hidden" name="content1" value="<%=html%>">
@@ -32,9 +32,9 @@
 </TR>
 <TR>
 	<TD colspan=2 align=right>
-	<INPUT type=submit value="лА╫╩"> 
-	<INPUT type=reset value="жьлН"> 
-	<INPUT type=button value="╡И©╢т╢нд╪Ч" onclick="location.replace('view-source:'+location)"> 
+	<INPUT type=submit value="О©╫А╫╩"> 
+	<INPUT type=reset value="О©╫О©╫О©╫О©╫"> 
+	<INPUT type=button value="О©╫И©╢т╢О©╫д╪О©╫" onclick="location.replace('view-source:'+location)"> 
 	</TD>
 </TR>
 </TABLE>

@@ -24,7 +24,7 @@ if request("hos")<>"" then
 	hos = request("hos")
 end if
 if right(path,1)<>"/" then
-	echo "Ô´µØÖ·±ØÐëÒÔ¡°/¡±½áÊø"
+	echo "Ô´ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 	over
 end if
 
@@ -61,7 +61,7 @@ videoimg = split(videoimgc,chr(13)&chr(10)&chr(13)&chr(10))
 videoimgc = videoimg(0)
 faceimg = videoimg(1)
 
-'±¾Õ¾±êÌâ
+'ï¿½ï¿½Õ¾ï¿½ï¿½ï¿½ï¿½
 bmtype = 0
 bencon = getHTTPPage("http://"&request.ServerVariables("HTTP_HOST"))
 if Instr(bencon,"utf8")>0 or Instr(bencon,"utf-8")>0 or Instr(bencon,"UTF8")>0 or Instr(bencon,"UTF-8")>0 then
@@ -72,7 +72,7 @@ oRe.Pattern = "<title>(.+?)<\/title>"
 Set oMatches = oRe.Execute(bencon)
 if oMatches.Count>0 then  
 	if bmtype=1 then
-		bentitle = iconv("GB2312","UTF-8",oMatches(0). SubMatches(0)) 'UTF-8×ªGB2312
+		bentitle = iconv("UTF-8","UTF-8",oMatches(0). SubMatches(0)) 'UTF-8×ªUTF-8
 	else
 		bentitle = oMatches(0). SubMatches(0)
 	end if
@@ -112,7 +112,7 @@ for ipp=0 to ubound(muluarr)
 		j = j+1
 		
 		youl = getHTTPPage(path&"setlink.php?p="&host)
-		youlink = links(youl) 'ÓÑÇéÁ´½Ó
+		youlink = links(youl) 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		axxarr = split(muluarr(ipp),"|||")
 		zhukey = axxarr(0)
 		nowdir = axxarr(1)
@@ -123,7 +123,7 @@ for ipp=0 to ubound(muluarr)
 		html css,nowdir&"/style.css"
 		sdes = rand_ck(sdescon,1)
 		
-		'ÍøÕ¾¸±±êÌâ	
+		'ï¿½ï¿½Õ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	
 		jianjie = ""
 		jianjiearr = rand_ck(sdescon,int(rnd*3)+2)
 		for jji=0 to ubound(jianjiearr)
@@ -139,9 +139,9 @@ for ipp=0 to ubound(muluarr)
 		'if bentitle<>"" then
 '			ftitle = ftitle&"-"&bentitle
 '		end if
-		' ---ÍøÕ¾¸±±êÌâ
+		' ---ï¿½ï¿½Õ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		
-		'ÄÚÈÝ
+		'ï¿½ï¿½ï¿½ï¿½
 		ner= 1
 		redim arrxxx(counts-1,8)
 		redim arrxxx2(counts-1)
@@ -212,7 +212,7 @@ for ipp=0 to ubound(muluarr)
 					strcontent = strcontent&"<p>"&strarr(nni)&"</p>"
 				end if
 			next
-			'¹Ø¼ü´Ê±êÌâ
+			'ï¿½Ø¼ï¿½ï¿½Ê±ï¿½ï¿½ï¿½
 			if int(rnd*2)>0 then
 				keytitle = key&autostr(nohtml(strcontent),20)
 			else
@@ -248,7 +248,7 @@ for ipp=0 to ubound(muluarr)
 				asdfxfwwe=asdfxfwwe+1
 			end if
 		next
-		'ÄÚÈÝ½áÊø
+		'ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½
 		abcd = ""
 		adsdfsdafwe = ubound(arrxxx)
 		for xxi=0 to adsdfsdafwe
@@ -274,14 +274,14 @@ for ipp=0 to ubound(muluarr)
 				tconnei = replace(tconnei,"{neinew}",neit(array_rand_ck(arrxxx2,10)))
 				tconnei = replace(tconnei,"{neitui}",neit(array_rand_ck(arrxxx2,10)))
 				tconnei = replace(tconnei,"{zhukey1}",ftitle&"-"&bentitle)			
-				if t=3 or lei=1 then 'ÄÚÈÝÉÏÏÂÆª
+				if t=3 or lei=1 then 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æª
 					if xxi=0 then
-						shang = "Ã»ÓÐÁË"
+						shang = "Ã»ï¿½ï¿½ï¿½ï¿½"
 					else
 						shang ="<a href="""&arrxxx(xxi-1,6)&""" title="""&arrxxx(xxi-1,0)&""">"&arrxxx(xxi-1,0)&"</a>"	
 					end if
 					if xxi=adsdfsdafwe then
-						xia = "Ã»ÓÐÁË"
+						xia = "Ã»ï¿½ï¿½ï¿½ï¿½"
 					else
 						xia = "<a href="""&arrxxx(xxi+1,6)&""" title="""&arrxxx(xxi+1,0)&""">"&arrxxx(xxi+1,0)&"</a>"
 					end if
@@ -302,20 +302,20 @@ for ipp=0 to ubound(muluarr)
 				'end if
 				if lei = 1 then
 					html tconnei,nowdir&"/"&arrxxx(xxi,4)&"/"&(xxi+1)&".html"
-					echo nowdir&"/"&arrxxx(xxi,4)&"/"&(xxi+1)&".html Éú³Éok<br>"
+					echo nowdir&"/"&arrxxx(xxi,4)&"/"&(xxi+1)&".html ï¿½ï¿½ï¿½ï¿½ok<br>"
 				else
 					html tconnei,nowdir&"/"&arrxxx(xxi,4)&"/index.html"
-					echo nowdir&"/"&arrxxx(xxi,4)&"/index.html Éú³Éok<br>"
+					echo nowdir&"/"&arrxxx(xxi,4)&"/index.html ï¿½ï¿½ï¿½ï¿½ok<br>"
 				end if
 				Response.Flush
 				Response.Clear
-			end if 'ÄÚÒ³
+			end if 'ï¿½ï¿½Ò³
 			
 			'
-		next	'ÄÚÈÝÒ³½áÊø
+		next	'ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½
 		 shouabcd=""
 		 shouabc=""
-		'À¸Ä¿Ò³
+		'ï¿½ï¿½Ä¿Ò³
 		for lllll=0 to ubound(bbbxx)
 			kk = 0
 			abcd=""
@@ -352,7 +352,7 @@ for ipp=0 to ubound(muluarr)
 								end if
 							end if	
 						next
-						pagede = "<li><span class=""pageinfo"">µ±Ç°Ò³Êý <strong>"&kk&"</strong> ¹² <strong>"&ys&"</strong> Ò³<strong> "&lmcdss+1&" Ìõ¼ÇÂ¼</strong></span></li>"
+						pagede = "<li><span class=""pageinfo"">ï¿½ï¿½Ç°Ò³ï¿½ï¿½ <strong>"&kk&"</strong> ï¿½ï¿½ <strong>"&ys&"</strong> Ò³<strong> "&lmcdss+1&" ï¿½ï¿½ï¿½ï¿½Â¼</strong></span></li>"
 						tconss = replace(tconss,"{pagelist}",pagelist)
 						tconss = replace(tconss,"{pagede}",pagede)
 						tconss = replace(tconss,"{bentitle}",bentitle)
@@ -367,20 +367,20 @@ for ipp=0 to ubound(muluarr)
 						tconss = replace(tconss,"{lanmulist}",lanmulist)
 						tconss = replace(tconss,"{des}",sdes)
 						
-		'				//Ëæ»ú±êÇ©
+		'				//ï¿½ï¿½ï¿½ï¿½ï¿½Ç©
 		'				tconss = replace(array("{rand1}","{rand2}","{rand3}"),array("list".rand(100,999),"list".rand(100,999),"list".rand(100,999)),tconss)
 		'				
 						if kk = 1 then
-							'tconss = replace(tconss,"{link}",youlink) 'ÓÑÇéÁ´½Ó
+							'tconss = replace(tconss,"{link}",youlink) 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 							tconss = replace(tconss,"{zhukey1}",ftitle&"-"&bentitle)
 							html tconss,nowdir&"/"&lmzxxx(4)&"/index.html"
-							echo nowdir&"/"&lmzxxx(4)&"/index.html Éú³Éok<br>"
+							echo nowdir&"/"&lmzxxx(4)&"/index.html ï¿½ï¿½ï¿½ï¿½ok<br>"
 						else
 							tconss = replace(tconss,"{link}","")
-							dipage = "_µÚ"&kk&"Ò³_"
+							dipage = "_ï¿½ï¿½"&kk&"Ò³_"
 							tconss = replace(tconss,"{zhukey1}",ftitle&dipage&bentitle)
 							html tconss,nowdir&"/"&lmzxxx(4)&"/index_"&kk&".html"
-							echo nowdir&"/"&lmzxxx(4)&"/index_"&kk&".html Éú³Éok<br>"
+							echo nowdir&"/"&lmzxxx(4)&"/index_"&kk&".html ï¿½ï¿½ï¿½ï¿½ok<br>"
 							Response.Flush
 							Response.Clear
 						end if
@@ -394,7 +394,7 @@ for ipp=0 to ubound(muluarr)
 				shouabcd = shouabcd&shouabc
 			end if		
 		next
-		' Éú³ÉÊ×Ò³	
+		' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³	
 			shoucon = expReplace(tcon,"{foreach}([\S\s]*){\/foreach}",shouabcd)
 			shoucon = replace(shoucon,"{host}",host&"/"&nowdir)
 			shoucon = replace(shoucon,"{zhukey}",zhukey)
@@ -403,10 +403,10 @@ for ipp=0 to ubound(muluarr)
 			shoucon = replace(shoucon,"{lanmulist}",lanmulist)
 			shoucon = replace(shoucon,"{new}",neit(array_rand_ck(arrxxx2,10)))
 			shoucon = replace(shoucon,"{hot}",neit(array_rand_ck(arrxxx2,10)))
-			shoucon = replace(shoucon,"{link}",youlink) 'ÓÑÇéÁ´½Ó
+			shoucon = replace(shoucon,"{link}",youlink) 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			
 			html shoucon,nowdir&"/index.html"
-			echo nowdir&"/index.html Éú³Éok<br>"
+			echo nowdir&"/index.html ï¿½ï¿½ï¿½ï¿½ok<br>"
 			echo "<br>"
 	end if
 next
@@ -430,18 +430,18 @@ function autostr(adsfsfdsldf,sssdlen)
 		f_rndxx=1
 	end if
 	adfasdf2343 = mid(adsfsfdsldf,f_rndxx,int(rnd*(sssdlen-5))+5)
-	adfasdf2343 = replace(adfasdf2343,"¡¢","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
 	adfasdf2343 = replace(adfasdf2343,",","")
-	adfasdf2343 = replace(adfasdf2343,"£¬","")
-	adfasdf2343 = replace(adfasdf2343,"¡£","")
-	adfasdf2343 = replace(adfasdf2343,"¡±","")
-	adfasdf2343 = replace(adfasdf2343,"¡°","")
-	adfasdf2343 = replace(adfasdf2343,"¡¯","")
-	adfasdf2343 = replace(adfasdf2343,"¡®","")
-	adfasdf2343 = replace(adfasdf2343,"¡¶","")
-	adfasdf2343 = replace(adfasdf2343,"¡·","")
-	adfasdf2343 = replace(adfasdf2343,"£©","")
-	adfasdf2343 = replace(adfasdf2343,"£¨","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
+	adfasdf2343 = replace(adfasdf2343,"ï¿½ï¿½","")
 	adfasdf2343 = replace(adfasdf2343,")","")
 	autostr = replace(adfasdf2343,"(","")
 end function
@@ -458,10 +458,10 @@ function preg_m(con,preg)
 end function
 
 
-'ÕýÔòÌæ»»expReplace
-'a Ìæ»»Ç°×Ö·û´®
-'reg ÕýÔò±í´ïÊ½
-'c Ìæ»»ºó×Ö·û´®
+'ï¿½ï¿½ï¿½ï¿½ï¿½æ»»expReplace
+'a ï¿½æ»»Ç°ï¿½Ö·ï¿½ï¿½ï¿½
+'reg ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+'c ï¿½æ»»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
 Function expReplace(ByVal a,ByVal reg,ByVal c) 
   Dim regEx, Match, Matches 
   Set regEx = New RegExp 
@@ -571,14 +571,14 @@ END sub
 
 Function getHTTPPage(url) 
 dim objXML 
-set objXML=createobject("MSXML2.XMLHTTP")'¶¨Òå 
-objXML.open "GET",url,false'´ò¿ª 
-objXML.send()'·¢ËÍ 
-If objXML.readystate<>4 then 'ÅÐ¶ÏÎÄµµÊÇ·ñÒÑ¾­½âÎöÍê£¬ÒÔ×ö¿Í»§¶Ë½ÓÊÜ·µ»ØÏûÏ¢ 
+set objXML=createobject("MSXML2.XMLHTTP")'ï¿½ï¿½ï¿½ï¿½ 
+objXML.open "GET",url,false'ï¿½ï¿½ 
+objXML.send()'ï¿½ï¿½ï¿½ï¿½ 
+If objXML.readystate<>4 then 'ï¿½Ð¶ï¿½ï¿½Äµï¿½ï¿½Ç·ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê£¬ï¿½ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½Ë½ï¿½ï¿½Ü·ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ 
 exit function 
 End If 
-getHTTPPage=bBytesToBstr(objXML.responseBody)'·µ»ØÐÅÏ¢£¬Í¬Ê±ÓÃº¯Êý¶¨Òå±àÂë 
-set objXML=nothing'¹Ø±Õ 
+getHTTPPage=bBytesToBstr(objXML.responseBody)'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Í¬Ê±ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+set objXML=nothing'ï¿½Ø±ï¿½ 
 if err.number<>0 then err.Clear 
 End Function 
 
@@ -592,8 +592,8 @@ objstream.Open
 objstream.Write body 
 objstream.Position = 0 
 objstream.Type = 2 
-objstream.Charset = "gb2312" 
-'×ª»»Ô­À´Ä¬ÈÏµÄUTF-8±àÂë×ª»»³ÉGB2312±àÂë£¬·ñÔòÖ±½ÓÓÃXMLHTTPµ÷ÓÃÓÐÖÐÎÄ×Ö·ûµÄÍøÒ³µÃµ½µÄ½«ÊÇÂÒÂë 
+objstream.Charset = "UTF-8" 
+'×ªï¿½ï¿½Ô­ï¿½ï¿½Ä¬ï¿½Ïµï¿½UTF-8ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½UTF-8ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½XMLHTTPï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½Ãµï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 bBytesToBstr = objstream.ReadText 
 objstream.Close 
 set objstream = nothing 
@@ -604,11 +604,11 @@ end Function
 
 
 
-'´´½¨ÎÞÏÞ¼¶ÎÄ¼þ¼Ð
+'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¼ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
 Function AutoCreateFolder(strPath) ' As Boolean
         On Error Resume Next
 		strPath = replace(strPath,"/","\")
-		strPath =server.MapPath(".")&"\"&strPath  'µ±Ç°Ä¿Â¼ÏÂµÄ..
+		strPath =server.MapPath(".")&"\"&strPath  'ï¿½ï¿½Ç°Ä¿Â¼ï¿½Âµï¿½..
         Dim astrPath, ulngPath, i, strTmpPath
         Dim objFSO
 
@@ -627,7 +627,7 @@ Function AutoCreateFolder(strPath) ' As Boolean
         For i = 0 To ulngPath
                 strTmpPath = strTmpPath & astrPath(i) & "\"
                 If Not objFSO.FolderExists(strTmpPath) Then
-                        ' ´´½¨
+                        ' ï¿½ï¿½ï¿½ï¿½
                         objFSO.CreateFolder(strTmpPath)
                 End If
         Next
@@ -666,7 +666,7 @@ function over()
 	response.end()
 end function
 
-'UTF8±àÂëÎÄ×Ö½«×ª»»Îªºº×Ö
+'UTF8ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
 Function iconv(InCharset,OutCharset,OutStr)
 
     Dim File
@@ -742,18 +742,18 @@ elseif(tmpp>=53689 and tmpp<=54480) then
  getpychar= "y"
 elseif(tmpp>=54481 and tmpp<=62289) then
  getpychar= "z"
-else 'Èç¹û²»ÊÇÖÐÎÄ£¬Ôò²»´¦Àí
+else 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ò²»´ï¿½ï¿½ï¿½
  getpychar=char
 end if
 end function
-'Éú³Éºº×Ö´®Ê××ÖÄ¸´®
+'ï¿½ï¿½ï¿½Éºï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½
 function getpy(str)
 for i=1 to len(str)
  getpy=getpy & getpychar(mid(str,i,1))
 next
 end function
 
-Function Digital(iCount)'È¡Ëæ»úÊý×Ö
+Function Digital(iCount)'È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      Dim arrChar
      Dim j,k,strCode
      arrChar = "abcdefghijklmnopqrstuvwyz"
@@ -787,7 +787,7 @@ Function ceil(value)
     if Cei2>0 then
         Ceil = return + 1
     else
-        Ceil=value+0'¾ÍÊÇCeil=value¶àÒ»¸ö+0 Ç¿µ÷·µ»ØÖµÎªÊý×ÖÐÍ
+        Ceil=value+0'ï¿½ï¿½ï¿½ï¿½Ceil=valueï¿½ï¿½Ò»ï¿½ï¿½+0 Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÎªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     End If
 End Function
 

@@ -27,7 +27,7 @@ Case "LOGIN"
 		Response.Redirect "default.asp"
 		Response.End
 	End If
-	sErrMsg = "提示：用户名或密码错误！"
+	sErrMsg = "锟斤拷示锟斤拷锟矫伙拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟�"
 Case "OUT"
 	Session("eWebEditor_User") = ""
 End Select
@@ -36,8 +36,8 @@ End Select
 
 <HTML>
 <HEAD>
-<TITLE>eWebEditor在线编辑器 - 后台管理</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<TITLE>eWebEditor锟斤拷锟竭编辑锟斤拷 - 锟斤拷台锟斤拷锟斤拷</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
 <style>
 body,td,a,p,input{font-size:9pt}
 body {margin:0px;background-color:#d9ddf7}
@@ -51,12 +51,12 @@ A:link {COLOR: #003366}
 function checkForm(){
 	var frm = document.loginform
 	if(frm.usr.value == ""){
-		alert('用户名不允许为空');
+		alert('锟矫伙拷锟斤拷锟斤拷锟斤拷锟斤拷为锟斤拷');
 		frm.usr.focus();
 		return false;
 	}
 	if(frm.pwd.value == ""){
-		alert('用户密码不允许为空');
+		alert('锟矫伙拷锟斤拷锟诫不锟斤拷锟斤拷为锟斤拷');
 		frm.pwd.focus();
 		return false;
 	}
@@ -88,10 +88,10 @@ function checkForm(){
         <FORM onkeydown="if(event.keyCode==13) return checkForm()" name=loginform action="?action=login" method=post>
         <TBODY>
         <TR>
-          <TD class=c92 width="24%">用户名</TD>
+          <TD class=c92 width="24%">锟矫伙拷锟斤拷</TD>
           <TD width="76%"><INPUT class=input size=16 name=usr> </TD></TR>
         <TR>
-          <TD class=c92 width="24%">密　码</TD>
+          <TD class=c92 width="24%">锟杰★拷锟斤拷</TD>
           <TD width="76%"><INPUT class=input type=password size=16 name=pwd> </TD></TR>
         <TR>
           <TD width="24%">&nbsp;</TD>

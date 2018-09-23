@@ -156,7 +156,7 @@ Set o_FSO = Nothing
 GetFolderTree = s_List
 End Function
 Sub OutScript(str)
-Response.Write "<HTML><HEAD><meta http-equiv='Content-Type' content='text/html; charset=gb2312'><TITLE>eWebEditor</TITLE></head><body>"
+Response.Write "<HTML><HEAD><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'><TITLE>eWebEditor</TITLE></head><body>"
 Response.Write "<script language=javascript>" & str & "</script>"
 Response.Write "</body></html>"
 Response.End

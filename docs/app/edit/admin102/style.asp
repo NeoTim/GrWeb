@@ -16,7 +16,7 @@ Dim sToolBarID, sToolBarName, sToolBarOrder, sToolBarButton
 Dim sSBCode, sSBEdit, sSBText, sSBView
 Dim sEnterMode, sAreaCssMode
 Dim nStyleID
-sPosition = sPosition & "ÑùÊ½¹ÜÀí"
+sPosition = sPosition & "ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½"
 If sAction = "STYLEPREVIEW" Then
 Call InitStyle()
 Call ShowStylePreview()
@@ -82,27 +82,27 @@ End Sub
 Sub ShowPosition()
 Response.Write "<table border=0 cellspacing=1 align=center class=navi>" & _
 "<tr><th>" & sPosition & "</th></tr>" & _
-"<tr><td align=center>[<a href='?'>ËùÓÐÑùÊ½ÁÐ±í</a>]&nbsp;&nbsp;&nbsp;&nbsp;[<a href='?action=styleadd'>ÐÂ½¨Ò»ÑùÊ½</a>]&nbsp;&nbsp;&nbsp;&nbsp;[<a href='?action=updateconfig'>¸üÐÂËùÓÐÑùÊ½µÄÇ°Ì¨ÅäÖÃÎÄ¼þ</a>]&nbsp;&nbsp;&nbsp;&nbsp;[<a href='#' onclick='history.back()'>·µ»ØÇ°Ò»Ò³</a>]</td></tr>" & _
+"<tr><td align=center>[<a href='?'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½Ð±ï¿½</a>]&nbsp;&nbsp;&nbsp;&nbsp;[<a href='?action=styleadd'>ï¿½Â½ï¿½Ò»ï¿½ï¿½Ê½</a>]&nbsp;&nbsp;&nbsp;&nbsp;[<a href='?action=updateconfig'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ç°Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½</a>]&nbsp;&nbsp;&nbsp;&nbsp;[<a href='#' onclick='history.back()'>ï¿½ï¿½ï¿½ï¿½Ç°Ò»Ò³</a>]</td></tr>" & _
 "</table><br>"
 End Sub
 Sub ShowMessage(str)
 Response.Write "<table border=0 cellspacing=1 align=center class=list><tr><td>" & str & "</td></tr></table><br>"
 End Sub
 Sub ShowStyleList()
-Call ShowMessage("<b class=blue>ÒÔÏÂÎªµ±Ç°ËùÓÐÑùÊ½ÁÐ±í£º</b>")
+Call ShowMessage("<b class=blue>ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½Ð±ï¿½</b>")
 Response.Write "<table border=0 cellpadding=0 cellspacing=1 class=list align=center>" & _
 "<form action='?action=del' method=post name=myform>" & _
 "<tr align=center>" & _
-"<th width='10%'>ÑùÊ½Ãû</th>" & _
-"<th width='10%'>×î¼Ñ¿í¶È</th>" & _
-"<th width='10%'>×î¼Ñ¸ß¶È</th>" & _
-"<th width='45%'>ËµÃ÷</th>" & _
-"<th width='25%'>¹ÜÀí</th>" & _
+"<th width='10%'>ï¿½ï¿½Ê½ï¿½ï¿½</th>" & _
+"<th width='10%'>ï¿½ï¿½Ñ¿ï¿½ï¿½</th>" & _
+"<th width='10%'>ï¿½ï¿½Ñ¸ß¶ï¿½</th>" & _
+"<th width='45%'>Ëµï¿½ï¿½</th>" & _
+"<th width='25%'>ï¿½ï¿½ï¿½ï¿½</th>" & _
 "</tr>"
 Dim sManage, i, aCurrStyle
 For i = 1 To Ubound(aStyle)
 aCurrStyle = Split(aStyle(i), "|||")
-sManage = "<a href='?action=stylepreview&id=" & i & "' target='_blank'>Ô¤ÀÀ</a>|<a href='?action=code&id=" & i & "'>´úÂë</a>|<a href='?action=styleset&id=" & i & "'>ÉèÖÃ</a>|<a href='?action=toolbar&id=" & i & "'>¹¤¾ßÀ¸</a>|<a href='?action=copy&id=" & i & "'>¿½±´</a>|<a href='?action=styledel&id=" & i & "' onclick=""return confirm('ÌáÊ¾£ºÄúÈ·¶¨ÒªÉ¾³ý´ËÑùÊ½Âð£¿')"">É¾³ý</a>"
+sManage = "<a href='?action=stylepreview&id=" & i & "' target='_blank'>Ô¤ï¿½ï¿½</a>|<a href='?action=code&id=" & i & "'>ï¿½ï¿½ï¿½ï¿½</a>|<a href='?action=styleset&id=" & i & "'>ï¿½ï¿½ï¿½ï¿½</a>|<a href='?action=toolbar&id=" & i & "'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</a>|<a href='?action=copy&id=" & i & "'>ï¿½ï¿½ï¿½ï¿½</a>|<a href='?action=styledel&id=" & i & "' onclick=""return confirm('ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ÒªÉ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½')"">É¾ï¿½ï¿½</a>"
 Response.Write "<tr align=center>" & _
 "<td>" & outHTML(aCurrStyle(0)) & "</td>" & _
 "<td>" & aCurrStyle(4) & "</td>" & _
@@ -112,7 +112,7 @@ Response.Write "<tr align=center>" & _
 "</tr>"
 Next
 Response.Write "</table><br>"
-Call ShowMessage("<b class=blue>ÌáÊ¾£º</b>Äã¿ÉÒÔÍ¨¹ý¡°¿½±´¡±Ò»ÑùÊ½ÒÔ´ïµ½¿ìËÙÐÂ½¨ÑùÊ½µÄÄ¿µÄ¡£")
+Call ShowMessage("<b class=blue>ï¿½ï¿½Ê¾ï¿½ï¿½</b>ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ê½ï¿½Ô´ïµ½ï¿½ï¿½ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ä¿ï¿½Ä¡ï¿½")
 End Sub
 Sub DoCopy()
 Dim i, b, sNewID, sNewName
@@ -169,7 +169,7 @@ sStyleContentPath = ""
 sStyleWidth = "550"
 sStyleHeight = "350"
 sStyleMemo = ""
-s_Title = "ÐÂÔöÑùÊ½"
+s_Title = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½"
 s_Action = "StyleAddSave"
 sStyleFileExt = "rar|zip|exe|doc|xls|chm|hlp"
 sStyleFlashExt = "swf"
@@ -200,10 +200,10 @@ sSLTFlag = "0"
 sSLTMinSize = "300"
 sSLTOkSize = "120"
 sSYWZFlag = "0"
-sSYText = "°æÈ¨ËùÓÐ..."
+sSYText = "ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½..."
 sSYFontColor = "000000"
 sSYFontSize = "12"
-sSYFontName = "ËÎÌå"
+sSYFontName = "ï¿½ï¿½ï¿½ï¿½"
 sSYPicPath = ""
 sSLTSYObject = "0"
 sSLTSYExt = "bmp|jpg|jpeg|gif"
@@ -240,7 +240,7 @@ sSYFontColor = inHTML(sSYFontColor)
 sSYFontSize = inHTML(sSYFontSize)
 sSYFontName = inHTML(sSYFontName)
 sSYPicPath = inHTML(sSYPicPath)
-s_Title = "ÉèÖÃÑùÊ½"
+s_Title = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½"
 s_Action = "StyleSetSave"
 End If
 s_FormStateFlag = InitCheckBox("d_stateflag", "1", sStyleStateFlag)
@@ -248,69 +248,69 @@ s_FormSBCode = InitCheckBox("d_sbcode", "1", sSBCode)
 s_FormSBEdit = InitCheckBox("d_sbedit", "1", sSBEdit)
 s_FormSBText = InitCheckBox("d_sbtext", "1", sSBText)
 s_FormSBView = InitCheckBox("d_sbview", "1", sSBView)
-s_FormEnterMode = InitSelect("d_entermode", Split("EnterÊäÈë<P>£¬Shift+EnterÊäÈë<BR>|EnterÊäÈë<BR>£¬Shift+EnterÊäÈë<P>", "|"), Split("1|2", "|"), sEnterMode, "", "")
-s_FormAreaCssMode = InitSelect("d_areacssmode", Split("³£¹æÄ£Ê½|Wordµ¼ÈëÄ£Ê½", "|"), Split("0|1", "|"), sAreaCssMode, "", "")
-s_FormAutoRemote = InitSelect("d_autoremote", Split("×Ô¶¯ÉÏ´«|²»×Ô¶¯ÉÏ´«", "|"), Split("1|0", "|"), sStyleAutoRemote, "", "")
-s_FormShowBorder = InitSelect("d_showborder", Split("Ä¬ÈÏÏÔÊ¾|Ä¬ÈÏ²»ÏÔÊ¾", "|"), Split("1|0", "|"), sStyleShowBorder, "", "")
-s_FormAllowBrowse = InitSelect("d_allowbrowse", Split("ÊÇ,¿ªÆô|·ñ,¹Ø±Õ", "|"), Split("1|0", "|"), sStyleAllowBrowse, "", "")
-s_FormUploadObject = InitSelect("d_uploadobject", Split("ÎÞ×é¼þÉÏ´«Àà|ASPUploadÉÏ´«×é¼þ|SA-FileUpÉÏ´«×é¼þ|LyfUploadÉÏ´«×é¼þ", "|"), Split("0|1|2|3", "|"), sStyleUploadObject, "", "")
-s_FormAutoDir = InitSelect("d_autodir", Split("²»Ê¹ÓÃ|ÄêÄ¿Â¼|ÄêÔÂÄ¿Â¼|ÄêÔÂÈÕÄ¿Â¼", "|"), Split("0|1|2|3", "|"), sStyleAutoDir, "", "")
-s_FormDetectFromWord = InitSelect("d_detectfromword", Split("×Ô¶¯¼ì²âÓÐÌáÊ¾|²»×Ô¶¯¼ì²â", "|"), Split("1|0", "|"), sStyleDetectFromWord, "", "")
-s_FormInitMode = InitSelect("d_initmode", Split("´úÂëÄ£Ê½|±à¼­Ä£Ê½|ÎÄ±¾Ä£Ê½|Ô¤ÀÀÄ£Ê½", "|"), Split("CODE|EDIT|TEXT|VIEW", "|"), sStyleInitMode, "", "")
-s_FormBaseUrl = InitSelect("d_baseurl", Split("Ïà¶ÔÂ·¾¶|¾ø¶Ô¸ùÂ·¾¶|¾ø¶ÔÈ«Â·¾¶|Õ¾Íâ¾ø¶ÔÈ«Â·¾¶", "|"), Split("0|1|2|3", "|"), sStyleBaseUrl, "", "")
-s_FormSLTFlag = InitSelect("d_sltflag", Split("Ê¹ÓÃ|²»Ê¹ÓÃ", "|"), Split("1|0", "|"), sSLTFlag, "", "")
-s_FormSYWZFlag = InitSelect("d_sywzflag", Split("²»Ê¹ÓÃ|Ê¹ÓÃ|Ç°Ì¨ÓÃ»§¿ØÖÆ", "|"), Split("0|1|2", "|"), sSYWZFlag, "", "")
-s_FormSLTSYObject = InitSelect("d_sltsyobject", Split("AspJpegÍ¼ÐÎ×é¼þ", "|"), Split("0", "|"), sSLTSYObject, "", "")
-s_FormSYTPFlag = InitSelect("d_sytpflag", Split("²»Ê¹ÓÃ|Ê¹ÓÃ|Ç°Ì¨ÓÃ»§¿ØÖÆ", "|"), Split("0|1|2", "|"), sSYTPFlag, "", "")
-s_FormSYWZPosition = InitSelect("d_sywzposition", Split("×óÉÏ|×óÖÐ|×óÏÂ|ÖÐÉÏ|ÖÐÖÐ|ÖÐÏÂ|ÓÒÉÏ|ÓÒÖÐ|ÓÒÏÂ", "|"), Split("1|2|3|4|5|6|7|8|9", "|"), sSYWZPosition, "", "")
-s_FormSYTPPosition = InitSelect("d_sytpposition", Split("×óÉÏ|×óÖÐ|×óÏÂ|ÖÐÉÏ|ÖÐÖÐ|ÖÐÏÂ|ÓÒÉÏ|ÓÒÖÐ|ÓÒÏÂ", "|"), Split("1|2|3|4|5|6|7|8|9", "|"), sSYTPPosition, "", "")
-s_FormCusDirFlag = InitSelect("d_cusdirflag", Split("½ûÓÃ|ÆôÓÃ", "|"), Split("0|1", "|"), sCusDirFlag, "", "")
+s_FormEnterMode = InitSelect("d_entermode", Split("Enterï¿½ï¿½ï¿½ï¿½<P>ï¿½ï¿½Shift+Enterï¿½ï¿½ï¿½ï¿½<BR>|Enterï¿½ï¿½ï¿½ï¿½<BR>ï¿½ï¿½Shift+Enterï¿½ï¿½ï¿½ï¿½<P>", "|"), Split("1|2", "|"), sEnterMode, "", "")
+s_FormAreaCssMode = InitSelect("d_areacssmode", Split("ï¿½ï¿½ï¿½ï¿½Ä£Ê½|Wordï¿½ï¿½ï¿½ï¿½Ä£Ê½", "|"), Split("0|1", "|"), sAreaCssMode, "", "")
+s_FormAutoRemote = InitSelect("d_autoremote", Split("ï¿½Ô¶ï¿½ï¿½Ï´ï¿½|ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½Ï´ï¿½", "|"), Split("1|0", "|"), sStyleAutoRemote, "", "")
+s_FormShowBorder = InitSelect("d_showborder", Split("Ä¬ï¿½ï¿½ï¿½ï¿½Ê¾|Ä¬ï¿½Ï²ï¿½ï¿½ï¿½Ê¾", "|"), Split("1|0", "|"), sStyleShowBorder, "", "")
+s_FormAllowBrowse = InitSelect("d_allowbrowse", Split("ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½,ï¿½Ø±ï¿½", "|"), Split("1|0", "|"), sStyleAllowBrowse, "", "")
+s_FormUploadObject = InitSelect("d_uploadobject", Split("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½|ASPUploadï¿½Ï´ï¿½ï¿½ï¿½ï¿½|SA-FileUpï¿½Ï´ï¿½ï¿½ï¿½ï¿½|LyfUploadï¿½Ï´ï¿½ï¿½ï¿½ï¿½", "|"), Split("0|1|2|3", "|"), sStyleUploadObject, "", "")
+s_FormAutoDir = InitSelect("d_autodir", Split("ï¿½ï¿½Ê¹ï¿½ï¿½|ï¿½ï¿½Ä¿Â¼|ï¿½ï¿½ï¿½ï¿½Ä¿Â¼|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼", "|"), Split("0|1|2|3", "|"), sStyleAutoDir, "", "")
+s_FormDetectFromWord = InitSelect("d_detectfromword", Split("ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾|ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½", "|"), Split("1|0", "|"), sStyleDetectFromWord, "", "")
+s_FormInitMode = InitSelect("d_initmode", Split("ï¿½ï¿½ï¿½ï¿½Ä£Ê½|ï¿½à¼­Ä£Ê½|ï¿½Ä±ï¿½Ä£Ê½|Ô¤ï¿½ï¿½Ä£Ê½", "|"), Split("CODE|EDIT|TEXT|VIEW", "|"), sStyleInitMode, "", "")
+s_FormBaseUrl = InitSelect("d_baseurl", Split("ï¿½ï¿½ï¿½Â·ï¿½ï¿½|ï¿½ï¿½ï¿½Ô¸ï¿½Â·ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½È«Â·ï¿½ï¿½|Õ¾ï¿½ï¿½ï¿½ï¿½ï¿½È«Â·ï¿½ï¿½", "|"), Split("0|1|2|3", "|"), sStyleBaseUrl, "", "")
+s_FormSLTFlag = InitSelect("d_sltflag", Split("Ê¹ï¿½ï¿½|ï¿½ï¿½Ê¹ï¿½ï¿½", "|"), Split("1|0", "|"), sSLTFlag, "", "")
+s_FormSYWZFlag = InitSelect("d_sywzflag", Split("ï¿½ï¿½Ê¹ï¿½ï¿½|Ê¹ï¿½ï¿½|Ç°Ì¨ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½", "|"), Split("0|1|2", "|"), sSYWZFlag, "", "")
+s_FormSLTSYObject = InitSelect("d_sltsyobject", Split("AspJpegÍ¼ï¿½ï¿½ï¿½ï¿½ï¿½", "|"), Split("0", "|"), sSLTSYObject, "", "")
+s_FormSYTPFlag = InitSelect("d_sytpflag", Split("ï¿½ï¿½Ê¹ï¿½ï¿½|Ê¹ï¿½ï¿½|Ç°Ì¨ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½", "|"), Split("0|1|2", "|"), sSYTPFlag, "", "")
+s_FormSYWZPosition = InitSelect("d_sywzposition", Split("ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½", "|"), Split("1|2|3|4|5|6|7|8|9", "|"), sSYWZPosition, "", "")
+s_FormSYTPPosition = InitSelect("d_sytpposition", Split("ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½", "|"), Split("1|2|3|4|5|6|7|8|9", "|"), sSYTPPosition, "", "")
+s_FormCusDirFlag = InitSelect("d_cusdirflag", Split("ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½", "|"), Split("0|1", "|"), sCusDirFlag, "", "")
 Response.Write "<table border=0 cellpadding=0 cellspacing=1 align=center class=form>" & _
 "<form action='?action=" & s_Action & "&id=" & sStyleID & "' method=post name=myform onsubmit='return checkStyleSetForm(this)'>" & _
-"<tr><th colspan=4>&nbsp;&nbsp;" & s_Title & "£¨Êó±êÒÆµ½ÊäÈë¿ò¿É¿´ËµÃ÷£¬´ø*ºÅÎª±ØÌîÏî£©</th></tr>" & _
-"<tr><td width='15%'>ÑùÊ½Ãû³Æ£º</td><td width='35%'><input type=text class=input size=20 name=d_name title='ÒýÓÃ´ËÑùÊ½µÄÃû×Ö£¬²»Òª¼ÓÌØÊâ·ûºÅ' value=""" & sStyleName & """> <span class=red>*</span></td><td width='15%'>³õÊ¼Ä£Ê½£º</td><td width='35%'>" & s_FormInitMode & " <span class=red>*</span></td></tr>" & _
-"<tr><td width='15%'>ÏÞ¿íÄ£Ê½¿í¶È£º</td><td width='35%'><input type=text class=input size=20 name=d_fixwidth title='Áô¿Õ±íÊ¾²»ÆôÓÃ£¬¿ÉÒÔÌîÈëÈç£º500px' value=""" & sFixWidth & """></td><td width='15%'>½çÃæÆ¤·ôÄ¿Â¼£º</td><td width='35%'><input type=text class=input size=15 name=d_skin title='´æ·Å½çÃæÆ¤·ôÎÄ¼þµÄÄ¿Â¼Ãû£¬±ØÐëÔÚskinÏÂ' value=""" & sSkin & """> <select size=1 id=d_skin_drop onchange='this.form.d_skin.value=this.value'><option>-ÏµÍ³×Ô´ø-</option><option value='blue1'>blue1</option><option value='blue2'>blue2</option><option value='green1'>green1</option><option value='light1'>light1</option><option value='office2000'>office2000</option><option value='office2003'>office2003</option><option value='officexp'>officexp</option><option value='red1'>red1</option><option value='vista1'>vista1</option><option value='yellow1'>yellow1</option></select> <span class=red>*</span></td></tr>" & _
-"<tr><td width='15%'>×î¼Ñ¿í¶È£º</td><td width='35%'><input type=text class=input name=d_width size=20 title='×î¼ÑÒýÓÃÐ§¹ûµÄ¿í¶È£¬Êý×ÖÐÍ' value='" & sStyleWidth & "'> <span class=red>*</span></td><td width='15%'>×î¼Ñ¸ß¶È£º</td><td width='35%'><input type=text class=input name=d_height size=20 title='×î¼ÑÒýÓÃÐ§¹ûµÄ¸ß¶È£¬Êý×ÖÐÍ' value='" & sStyleHeight & "'> <span class=red>*</span></td></tr>" & _
-"<tr><td width='15%'>ÏÔÊ¾×´Ì¬À¸¼°°´Å¥£º</td><td width='35%'>" & s_FormStateFlag & "×´Ì¬À¸ " & s_FormSBCode & "´úÂë " & s_FormSBEdit & "±à¼­ " & s_FormSBText & "ÎÄ±¾ " & s_FormSBView & "Ô¤ÀÀ<span class=red>*</span></td><td width='15%'>WordÕ³Ìù£º</td><td width='35%'>" & s_FormDetectFromWord & " <span class=red>*</span></td></tr>" & _
-"<tr><td width='15%'>Ô¶³ÌÎÄ¼þ£º</td><td width='35%'>" & s_FormAutoRemote & " <span class=red>*</span></td><td width='15%'>Ö¸µ¼·½Õë£º</td><td width='35%'>" & s_FormShowBorder & " <span class=red>*</span></td></tr>" & _
-"<tr><td width='15%'>»Ø³µ»»ÐÐÄ£Ê½£º</td><td width='35%'>" & s_FormEnterMode & " <span class=red>*</span></td><td width='15%'>±à¼­ÇøCSSÄ£Ê½£º</td><td width='35%'>" & s_FormAreaCssMode & " <span class=red>*</span></td></tr>" & _
-"<tr><td>±¸×¢ËµÃ÷£º</td><td colspan=3><input type=text name=d_memo size=90 title='´ËÑùÊ½µÄËµÃ÷£¬¸üÓÐÀûÓÚµ÷ÓÃ' value=""" & sStyleMemo & """></td></tr>" & _
-"<tr><td colspan=4><span class=red>&nbsp;&nbsp;&nbsp;ÉÏ´«Ïà¹ØÉèÖÃ£¨Ïà¹ØÉèÖÃËµÃ÷Ïê¼ûÓÃ»§ÊÖ²á£©£º</span></td></tr>" & _
-"<tr><td width='15%'>ÉÏ´«×é¼þ£º</td><td width='35%'>" & s_FormUploadObject & " <span class=red>*</span></td><td width='15%'>ÄêÔÂÈÕ×Ô¶¯Ä¿Â¼£º</td><td width='35%'>" & s_FormAutoDir & " <span class=red>*</span></td></tr>" & _
-"<tr><td width='15%'>ÉÏ´«ÎÄ¼þä¯ÀÀ£º</td><td width='35%'>" & s_FormAllowBrowse & " <span class=red>*</span></td><td width='15%'>×Ô¶¨ÉÏ´«Â·¾¶½Ó¿Ú£º</td><td width='35%'>" & s_FormCusDirFlag & "</td></tr>" & _
-"<tr><td width='15%'>Â·¾¶Ä£Ê½£º</td><td width='35%'>" & s_FormBaseUrl & " <span class=red>*</span> <a href='#baseurl'>ËµÃ÷</a></td><td width='15%'>ÉÏ´«Â·¾¶£º</td><td width='35%'><input type=text class=input size=20 name=d_uploaddir title='ÉÏ´«ÎÄ¼þËù´æ·ÅÂ·¾¶£¬Ïà¶ÔeWebEditor¸ùÄ¿Â¼ÎÄ¼þµÄÂ·¾¶' value=""" & sStyleUploadDir & """> <span class=red>*</span></td></tr>" & _
-"<tr><td width='15%'>ÏÔÊ¾Â·¾¶£º</td><td width='35%'><input type=text class=input size=20 name=d_basehref title='ÏÔÊ¾ÄÚÈÝÒ³Ëù´æ·ÅÂ·¾¶£¬±ØÐëÒÔ&quot;/&quot;¿ªÍ·' value=""" & sStyleBaseHref & """></td><td width='15%'>ÄÚÈÝÂ·¾¶£º</td><td width='35%'><input type=text class=input size=20 name=d_contentpath title='Êµ¼Ê±£´æÔÚÄÚÈÝÖÐµÄÂ·¾¶£¬Ïà¶ÔÏÔÊ¾Â·¾¶µÄÂ·¾¶£¬²»ÄÜÒÔ&quot;/&quot;¿ªÍ·' value=""" & sStyleContentPath & """></td></tr>" & _
-"<tr><td colspan=4><span class=red>&nbsp;&nbsp;&nbsp;ÔÊÐíÉÏ´«ÎÄ¼þÀàÐÍ¼°ÎÄ¼þ´óÐ¡ÉèÖÃ£¨ÎÄ¼þ´óÐ¡µ¥Î»ÎªKB£¬0±íÊ¾²»ÔÊÐí£©£º</span></td></tr>" & _
-"<tr><td width='15%'>Í¼Æ¬ÀàÐÍ£º</td><td width='35%'><input type=text class=input name=d_imageext size=20 title='ÓÃÓÚÍ¼Æ¬Ïà¹ØµÄÉÏ´«' value='" & sStyleImageExt & "'></td><td width='15%'>Í¼Æ¬ÏÞÖÆ£º</td><td width='35%'><input type=text class=input name=d_imagesize size=20 title='Êý×ÖÐÍ£¬µ¥Î»KB' value='" & sStyleImageSize & "'>KB</td></tr>" & _
-"<tr><td width='15%'>FlashÀàÐÍ£º</td><td width='35%'><input type=text class=input name=d_flashext size=20 title='ÓÃÓÚ²åÈëFlash¶¯»­' value='" & sStyleFlashExt & "'></td><td width='15%'>FlashÏÞÖÆ£º</td><td width='35%'><input type=text class=input name=d_flashsize size=20 title='Êý×ÖÐÍ£¬µ¥Î»KB' value='" & sStyleFlashSize & "'>KB</td></tr>" & _
-"<tr><td width='15%'>Ã½ÌåÀàÐÍ£º</td><td width='35%'><input type=text class=input name=d_mediaext size=20 title='ÓÃÓÚ²åÈëÃ½ÌåÎÄ¼þ' value='" & sStyleMediaExt & "'></td><td width='15%'>Ã½ÌåÏÞÖÆ£º</td><td width='35%'><input type=text class=input name=d_mediasize size=20 title='Êý×ÖÐÍ£¬µ¥Î»KB' value='" & sStyleMediaSize & "'>KB</td></tr>" & _
-"<tr><td width='15%'>¸½¼þÀàÐÍ£º</td><td width='35%'><input type=text class=input name=d_fileext size=20 title='ÓÃÓÚ²åÈë¸½¼þ' value='" & sStyleFileExt & "'></td><td width='15%'>¸½¼þÏÞÖÆ£º</td><td width='35%'><input type=text class=input name=d_filesize size=20 title='Êý×ÖÐÍ£¬µ¥Î»KB' value='" & sStyleFileSize & "'>KB</td></tr>" & _
-"<tr><td width='15%'>Ô¶³ÌÀàÐÍ£º</td><td width='35%'><input type=text class=input name=d_remoteext size=20 title='ÓÃÓÚ×Ô¶¯ÉÏ´«Ô¶³ÌÎÄ¼þ' value='" & sStyleRemoteExt & "'></td><td width='15%'>Ô¶³ÌÏÞÖÆ£º</td><td width='35%'><input type=text class=input name=d_remotesize size=20 title='Êý×ÖÐÍ£¬µ¥Î»KB' value='" & sStyleRemoteSize & "'>KB</td></tr>" & _
-"<tr><td width='15%'>±¾µØÀàÐÍ£º</td><td width='35%'><input type=text class=input name=d_localext size=20 title='ÓÃÓÚ×Ô¶¯ÉÏ´«±¾µØÎÄ¼þ' value='" & sStyleLocalExt & "'></td><td width='15%'>±¾µØÏÞÖÆ£º</td><td width='35%'><input type=text class=input name=d_localsize size=20 title='Êý×ÖÐÍ£¬µ¥Î»KB' value='" & sStyleLocalSize & "'>KB</td></tr>" & _
-"<tr><td colspan=4><span class=red>&nbsp;&nbsp;&nbsp;ËõÂÔÍ¼¼°Ë®Ó¡Ïà¹ØÉèÖÃ£º</span></td></tr>" & _
-"<tr><td width='15%'>Í¼ÐÎ´¦Àí×é¼þ£º</td><td width='35%'>" & s_FormSLTSYObject & "</td><td width='15%'>´¦ÀíÍ¼ÐÎÀ©Õ¹Ãû£º</td><td width='35%'><input type=text name=d_sltsyext size=20 class=input value=""" & sSLTSYExt & """></td></tr>" & _
-"<tr><td width='15%'>ËõÂÔÍ¼Ê¹ÓÃ×´Ì¬£º</td><td width='35%'>" & s_FormSLTFlag & "</td><td width='15%'>ËõÂÔÍ¼³¤¶ÈÌõ¼þ£º</td><td width='35%'><input type=text name=d_sltminsize size=20 class=input title='Í¼ÐÎµÄ³¤¶ÈÖ»ÓÐ´ïµ½´Ë×îÐ¡³¤¶ÈÒªÇóÊ±²Å»áÉú³ÉËõÂÔÍ¼£¬Êý×ÖÐÍ' value='" & sSLTMinSize & "'>px</td></tr>" & _
-"<tr><td width='15%'>ËõÂÔÍ¼Éú³É³¤¶È£º</td><td width='35%'><input type=text name=d_sltoksize size=20 class=input title='Éú³ÉµÄËõÂÔÍ¼³¤¶ÈÖµ£¬Êý×ÖÐÍ' value='" & sSLTOkSize & "'>px</td><td width='15%'>&nbsp;</td><td width='35%'>&nbsp;</td></tr>" & _
-"<tr><td width='15%'>ÎÄ×ÖË®Ó¡Ê¹ÓÃ×´Ì¬£º</td><td width='35%'>" & s_FormSYWZFlag & "</td><td width='15%'>ÎÄ×ÖË®Ó¡ÆôÓÃÌõ¼þ£º</td><td width='35%'>¿í:<input type=text name=d_sywzminwidth size=4 class=input title='Í¼ÐÎµÄ¿í¶ÈÖ»ÓÐ´ïµ½´Ë×îÐ¡¿í¶ÈÒªÇóÊ±²Å»áÉú³ÉË®Ó¡£¬Êý×ÖÐÍ' value='" & sSYWZMinWidth & "'>px&nbsp; ¸ß:<input type=text name=d_sywzminheight size=4 class=input title='Í¼ÐÎµÄ¸ß¶ÈÖ»ÓÐ´ïµ½´Ë×îÐ¡¸ß¶ÈÒªÇóÊ±²Å»áÉú³ÉË®Ó¡£¬Êý×ÖÐÍ' value='" & sSYWZMinHeight & "'>px</td></tr>" & _
-"<tr><td width='15%'>ÎÄ×ÖË®Ó¡ÄÚÈÝ£º</td><td width='35%'><input type=text name=d_sytext size=20 class=input title='µ±Ê¹ÓÃÎÄ×ÖË®Ó¡Ê±µÄÎÄ×ÖÄÚÈÝ' value=""" & sSYText & """></td><td width='15%'>ÎÄ×ÖË®Ó¡×ÖÌåÑÕÉ«£º</td><td width='35%'><input type=text name=d_syfontcolor size=20 class=input title='µ±Ê¹ÓÃÎÄ×ÖË®Ó¡Ê±ÎÄ×ÖµÄÑÕÉ«' value=""" & sSYFontColor & """></td></tr>" & _
-"<tr><td width='15%'>ÎÄ×ÖË®Ó¡ÒõÓ°ÑÕÉ«£º</td><td width='35%'><input type=text name=d_syshadowcolor size=20 class=input title='µ±Ê¹ÓÃÎÄ×ÖË®Ó¡Ê±µÄÎÄ×ÖÒõÓ°ÑÕÉ«' value=""" & sSYShadowColor & """></td><td width='15%'>ÎÄ×ÖË®Ó¡ÒõÓ°´óÐ¡£º</td><td width='35%'><input type=text name=d_syshadowoffset size=20 class=input title='µ±Ê¹ÓÃÎÄ×ÖË®Ó¡Ê±ÎÄ×ÖµÄÒõÓ°´óÐ¡' value=""" & sSYShadowOffset & """>px</td></tr>" & _
-"<tr><td width='15%'>ÎÄ×ÖË®Ó¡×ÖÌå´óÐ¡£º</td><td width='35%'><input type=text name=d_syfontsize size=20 class=input title='µ±Ê¹ÓÃÎÄ×ÖË®Ó¡Ê±ÎÄ×ÖµÄ×ÖÌå´óÐ¡' value=""" & sSYFontSize & """>px</td><td width='15%'>ÎÄ×ÖË®Ó¡×ÖÌåÃû³Æ£º</td><td width='35%'><input type=text name=d_syfontname size=20 class=input title='µ±Ê¹ÓÃÎÄ×ÖË®Ó¡Ê±ÎÄ×ÖµÄ×ÖÌåÃû' value=""" & sSYFontName & """></td></tr>" & _
-"<tr><td width='15%'>ÎÄ×ÖË®Ó¡Î»ÖÃ£º</td><td width='35%'>" & s_FormSYWZPosition & "</td><td width='15%'>ÎÄ×ÖË®Ó¡±ß¾à£º</td><td width='35%'>×óÓÒ:<input type=text name=d_sywzpaddingh size=4 class=input title='¾Ó×óÊ±×÷ÓÃÎª×ó±ß¾à£¬¾ÓÓÒÊ±×÷ÓÃÎªÓÒ±ß¾à£¬Êý×ÖÐÍ' value='" & sSYWZPaddingH & "'>px&nbsp; ÉÏÏÂ:<input type=text name=d_sywzpaddingv size=4 class=input title='¾ÓÉÏÊ±×÷ÓÃÎªÉÏ±ß¾à£¬¾ÓÏÂÊ±×÷ÓÃÎªÏÂ±ß¹ñ£¬Êý×ÖÐÍ' value='" & sSYWZPaddingV & "'>px</td></tr>" & _
-"<tr><td width='15%'>ÎÄ×ÖË®Ó¡ÎÄ×ÖÕ¼Î»£º</td><td width='35%'>¿í:<input type=text name=d_sywztextwidth size=4 class=input title='Ë®Ó¡ÎÄ×ÖµÄÕ¼Î»¿í¶È£¬ÓÉ×ÖÊý¡¢×ÖÌå´óÐ¡µÈÉèÖÃµÄÐ§¹ûÈ·¶¨£¬Êý×ÖÐÍ' value='" & sSYWZTextWidth & "'>px&nbsp; ¸ß:<input type=text name=d_sywztextheight size=4 class=input title='Ë®Ó¡ÎÄ×ÖµÄÕ¼Î»¸ß¶È£¬ÓÉ×ÖÊý¡¢×ÖÌå´óÐ¡µÈÉèÖÃµÄÐ§¹ûÈ·¶¨£¬Êý×ÖÐÍ' value='" & sSYWZTextHeight & "'>px&nbsp; <input type=button value='¼ì²â¿í¸ß' onclick='doCheckWH(1)'></td><td width='15%'></td><td width='35%'></td></tr>" & _
-"<tr><td width='15%'>Í¼Æ¬Ë®Ó¡Ê¹ÓÃ×´Ì¬£º</td><td width='35%'>" & s_FormSYTPFlag & "</td><td width='15%'>Í¼Æ¬Ë®Ó¡ÆôÓÃÌõ¼þ£º</td><td width='35%'>¿í:<input type=text name=d_sytpminwidth size=4 class=input title='Í¼ÐÎµÄ¿í¶ÈÖ»ÓÐ´ïµ½´Ë×îÐ¡¿í¶ÈÒªÇóÊ±²Å»áÉú³ÉË®Ó¡£¬Êý×ÖÐÍ' value='" & sSYTPMinWidth & "'>px&nbsp; ¸ß:<input type=text name=d_sytpminheight size=4 class=input title='Í¼ÐÎµÄ¸ß¶ÈÖ»ÓÐ´ïµ½´Ë×îÐ¡¸ß¶ÈÒªÇóÊ±²Å»áÉú³ÉË®Ó¡£¬Êý×ÖÐÍ' value='" & sSYTPMinHeight & "'>px</td></tr>" & _
-"<tr><td width='15%'>Í¼Æ¬Ë®Ó¡Î»ÖÃ£º</td><td width='35%'>" & s_FormSYTPPosition & "</td><td width='15%'>Í¼Æ¬Ë®Ó¡±ß¾à£º</td><td width='35%'>×óÓÒ:<input type=text name=d_sytppaddingh size=4 class=input title='¾Ó×óÊ±×÷ÓÃÎª×ó±ß¾à£¬¾ÓÓÒÊ±×÷ÓÃÎªÓÒ±ß¾à£¬Êý×ÖÐÍ' value='" & sSYTPPaddingH & "'>px&nbsp; ÉÏÏÂ:<input type=text name=d_sytppaddingv size=4 class=input title='¾ÓÉÏÊ±×÷ÓÃÎªÉÏ±ß¾à£¬¾ÓÏÂÊ±×÷ÓÃÎªÏÂ±ß¹ñ£¬Êý×ÖÐÍ' value='" & sSYTPPaddingV & "'>px</td></tr>" & _
-"<tr><td width='15%'>Í¼Æ¬Ë®Ó¡Í¼Æ¬Â·¾¶£º</td><td width='35%'><input type=text name=d_sypicpath size=20 class=input title='µ±Ê¹ÓÃÍ¼Æ¬Ë®Ó¡Ê±Í¼Æ¬µÄÂ·¾¶' value=""" & sSYPicPath & """></td><td width='15%'>Í¼Æ¬Ë®Ó¡Í¸Ã÷¶È£º</td><td width='35%'><input type=text name=d_sytpopacity size=20 class=input title='0ÖÁ1¼äµÄÊý×Ö£¬Èç0.5±íÊ¾°ëÍ¸Ã÷' value=""" & sSYTPOpacity & """></td></tr>" & _
-"<tr><td width='15%'>Í¼Æ¬Ë®Ó¡Í¼Æ¬Õ¼Î»£º</td><td width='35%'>¿í:<input type=text name=d_sytpimagewidth size=4 class=input title='Ë®Ó¡Í¼Æ¬µÄ¿í¶È£¬Êý×ÖÐÍ' value='" & sSYTPImageWidth & "'>px&nbsp; ¸ß:<input type=text name=d_sytpimageheight size=4 class=input title='Ë®Ó¡Í¼Æ¬µÄ¸ß¶È£¬Êý×ÖÐÍ' value='" & sSYTPImageHeight & "'>px&nbsp; <input type=button value='¼ì²â¿í¸ß' onclick='doCheckWH(2)'></td><td width='15%'></td><td width='35%'></td></tr>" & _
-"<tr><td width='15%'>Ë®Ó¡¿í¸ß¼ì²âÇø£º</td><td width='85%' colspan=3><span id=tdPreview></span></td></tr>" & _
-"<tr><td align=center colspan=4><input type=submit value='  Ìá½»  ' align=absmiddle>&nbsp;<input type=reset name=btnReset value='  ÖØÌî  '></td></tr>" & _
+"<tr><th colspan=4>&nbsp;&nbsp;" & s_Title & "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¿ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½î£©</th></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Æ£ï¿½</td><td width='35%'><input type=text class=input size=20 name=d_name title='ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value=""" & sStyleName & """> <span class=red>*</span></td><td width='15%'>ï¿½ï¿½Ê¼Ä£Ê½ï¿½ï¿½</td><td width='35%'>" & s_FormInitMode & " <span class=red>*</span></td></tr>" & _
+"<tr><td width='15%'>ï¿½Þ¿ï¿½Ä£Ê½ï¿½ï¿½È£ï¿½</td><td width='35%'><input type=text class=input size=20 name=d_fixwidth title='ï¿½ï¿½Õ±ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç£º500px' value=""" & sFixWidth & """></td><td width='15%'>ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½Ä¿Â¼ï¿½ï¿½</td><td width='35%'><input type=text class=input size=15 name=d_skin title='ï¿½ï¿½Å½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½skinï¿½ï¿½' value=""" & sSkin & """> <select size=1 id=d_skin_drop onchange='this.form.d_skin.value=this.value'><option>-ÏµÍ³ï¿½Ô´ï¿½-</option><option value='blue1'>blue1</option><option value='blue2'>blue2</option><option value='green1'>green1</option><option value='light1'>light1</option><option value='office2000'>office2000</option><option value='office2003'>office2003</option><option value='officexp'>officexp</option><option value='red1'>red1</option><option value='vista1'>vista1</option><option value='yellow1'>yellow1</option></select> <span class=red>*</span></td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½Ñ¿ï¿½È£ï¿½</td><td width='35%'><input type=text class=input name=d_width size=20 title='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Ä¿ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sStyleWidth & "'> <span class=red>*</span></td><td width='15%'>ï¿½ï¿½Ñ¸ß¶È£ï¿½</td><td width='35%'><input type=text class=input name=d_height size=20 title='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Ä¸ß¶È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sStyleHeight & "'> <span class=red>*</span></td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½Ê¾×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½</td><td width='35%'>" & s_FormStateFlag & "×´Ì¬ï¿½ï¿½ " & s_FormSBCode & "ï¿½ï¿½ï¿½ï¿½ " & s_FormSBEdit & "ï¿½à¼­ " & s_FormSBText & "ï¿½Ä±ï¿½ " & s_FormSBView & "Ô¤ï¿½ï¿½<span class=red>*</span></td><td width='15%'>WordÕ³ï¿½ï¿½ï¿½ï¿½</td><td width='35%'>" & s_FormDetectFromWord & " <span class=red>*</span></td></tr>" & _
+"<tr><td width='15%'>Ô¶ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½</td><td width='35%'>" & s_FormAutoRemote & " <span class=red>*</span></td><td width='15%'>Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ë£º</td><td width='35%'>" & s_FormShowBorder & " <span class=red>*</span></td></tr>" & _
+"<tr><td width='15%'>ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½</td><td width='35%'>" & s_FormEnterMode & " <span class=red>*</span></td><td width='15%'>ï¿½à¼­ï¿½ï¿½CSSÄ£Ê½ï¿½ï¿½</td><td width='35%'>" & s_FormAreaCssMode & " <span class=red>*</span></td></tr>" & _
+"<tr><td>ï¿½ï¿½×¢Ëµï¿½ï¿½ï¿½ï¿½</td><td colspan=3><input type=text name=d_memo size=90 title='ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½' value=""" & sStyleMemo & """></td></tr>" & _
+"<tr><td colspan=4><span class=red>&nbsp;&nbsp;&nbsp;ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ö²á£©ï¿½ï¿½</span></td></tr>" & _
+"<tr><td width='15%'>ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</td><td width='35%'>" & s_FormUploadObject & " <span class=red>*</span></td><td width='15%'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ä¿Â¼ï¿½ï¿½</td><td width='35%'>" & s_FormAutoDir & " <span class=red>*</span></td></tr>" & _
+"<tr><td width='15%'>ï¿½Ï´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</td><td width='35%'>" & s_FormAllowBrowse & " <span class=red>*</span></td><td width='15%'>ï¿½Ô¶ï¿½ï¿½Ï´ï¿½Â·ï¿½ï¿½ï¿½Ó¿Ú£ï¿½</td><td width='35%'>" & s_FormCusDirFlag & "</td></tr>" & _
+"<tr><td width='15%'>Â·ï¿½ï¿½Ä£Ê½ï¿½ï¿½</td><td width='35%'>" & s_FormBaseUrl & " <span class=red>*</span> <a href='#baseurl'>Ëµï¿½ï¿½</a></td><td width='15%'>ï¿½Ï´ï¿½Â·ï¿½ï¿½ï¿½ï¿½</td><td width='35%'><input type=text class=input size=20 name=d_uploaddir title='ï¿½Ï´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eWebEditorï¿½ï¿½Ä¿Â¼ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½' value=""" & sStyleUploadDir & """> <span class=red>*</span></td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½Ê¾Â·ï¿½ï¿½ï¿½ï¿½</td><td width='35%'><input type=text class=input size=20 name=d_basehref title='ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½&quot;/&quot;ï¿½ï¿½Í·' value=""" & sStyleBaseHref & """></td><td width='15%'>ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½</td><td width='35%'><input type=text class=input size=20 name=d_contentpath title='Êµï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Â·ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½&quot;/&quot;ï¿½ï¿½Í·' value=""" & sStyleContentPath & """></td></tr>" & _
+"<tr><td colspan=4><span class=red>&nbsp;&nbsp;&nbsp;ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Ã£ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½Î»ÎªKBï¿½ï¿½0ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</span></td></tr>" & _
+"<tr><td width='15%'>Í¼Æ¬ï¿½ï¿½ï¿½Í£ï¿½</td><td width='35%'><input type=text class=input name=d_imageext size=20 title='ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Øµï¿½ï¿½Ï´ï¿½' value='" & sStyleImageExt & "'></td><td width='15%'>Í¼Æ¬ï¿½ï¿½ï¿½Æ£ï¿½</td><td width='35%'><input type=text class=input name=d_imagesize size=20 title='ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Î»KB' value='" & sStyleImageSize & "'>KB</td></tr>" & _
+"<tr><td width='15%'>Flashï¿½ï¿½ï¿½Í£ï¿½</td><td width='35%'><input type=text class=input name=d_flashext size=20 title='ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Flashï¿½ï¿½ï¿½ï¿½' value='" & sStyleFlashExt & "'></td><td width='15%'>Flashï¿½ï¿½ï¿½Æ£ï¿½</td><td width='35%'><input type=text class=input name=d_flashsize size=20 title='ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Î»KB' value='" & sStyleFlashSize & "'>KB</td></tr>" & _
+"<tr><td width='15%'>Ã½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½</td><td width='35%'><input type=text class=input name=d_mediaext size=20 title='ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ã½ï¿½ï¿½ï¿½Ä¼ï¿½' value='" & sStyleMediaExt & "'></td><td width='15%'>Ã½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½</td><td width='35%'><input type=text class=input name=d_mediasize size=20 title='ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Î»KB' value='" & sStyleMediaSize & "'>KB</td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½</td><td width='35%'><input type=text class=input name=d_fileext size=20 title='ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ë¸½ï¿½ï¿½' value='" & sStyleFileExt & "'></td><td width='15%'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½</td><td width='35%'><input type=text class=input name=d_filesize size=20 title='ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Î»KB' value='" & sStyleFileSize & "'>KB</td></tr>" & _
+"<tr><td width='15%'>Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½</td><td width='35%'><input type=text class=input name=d_remoteext size=20 title='ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½Ï´ï¿½Ô¶ï¿½ï¿½ï¿½Ä¼ï¿½' value='" & sStyleRemoteExt & "'></td><td width='15%'>Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½</td><td width='35%'><input type=text class=input name=d_remotesize size=20 title='ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Î»KB' value='" & sStyleRemoteSize & "'>KB</td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½</td><td width='35%'><input type=text class=input name=d_localext size=20 title='ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½' value='" & sStyleLocalExt & "'></td><td width='15%'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½</td><td width='35%'><input type=text class=input name=d_localsize size=20 title='ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Î»KB' value='" & sStyleLocalSize & "'>KB</td></tr>" & _
+"<tr><td colspan=4><span class=red>&nbsp;&nbsp;&nbsp;ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½</span></td></tr>" & _
+"<tr><td width='15%'>Í¼ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</td><td width='35%'>" & s_FormSLTSYObject & "</td><td width='15%'>ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½</td><td width='35%'><input type=text name=d_sltsyext size=20 class=input value=""" & sSLTSYExt & """></td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½ï¿½ï¿½Í¼Ê¹ï¿½ï¿½×´Ì¬ï¿½ï¿½</td><td width='35%'>" & s_FormSLTFlag & "</td><td width='15%'>ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</td><td width='35%'><input type=text name=d_sltminsize size=20 class=input title='Í¼ï¿½ÎµÄ³ï¿½ï¿½ï¿½Ö»ï¿½Ð´ïµ½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ê±ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSLTMinSize & "'>px</td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½É³ï¿½ï¿½È£ï¿½</td><td width='35%'><input type=text name=d_sltoksize size=20 class=input title='ï¿½ï¿½ï¿½Éµï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSLTOkSize & "'>px</td><td width='15%'>&nbsp;</td><td width='35%'>&nbsp;</td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡Ê¹ï¿½ï¿½×´Ì¬ï¿½ï¿½</td><td width='35%'>" & s_FormSYWZFlag & "</td><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</td><td width='35%'>ï¿½ï¿½:<input type=text name=d_sywzminwidth size=4 class=input title='Í¼ï¿½ÎµÄ¿ï¿½ï¿½Ö»ï¿½Ð´ïµ½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Òªï¿½ï¿½Ê±ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYWZMinWidth & "'>px&nbsp; ï¿½ï¿½:<input type=text name=d_sywzminheight size=4 class=input title='Í¼ï¿½ÎµÄ¸ß¶ï¿½Ö»ï¿½Ð´ïµ½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ß¶ï¿½Òªï¿½ï¿½Ê±ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYWZMinHeight & "'>px</td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½Ý£ï¿½</td><td width='35%'><input type=text name=d_sytext size=20 class=input title='ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Ó¡Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value=""" & sSYText & """></td><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½</td><td width='35%'><input type=text name=d_syfontcolor size=20 class=input title='ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Ó¡Ê±ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½É«' value=""" & sSYFontColor & """></td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½Ó°ï¿½ï¿½É«ï¿½ï¿½</td><td width='35%'><input type=text name=d_syshadowcolor size=20 class=input title='ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Ó¡Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½É«' value=""" & sSYShadowColor & """></td><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½Ó°ï¿½ï¿½Ð¡ï¿½ï¿½</td><td width='35%'><input type=text name=d_syshadowoffset size=20 class=input title='ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Ó¡Ê±ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Ó°ï¿½ï¿½Ð¡' value=""" & sSYShadowOffset & """>px</td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½</td><td width='35%'><input type=text name=d_syfontsize size=20 class=input title='ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Ó¡Ê±ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡' value=""" & sSYFontSize & """>px</td><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½</td><td width='35%'><input type=text name=d_syfontname size=20 class=input title='ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Ó¡Ê±ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value=""" & sSYFontName & """></td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡Î»ï¿½Ã£ï¿½</td><td width='35%'>" & s_FormSYWZPosition & "</td><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ß¾à£º</td><td width='35%'>ï¿½ï¿½ï¿½ï¿½:<input type=text name=d_sywzpaddingh size=4 class=input title='ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ß¾à£¬ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îªï¿½Ò±ß¾à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYWZPaddingH & "'>px&nbsp; ï¿½ï¿½ï¿½ï¿½:<input type=text name=d_sywzpaddingv size=4 class=input title='ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îªï¿½Ï±ß¾à£¬ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îªï¿½Â±ß¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYWZPaddingV & "'>px</td></tr>" & _
+"<tr><td width='15%'>ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½ï¿½Õ¼Î»ï¿½ï¿½</td><td width='35%'>ï¿½ï¿½:<input type=text name=d_sywztextwidth size=4 class=input title='Ë®Ó¡ï¿½ï¿½ï¿½Öµï¿½Õ¼Î»ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ð§ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYWZTextWidth & "'>px&nbsp; ï¿½ï¿½:<input type=text name=d_sywztextheight size=4 class=input title='Ë®Ó¡ï¿½ï¿½ï¿½Öµï¿½Õ¼Î»ï¿½ß¶È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ð§ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYWZTextHeight & "'>px&nbsp; <input type=button value='ï¿½ï¿½ï¿½ï¿½ï¿½' onclick='doCheckWH(1)'></td><td width='15%'></td><td width='35%'></td></tr>" & _
+"<tr><td width='15%'>Í¼Æ¬Ë®Ó¡Ê¹ï¿½ï¿½×´Ì¬ï¿½ï¿½</td><td width='35%'>" & s_FormSYTPFlag & "</td><td width='15%'>Í¼Æ¬Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</td><td width='35%'>ï¿½ï¿½:<input type=text name=d_sytpminwidth size=4 class=input title='Í¼ï¿½ÎµÄ¿ï¿½ï¿½Ö»ï¿½Ð´ïµ½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Òªï¿½ï¿½Ê±ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYTPMinWidth & "'>px&nbsp; ï¿½ï¿½:<input type=text name=d_sytpminheight size=4 class=input title='Í¼ï¿½ÎµÄ¸ß¶ï¿½Ö»ï¿½Ð´ïµ½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ß¶ï¿½Òªï¿½ï¿½Ê±ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYTPMinHeight & "'>px</td></tr>" & _
+"<tr><td width='15%'>Í¼Æ¬Ë®Ó¡Î»ï¿½Ã£ï¿½</td><td width='35%'>" & s_FormSYTPPosition & "</td><td width='15%'>Í¼Æ¬Ë®Ó¡ï¿½ß¾à£º</td><td width='35%'>ï¿½ï¿½ï¿½ï¿½:<input type=text name=d_sytppaddingh size=4 class=input title='ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ß¾à£¬ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îªï¿½Ò±ß¾à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYTPPaddingH & "'>px&nbsp; ï¿½ï¿½ï¿½ï¿½:<input type=text name=d_sytppaddingv size=4 class=input title='ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îªï¿½Ï±ß¾à£¬ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Îªï¿½Â±ß¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYTPPaddingV & "'>px</td></tr>" & _
+"<tr><td width='15%'>Í¼Æ¬Ë®Ó¡Í¼Æ¬Â·ï¿½ï¿½ï¿½ï¿½</td><td width='35%'><input type=text name=d_sypicpath size=20 class=input title='ï¿½ï¿½Ê¹ï¿½ï¿½Í¼Æ¬Ë®Ó¡Ê±Í¼Æ¬ï¿½ï¿½Â·ï¿½ï¿½' value=""" & sSYPicPath & """></td><td width='15%'>Í¼Æ¬Ë®Ó¡Í¸ï¿½ï¿½ï¿½È£ï¿½</td><td width='35%'><input type=text name=d_sytpopacity size=20 class=input title='0ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½0.5ï¿½ï¿½Ê¾ï¿½ï¿½Í¸ï¿½ï¿½' value=""" & sSYTPOpacity & """></td></tr>" & _
+"<tr><td width='15%'>Í¼Æ¬Ë®Ó¡Í¼Æ¬Õ¼Î»ï¿½ï¿½</td><td width='35%'>ï¿½ï¿½:<input type=text name=d_sytpimagewidth size=4 class=input title='Ë®Ó¡Í¼Æ¬ï¿½Ä¿ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYTPImageWidth & "'>px&nbsp; ï¿½ï¿½:<input type=text name=d_sytpimageheight size=4 class=input title='Ë®Ó¡Í¼Æ¬ï¿½Ä¸ß¶È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' value='" & sSYTPImageHeight & "'>px&nbsp; <input type=button value='ï¿½ï¿½ï¿½ï¿½ï¿½' onclick='doCheckWH(2)'></td><td width='15%'></td><td width='35%'></td></tr>" & _
+"<tr><td width='15%'>Ë®Ó¡ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</td><td width='85%' colspan=3><span id=tdPreview></span></td></tr>" & _
+"<tr><td align=center colspan=4><input type=submit value='  ï¿½á½»  ' align=absmiddle>&nbsp;<input type=reset name=btnReset value='  ï¿½ï¿½ï¿½ï¿½  '></td></tr>" & _
 "</form>" & _
 "</table><br>"
 Dim sMsg
-sMsg = "<a name=baseurl></a><p><span class=blue><b>Â·¾¶Ä£Ê½ÉèÖÃËµÃ÷£º</b></span><br>" & _
-"<b>Ïà¶ÔÂ·¾¶£º</b>Ö¸ËùÓÐµÄÏà¹ØÉÏ´«»ò×Ô¶¯²åÈëÎÄ¼þÂ·¾¶£¬±à¼­ºó¶¼ÒÔ""UploadFile/...""»ò""../UploadFile/...""ÐÎÊ½³ÊÏÖ£¬µ±Ê¹ÓÃ´ËÄ£Ê½Ê±£¬ÏÔÊ¾Â·¾¶ºÍÄÚÈÝÂ·¾¶±ØÌî£¬ÏÔÊ¾Â·¾¶±ØÐëÒÔ""/""¿ªÍ·ºÍ½áÎ²£¬ÄÚÈÝÂ·¾¶ÉèÖÃÖÐ²»ÄÜÒÔ""/""¿ªÍ·¡£<br>" & _
-"<b>¾ø¶Ô¸ùÂ·¾¶£º</b>Ö¸ËùÓÐµÄÏà¹ØÉÏ´«»ò×Ô¶¯²åÈëÎÄ¼þÂ·¾¶£¬±à¼­ºó¶¼ÒÔ""/eWebEditor/UploadFile/...""ÕâÖÖÐÎÊ½³ÊÏÖ£¬µ±Ê¹ÓÃ´ËÄ£Ê½Ê±£¬ÏÔÊ¾Â·¾¶ºÍÄÚÈÝÂ·¾¶²»±ØÌî¡£<br>" & _
-"<b>¾ø¶ÔÈ«Â·¾¶£º</b>Ö¸ËùÓÐµÄÏà¹ØÉÏ´«»ò×Ô¶¯²åÈëÎÄ¼þÂ·¾¶£¬±à¼­ºó¶¼ÒÔ""http://xxx.xxx.xxx/eWebEditor/UploadFile/...""ÕâÖÖÐÎÊ½³ÊÏÖ£¬µ±Ê¹ÓÃ´ËÄ£Ê½Ê±£¬ÏÔÊ¾Â·¾¶ºÍÄÚÈÝÂ·¾¶²»±ØÌî¡£<br>" & _
-"<b>Õ¾Íâ¾ø¶ÔÈ«Â·¾¶£º</b>µ±Ê¹ÓÃ´ËÄ£Ê½Ê±£¬ÉÏ´«Â·¾¶±ØÐëÊÇÊµ¼ÊÎïÀíÂ·¾¶£¬Èç£º""c:\xxx\""£»ÏÔÊ¾Â·¾¶Îª¿Õ£»ÄÚÈÝÂ·¾¶±ØÐëÒÔ""http""¿ªÍ·¡£</p>"
+sMsg = "<a name=baseurl></a><p><span class=blue><b>Â·ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½</b></span><br>" & _
+"<b>ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½</b>Ö¸ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½à¼­ï¿½ï¿½ï¿½ï¿½""UploadFile/...""ï¿½ï¿½""../UploadFile/...""ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Ê¹ï¿½Ã´ï¿½Ä£Ê½Ê±ï¿½ï¿½ï¿½ï¿½Ê¾Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½î£¬ï¿½ï¿½Ê¾Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½""/""ï¿½ï¿½Í·ï¿½Í½ï¿½Î²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½""/""ï¿½ï¿½Í·ï¿½ï¿½<br>" & _
+"<b>ï¿½ï¿½ï¿½Ô¸ï¿½Â·ï¿½ï¿½ï¿½ï¿½</b>Ö¸ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½à¼­ï¿½ï¿½ï¿½ï¿½""/eWebEditor/UploadFile/...""ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Ê¹ï¿½Ã´ï¿½Ä£Ê½Ê±ï¿½ï¿½ï¿½ï¿½Ê¾Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¡£<br>" & _
+"<b>ï¿½ï¿½ï¿½ï¿½È«Â·ï¿½ï¿½ï¿½ï¿½</b>Ö¸ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½à¼­ï¿½ï¿½ï¿½ï¿½""http://xxx.xxx.xxx/eWebEditor/UploadFile/...""ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Ê¹ï¿½Ã´ï¿½Ä£Ê½Ê±ï¿½ï¿½ï¿½ï¿½Ê¾Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¡£<br>" & _
+"<b>Õ¾ï¿½ï¿½ï¿½ï¿½ï¿½È«Â·ï¿½ï¿½ï¿½ï¿½</b>ï¿½ï¿½Ê¹ï¿½Ã´ï¿½Ä£Ê½Ê±ï¿½ï¿½ï¿½Ï´ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ç£º""c:\xxx\""ï¿½ï¿½ï¿½ï¿½Ê¾Â·ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½""http""ï¿½ï¿½Í·ï¿½ï¿½</p>"
 Call ShowMessage(sMsg)
 End Sub
 Sub InitStyle()
@@ -391,7 +391,7 @@ b = True
 End If
 End If
 If b = False Then
-GoError "ÎÞÐ§µÄÑùÊ½IDºÅ£¬ÇëÍ¨¹ýÒ³ÃæÉÏµÄÁ´½Ó½øÐÐ²Ù×÷£¡"
+GoError "ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½Ê½IDï¿½Å£ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½Ó½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½"
 End If
 End Sub
 Sub CheckStyleForm()
@@ -464,7 +464,7 @@ sCusDirFlag = Trim(Request("d_cusdirflag"))
 End Sub
 Sub DoStyleAddSave()
 If StyleName2ID(sStyleName) <> -1 Then
-GoError "´ËÑùÊ½ÃûÒÑ¾­´æÔÚ£¬ÇëÓÃÁíÒ»¸öÑùÊ½Ãû£¡"
+GoError "ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½"
 End If
 Dim nNewStyleID
 nNewStyleID = Ubound(aStyle) + 1
@@ -472,7 +472,7 @@ Redim Preserve aStyle(nNewStyleID)
 aStyle(nNewStyleID) = sStyleName & "|||" & sFixWidth & "|||" & sSkin & "|||" & sStyleUploadDir & "|||" & sStyleWidth & "|||" & sStyleHeight & "|||" & sStyleFileExt & "|||" & sStyleFlashExt & "|||" & sStyleImageExt & "|||" & sStyleMediaExt & "|||" & sStyleRemoteExt & "|||" & sStyleFileSize & "|||" & sStyleFlashSize & "|||" & sStyleImageSize & "|||" & sStyleMediaSize & "|||" & sStyleRemoteSize & "|||" & sStyleStateFlag & "|||" & sStyleDetectFromWord & "|||" & sStyleInitMode & "|||" & sStyleBaseUrl & "|||" & sStyleUploadObject & "|||" & sStyleAutoDir & "|||" & sStyleBaseHref & "|||" & sStyleContentPath & "|||" & sStyleAutoRemote & "|||" & sStyleShowBorder & "|||" & sStyleMemo & "|||||||||" & sSLTFlag & "|||" & sSLTMinSize & "|||" & sSLTOkSize & "|||" & sSYWZFlag & "|||" & sSYText & "|||" & sSYFontColor & "|||" & sSYFontSize & "|||" & sSYFontName & "|||" & sSYPicPath & "|||" & sSLTSYObject & "|||" & sSLTSYExt & "|||" & sSYWZMinWidth & "|||" & sSYShadowColor & "|||" & sSYShadowOffset & "|||" & sStyleAllowBrowse & "|||" & sStyleLocalExt & "|||" & sStyleLocalSize & "|||" & sSYWZMinHeight & "|||" & sSYWZPosition & "|||" & sSYWZTextWidth & "|||" & sSYWZTextHeight & "|||" & sSYWZPaddingH & "|||" & sSYWZPaddingV & "|||" & sSYTPFlag & "|||" & sSYTPMinWidth & "|||" & sSYTPMinHeight & "|||" & sSYTPPosition & "|||" & sSYTPPaddingH & "|||" & sSYTPPaddingV & "|||" & sSYTPImageWidth & "|||" & sSYTPImageHeight & "|||" & sSYTPOpacity & "|||" & sCusDirFlag  & "|||" & sSBCode  & "|||" & sSBEdit  & "|||" & sSBText  & "|||" & sSBView & "|||" & sEnterMode & "|||" & sAreaCssMode
 Call WriteConfig()
 Call WriteStyle(nNewStyleID)
-Call ShowMessage("<b><span class=red>ÑùÊ½Ôö¼Ó³É¹¦£¡</span></b><li><a href='?action=toolbar&id=" & nNewStyleID & "'>ÉèÖÃ´ËÑùÊ½ÏÂµÄ¹¤¾ßÀ¸</a>")
+Call ShowMessage("<b><span class=red>ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ó³É¹ï¿½ï¿½ï¿½</span></b><li><a href='?action=toolbar&id=" & nNewStyleID & "'>ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ê½ï¿½ÂµÄ¹ï¿½ï¿½ï¿½ï¿½ï¿½</a>")
 End Sub
 Sub DoUpdateConfig()
 Dim i
@@ -480,7 +480,7 @@ Call WriteConfig()
 For i = 1 To UBound(aStyle)
 Call WriteStyle(i)
 Next
-Call ShowMessage("<b><span class=red>ËùÓÐÑùÊ½µÄÇ°Ì¨ÅäÖÃÎÄ¼þ¸üÐÂ²Ù×÷³É¹¦£¡</span></b><li><a href='?'>·µ»ØËùÓÐÑùÊ½ÁÐ±í</a>")
+Call ShowMessage("<b><span class=red>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ç°Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½</span></b><li><a href='?'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½Ð±ï¿½</a>")
 End Sub
 Sub DoStyleSetSave()
 Dim n, s_OldStyleName
@@ -488,22 +488,22 @@ sStyleID = Trim(Request("id"))
 If IsNumeric(sStyleID) = True Then
 n = StyleName2ID(sStyleName)
 If CStr(n) <> sStyleID And n <> -1 Then
-GoError "´ËÑùÊ½ÃûÒÑ¾­´æÔÚ£¬ÇëÓÃÁíÒ»¸öÑùÊ½Ãû£¡"
+GoError "ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½"
 End If
 If Clng(sStyleID) < 1 And Clng(sStyleID)>UBound(aStyle) Then
-GoError "ÎÞÐ§µÄÑùÊ½IDºÅ£¬ÇëÍ¨¹ýÒ³ÃæÉÏµÄÁ´½Ó½øÐÐ²Ù×÷£¡"
+GoError "ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½Ê½IDï¿½Å£ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½Ó½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½"
 End If
 s_OldStyleName = Split(aStyle(Clng(sStyleID)), "|||")(0)
 aStyle(Clng(sStyleID)) = sStyleName & "|||" & sFixWidth & "|||" & sSkin & "|||" & sStyleUploadDir & "|||" & sStyleWidth & "|||" & sStyleHeight & "|||" & sStyleFileExt & "|||" & sStyleFlashExt & "|||" & sStyleImageExt & "|||" & sStyleMediaExt & "|||" & sStyleRemoteExt & "|||" & sStyleFileSize & "|||" & sStyleFlashSize & "|||" & sStyleImageSize & "|||" & sStyleMediaSize & "|||" & sStyleRemoteSize & "|||" & sStyleStateFlag & "|||" & sStyleDetectFromWord & "|||" & sStyleInitMode & "|||" & sStyleBaseUrl & "|||" & sStyleUploadObject & "|||" & sStyleAutoDir & "|||" & sStyleBaseHref & "|||" & sStyleContentPath & "|||" & sStyleAutoRemote & "|||" & sStyleShowBorder & "|||" & sStyleMemo & "|||||||||" & sSLTFlag & "|||" & sSLTMinSize & "|||" & sSLTOkSize & "|||" & sSYWZFlag & "|||" & sSYText & "|||" & sSYFontColor & "|||" & sSYFontSize & "|||" & sSYFontName & "|||" & sSYPicPath & "|||" & sSLTSYObject & "|||" & sSLTSYExt & "|||" & sSYWZMinWidth & "|||" & sSYShadowColor & "|||" & sSYShadowOffset & "|||" & sStyleAllowBrowse & "|||" & sStyleLocalExt & "|||" & sStyleLocalSize & "|||" & sSYWZMinHeight & "|||" & sSYWZPosition & "|||" & sSYWZTextWidth & "|||" & sSYWZTextHeight & "|||" & sSYWZPaddingH & "|||" & sSYWZPaddingV & "|||" & sSYTPFlag & "|||" & sSYTPMinWidth & "|||" & sSYTPMinHeight & "|||" & sSYTPPosition & "|||" & sSYTPPaddingH & "|||" & sSYTPPaddingV & "|||" & sSYTPImageWidth & "|||" & sSYTPImageHeight & "|||" & sSYTPOpacity & "|||" & sCusDirFlag  & "|||" & sSBCode  & "|||" & sSBEdit  & "|||" & sSBText  & "|||" & sSBView & "|||" & sEnterMode & "|||" & sAreaCssMode
 Else
-GoError "ÎÞÐ§µÄÑùÊ½IDºÅ£¬ÇëÍ¨¹ýÒ³ÃæÉÏµÄÁ´½Ó½øÐÐ²Ù×÷£¡"
+GoError "ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½Ê½IDï¿½Å£ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½Ó½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½"
 End If
 Call WriteConfig()
 If LCase(s_OldStyleName) <> LCase(sStyleName) Then
 Call DeleteFile(s_OldStyleName)
 End If
 Call WriteStyle(Clng(sStyleID))
-Call ShowMessage("<b><span class=red>ÑùÊ½ÐÞ¸Ä³É¹¦£¡</span></b><li><a href='?action=stylepreview&id=" & sStyleID & "' target='_blank'>Ô¤ÀÀ´ËÑùÊ½</a><li><a href='?action=toolbar&id=" & sStyleID & "'>ÉèÖÃ´ËÑùÊ½ÏÂµÄ¹¤¾ßÀ¸</a><li><a href='?action=styleset&id=" & sStyleID & "'>ÖØÐÂÉèÖÃ´ËÑùÊ½</a>")
+Call ShowMessage("<b><span class=red>ï¿½ï¿½Ê½ï¿½Þ¸Ä³É¹ï¿½ï¿½ï¿½</span></b><li><a href='?action=stylepreview&id=" & sStyleID & "' target='_blank'>Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½</a><li><a href='?action=toolbar&id=" & sStyleID & "'>ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ê½ï¿½ÂµÄ¹ï¿½ï¿½ï¿½ï¿½ï¿½</a><li><a href='?action=styleset&id=" & sStyleID & "'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ê½</a>")
 End Sub
 Sub DoStyleDel()
 aStyle(Clng(sStyleID)) = ""
@@ -513,8 +513,8 @@ Call GoUrl("?")
 End Sub
 Sub ShowStylePreview()
 Response.Write "<html><head>" & _
-"<title>ÑùÊ½Ô¤ÀÀ</title>" & _
-"<meta http-equiv='Content-Type' content='text/html; charset=gb2312'>" & _
+"<title>ï¿½ï¿½Ê½Ô¤ï¿½ï¿½</title>" & _
+"<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>" & _
 "</head><body>" & _
 "<input type=hidden name=content1  value=''>" & _
 "<iframe ID='eWebEditor1' src='../ewebeditor.htm?id=content1&style=" & sStyleName & "' frameborder=0 scrolling=no width='" & sStyleWidth & "' HEIGHT='" & sStyleHeight & "'></iframe>" & _
@@ -522,12 +522,12 @@ Response.Write "<html><head>" & _
 End Sub
 Sub ShowStyleCode()
 Response.Write "<table border=0 cellspacing=1 align=center class=list>" & _
-"<tr><th>ÑùÊ½£¨" & outHTML(sStyleName) & "£©µÄ×î¼Ñµ÷ÓÃ´úÂëÈçÏÂ£¨ÆäÖÐXXX°´Êµ¼Ê¹ØÁªµÄ±íµ¥Ïî½øÐÐÐÞ¸Ä£©£º</th></tr>" & _
+"<tr><th>ï¿½ï¿½Ê½ï¿½ï¿½" & outHTML(sStyleName) & "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñµï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½XXXï¿½ï¿½Êµï¿½Ê¹ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä£ï¿½ï¿½ï¿½</th></tr>" & _
 "<tr><td><textarea rows=5 cols=65 style='width:100%'><IFRAME ID=""eWebEditor1"" SRC=""ewebeditor.htm?id=XXX&style=" & sStyleName & """ FRAMEBORDER=""0"" SCROLLING=""no"" WIDTH=""" & sStyleWidth & """ HEIGHT=""" & sStyleHeight & """></IFRAME></textarea></td></tr>" & _
 "</table>"
 End Sub
 Sub ShowToolBarList()
-Call ShowMessage("<b class=blue>ÑùÊ½£¨" & outHTML(sStyleName) & "£©ÏÂµÄ¹¤¾ßÀ¸¹ÜÀí£º</b>")
+Call ShowMessage("<b class=blue>ï¿½ï¿½Ê½ï¿½ï¿½" & outHTML(sStyleName) & "ï¿½ï¿½ï¿½ÂµÄ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</b>")
 Dim s_AddForm, s_ModiForm, i, aCurrToolbar
 Dim nMaxOrder
 nMaxOrder = 0
@@ -542,17 +542,17 @@ Next
 nMaxOrder = nMaxOrder + 1
 s_AddForm = "<hr width='80%' align=center size=1><table border=0 cellpadding=4 cellspacing=0 align=center>" & _
 "<form action='?id=" & sStyleID & "&action=toolbaradd' name='addform' method=post>" & _
-"<tr><td>¹¤¾ßÀ¸Ãû£º<input type=text name=d_name size=20 class=input value='¹¤¾ßÀ¸" & nMaxOrder & "'> ÅÅÐòºÅ£º<input type=text name=d_order size=5 value='" & nMaxOrder & "' class=input> <input type=submit name=b1 value='ÐÂÔö¹¤¾ßÀ¸'></td></tr>" & _
+"<tr><td>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½<input type=text name=d_name size=20 class=input value='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" & nMaxOrder & "'> ï¿½ï¿½ï¿½ï¿½Å£ï¿½<input type=text name=d_order size=5 value='" & nMaxOrder & "' class=input> <input type=submit name=b1 value='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'></td></tr>" & _
 "</form></table><hr width='80%' align=center size=1>"
 Dim s_Manage
 s_ModiForm = "<form action='?id=" & sStyleID & "&action=toolbarmodi' name=modiform method=post>" & _
 "<table border=0 cellpadding=0 cellspacing=1 align=center class=form>" & _
-"<tr align=center><th>ID</th><th>¹¤¾ßÀ¸Ãû</th><th>ÅÅÐòºÅ</th><th>²Ù×÷</th></tr>"
+"<tr align=center><th>ID</th><th>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</th><th>ï¿½ï¿½ï¿½ï¿½ï¿½</th><th>ï¿½ï¿½ï¿½ï¿½</th></tr>"
 For i = 1 To UBound(aToolbar)
 aCurrToolbar = Split(aToolbar(i), "|||")
 If aCurrToolbar(0) = sStyleID Then
-s_Manage = "<a href='?id=" & sStyleID & "&action=buttonset&toolbarid=" & i & "'>°´Å¥ÉèÖÃ</a>"
-s_Manage = s_Manage & "|<a href='?id=" & sStyleID & "&action=toolbardel&delid=" & i & "'>É¾³ý</a>"
+s_Manage = "<a href='?id=" & sStyleID & "&action=buttonset&toolbarid=" & i & "'>ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½</a>"
+s_Manage = s_Manage & "|<a href='?id=" & sStyleID & "&action=toolbardel&delid=" & i & "'>É¾ï¿½ï¿½</a>"
 s_ModiForm = s_ModiForm & "<tr align=center>" & _
 "<td>" & i & "</td>" & _
 "<td><input type=text name='d_name" & i & "' value=""" & inHTML(aCurrToolbar(2)) & """ size=30 class=input></td>" & _
@@ -561,7 +561,7 @@ s_ModiForm = s_ModiForm & "<tr align=center>" & _
 "</tr>"
 End If
 Next
-s_ModiForm = s_ModiForm & "<tr><td colspan=4 align=center><input type=submit name=b1 value='  ÐÞ¸Ä  '></td></tr></table></form>"
+s_ModiForm = s_ModiForm & "<tr><td colspan=4 align=center><input type=submit name=b1 value='  ï¿½Þ¸ï¿½  '></td></tr></table></form>"
 Response.Write s_AddForm & s_ModiForm
 End Sub
 Sub DoToolBarAdd()
@@ -569,10 +569,10 @@ Dim s_Name, s_Order
 s_Name = Trim(Request("d_name"))
 s_Order = Trim(Request("d_order"))
 If s_Name = "" Then
-GoError "¹¤¾ßÀ¸Ãû²»ÄÜÎª¿Õ£¡"
+GoError "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½"
 End If
 If IsNumeric(s_Order) = False Then
-GoError "ÎÞÐ§µÄ¹¤¾ßÀ¸ÅÅÐòºÅ£¬ÅÅÐòºÅ±ØÐëÎªÊý×Ö£¡"
+GoError "ï¿½ï¿½Ð§ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ö£ï¿½"
 End If
 Dim nToolbarNum
 nToolbarNum = Ubound(aToolbar) + 1
@@ -580,7 +580,7 @@ Redim Preserve aToolbar(nToolbarNum)
 aToolbar(nToolbarNum) = sStyleID & "||||||" & s_Name & "|||" & s_Order
 Call WriteConfig()
 Call WriteStyle(Clng(sStyleID))
-Response.Write "<script language=javascript>alert(""¹¤¾ßÀ¸£¨" & outHTML(s_Name) & "£©Ôö¼Ó²Ù×÷³É¹¦£¡"");</script>"
+Response.Write "<script language=javascript>alert(""ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" & outHTML(s_Name) & "ï¿½ï¿½ï¿½ï¿½ï¿½Ó²ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½"");</script>"
 Call GoUrl("?action=toolbar&id=" & sStyleID)
 End Sub
 Sub DoToolBarModi()
@@ -599,7 +599,7 @@ End If
 Next
 Call WriteConfig()
 Call WriteStyle(Clng(sStyleID))
-Response.Write "<script language=javascript>alert('¹¤¾ßÀ¸ÐÞ¸Ä²Ù×÷³É¹¦£¡');</script>"
+Response.Write "<script language=javascript>alert('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä²ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½');</script>"
 Call GoUrl("?action=toolbar&id=" & sStyleID)
 End Sub
 Sub DoToolBarDel()
@@ -609,7 +609,7 @@ If IsNumeric(s_DelID) = True Then
 aToolbar(Clng(s_DelID)) = ""
 Call WriteConfig()
 Call WriteStyle(Clng(sStyleID))
-Response.Write "<script language=javascript>alert('¹¤¾ßÀ¸£¨ID£º" & s_DelID & "£©É¾³ý²Ù×÷³É¹¦£¡');</script>"
+Response.Write "<script language=javascript>alert('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½IDï¿½ï¿½" & s_DelID & "ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½');</script>"
 Call GoUrl("?action=toolbar&id=" & sStyleID)
 End If
 End Sub
@@ -627,32 +627,32 @@ b = True
 End If
 End If
 If b = False Then
-GoError "ÎÞÐ§µÄ¹¤¾ßÀ¸IDºÅ£¬ÇëÍ¨¹ýÒ³ÃæÉÏµÄÁ´½Ó½øÐÐ²Ù×÷£¡"
+GoError "ï¿½ï¿½Ð§ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½IDï¿½Å£ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½Ó½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½"
 End If
 End Sub
 Sub ShowButtonList()
-Call ShowMessage("<b class=blue>µ±Ç°ÑùÊ½£º<span class=red>" & outHTML(sStyleName) & "</span>&nbsp;&nbsp;µ±Ç°¹¤¾ßÀ¸£º<span class=red>" & outHTML(sToolBarName) & "</span></b>")
+Call ShowMessage("<b class=blue>ï¿½ï¿½Ç°ï¿½ï¿½Ê½ï¿½ï¿½<span class=red>" & outHTML(sStyleName) & "</span>&nbsp;&nbsp;ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½<span class=red>" & outHTML(sToolBarName) & "</span></b>")
 %>
 <script language='javascript' src='../js/buttons.js'></script>
 <script language='javascript' src='../js/zh-cn.js'></script>
 <table border=0 cellpadding=5 cellspacing=0 align=center>
 <form action='?action=buttonsave&id=<%=sStyleID%>&toolbarid=<%=sToolBarID%>' method=post name=myform>
-<tr align=center><td>¿ÉÑ¡°´Å¥</td><td></td><td>ÒÑÑ¡°´Å¥</td><td></td></tr>
+<tr align=center><td>ï¿½ï¿½Ñ¡ï¿½ï¿½Å¥</td><td></td><td>ï¿½ï¿½Ñ¡ï¿½ï¿½Å¥</td><td></td></tr>
 <tr>
 <td><DIV id=div1 style="BORDER-RIGHT: 1.5pt inset; PADDING-RIGHT: 0px; BORDER-TOP: 1.5pt inset; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; OVERFLOW: auto; BORDER-LEFT: 1.5pt inset; WIDTH: 250px; PADDING-TOP: 0px; BORDER-BOTTOM: 1.5pt inset; HEIGHT: 350px; BACKGROUND-COLOR: white"></DIV></td>
-<td><input type=button name=b1 value=' ¡ú ' onclick='Add()'><br><br><input type=button name=b1 value=' ¡û ' onclick='Del()'></td>
+<td><input type=button name=b1 value=' ï¿½ï¿½ ' onclick='Add()'><br><br><input type=button name=b1 value=' ï¿½ï¿½ ' onclick='Del()'></td>
 <td><DIV id=div2 style="BORDER-RIGHT: 1.5pt inset; PADDING-RIGHT: 0px; BORDER-TOP: 1.5pt inset; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; OVERFLOW: auto; BORDER-LEFT: 1.5pt inset; WIDTH: 250px; PADDING-TOP: 0px; BORDER-BOTTOM: 1.5pt inset; HEIGHT: 350px; BACKGROUND-COLOR: white"></DIV></td>
-<td><input type=button name=b3 value='¡ü' onclick='Up()'><br><br><br><input type=button name=b4 value='¡ý' onclick='Down()'></td>
+<td><input type=button name=b3 value='ï¿½ï¿½' onclick='Up()'><br><br><br><input type=button name=b4 value='ï¿½ï¿½' onclick='Down()'></td>
 </tr>
 <input type=hidden name='d_button' value='<%=sToolBarButton%>'>
-<tr><td colspan=4 align=right><input type=submit name=b value=' ±£´æÉèÖÃ '></td></tr>
+<tr><td colspan=4 align=right><input type=submit name=b value=' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ '></td></tr>
 </form>
 </table>
 <script language=javascript>
 initButtonOptions("<%=sSkin%>");
 </script>
 <%
-Call ShowMessage("<b class=blue>ÌáÊ¾£º</b>Äã¿ÉÒÔÍ¨¹ý°´¡°Ctrl¡±¡°Shift¡±À´¿ìËÙ¶àÑ¡¶¨£¬¿ÉÒÔÔÚÖ¸¶¨ÏîÉÏ¡°Ë«»÷¡±¿ìËÙÔö¼Ó»òÉ¾³ýÏî¡£¿ÉÒÔÑ¡¶¨¶à¸ö°´Å¥Í¬Ê±ÉÏÒÆ»òÏÂÒÆ²Ù×÷¡£")
+Call ShowMessage("<b class=blue>ï¿½ï¿½Ê¾ï¿½ï¿½</b>ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ctrlï¿½ï¿½ï¿½ï¿½Shiftï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¡ï¿½Ë«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó»ï¿½É¾ï¿½ï¿½ï¿½î¡£ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥Í¬Ê±ï¿½ï¿½ï¿½Æ»ï¿½ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½ï¿½ï¿½")
 End Sub
 Sub DoButtonSave()
 Dim s_Button, nToolBarID, aCurrToolbar
@@ -662,7 +662,7 @@ aCurrToolbar = Split(aToolbar(nToolBarID), "|||")
 aToolbar(nToolBarID) = aCurrToolbar(0) & "|||" & s_Button & "|||" & aCurrToolbar(2) & "|||" & aCurrToolbar(3)
 Call WriteConfig()
 Call WriteStyle(Clng(sStyleID))
-Call ShowMessage("<b><span class=red>¹¤¾ßÀ¸°´Å¥ÉèÖÃ±£´æ³É¹¦£¡</span></b><li><a href='?action=stylepreview&id=" & sStyleID & "' target='_blank'>Ô¤ÀÀ´ËÑùÊ½</a><li><a href='?action=toolbar&id=" & sStyleID & "'>·µ»Ø¹¤¾ßÀ¸¹ÜÀí</a><li><a href='?action=buttonset&id=" & sStyleID & "&toolbarid=" & sToolBarID & "'>ÖØÐÂÉèÖÃ´Ë¹¤¾ßÀ¸ÏÂµÄ°´Å¥</a>")
+Call ShowMessage("<b><span class=red>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½</span></b><li><a href='?action=stylepreview&id=" & sStyleID & "' target='_blank'>Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½</a><li><a href='?action=toolbar&id=" & sStyleID & "'>ï¿½ï¿½ï¿½Ø¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</a><li><a href='?action=buttonset&id=" & sStyleID & "&toolbarid=" & sToolBarID & "'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´Ë¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ°ï¿½Å¥</a>")
 End Sub
 Sub WriteStyle(n_StyleID)
 Dim sConfig

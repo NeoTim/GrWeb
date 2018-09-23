@@ -1,39 +1,39 @@
 <HTML>
 <HEAD>
-<TITLE>eWebEditor ： 代码实例</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<TITLE>eWebEditor 锟斤拷 锟斤拷锟斤拷实锟斤拷</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
 <link rel='stylesheet' type='text/css' href='example.css'>
 </HEAD>
 <BODY>
 
 
-<p><b>导航 ： 示例首页</b></p>
+<p><b>锟斤拷锟斤拷 锟斤拷 示锟斤拷锟斤拷页</b></p>
 
-<p><b>示例目录中，包括的实例代码有：</b></p>
+<p><b>示锟斤拷目录锟叫ｏ拷锟斤拷锟斤拷锟斤拷实锟斤拷锟斤拷锟斤拷锟叫ｏ拷</b></p>
 <ol>
-<li><a href="standard.asp">标准调用示例</a> (_example/standard.asp)
-<li><a href="popup.asp">弹窗调用示例</a> (_example/popup.asp)
-<li><a href="remote.asp">远程文件自动上传示例</a> (_example/remote.asp)
-<li><a href="clientapi.asp">客户端API示例</a> (_example/clientapi.asp)
-<li><a href="para_file.asp">上传文件接口示例</a> (_example/para_file.asp)
-<li><a href="dlg_upload.asp">输入框调用上传文件对话框示例</a>(_example/dlg_upload.asp)
-<li><a href="para_extcss.asp">外部样式引用接口示例</a> (_example/para_extcss.asp)
-<li>表单接收示例(上面示例点提交后即为此页) (_example/retrieve.asp)
+<li><a href="standard.asp">锟斤拷准锟斤拷锟斤拷示锟斤拷</a> (_example/standard.asp)
+<li><a href="popup.asp">锟斤拷锟斤拷锟斤拷锟斤拷示锟斤拷</a> (_example/popup.asp)
+<li><a href="remote.asp">远锟斤拷锟侥硷拷锟皆讹拷锟较达拷示锟斤拷</a> (_example/remote.asp)
+<li><a href="clientapi.asp">锟酵伙拷锟斤拷API示锟斤拷</a> (_example/clientapi.asp)
+<li><a href="para_file.asp">锟较达拷锟侥硷拷锟接匡拷示锟斤拷</a> (_example/para_file.asp)
+<li><a href="dlg_upload.asp">锟斤拷锟斤拷锟斤拷锟斤拷锟较达拷锟侥硷拷锟皆伙拷锟斤拷示锟斤拷</a>(_example/dlg_upload.asp)
+<li><a href="para_extcss.asp">锟解部锟斤拷式锟斤拷锟矫接匡拷示锟斤拷</a> (_example/para_extcss.asp)
+<li>锟斤拷锟斤拷锟斤拷示锟斤拷(锟斤拷锟斤拷示锟斤拷锟斤拷锟结交锟斤拷为锟斤拷页) (_example/retrieve.asp)
 </ol>
 
 
-<p><b>更多相关在线网址：</b></p>
+<p><b>锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟街凤拷锟�</b></p>
 <ul>
-<li>首页：<br>
+<li>锟斤拷页锟斤拷<br>
   <a href="http://www.ewebeditor.net" target="_blank">http://www.ewebeditor.net</a><br><br>
-<li>在线演示：<br>
+<li>锟斤拷锟斤拷锟斤拷示锟斤拷<br>
   <a href="http://www.ewebeditor.net/demo/" target="_blank">http://www.ewebeditor.net/demo/</a><br><br>
-<li>联系我们：<br>
-  ＱＱ: 589808<br>
-  邮箱: <a href="mailto:service@ewebsoft.com">service@ewebsoft.com</a><br>
-  电话: 0591-83633592<br>
-  传真: 0591-83633593<br>
-  公司: 福州极限软件开发有限公司
+<li>锟斤拷系锟斤拷锟角ｏ拷<br>
+  锟窖ｏ拷: 589808<br>
+  锟斤拷锟斤拷: <a href="mailto:service@ewebsoft.com">service@ewebsoft.com</a><br>
+  锟界话: 0591-83633592<br>
+  锟斤拷锟斤拷: 0591-83633593<br>
+  锟斤拷司: 锟斤拷锟捷硷拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷薰锟剿�
 
 </ul>
 

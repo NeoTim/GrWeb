@@ -1,0 +1,165 @@
+<html><meta http-equiv="Content-Type" content="text/html; charset=GB2312"><link rel="stylesheet" type="text/css" href="../../img/TML.css"><Script src=../../img/menu.js></Script><title>基于OCI开发的ORACLE独立ADO驱动　集成超级管理器—告别SQL*Net的真正高速直连</title><meta name="keywords" content="国软,网络游戏,棋牌游戏,麻将游戏,军棋,象棋,围棋,五子棋,斗地主,梭哈,小游戏,连连看小游戏,双人小游戏,迷你小游戏,网页游戏,游戏开发,棋牌游戏开发">
+<meta name="description" content="国软是在国内的网络游戏企业，旗下自主研发多款网络游戏、休闲游戏、棋牌游戏、竞技游戏、大型MMORPG游戏"><body><center><div id="page"><div id="top" align=right><br><br><br><br><br><br>
+<a onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.guoruan.com');" href="#">设为首页</a>　|　<a href="Javascript:window.external.addFavorite('http://www.guoruan.com','国软股份有限公司')">加入收藏</a>　|　<a href="../../tml/Conncetus.htm">联系我们</a>　|　<a href="../../tml/Statement.htm">法律声明</a>　|　<a href="../../tml/pay.htm">支付方式</a></div></div>
+<div style="width:100%;height:31px;background:url(../../img/TML8.jpg)">
+<div style="width:1004" align=left>　　　　　　　<a href="../../index.htm"><img src="../../img/TML9.jpg" title="网站首页"></a> 　<a href="../../tml/Introduction.htm"><img src=../../img/TML10.jpg title="公司信息"></a>　　　<a href="../../tml/Production.htm"><img src=../../img/TML11.jpg title="产品体系"></a>　　　<a href="../../tml/technology.htm"><img src=../../img/TML12.jpg title="技术培训"></a>　　　<a href="../../tml/job.htm"><img src=../../img/TML13.jpg title="招聘信息"></a>　　　<a href="../../tml/Honor.htm"><img src=../../img/TML100.jpg title="荣誉资质"></a>
+<!--公司相关网站连接开始-->
+<div id="correlation">
+    <div id="t_select">
+        <div id="t_selected" onClick="shlist();" onMouseOver="cws(true);" onMouseOut="cws(false);"
+            onblur="hlist()">
+            访问国软相关产品网站</div>
+        <div id="t_select-list" onMouseOver="cws(true);" onMouseOut="cws(false);">
+            <a href="http://rpg.guoruan.com/" onClick="changesever(this);" target="_blank">《封神》MMORPG网站</a>
+            <a href="http://www.euqq.com/" onClick="changesever(this);" target="_blank">《益友休闲游戏》平台</a>
+            <a href="http://www.pukeyule.com/" onClick="changesever(this);" target="_blank">《闯关赛》棋牌竞技平台</a>
+            <a href="http://www.hk163.com/" onClick="changesever(this);" target="_blank">《皇嘉Flash棋牌游戏》</a>
+            <a href="http://www.qeyx.com/" onClick="changesever(this);" target="_blank">《企鹅游戏》平台</a>
+            <a href="http://www.xydb.com/" onClick="changesever(this);" target="_blank">《真钱游戏》平台</a>
+            <a href="http://www.fengzi.net/" onClick="changesever(this);" target="_blank">疯子创作室官方网站</a>
+            <a href="http://www.tml.cn/" onClick="changesever(this);" target="_blank">TML实验室官方网站</a>
+			</div>		
+    </div>
+</div>
+</div>
+</div>
+
+
+<div align="center"  id="banner-small"><img src="../../img/b-xw.jpg" width="990" height="120"></div>
+<!--内容开始-->
+<div id="contentbox">
+<div id="content">
+<div id="main-small">
+<div class="linemenu">
+  您当前的位置：<a href="../index.htm">首页</a> &gt; 
+  <a href="../../tml/Production.htm">产品体系</a></div>
+  
+  <table>
+  
+  <tr><td valign=top>
+<div id="producemenu"><iframe src="../../tml/menu.htm" height=1100 width=210 scrolling="no" border="0" frameborder="0"></iframe></div></td>
+<td valign=top>
+<div id="txt">
+
+ <h1>基于OCI开发的ORACLE独立ADO驱动　集成超级管理器—告别SQL*Net的真正高速直连</h1>　
+       <table width="96%" border="0" cellspacing="0" cellpadding="0">
+     
+         
+         <tr>
+           <td align="left" class="line"><span style="color:#FF0000; font-weight:bold;">&nbsp;1.下载试用</span></td>
+           </tr>
+         <tr>
+           <td height="25" align="left" class="line">本驱动已升级十余次，用户量已过千，不能保证您现在使用的是最佳版本，因此建议您经常访问下面网址检查是否为最新版本，最新版体积更小速度更快
+             最新版始终发布在下面的地址：（旧版本将销毁）<br />
+               免费版下载地址：<a href="http://tml.cn/soft/OCI/OCI.exe">http://tml.cn/soft/OCI/OCI.exe </a><br />
+               免费版介绍页面：<a href="http://tml.cn/soft/OCI/TML.htm" target="_blank">http://tml.cn/soft/OCI/TML.htm </a><br />
+              免费版界面抓图：<a href="http://tml.cn/soft/OCI/OCI4.JPG" target="_blank">http://tml.cn/soft/OCI/OCI4.JPG </a></p></td>
+         </tr>
+         <tr>
+           <td height="20" align="left" class="line"><span style="color:#FF0000; font-weight:bold;">&nbsp;2.购买方法</span></td>
+         </tr>
+         
+         <tr>
+           <td height="20" align="left">　<a href="/soft/tml/service.htm">　　■价格请垂询我们，单击此处查看“联系方式”</a><br />
+　<a href="/soft/tml/pay.htm">　　■单击此处查看“注册用户的付款方法”</a></span></td>
+         </tr>
+         <tr>
+           <td height="20" align="left" class="line"><span style="color:#FF0000; font-weight:bold;">&nbsp;3.升级历史</span></td>
+         </tr>
+         <tr>
+           <td height="20" align="left" class="line">2004/6/18 - Oracle超级管理器 9.5 released.<br />
+9.5全新支持Oracle备份和恢复功能，支持任意导入导出Oracle表到XML。并增加注册功能，无需任何辅助能将Oracle服务器直接注册为正版。</span></td>
+         </tr>
+         <tr>
+           <td height="20" align="center"><img src="http://tml.cn/soft/OCI/OCI4.jpg" /></span></td>
+         </tr>
+         <tr>
+           <td height="20" align="left">2004/5/30 - Oracle通用ADO驱动 9.4 released.<br />
+9.4驱动支持直接读写Oracle属性，能够列出所有表，并支持显示表所有字段的属性和定义</span></td>
+         </tr>
+         <tr>
+           <td height="20" align="center"><img src="http://tml.cn/soft/OCI/OCI3.GIF" width="550" /></span></td>
+         </tr>
+         <tr>
+           <td height="20" align="left">2004/5/4 - Oracle驱动 9.3.1 released.</span></td>
+         </tr>
+
+         <tr>
+           <td width="62%" align="left" class="line"><img src="http://tml.cn/soft/OCI/OCI2.GIF" width="417" height="493" /></span></td>
+           <td width="38%" align="center" class="line"><img src="http://tml.cn/soft/OCI/OCI1.JPG" /></td>
+         </tr>
+         <tr>
+           <td height="25" colspan="2" align="center" class="line">2004/3/6 - Oracle驱动 8.5 released.<br />             </span></td>
+         </tr>
+         <tr>
+           <td height="20" colspan="2" align="left" class="line"><span style="color:#FF0000; font-weight:bold;">&nbsp;2.功能简介</span></td>
+         </tr>
+
+           <td colspan="2" align="left" valign="top" class="line">本套程序是为方便打包使用ORACLE开发的软件而制作的，能够完全独立连接Oracle，完全不需要SQL*Net，即装即连，
+             而现存的诸多驱动比如JDBC、ODBC、DOA（Direct Oracle Access）、ODAC（Oracle Data Access Components）都要依赖SQL*Net。
+  <br />
+             程序包含了我们二次开发并经过精简处理的ORACLE调用接口（Oracle Call Interface简称OCI）
+             主要提供给大家一组可对ORACLE数据库进行存取的接口函数。<br />
+             并且我们利用OCI技术对应用系统工程环境ASEE<br />
+             (Application System Engineering Environment)进行了功能扩充，<br />
+             使其具有了访问ORACLE数据库的功能，接口简单高效，灵活易用。
+            本驱动是从事ORACLE开发的程序员首选组件，特别适合初学者，使用者已超过<strong>1500</strong>人，并被诸多公司购买用于ORACLE开发。
+            ORACLE调用接口(Oracle Call Interface简称OCI)提供了一组可对ORACLE数据库<br />
+               进行存取的接口子例程(函数)，通过在第三代程序设计语言(如C语言)中进行调用<br />
+               可达到存取ORACLE数据库的目的。
+            我们这套OCI开发方法实际上是将结构化查询语言(SQL)和第三代程序设计语言相结合的一种方法。<br />
+               对数据库的访问是通过调用OCI库函数实现的，若将C语言作为宿主语言，<br />
+               那么ORACLE库调用其实就是C程序中的函数调用，<br />
+               一个含OCI调用的C程序其实就是用C语言编写的应用程序。<br />
+               这样的程序既具有SQL语言非过程性的优点又具有C语言过程性的优点，<br />
+               同时还可具有SQL语言的扩展——PL/SQL语言过程性和结构性的优点，<br />
+               因此使得开发出的应用程序具有高度灵活性和强大的数据处理功能。
+           本安装包含我们使用Delphi6+ADO调用OCI编写的一个范例程序—一个Oracle管理器。</td>
+         </tr>
+       </table>
+ </td>
+     </tr>
+   </table></td>
+     </tr>
+   </table></td>
+     </tr>
+   </table></td>
+     </tr>
+   </table>
+<marquee scrollAmount=10000 width="1" height="6">
+                     具体产品如下：<br />
+                   益友斗地主、益友棋牌软件、益友牌类游戏、益友麻将游戏、益友棋牌游戏源程序、益友网页版棋牌游戏、益友棋牌游戏程序、益友棋牌游戏代码、益友棋牌游戏平台出售、益友flash棋牌游戏源代码、益友flash棋牌游戏、益友flash棋牌游戏程序、益友flash棋牌游戏软件、益友flash棋牌游戏开发、益友棋牌游戏源程序、购买益友棋牌游戏、购买益友网络棋牌、益友网络棋牌平台开发、益友网络棋牌游戏开发、益友棋牌游戏开发、开发益友棋牌游戏、益友棋牌游戏开发公司、益友网络棋牌开发公司、益友视频游戏开发、益友视频语音棋牌游戏开发 .                  
+                   
+                   </marquee>  
+                   
+
+  <h1>&nbsp;</h1>
+<p><br>
+</p>
+</div>
+</div>
+</div>
+</div></div>
+<div class="clear"></div>
+<!--底部开始-->
+<div id="foot">
+    <div class="copyright">
+        <div class="foot-nav">
+            <dl>
+                <dd>
+                    <a href="Javascript:window.external.addFavorite('http://www.guoruan.com','国软股份有限公司')" target="_self">加入收藏 </a>
+                </dd>
+                <dd>
+                    <a href="../../index.htm">网站首页 </a></dd><dd><a href="../../tml/pay.htm">支付方式 </a></dd>
+                </dd>
+                <dd>
+                    <a href="../../tml/Conncetus.htm">联系我们 </a>                </dd>
+                <dd>
+                    <a onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.guoruan.com');" href="#">设为首页</a></dd>
+            </dl>
+        </div>
+        <div class="copyinfo">
+           Copyright &#169; 1997 - 2012 Tencent. All Rights Reserved.  国软公司 版权所有 京ICP证09000566号</div>
+</div></div></div>
+</body>
+</html>

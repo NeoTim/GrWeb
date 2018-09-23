@@ -1,14 +1,14 @@
 <HTML>
 <HEAD>
-<TITLE>eWebEditor ： 上传文件接口示例</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<TITLE>eWebEditor 锟斤拷 锟较达拷锟侥硷拷锟接匡拷示锟斤拷</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
 <link rel='stylesheet' type='text/css' href='example.css'>
 </HEAD>
 <BODY>
 
-<p><b>导航 ： <a href="default.asp">示例首页</a> &gt; 上传文件接口示例</b></p>
-<p>通过使用这个接口功能，您可以获取到所有通过编辑器上传的图片或文件的文件名及路径。</p>
-<p>在编辑器中上传一个文件或图片，看一下效果。</p>
+<p><b>锟斤拷锟斤拷 锟斤拷 <a href="default.asp">示锟斤拷锟斤拷页</a> &gt; 锟较达拷锟侥硷拷锟接匡拷示锟斤拷</b></p>
+<p>通锟斤拷使锟斤拷锟斤拷锟斤拷涌诠锟斤拷埽锟斤拷锟斤拷锟斤拷曰锟饺★拷锟斤拷锟斤拷锟酵拷锟斤拷嗉拷锟斤拷洗锟斤拷锟酵计拷锟斤拷募锟斤拷锟斤拷募锟斤拷锟斤拷锟铰凤拷锟斤拷锟�</p>
+<p>锟节编辑锟斤拷锟斤拷锟较达拷一锟斤拷锟侥硷拷锟斤拷图片锟斤拷锟斤拷一锟斤拷效锟斤拷锟斤拷</p>
 
 
 <Script Language=JavaScript>
@@ -27,29 +27,29 @@ function doChange(objText, objDrop){
 <FORM method="post" name="myform" action="retrieve.asp">
 <TABLE border="0" cellpadding="2" cellspacing="1">
 <TR>
-	<TD>编辑内容：</TD>
+	<TD>锟洁辑锟斤拷锟捷ｏ拷</TD>
 	<TD>
 		<INPUT type="hidden" name="content1" value="">
 		<IFRAME ID="eWebEditor1" src="../ewebeditor.htm?id=content1&style=coolblue&originalfilename=myText1&savefilename=myText2&savepathfilename=myText3" frameborder="0" scrolling="no" width="550" height="350"></IFRAME>
 	</TD>
 </TR>
 <TR>
-	<TD>参数：originalfilename</TD>
+	<TD>锟斤拷锟斤拷锟斤拷originalfilename</TD>
 	<TD><input type=text id=myText1 style="width:200px" onchange="doChange(this,myDrop1)">&nbsp;<select id=myDrop1 size=1 style="width:200px"></select></TD>
 </TR>
 <TR>
-	<TD>参数：savefilename</TD>
+	<TD>锟斤拷锟斤拷锟斤拷savefilename</TD>
 	<TD><input type=text id=myText2 style="width:200px" onchange="doChange(this,myDrop2)">&nbsp;<select id=myDrop2 size=1 style="width:200px"></select></TD>
 </TR>
 <TR>
-	<TD>参数：savepathfilename</TD>
+	<TD>锟斤拷锟斤拷锟斤拷savepathfilename</TD>
 	<TD><input type=text id=myText3 style="width:200px" onchange="doChange(this,myDrop3)">&nbsp;<select id=myDrop3 size=1 style="width:350px"></select></TD>
 </TR>
 <TR>
 	<TD colspan=2 align=right>
-	<INPUT type=submit value="提交"> 
-	<INPUT type=reset value="重填"> 
-	<INPUT type=button value="查看源文件" onclick="location.replace('view-source:'+location)"> 
+	<INPUT type=submit value="锟结交"> 
+	<INPUT type=reset value="锟斤拷锟斤拷"> 
+	<INPUT type=button value="锟介看源锟侥硷拷" onclick="location.replace('view-source:'+location)"> 
 	</TD>
 </TR>
 </TABLE>

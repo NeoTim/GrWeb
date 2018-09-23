@@ -12,8 +12,8 @@
 
 <html>
 <head>
-<title>eWebEditor在线编辑器 - 后台管理</title>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>eWebEditor锟斤拷锟竭编辑锟斤拷 - 锟斤拷台锟斤拷锟斤拷</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script language="JavaScript">
 window.self.focus();
 </script>
@@ -23,7 +23,7 @@ window.self.focus();
   <frame name="main" src="main.asp" scrolling="yes">
   <noframes>
     <body topmargin="0" leftmargin="0">
-    <p>此网页使用了框架，但您的浏览器不支持框架</p>
+    <p>锟斤拷锟斤拷页使锟斤拷锟剿匡拷埽锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷支锟街匡拷锟�</p>
     </body>
   </noframes>
 </frameset>

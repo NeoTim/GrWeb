@@ -21,7 +21,7 @@ Select Case sAction
 End Select
 
 Sub DoSave()
-	Response.Write "<html><head><title>eWebEditor</title><meta http-equiv='Content-Type' content='text/html; charset=gb2312'></head><body>"
+	Response.Write "<html><head><title>eWebEditor</title><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'></head><body>"
 	Select Case nUploadObject
 		Case 1
 			Call DoUpload_ASPUpload()
@@ -200,7 +200,7 @@ Sub DoRemote()
 	If sAllowExt <> "" Then
 		sContent = ReplaceRemoteUrl(sContent, sAllowExt)
 	End If
-	Response.Write "<html><head><title>eWebEditor</title><meta http-equiv='Content-Type' content='text/html; charset=gb2312'></head><body>" & _
+	Response.Write "<html><head><title>eWebEditor</title><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'></head><body>" & _
 	"<input type=hidden id=UploadText value=""" & inHTML(sContent) & """>" & _
 	"</body></html>"
 	Call OutScriptNoBack("parent.setHTML(UploadText.value);try{parent.addUploadFile('" & sOriginalFileName & "', '" & sSaveFileName & "', '" & sPathFileName & "');} catch(e){} parent.remoteUploadOK();")

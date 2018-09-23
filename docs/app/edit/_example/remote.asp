@@ -1,41 +1,41 @@
 <HTML>
 <HEAD>
-<TITLE>eWebEditor £º Ô¶³ÌÎÄ¼þ×Ô¶¯ÉÏ´«Ê¾Àý</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<TITLE>eWebEditor ï¿½ï¿½ Ô¶ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ô¶ï¿½ï¿½Ï´ï¿½Ê¾ï¿½ï¿½</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
 <link rel='stylesheet' type='text/css' href='example.css'>
 </HEAD>
 <BODY>
 
-<p><b>µ¼º½ £º <a href="default.asp">Ê¾ÀýÊ×Ò³</a> &gt; Ô¶³ÌÎÄ¼þ×Ô¶¯ÉÏ´«Ê¾Àý</b></p>
-<p>ÑÝÊ¾²Ù×÷ËµÃ÷£º</p>
+<p><b>ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ <a href="default.asp">Ê¾ï¿½ï¿½ï¿½ï¿½Ò³</a> &gt; Ô¶ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ô¶ï¿½ï¿½Ï´ï¿½Ê¾ï¿½ï¿½</b></p>
+<p>ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½</p>
 <ul>
-<li>±à¼­ÇøÖÐµÄÍ¼Æ¬µØÖ·Îª£ºhttp://www.ewebeditor.net/images/ewebeditor.gif
-<li>µã»÷°´Å¥<img src="images/remoteupload.gif">£¬È»ºó×ªµ½¡°´úÂë¡±Ä£Ê½¿´Ò»ÏÂ£¬±à¼­ÇøµÄÍ¼Æ¬µÄµØÖ·ÒÑ¾­µ½±¾µØ·þÎñÆ÷ÁË¡£
-<li>»òµã´Ë±íµ¥µÄ¡°Ìá½»¡±£¬Ìá½»ºó£¬ÓÃIEµÄ¡°²é¿´Ô´ÎÄ¼þ¡±¿´Ò»ÏÂ£¬Í¼Æ¬µÄµØÖ·Ò²µ½±¾µØ·þÎñÆ÷ÁË¡£
-<li>µ½eWebEditorËùÓÐµÄÄ¿Â¼ÏÂµÄuploadfileÄ¿Â¼ÖÐ£¬²é¿´Ò»ÏÂ£¬ÊÇ²»ÊÇ¶àÁËÒ»¸öÍ¼Æ¬ÎÄ¼þ£¬Õâ¸öÎÄ¼þ¾ÍÊÇÔ¶³Ì×Ô¶¯»ñÈ¡µÄ¡£
+<li>ï¿½à¼­ï¿½ï¿½ï¿½Ðµï¿½Í¼Æ¬ï¿½ï¿½Ö·Îªï¿½ï¿½http://www.ewebeditor.net/images/ewebeditor.gif
+<li>ï¿½ï¿½ï¿½ï¿½ï¿½Å¥<img src="images/remoteupload.gif">ï¿½ï¿½È»ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¡±Ä£Ê½ï¿½ï¿½Ò»ï¿½Â£ï¿½ï¿½à¼­ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Äµï¿½Ö·ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¡ï¿½
+<li>ï¿½ï¿½ï¿½Ë±ï¿½ï¿½Ä¡ï¿½ï¿½á½»ï¿½ï¿½ï¿½ï¿½ï¿½á½»ï¿½ï¿½ï¿½ï¿½IEï¿½Ä¡ï¿½ï¿½é¿´Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Â£ï¿½Í¼Æ¬ï¿½Äµï¿½Ö·Ò²ï¿½ï¿½ï¿½ï¿½ï¿½Ø·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¡ï¿½
+<li>ï¿½ï¿½eWebEditorï¿½ï¿½ï¿½Ðµï¿½Ä¿Â¼ï¿½Âµï¿½uploadfileÄ¿Â¼ï¿½Ð£ï¿½ï¿½é¿´Ò»ï¿½Â£ï¿½ï¿½Ç²ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Í¼Æ¬ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½È¡ï¿½Ä¡ï¿½
 </ul>
 
 
 <script language=javascript>
-// ±íµ¥Ìá½»¼ì²â
+// ï¿½ï¿½ï¿½á½»ï¿½ï¿½ï¿½
 function doCheck(){
 
-	// ¼ì²â±íµ¥µÄÓÐÐ§ÐÔ
-	// Èç£º±êÌâ²»ÄÜÎª¿Õ£¬ÄÚÈÝ²»ÄÜÎª¿Õ£¬µÈµÈ...
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
+	// ï¿½ç£ºï¿½ï¿½ï¿½â²»ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½Èµï¿½...
 	if (eWebEditor1.getHTML()=="") {
-		alert("ÄÚÈÝ²»ÄÜÎª¿Õ£¡");
+		alert("ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½");
 		return false;
 	}
 
-	// ±íµ¥ÓÐÐ§ÐÔ¼ì²âÍêºó£¬×Ô¶¯ÉÏ´«Ô¶³ÌÎÄ¼þ
-	// º¯Êý£º remoteUpload(strEventUploadAfter)
-	// ²ÎÊý£ºstrEventUploadAfter ; ÉÏ´«Íêºó£¬´¥·¢µÄº¯ÊýÃû£¬Èç¹ûÉÏ´«Íêºó²»Ðè¶¯×÷¿É²»Ìî²ÎÊý
+	// ï¿½ï¿½ï¿½ï¿½Ð§ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½Ï´ï¿½Ô¶ï¿½ï¿½ï¿½Ä¼ï¿½
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ remoteUpload(strEventUploadAfter)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½strEventUploadAfter ; ï¿½Ï´ï¿½ï¿½ï¿½ó£¬´ï¿½ï¿½ï¿½ï¿½Äºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½è¶¯ï¿½ï¿½ï¿½É²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	eWebEditor1.remoteUpload("doSubmit()");
 	return false;
 
 }
 
-// ±íµ¥Ìá½»£¨µ±Ô¶³ÌÉÏ´«Íê³Éºó£¬´¥·¢´Ëº¯Êý£©
+// ï¿½ï¿½ï¿½á½»ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½Éºó£¬´ï¿½ï¿½ï¿½ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½
 function doSubmit(){
 	document.myform.submit();
 }
@@ -45,7 +45,7 @@ function doSubmit(){
 <FORM method="post" name="myform" action="retrieve.asp" onsubmit="return doCheck();">
 <TABLE border="0" cellpadding="2" cellspacing="1">
 <TR>
-	<TD>±à¼­ÄÚÈÝ£º</TD>
+	<TD>ï¿½à¼­ï¿½ï¿½ï¿½Ý£ï¿½</TD>
 	<TD>
 		<INPUT type="hidden" name="content1" value="&lt;IMG src=&quot;http://www.ewebeditor.net/images/ewebeditor.gif&quot;&gt;">
 		<IFRAME ID="eWebEditor1" src="../ewebeditor.htm?id=content1&style=coolblue" frameborder="0" scrolling="no" width="550" height="350"></IFRAME>
@@ -53,9 +53,9 @@ function doSubmit(){
 </TR>
 <TR>
 	<TD colspan=2 align=right>
-	<INPUT type=submit value="Ìá½»"> 
-	<INPUT type=reset value="ÖØÌî"> 
-	<INPUT type=button value="²é¿´Ô´ÎÄ¼þ" onclick="location.replace('view-source:'+location)"> 
+	<INPUT type=submit value="ï¿½á½»"> 
+	<INPUT type=reset value="ï¿½ï¿½ï¿½ï¿½"> 
+	<INPUT type=button value="ï¿½é¿´Ô´ï¿½Ä¼ï¿½" onclick="location.replace('view-source:'+location)"> 
 	</TD>
 </TR>
 </TABLE>

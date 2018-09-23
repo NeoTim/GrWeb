@@ -1,14 +1,14 @@
 <HTML>
 <HEAD>
-<TITLE>eWebEditor ： 弹窗调用示例</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<TITLE>eWebEditor 锟斤拷 锟斤拷锟斤拷锟斤拷锟斤拷示锟斤拷</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
 <link rel='stylesheet' type='text/css' href='example.css'>
 </HEAD>
 <BODY>
 
-<p><b>导航 ： <a href="default.asp">示例首页</a> &gt; 弹窗调用示例</b></p>
-<p>当页面中表单的元素较多时，此方法可以使页面更加整洁，并加快表单页的加载速度。</p>
-<p>点击“HTML编辑”按钮，在弹出窗口编辑一些内容，然后点“保存返回”按钮，看一下效果。</p>
+<p><b>锟斤拷锟斤拷 锟斤拷 <a href="default.asp">示锟斤拷锟斤拷页</a> &gt; 锟斤拷锟斤拷锟斤拷锟斤拷示锟斤拷</b></p>
+<p>锟斤拷页锟斤拷锟叫憋拷锟斤拷元锟截较讹拷时锟斤拷锟剿凤拷锟斤拷锟斤拷锟斤拷使页锟斤拷锟斤拷锟斤拷锟斤拷啵拷锟斤拷涌锟斤拷页锟侥硷拷锟斤拷锟劫度★拷</p>
+<p>锟斤拷锟斤拷锟紿TML锟洁辑锟斤拷锟斤拷钮锟斤拷锟节碉拷锟斤拷锟斤拷锟节编辑一些锟斤拷锟捷ｏ拷然锟斤拷恪帮拷锟斤拷娣碉拷亍锟斤拷锟脚ワ拷锟斤拷锟揭伙拷锟叫э拷锟斤拷锟�</p>
 
 
 <Script Language=JavaScript>
@@ -21,17 +21,17 @@ function eWebEditorPopUp(form, field, width, height) {
 <FORM ACTION="retrieve.asp" METHOD="post" NAME="myform">
 <TABLE border="0" cellpadding="2" cellspacing="1">
 <TR>
-	<TD>编辑内容：</TD>
+	<TD>锟洁辑锟斤拷锟捷ｏ拷</TD>
 	<TD>
-		<TEXTAREA NAME="content1" COLS="50" ROWS="10" style="width:550px">&lt;i&gt;弹窗调用示例&lt;/i&gt;</TEXTAREA><br>
-		<INPUT TYPE="BUTTON" NAME="btn" VALUE="HTML编辑" ONCLICK="eWebEditorPopUp('myform', 'content1', 580, 380)">
+		<TEXTAREA NAME="content1" COLS="50" ROWS="10" style="width:550px">&lt;i&gt;锟斤拷锟斤拷锟斤拷锟斤拷示锟斤拷&lt;/i&gt;</TEXTAREA><br>
+		<INPUT TYPE="BUTTON" NAME="btn" VALUE="HTML锟洁辑" ONCLICK="eWebEditorPopUp('myform', 'content1', 580, 380)">
 	</TD>
 </TR>
 <TR>
 	<TD align=right colspan=2>
-	<INPUT type=submit value="提交">
-	<INPUT type=reset value="重填">
-	<INPUT type=button value="查看源文件" onclick="location.replace('view-source:'+location)">
+	<INPUT type=submit value="锟结交">
+	<INPUT type=reset value="锟斤拷锟斤拷">
+	<INPUT type=button value="锟介看源锟侥硷拷" onclick="location.replace('view-source:'+location)">
 	</TD>
 </TR>
 </TABLE>

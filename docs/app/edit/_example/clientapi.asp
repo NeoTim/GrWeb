@@ -1,53 +1,53 @@
 <HTML>
 <HEAD>
-<TITLE>eWebEditor £º ¿Í»§¶ËAPIÊ¾Àý</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<TITLE>eWebEditor ï¿½ï¿½ ï¿½Í»ï¿½ï¿½ï¿½APIÊ¾ï¿½ï¿½</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
 <link rel='stylesheet' type='text/css' href='example.css'>
 </HEAD>
 <BODY>
 
-<p><b>µ¼º½ £º <a href="default.asp">Ê¾ÀýÊ×Ò³</a> &gt; ¿Í»§¶ËAPIÊ¾Àý</b></p>
-<p>Äú¿ÉÒÔÓÃeWebEditorÌá¹©µÄ¿Í»§¶ËAPI£¬¶Ô±à¼­Æ÷Ö´ÐÐ¸ß¼¶²Ù×÷¡£¸ü¶àAPI£¬Çë²Î¼û¿ª·¢ÊÖ²á¡£</p>
+<p><b>ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ <a href="default.asp">Ê¾ï¿½ï¿½ï¿½ï¿½Ò³</a> &gt; ï¿½Í»ï¿½ï¿½ï¿½APIÊ¾ï¿½ï¿½</b></p>
+<p>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eWebEditorï¿½á¹©ï¿½Ä¿Í»ï¿½ï¿½ï¿½APIï¿½ï¿½ï¿½Ô±à¼­ï¿½ï¿½Ö´ï¿½Ð¸ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½APIï¿½ï¿½ï¿½ï¿½Î¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²á¡£</p>
 
 
 
 <FORM method="post" name="myform" action="retrieve.asp">
 <TABLE border="0" cellpadding="2" cellspacing="1">
 <TR>
-	<TD>±à¼­ÄÚÈÝ£º</TD>
+	<TD>ï¿½à¼­ï¿½ï¿½ï¿½Ý£ï¿½</TD>
 	<TD>
-		<INPUT type="hidden" name="content1" value="&lt;p&gt;eWebEditor - ÔÚÏßHTML±à¼­Æ÷£¬HTMLÔÚÏß±à¼­ºÃ°ïÊÖ&lt;/p&gt;">
+		<INPUT type="hidden" name="content1" value="&lt;p&gt;eWebEditor - ï¿½ï¿½ï¿½ï¿½HTMLï¿½à¼­ï¿½ï¿½ï¿½ï¿½HTMLï¿½ï¿½ï¿½ß±à¼­ï¿½Ã°ï¿½ï¿½ï¿½&lt;/p&gt;">
 		<IFRAME ID="eWebEditor1" src="../ewebeditor.htm?id=content1&style=coolblue" frameborder="0" scrolling="no" width="550" height="350"></IFRAME>
 	</TD>
 </TR>
 <TR>
 	<TD colspan=2 align=right>
-	<INPUT type=submit value="Ìá½»"> 
-	<INPUT type=reset value="ÖØÌî"> 
-	<INPUT type=button value="²é¿´Ô´ÎÄ¼þ" onclick="location.replace('view-source:'+location)"> 
+	<INPUT type=submit value="ï¿½á½»"> 
+	<INPUT type=reset value="ï¿½ï¿½ï¿½ï¿½"> 
+	<INPUT type=button value="ï¿½é¿´Ô´ï¿½Ä¼ï¿½" onclick="location.replace('view-source:'+location)"> 
 	</TD>
 </TR>
 <TR>
-	<TD>HTML´úÂë£º</TD>
-	<TD><TEXTAREA cols=50 rows=5 id=myTextArea style="width:550px">µã»÷¡°È¡Öµ¡±°´Å¥£¬¿´Ò»ÏÂÐ§¹û£¡</TEXTAREA></TD>
+	<TD>HTMLï¿½ï¿½ï¿½ë£º</TD>
+	<TD><TEXTAREA cols=50 rows=5 id=myTextArea style="width:550px">ï¿½ï¿½ï¿½ï¿½ï¿½È¡Öµï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½</TEXTAREA></TD>
 </TR>
 <TR>
 	<TD colspan=2 align=right>
 	<INPUT type=button value="È¡Öµ(HTML)" onclick="myTextArea.value=eWebEditor1.getHTML()"> 
-	<INPUT type=button value="È¡Öµ(´¿ÎÄ±¾)" onclick="myTextArea.value=eWebEditor1.getText()"> 
-	<INPUT type=button value="¸³Öµ" onclick="eWebEditor1.setHTML('<b>Hello My World!</b>')">
-	<INPUT type=button value="µ±Ç°Î»ÖÃ²åÈë" onclick="eWebEditor1.insertHTML('This is insertHTML function!')">
-	<INPUT type=button value="Î²²¿×·¼Ó" onclick="eWebEditor1.appendHTML('This is appendHTML function!')">
+	<INPUT type=button value="È¡Öµ(ï¿½ï¿½ï¿½Ä±ï¿½)" onclick="myTextArea.value=eWebEditor1.getText()"> 
+	<INPUT type=button value="ï¿½ï¿½Öµ" onclick="eWebEditor1.setHTML('<b>Hello My World!</b>')">
+	<INPUT type=button value="ï¿½ï¿½Ç°Î»ï¿½Ã²ï¿½ï¿½ï¿½" onclick="eWebEditor1.insertHTML('This is insertHTML function!')">
+	<INPUT type=button value="Î²ï¿½ï¿½×·ï¿½ï¿½" onclick="eWebEditor1.appendHTML('This is appendHTML function!')">
 	<br>
-	<INPUT type=button value="´úÂë×´Ì¬" onclick="eWebEditor1.setMode('CODE')">
-	<INPUT type=button value="Éè¼Æ×´Ì¬" onclick="eWebEditor1.setMode('EDIT')">
-	<INPUT type=button value="ÎÄ±¾×´Ì¬" onclick="eWebEditor1.setMode('TEXT')">
-	<INPUT type=button value="Ô¤ÀÀ×´Ì¬" onclick="eWebEditor1.setMode('VIEW')">
+	<INPUT type=button value="ï¿½ï¿½ï¿½ï¿½×´Ì¬" onclick="eWebEditor1.setMode('CODE')">
+	<INPUT type=button value="ï¿½ï¿½ï¿½×´Ì¬" onclick="eWebEditor1.setMode('EDIT')">
+	<INPUT type=button value="ï¿½Ä±ï¿½×´Ì¬" onclick="eWebEditor1.setMode('TEXT')">
+	<INPUT type=button value="Ô¤ï¿½ï¿½×´Ì¬" onclick="eWebEditor1.setMode('VIEW')">
 	<br>
-	<INPUT type=button value="Ó¢ÎÄ×ÖÊý" onclick="alert(eWebEditor1.getCount(0))">
-	<INPUT type=button value="ÖÐÎÄ×ÖÊý" onclick="alert(eWebEditor1.getCount(1))">
-	<INPUT type=button value="ÖÐÓ¢ÎÄ×ÖÊý(ÖÐÎÄ¼Ó1)" onclick="alert(eWebEditor1.getCount(2))">
-	<INPUT type=button value="ÖÐÓ¢ÎÄ×ÖÊý(ÖÐÎÄ¼Ó2)" onclick="alert(eWebEditor1.getCount(3))">
+	<INPUT type=button value="Ó¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" onclick="alert(eWebEditor1.getCount(0))">
+	<INPUT type=button value="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" onclick="alert(eWebEditor1.getCount(1))">
+	<INPUT type=button value="ï¿½ï¿½Ó¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ä¼ï¿½1)" onclick="alert(eWebEditor1.getCount(2))">
+	<INPUT type=button value="ï¿½ï¿½Ó¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ä¼ï¿½2)" onclick="alert(eWebEditor1.getCount(3))">
 	</TD>
 </TR>
 </TABLE>
