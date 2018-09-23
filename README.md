@@ -40,8 +40,7 @@ File docs/soft/qipai/boda158.com/boda.rar is 102.90 MB; this exceeds GitHub's fi
 File docs/soft/qipai/taoyuan/taoyuan.rar is 121.68 MB; this exceeds GitHub's file size limit of 100.00 MB         
 
 File docs/soft/qipai/yilong/yilong.rar is 119.41 MB; this exceeds GitHub's file size limit of 100.00 MB
-
-File docs/video/intr.ppt is 89.72 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+       
 File docs/新版本/wwwroot.rar is 78.63 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
 File docs/旧版本/soft/qipai/animan/am.rar is 63.72 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
 File docs/旧版本/soft/qipai/aolong/al.rar is 85.48 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
