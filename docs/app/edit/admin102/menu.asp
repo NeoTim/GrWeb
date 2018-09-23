@@ -13,7 +13,7 @@
 <html>
 <head>
 <title>eWebEditor</title>
-<meta http-equiv=Content-Type content=text/html; charset=UTF-8>
+<meta http-equiv=Content-Type content=text/html; charset=gb2312>
 <link type=text/css href='private.css' rel=stylesheet>
 <base target=main>
 </head>
@@ -33,33 +33,33 @@ function menu_tree(meval)
 <center>
 
   <table cellspacing=0  class="Menu">
-  <tr><th align=center  onclick="javascript:menu_tree('left_1');" >锟斤拷 锟斤拷选锟斤拷锟斤拷 锟斤拷</th></tr>
+  <tr><th align=center  onclick="javascript:menu_tree('left_1');" >≡ 首选服务 ≡</th></tr>
   <tr id='left_1'><td >
     <table width='100%'>
-    <tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a href='style.asp'>锟斤拷式锟斤拷锟斤拷</a></td></tr>
-    <tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a href='upload.asp'>锟较达拷锟斤拷锟斤拷</a></td></tr>
+    <tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a href='style.asp'>样式管理</a></td></tr>
+    <tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a href='upload.asp'>上传管理</a></td></tr>
     </table>
   </td></tr>
   </table>
 
   <table width='90%' height=2><tr ><td></td></tr></table>
   <table cellspacing=0  class="Menu">
-  <tr><th align=center  onclick="javascript:menu_tree('left_2');" >锟斤拷 锟斤拷锟斤拷锟斤拷锟斤拷 锟斤拷</th></tr>
+  <tr><th align=center  onclick="javascript:menu_tree('left_2');" >≡ 辅助服务 ≡</th></tr>
   <tr id='left_2'><td>
     <table width='100%'>
-    <tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a href='main.asp'>锟斤拷台锟斤拷页</a></td></tr>
-	<tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a href='../_example/default.asp' target='_blank'>示锟斤拷锟斤拷页</a></td></tr>
-    <tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a href='modipwd.asp'>锟睫革拷锟斤拷锟斤拷</a></td></tr>
-    <tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a onclick="return confirm('锟斤拷示锟斤拷锟斤拷确锟斤拷要锟剿筹拷系统锟斤拷')" href='login.asp?action=out' target='_parent'>锟剿筹拷锟斤拷台</a></td></tr>
+    <tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a href='main.asp'>后台首页</a></td></tr>
+	<tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a href='../_example/default.asp' target='_blank'>示例首页</a></td></tr>
+    <tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a href='modipwd.asp'>修改密码</a></td></tr>
+    <tr><td><img border=0 src='images/menu.gif' align=absmiddle>&nbsp;<a onclick="return confirm('提示：您确定要退出系统吗？')" href='login.asp?action=out' target='_parent'>退出后台</a></td></tr>
     </table>
   </td></tr>
   </table>
   
   <table width='90%' height=2><tr ><td></td></tr></table>
   <table cellspacing=0  class="Menu">
-  <tr><th align=center  >锟斤拷 锟芥本锟斤拷息 锟斤拷</th></tr>
+  <tr><th align=center  >〓 版本信息 〓</th></tr>
   <tr><td align=center>eWebEditor V5.5</td></tr>
-  <tr><td align=center><a href='http://www.ewebeditor.net' target=_blank><b>锟斤拷锟竭帮拷锟斤拷</b></a></td></tr>
+  <tr><td align=center><a href='http://www.ewebeditor.net' target=_blank><b>在线帮助</b></a></td></tr>
   </table>
 
 </center>

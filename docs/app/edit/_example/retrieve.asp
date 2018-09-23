@@ -2,14 +2,14 @@
 
 <HTML>
 <HEAD>
-<TITLE>eWebEditor 锟斤拷 锟斤拷锟斤拷锟斤拷示锟斤拷</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<TITLE>eWebEditor ： 表单接收示例</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
 <link rel='stylesheet' type='text/css' href='example.css'>
 </HEAD>
 <BODY>
 
-<p><b>锟斤拷锟斤拷 锟斤拷 <a href="default.asp">示锟斤拷锟斤拷页</a> &gt; 锟斤拷锟斤拷锟斤拷示锟斤拷</b></p>
-<p>锟斤拷锟斤拷锟斤拷示锟斤拷锟斤拷谓锟斤拷盏锟斤拷锟斤拷峤伙拷锟斤拷锟斤拷锟紿TML锟斤拷锟诫，锟斤拷锟斤拷示锟斤拷锟斤拷</p>
+<p><b>导航 ： <a href="default.asp">示例首页</a> &gt; 表单接收示例</b></p>
+<p>此例演示了如何接收到表单提交过来的HTML代码，并显示它。</p>
 
 <%
 Dim sContent1, i
@@ -18,8 +18,8 @@ For i = 1 To Request.Form("content1").Count
 	sContent1 = sContent1 & Request.Form("content1")(i) 
 Next 
 
-Response.Write "锟洁辑锟斤拷锟斤拷锟斤拷锟铰ｏ拷<br><br>" & sContent1
-Response.Write "<br><br><p><input type=button value=' 锟斤拷锟斤拷 ' onclick='history.back()'></p>"
+Response.Write "编辑内容如下：<br><br>" & sContent1
+Response.Write "<br><br><p><input type=button value=' 后退 ' onclick='history.back()'></p>"
 %>
 
 </BODY>

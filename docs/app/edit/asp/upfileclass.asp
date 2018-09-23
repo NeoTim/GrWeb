@@ -62,7 +62,7 @@ Class UpFile_Class
 			oUpFileStream.CopyTo tStream,iInfoEnd-iFormStart
 			tStream.Position = 0
 			tStream.Type = 2
-			tStream.CharSet = "UTF-8"
+			tStream.CharSet = "gb2312"
 			sInfo = tStream.ReadText
 
 			iFormStart = InStrB(iInfoEnd,RequestBinData,sSpace)-1
@@ -94,7 +94,7 @@ Class UpFile_Class
 				oUpFileStream.CopyTo tStream,iFormStart-iInfoEnd-2
 				tStream.Position = 0
 				tStream.Type = 2
-				tStream.CharSet = "UTF-8"
+				tStream.CharSet = "gb2312"
 				sFormValue = tStream.ReadText
 				If Form.Exists(sFormName) Then
 					Form(sFormName) = Form(sFormName) & ", " & sFormValue

@@ -1,22 +1,22 @@
 <HTML>
 <HEAD>
-<TITLE>eWebEditor ï¿½ï¿½ ï¿½â²¿ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ã½Ó¿ï¿½Ê¾ï¿½ï¿½</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<TITLE>eWebEditor £º Íâ²¿ÑùÊ½ÒýÓÃ½Ó¿ÚÊ¾Àý</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
 <link rel='stylesheet' type='text/css' href='example.css'>
 </HEAD>
 <BODY>
 
-<p><b>ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ <a href="default.asp">Ê¾ï¿½ï¿½ï¿½ï¿½Ò³</a> &gt; ï¿½â²¿ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ã½Ó¿ï¿½Ê¾ï¿½ï¿½</b></p>
-<p>Í¨ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½à¼­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½</p>
-<p>ï¿½ï¿½ï¿½ï¿½ï¿½Ú°Ñ±à¼­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ÏµÍ³ï¿½ï¿½Í¬ï¿½ï¿½CSSï¿½ï¿½Ê½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½Ë±à¼­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½Í¬ï¿½ï¿½</p>
-<p>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½Ö¸ï¿½ï¿½extcss=_example/myeditorarea.cssï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±à¼­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½Ö¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½myeditorarea.cssï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½Ä¡ï¿½</p>
-<p>Ê¾ï¿½ï¿½ï¿½ï¿½Ê½ï¿½Ä¼ï¿½ï¿½Ð£ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½É«ï¿½ï¿½ï¿½Ñ¶ï¿½ï¿½ï¿½Ä±ß¾ï¿½ï¿½ï¿½Îª0ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ë¡°ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¡°Shift+ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½</p>
+<p><b>µ¼º½ £º <a href="default.asp">Ê¾ÀýÊ×Ò³</a> &gt; Íâ²¿ÑùÊ½ÒýÓÃ½Ó¿ÚÊ¾Àý</b></p>
+<p>Í¨¹ýÊ¹ÓÃÍâ²¿ÑùÊ½²ÎÊý½Ó¿Ú£¬Äã¿ÉÒÔÖ¸¶¨±à¼­ÇøµÄÑùÊ½¡£</p>
+<p>³£ÓÃÓÚ°Ñ±à¼­ÇøµÄÑùÊ½ÉèÖÃÎªÓëÄãµÄÓ¦ÓÃÏµÍ³ÏàÍ¬µÄCSSÑùÊ½ÎÄ¼þ£¬ÕâÑù±£Ö¤ÁË±à¼­Æ÷ÖÐÏÔÊ¾µÄÐ§¹ûÓëÄúµÄÓ¦ÓÃÏµÍ³ÖÐÊä³öÏÔÊ¾µÄÐ§¹ûÍêÈ«ÏàÍ¬¡£</p>
+<p>ÏÂÃæµÄÀý×Ó£¬Ö¸¶¨extcss=_example/myeditorarea.css£¬Äã¿ÉÒÔÔÚ±à¼­ÇøÖÐÊäÈëÒ»Ð©ÎÄ×Ö¿´¿´£¬±íÏÖÐ§¹ûÓëmyeditorarea.cssÖÐ¶¨ÒåµÄÊÇÏàÍ¬µÄ¡£</p>
+<p>Ê¾ÀýÑùÊ½ÎÄ¼þÖÐ£¬Ä¬ÈÏ×ÖÌåÎªºìÉ«£¬°Ñ¶ÎÂäµÄ±ß¾àÉèÎª0£¬Ê¹µÃÊäÈë¡°»Ø³µ¡±£¬ÓëÊäÈë¡°Shift+»Ø³µ¡±µÄÐ§¹ûÒ»Ñù¡£</p>
 
 
 <FORM method="post" name="myform" action="retrieve.asp">
 <TABLE border="0" cellpadding="2" cellspacing="1">
 <TR>
-	<TD>ï¿½à¼­ï¿½ï¿½ï¿½Ý£ï¿½</TD>
+	<TD>±à¼­ÄÚÈÝ£º</TD>
 	<TD>
 		<INPUT type="hidden" name="content1" value="&lt;p&gt;&nbsp;&lt;/p&gt;">
 		<IFRAME ID="eWebEditor1" src="../ewebeditor.htm?id=content1&style=coolblue&extcss=_example/myeditorarea.css" frameborder="0" scrolling="no" width="550" height="350"></IFRAME>
@@ -24,9 +24,9 @@
 </TR>
 <TR>
 	<TD colspan=2 align=right>
-	<INPUT type=submit value="ï¿½á½»"> 
-	<INPUT type=reset value="ï¿½ï¿½ï¿½ï¿½"> 
-	<INPUT type=button value="ï¿½é¿´Ô´ï¿½Ä¼ï¿½" onclick="location.replace('view-source:'+location)"> 
+	<INPUT type=submit value="Ìá½»"> 
+	<INPUT type=reset value="ÖØÌî"> 
+	<INPUT type=button value="²é¿´Ô´ÎÄ¼þ" onclick="location.replace('view-source:'+location)"> 
 	</TD>
 </TR>
 </TABLE>

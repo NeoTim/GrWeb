@@ -1,29 +1,29 @@
 <HTML>
 <HEAD>
-<TITLE>eWebEditor ï¿½ï¿½ ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<TITLE>eWebEditor £º ±ê×¼µ÷ÓÃÊ¾Àý</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
 <link rel='stylesheet' type='text/css' href='example.css'>
 </HEAD>
 <BODY>
 
-<p><b>ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ <a href="default.asp">Ê¾ï¿½ï¿½ï¿½ï¿½Ò³</a> &gt; ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½</b></p>
-<p>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½eWebEditorï¿½Ä±ï¿½×¼ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½î³£ï¿½ÃµÄµï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½</p>
-<p>ï¿½ï¿½ï¿½ï¿½Ê½Ê¹ï¿½ï¿½ÏµÍ³ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½Ê½(coolblue)ï¿½ï¿½ï¿½ï¿½Ñµï¿½ï¿½Ã¿ï¿½ï¿½550pxï¿½ï¿½ï¿½ï¿½Ñµï¿½ï¿½Ã¸ß¶ï¿½350pxï¿½ï¿½</p>
+<p><b>µ¼º½ £º <a href="default.asp">Ê¾ÀýÊ×Ò³</a> &gt; ±ê×¼µ÷ÓÃÊ¾Àý</b></p>
+<p>´ËÀýÑÝÊ¾ÁËeWebEditorµÄ±ê×¼µ÷ÓÃ·½·¨£¬Ò²ÊÇ×î³£ÓÃµÄµ÷ÓÃ·½·¨¡£</p>
+<p>±¾ÑùÊ½Ê¹ÓÃÏµÍ³µÄÄ¬ÈÏÑùÊ½(coolblue)£¬×î¼Ñµ÷ÓÃ¿í¶È550px£¬×î¼Ñµ÷ÓÃ¸ß¶È350px¡£</p>
 
 
 <FORM method="post" name="myform" action="retrieve.asp">
 <TABLE border="0" cellpadding="2" cellspacing="1">
 <TR>
-	<TD>ï¿½à¼­ï¿½ï¿½ï¿½Ý£ï¿½</TD>
+	<TD>±à¼­ÄÚÈÝ£º</TD>
 	<TD>
 		<%
-		' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		' ¶¨Òå±äÁ¿
 		Dim html
-		' ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½È¡Öµ
+		' ¸³Öµ£¬Èç´ÓÊý¾Ý¿âÈ¡Öµ
 		' html = rs("field")
-		html = "<P align=center><FONT color=#ff0000><FONT face='Arial Black' size=7><STRONG>eWeb<FONT color=#0000ff>Editor</FONT><FONT color=#000000><SUP>TM</SUP></FONT></STRONG></FONT></FONT></P><P align=right><FONT style='BACKGROUND-COLOR: #ffff00' color=#ff0000><STRONG>eWebEditor V5.5 for ASP ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½</STRONG></FONT></P><P>ï¿½ï¿½ï¿½ï¿½Ê½ÎªÏµÍ³Ä¬ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½coolblueï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñµï¿½ï¿½Ã¿ï¿½ï¿½550pxï¿½ï¿½ï¿½ß¶ï¿½350pxï¿½ï¿½</P><P>ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ß¼ï¿½ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½Üµï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ò³ï¿½é¿´ï¿½ï¿½</P><P><B><TABLE borderColor=#ff9900 cellSpacing=2 cellPadding=3 align=center bgColor=#ffffff border=1><TBODY><TR><TD bgColor=#00ff00><STRONG>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½Ã»ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½×°ï¿½Ñ¾ï¿½ï¿½ï¿½È·ï¿½ï¿½É£ï¿½</STRONG></TD></TR></TBODY></TABLE></B></P>"
-		' ï¿½Ö·ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ôµï¿½Ë«ï¿½ï¿½ï¿½Åµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½
-		' Ö»ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½à¼­ï¿½ï¿½ï¿½ï¿½ÖµÊ±ï¿½ï¿½ï¿½Ð±ï¿½ÒªÊ¹ï¿½Ã´ï¿½ï¿½Ö·ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¼°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÊ¹ï¿½Ã´Ëºï¿½ï¿½ï¿½
+		html = "<P align=center><FONT color=#ff0000><FONT face='Arial Black' size=7><STRONG>eWeb<FONT color=#0000ff>Editor</FONT><FONT color=#000000><SUP>TM</SUP></FONT></STRONG></FONT></FONT></P><P align=right><FONT style='BACKGROUND-COLOR: #ffff00' color=#ff0000><STRONG>eWebEditor V5.5 for ASP ¼òÌåÖÐÎÄÉÌÒµ°æ</STRONG></FONT></P><P>±¾ÑùÊ½ÎªÏµÍ³Ä¬ÈÏÑùÊ½£¨coolblue£©£¬×î¼Ñµ÷ÓÃ¿í¶È550px£¬¸ß¶È350px£¡</P><P>»¹ÓÐÒ»Ð©¸ß¼¶µ÷ÓÃ¹¦ÄÜµÄÀý×Ó£¬Äã¿ÉÒÔÍ¨¹ýµ¼º½½øÈëÊ¾ÀýÊ×Ò³²é¿´¡£</P><P><B><TABLE borderColor=#ff9900 cellSpacing=2 cellPadding=3 align=center bgColor=#ffffff border=1><TBODY><TR><TD bgColor=#00ff00><STRONG>¿´µ½ÕâÐ©ÄÚÈÝ£¬ÇÒÃ»ÓÐ´íÎóÌáÊ¾£¬ËµÃ÷°²×°ÒÑ¾­ÕýÈ·Íê³É£¡</STRONG></TD></TR></TBODY></TABLE></B></P>"
+		' ×Ö·û×ª»»£¬Ö÷ÒªÕë¶Ôµ¥Ë«ÒýºÅµÈÌØÊâ×Ö·û
+		' Ö»ÓÐÔÚ¸ø±à¼­Æ÷¸³ÖµÊ±²ÅÓÐ±ØÒªÊ¹ÓÃ´Ë×Ö·û×ª»»º¯Êý£¬Èë¿â¼°³ö¿âÏÔÊ¾¶¼²»ÐèÒªÊ¹ÓÃ´Ëº¯Êý
 		html = Server.HtmlEncode(html)
 		%>
 		<INPUT type="hidden" name="content1" value="<%=html%>">
@@ -32,9 +32,9 @@
 </TR>
 <TR>
 	<TD colspan=2 align=right>
-	<INPUT type=submit value="ï¿½á½»"> 
-	<INPUT type=reset value="ï¿½ï¿½ï¿½ï¿½"> 
-	<INPUT type=button value="ï¿½é¿´Ô´ï¿½Ä¼ï¿½" onclick="location.replace('view-source:'+location)"> 
+	<INPUT type=submit value="Ìá½»"> 
+	<INPUT type=reset value="ÖØÌî"> 
+	<INPUT type=button value="²é¿´Ô´ÎÄ¼þ" onclick="location.replace('view-source:'+location)"> 
 	</TD>
 </TR>
 </TABLE>
