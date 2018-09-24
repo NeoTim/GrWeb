@@ -1,6 +1,6 @@
 body{}
 body,form{margin:0;padding:0;font-size:14px;}
-*{font-family:"宋体"}
+*{font-family:"瀹嬩綋"}
 .l{float:left;}
 .r{float:right;}
 .c{clear:both;}
@@ -43,10 +43,10 @@ a:hover{text-decoration:none;color:#f30;}
 .index_link a{color:#000}
 .index_link a:hover{color:#993300}
 
-.subject_title span{float:right;font:12px/30px "宋体";padding-right:10px;}
+.subject_title span{float:right;font:12px/30px "瀹嬩綋";padding-right:10px;}
 .subject_title span span{float:none;font:12px/30px arial;padding:0 4px;color:#f30;border:0;}
-.subject_title span a{color:#fff;font:12px/30px "宋体";color:#fff;}
-.subject_title span a:hover{color:#000;font:12px/30px "宋体";color:#000;}
+.subject_title span a{color:#fff;font:12px/30px "瀹嬩綋";color:#fff;}
+.subject_title span a:hover{color:#000;font:12px/30px "瀹嬩綋";color:#000;}
 .m10{margin:10px;}
 .all_list{margin:0;padding:0;}
 .all_list dt{line-height:25px;}

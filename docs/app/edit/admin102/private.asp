@@ -17,11 +17,11 @@ End If
 Call CheckAndUpdateConfig()
 Dim sAction, sPosition
 sAction = UCase(Trim(Request.QueryString("action")))
-sPosition = "µ±Ç°Î»ÖÃ£º"
+sPosition = "å½“å‰ä½ç½®ï¼š"
 Sub Header()
 Response.Write "<html><head>"
 Response.Write "<meta http-equiv='Content-Type' content='text/html; charset=gb2312'>" & _
-"<title>eWebEditorÔÚÏß±à¼­Æ÷ - ºóÌ¨¹ÜÀí</title>" & _
+"<title>eWebEditoråœ¨çº¿ç¼–è¾‘å™¨ - åå°ç®¡ç†</title>" & _
 "<link rel='stylesheet' type='text/css' href='private.css'>" & _
 "<script language='javascript' src='private.js'></script>"
 Response.Write "</head>"
@@ -43,7 +43,7 @@ Response.Write "</body></html>"
 End Sub
 Function IsSafeStr(str)
 Dim s_BadStr, n, i
-s_BadStr = "' ¡¡&<>?%,;:()`~!@#$^*{}[]|+-=" & Chr(34) & Chr(9) & Chr(32)
+s_BadStr = "' ã€€&<>?%,;:()`~!@#$^*{}[]|+-=" & Chr(34) & Chr(9) & Chr(32)
 n = Len(s_BadStr)
 IsSafeStr = True
 For i = 1 To n
@@ -81,7 +81,7 @@ sTemp = Replace(sTemp, Chr(34), "&quot;")
 inHTML = sTemp
 End Function
 Sub GoError(str)
-Response.Write "<script language=javascript>alert('" & str & "\n\nÏµÍ³½«×Ô¶¯·µ»ØÇ°Ò»Ò³Ãæ...');history.back();</script>"
+Response.Write "<script language=javascript>alert('" & str & "\n\nç³»ç»Ÿå°†è‡ªåŠ¨è¿”å›å‰ä¸€é¡µé¢...');history.back();</script>"
 Response.End
 End Sub
 Function GetTrueLen(str)

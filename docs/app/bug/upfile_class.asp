@@ -1,18 +1,18 @@
 <%
 Dim oUpFileStream
 '----------------------------------------------------------------------
-'ÎÄ¼şÉÏ´«Àà
+'æ–‡ä»¶ä¸Šä¼ ç±»
 Class UpFile_Class
 
 Dim Form,File,Version,Err 
 
 Private Sub Class_Initialize
- Version = "ÎŞ¾åÉÏ´«Àà Version V1.2"
+ Version = "æ— æƒ§ä¸Šä¼ ç±» Version V1.2"
  Err = -1
 End Sub
 
 Private Sub Class_Terminate  
-  'Çå³ı±äÁ¿¼°¶ÔÏñ
+  'æ¸…é™¤å˜é‡åŠå¯¹åƒ
   If Err < 0 Then
     Form.RemoveAll
     Set Form = Nothing
@@ -24,21 +24,21 @@ Private Sub Class_Terminate
 End Sub
    
 Public Sub GetData (MaxSize)
-   '¶¨Òå±äÁ¿
+   'å®šä¹‰å˜é‡
   Dim RequestBinData,sSpace,bCrLf,sInfo,iInfoStart,iInfoEnd,tStream,iStart,oFileInfo
   Dim iFileSize,sFilePath,sFileType,sFormValue,sFileName
   Dim iFindStart,iFindEnd
   Dim iFormStart,iFormEnd,sFormName
-   '´úÂë¿ªÊ¼
-  If Request.TotalBytes < 1 Then  'Èç¹ûÃ»ÓĞÊı¾İÉÏ´«
+   'ä»£ç å¼€å§‹
+  If Request.TotalBytes < 1 Then  'å¦‚æœæ²¡æœ‰æ•°æ®ä¸Šä¼ 
     Err = 1
     Exit Sub
   End If
   
   response.write Request.TotalBytes
-  If MaxSize > 0 Then 'Èç¹ûÏŞÖÆ´óĞ¡
+  If MaxSize > 0 Then 'å¦‚æœé™åˆ¶å¤§å°
     If Request.TotalBytes > MaxSize Then
-    Err = 2	'Èç¹ûÉÏ´«µÄÊı¾İ³¬³öÏŞÖÆ
+    Err = 2	'å¦‚æœä¸Šä¼ çš„æ•°æ®è¶…å‡ºé™åˆ¶
     Exit Sub
     End If
   End If
@@ -56,11 +56,11 @@ Public Sub GetData (MaxSize)
   RequestBinData = oUpFileStream.Read 
   iFormEnd = oUpFileStream.Size
   bCrLf = ChrB (13) & ChrB (10)
-  'È¡µÃÃ¿¸öÏîÄ¿Ö®¼äµÄ·Ö¸ô·û
+  'å–å¾—æ¯ä¸ªé¡¹ç›®ä¹‹é—´çš„åˆ†éš”ç¬¦
   sSpace = MidB (RequestBinData,1, InStrB (1,RequestBinData,bCrLf)-1)
   iStart = LenB  (sSpace)
   iFormStart = iStart+2
-  '·Ö½âÏîÄ¿
+  'åˆ†è§£é¡¹ç›®
   Do
     iInfoEnd = InStrB (iFormStart,RequestBinData,bCrLf & bCrLf)+3
     tStream.Type = 1
@@ -72,15 +72,15 @@ Public Sub GetData (MaxSize)
     tStream.Type = 2
     tStream.CharSet = "gb2312"
     sInfo = tStream.ReadText      
-    'È¡µÃ±íµ¥ÏîÄ¿Ãû³Æ
+    'å–å¾—è¡¨å•é¡¹ç›®åç§°
     iFormStart = InStrB (iInfoEnd,RequestBinData,sSpace)-1
     iFindStart = InStr (22,sInfo,"name=""",1)+6
     iFindEnd = InStr (iFindStart,sInfo,"""",1)
     sFormName = Mid  (sinfo,iFindStart,iFindEnd-iFindStart)
-    'Èç¹ûÊÇÎÄ¼ş
+    'å¦‚æœæ˜¯æ–‡ä»¶
     If InStr  (45,sInfo,"filename=""",1) > 0 Then
       Set oFileInfo = new FileInfo_Class
-      'È¡µÃÎÄ¼şÊôĞÔ
+      'å–å¾—æ–‡ä»¶å±æ€§
       iFindStart = InStr (iFindEnd,sInfo,"filename=""",1)+10
       iFindEnd = InStr (iFindStart,sInfo,"""",1)
       sFileName = Mid  (sinfo,iFindStart,iFindEnd-iFindStart)
@@ -95,7 +95,7 @@ Public Sub GetData (MaxSize)
       oFileInfo.FormName = sFormName
       file.add sFormName,oFileInfo
     else
-    'Èç¹ûÊÇ±íµ¥ÏîÄ¿
+    'å¦‚æœæ˜¯è¡¨å•é¡¹ç›®
       tStream.Close
       tStream.Type = 1
       tStream.Mode = 3
@@ -114,7 +114,7 @@ Public Sub GetData (MaxSize)
     End If
     tStream.Close
     iFormStart = iFormStart+iStart+2
-    'Èç¹ûµ½ÎÄ¼şÎ²ÁË¾ÍÍË³ö
+    'å¦‚æœåˆ°æ–‡ä»¶å°¾äº†å°±é€€å‡º
   Loop Until  (iFormStart+2) >= iFormEnd 
   RequestBinData = ""
   Set tStream = Nothing
@@ -122,10 +122,10 @@ End Sub
 End Class
 
 '----------------------------------------------------------------------------------------------------
-'ÎÄ¼şÊôĞÔÀà
+'æ–‡ä»¶å±æ€§ç±»
 Class FileInfo_Class
 Dim FormName,FileName,FilePath,FileSize,FileType,FileStart,FileExt
-'±£´æÎÄ¼ş·½·¨
+'ä¿å­˜æ–‡ä»¶æ–¹æ³•
 Public Function SaveToFile (Path)
   On Error Resume Next
   Dim oFileStream
@@ -140,7 +140,7 @@ Public Function SaveToFile (Path)
   Set oFileStream = Nothing 
 End Function
  
-'È¡µÃÎÄ¼şÊı¾İ
+'å–å¾—æ–‡ä»¶æ•°æ®
 Public Function FileData
   oUpFileStream.Position = FileStart
   FileData = oUpFileStream.Read (FileSize)

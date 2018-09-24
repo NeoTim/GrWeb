@@ -1,16 +1,16 @@
-<%'∞Ê»®À˘”– π˙»Ìπ´Àæ www.GuoRuan.com
+<%'ÁâàÊùÉÊâÄÊúâ ÂõΩËΩØÂÖ¨Âè∏ www.GuoRuan.com
 Function Look_Ip(IP)
         Dim Wry, IPType, QQWryVersion, IpCounter
-        ' …Ë÷√¿‡∂‘œÛ
+        ' ËÆæÁΩÆÁ±ªÂØπË±°
         Set Wry = New TQQWry
         IPType = Wry.QQWry(IP)
-        ' Country£∫π˙º“µÿ«¯◊÷∂Œ
-        ' LocalStr£∫ ° –º∞∆‰À˚–≈œ¢◊÷∂Œ
-        Look_Ip =replace(left(Wry.Country&Wry.LocalStr,31),"…Ω∂´ °","")
+        ' CountryÔºöÂõΩÂÆ∂Âú∞Âå∫Â≠óÊÆµ
+        ' LocalStrÔºöÁúÅÂ∏ÇÂèäÂÖ∂‰ªñ‰ø°ÊÅØÂ≠óÊÆµ
+        Look_Ip =replace(left(Wry.Country&Wry.LocalStr,31),"Â±±‰∏úÁúÅ","")
         '''''Look_Ip = Wry.Country & ""
 End Function
 ' ============================================
-' ∑µªÿIP–≈œ¢ JSµ˜”√
+' ËøîÂõûIP‰ø°ÊÅØ JSË∞ÉÁî®
 ' ============================================
 Function Disp_IPAddressData(IP, sType)
         Dim Wry, IPType
@@ -26,23 +26,23 @@ Function Disp_IPAddressData(IP, sType)
         End Select
 End Function
 ' ============================================
-' ∑µªÿQQWry–≈œ¢
+' ËøîÂõûQQWry‰ø°ÊÅØ
 ' ============================================
 Function WryInfo()
         Dim Wry, IPType, QQWry_tem(0), QQWry_tem1(1)
-        ' …Ë÷√¿‡∂‘œÛ
+        ' ËÆæÁΩÆÁ±ªÂØπË±°
         Set Wry = New TQQWry
         IPType = Wry.QQWry("255.255.255.254")
-        ' ∂¡»° ˝æ›ø‚∞Ê±æ–≈œ¢
+        ' ËØªÂèñÊï∞ÊçÆÂ∫ìÁâàÊú¨‰ø°ÊÅØ
         QQWry_tem(0) = Wry.Country & " " & Wry.LocalStr
-        ' ∂¡»° ˝æ›ø‚IPµÿ÷∑ ˝ƒø
+        ' ËØªÂèñÊï∞ÊçÆÂ∫ìIPÂú∞ÂùÄÊï∞ÁõÆ
         QQWry_tem1(1) = Wry.RecordCount + 1
         WryInfo = QQWry_tem(0)& " " & QQWry_tem1(1)
 End Function
 
 Class TQQWry
         ' ============================================
-        ' ±‰¡ø…˘√˚
+        ' ÂèòÈáèÂ£∞Âêç
         ' ============================================
         Dim Country, LocalStr, Buf, OffSet
         Private StartIP, EndIP, CountryFlag
@@ -50,7 +50,7 @@ Class TQQWry
         Public FirstStartIP, LastStartIP, RecordCount
         Private Stream, EndIPOff
         ' ============================================
-        ' ¿‡ƒ£øÈ≥ı ºªØ
+        ' Á±ªÊ®°ÂùóÂàùÂßãÂåñ
         ' ============================================
         Private Sub Class_Initialize
                 Country                 = ""
@@ -61,10 +61,10 @@ Class TQQWry
                 FirstStartIP         = 0 
                 LastStartIP         = 0 
                 EndIPOff                 = 0 
-                QQWryFile = Server.MapPath("/../data/QQWry.dat") 'QQ¥ø’ÊIPø‚¥Ê∑≈¬∑æ∂£¨“™∏ƒŒ™ƒ„µƒ¬∑æ∂
+                QQWryFile = Server.MapPath("/../data/QQWry.dat") 'QQÁ∫ØÁúüIPÂ∫ìÂ≠òÊîæË∑ØÂæÑÔºåË¶ÅÊîπ‰∏∫‰Ω†ÁöÑË∑ØÂæÑ
         End Sub
         ' ============================================
-        ' IPµÿ÷∑◊™ªª≥…’˚ ˝
+        ' IPÂú∞ÂùÄËΩ¨Êç¢ÊàêÊï¥Êï∞
         ' ============================================
         Function IPToInt(IP)
                 Dim IPArray, i
@@ -77,7 +77,7 @@ Class TQQWry
                 IPToInt = (CInt(IPArray(0))*256*256*256) + (CInt(IPArray(1))*256*256) + (CInt(IPArray(2))*256) + CInt(IPArray(3))
         End Function
         ' ============================================
-        ' ’˚ ˝ƒÊ◊™IPµÿ÷∑
+        ' Êï¥Êï∞ÈÄÜËΩ¨IPÂú∞ÂùÄ
         ' ============================================
         Function IntToIP(IntValue)
                 p4 = IntValue - Fix(IntValue/256)*256
@@ -90,7 +90,7 @@ Class TQQWry
                 IntToIP = Cstr(p1) & "." & Cstr(p2) & "." & Cstr(p3) & "." & Cstr(p4)
         End Function
         ' ============================================
-        ' ªÒ»°ø™ ºIPŒª÷√
+        ' Ëé∑ÂèñÂºÄÂßãIP‰ΩçÁΩÆ
         ' ============================================
         Private Function GetStartIP(RecNo)
                 OffSet = FirstStartIP + RecNo * 7
@@ -102,7 +102,7 @@ Class TQQWry
                 GetStartIP = StartIP
         End Function
         ' ============================================
-        ' ªÒ»°Ω· ¯IPŒª÷√
+        ' Ëé∑ÂèñÁªìÊùüIP‰ΩçÁΩÆ
         ' ============================================
         Private Function GetEndIP()
                 Stream.Position = EndIPOff
@@ -112,14 +112,14 @@ Class TQQWry
                 GetEndIP = EndIP
         End Function
         ' ============================================
-        ' ªÒ»°µÿ”Ú–≈œ¢£¨∞¸∫¨π˙º“∫Õ∫Õ ° –
+        ' Ëé∑ÂèñÂú∞Âüü‰ø°ÊÅØÔºåÂåÖÂê´ÂõΩÂÆ∂ÂíåÂíåÁúÅÂ∏Ç
         ' ============================================
         Private Sub GetCountry(IP)
                 If (CountryFlag = 1 Or CountryFlag = 2) Then
                         Country = GetFlagStr(EndIPOff + 4)
                         If CountryFlag = 1 Then
                                 LocalStr = GetFlagStr(Stream.Position)
-                                ' “‘œ¬”√¿¥ªÒ»° ˝æ›ø‚∞Ê±æ–≈œ¢
+                                ' ‰ª•‰∏ãÁî®Êù•Ëé∑ÂèñÊï∞ÊçÆÂ∫ìÁâàÊú¨‰ø°ÊÅØ
                                 If IP >= IPToInt("255.255.255.0") And IP <= IPToInt("255.255.255.255") Then
                                         LocalStr = GetFlagStr(EndIPOff + 21)
                                         Country = GetFlagStr(EndIPOff + 12)
@@ -131,14 +131,14 @@ Class TQQWry
                         Country = GetFlagStr(EndIPOff + 4)
                         LocalStr = GetFlagStr(Stream.Position)
                 End If
-                ' π˝¬À ˝æ›ø‚÷–µƒŒﬁ”√–≈œ¢
+                ' ËøáÊª§Êï∞ÊçÆÂ∫ì‰∏≠ÁöÑÊó†Áî®‰ø°ÊÅØ
                 Country = Trim(Country)
                 LocalStr = Trim(LocalStr)
                 If InStr(Country, "CZ88.NET") Then Country = ""
                 If InStr(LocalStr, "CZ88.NET") Then LocalStr = ""
         End Sub
         ' ============================================
-        ' ªÒ»°IPµÿ÷∑±Í ∂∑˚
+        ' Ëé∑ÂèñIPÂú∞ÂùÄÊ†áËØÜÁ¨¶
         ' ============================================
         Private Function GetFlagStr(OffSet)
                 Dim Flag
@@ -166,7 +166,7 @@ Class TQQWry
                 End If
         End Function
         ' ============================================
-        ' ªÒ»°◊÷¥Æ–≈œ¢
+        ' Ëé∑ÂèñÂ≠ó‰∏≤‰ø°ÊÅØ
         ' ============================================
         Private Function GetStr() 
                 Dim c
@@ -175,7 +175,7 @@ Class TQQWry
                         c = AscB(Stream.Read(1))
                         If (c = 0) Then Exit Do 
                         
-                        '»Áπ˚ «À´◊÷Ω⁄£¨æÕΩ¯––∏ﬂ◊÷Ω⁄‘⁄Ω·∫œµÕ◊÷Ω⁄∫œ≥…“ª∏ˆ◊÷∑˚
+                        'Â¶ÇÊûúÊòØÂèåÂ≠óËäÇÔºåÂ∞±ËøõË°åÈ´òÂ≠óËäÇÂú®ÁªìÂêà‰ΩéÂ≠óËäÇÂêàÊàê‰∏Ä‰∏™Â≠óÁ¨¶
                         If c > 127 Then
                                 If Stream.EOS Then Exit Do
                                 GetStr = GetStr & Chr(AscW(ChrB(AscB(Stream.Read(1))) & ChrB(C)))
@@ -185,7 +185,7 @@ Class TQQWry
                 Loop 
         End Function
         ' ============================================
-        ' ∫À–ƒ∫Ø ˝£¨÷¥––IPÀ—À˜
+        ' Ê†∏ÂøÉÂáΩÊï∞ÔºåÊâßË°åIPÊêúÁ¥¢
         ' ============================================
         Public Function QQWry(DotIP)
                 Dim IP, nRet
@@ -204,9 +204,9 @@ Class TQQWry
                 FirstStartIP = AscB(MidB(Buf, 1, 1)) + (AscB(MidB(Buf, 2, 1))*256) + (AscB(MidB(Buf, 3, 1))*256*256) + (AscB(MidB(Buf, 4, 1))*256*256*256)
                 LastStartIP = AscB(MidB(Buf, 5, 1)) + (AscB(MidB(Buf, 6, 1))*256) + (AscB(MidB(Buf, 7, 1))*256*256) + (AscB(MidB(Buf, 8, 1))*256*256*256)
                 RecordCount = Int((LastStartIP - FirstStartIP)/7)
-                ' ‘⁄ ˝æ›ø‚÷–’“≤ªµΩ»Œ∫ŒIPµÿ÷∑
+                ' Âú®Êï∞ÊçÆÂ∫ì‰∏≠Êâæ‰∏çÂà∞‰ªª‰ΩïIPÂú∞ÂùÄ
                 If (RecordCount <= 1) Then
-                        Country = "Œ¥÷™"
+                        Country = "Êú™Áü•"
                         QQWry = 2
                         Exit Function
                 End If
@@ -232,10 +232,10 @@ Class TQQWry
                 Call GetEndIP()
 
                 If (StartIP <= IP) And ( EndIP >= IP) Then
-                        ' √ª”–’“µΩ
+                        ' Ê≤°ÊúâÊâæÂà∞
                         nRet = 0
                 Else
-                        ' ’˝≥£
+                        ' Ê≠£Â∏∏
                         nRet = 3
                 End If
                 Call GetCountry(IP)
@@ -243,7 +243,7 @@ Class TQQWry
                 QQWry = nRet
         End Function
         ' ============================================
-        ' ¿‡÷’Ω·
+        ' Á±ªÁªàÁªì
         ' ============================================
         Private Sub Class_Terminate
                 On ErrOr Resume Next

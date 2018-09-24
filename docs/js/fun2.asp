@@ -5,17 +5,17 @@
 <title></title>
 </head>
 
-<body style=" background:url(http://404.safedog.cn/images/safedogsite/404.jpg) no-repeat center 45px;  padding:0; margin:0; font:14px/1.5 Microsoft Yahei, ËÎ
-Ìå,sans-serif; color:#555;">
+<body style=" background:url(http://404.safedog.cn/images/safedogsite/404.jpg) no-repeat center 45px;  padding:0; margin:0; font:14px/1.5 Microsoft Yahei, å®‹
+ä½“,sans-serif; color:#555;">
 
 <a style="display:none;" id="eCode">404</a>
 
 <div style="width:1000px; margin:0 auto; padding-top:45px;">
   <div style="width:600px; font-size:16px; line-height:25px;padding-left:400px; padding-top:0px;">
-  	   <span id="eMsg_t" style=" font-size:24px; line-height:36px;color:#139ff8;"></span><span style="font-size:16px;">(¿ÉÔÚ·þÎñÆ÷ÉÏ²é¿´¾ßÌå´íÎóÐÅÏ¢)</span></br><span id="eMsg"></span>
+  	   <span id="eMsg_t" style=" font-size:24px; line-height:36px;color:#139ff8;"></span><span style="font-size:16px;">(å¯åœ¨æœåŠ¡å™¨ä¸ŠæŸ¥çœ‹å…·ä½“é”™è¯¯ä¿¡æ¯)</span></br><span id="eMsg"></span>
       <div>
-	      <a href="http://bbs.safedog.cn/thread-60693-1-1.html?from=stat" target="_blank" style="color:#139ff8; font-size:16px; text-decoration:none">Õ¾³¤Çëµã»÷</a>
-	      <a href="#" onclick="redirectToHost();" style="color:#139ff8; font-size:16px; text-decoration:none;padding-left: 20px;">·µ»ØÉÏÒ»¼¶>></a>
+	      <a href="http://bbs.safedog.cn/thread-60693-1-1.html?from=stat" target="_blank" style="color:#139ff8; font-size:16px; text-decoration:none">ç«™é•¿è¯·ç‚¹å‡»</a>
+	      <a href="#" onclick="redirectToHost();" style="color:#139ff8; font-size:16px; text-decoration:none;padding-left: 20px;">è¿”å›žä¸Šä¸€çº§>></a>
       </div>
     </div> 
     <div style="padding-top:80px; width:900px; margin:0 auto;">
@@ -36,50 +36,50 @@ function redirectToHost(){
 
 
 var errorMsgData = {
-	"400":"ÇëÇó³öÏÖÓï·¨´íÎó",
-	"401":"Ã»ÓÐ·ÃÎÊÈ¨ÏÞ",
-	"403":"·þÎñÆ÷¾Ü¾øÖ´ÐÐ¸ÃÇëÇó",
-	"404":"Ö¸¶¨µÄÒ³Ãæ²»´æÔÚ",
-	"405":"ÇëÇó·½·¨¶ÔÖ¸¶¨µÄ×ÊÔ´²»ÊÊÓÃ",
-	"406":"¿Í»§¶ËÎÞ·¨½ÓÊÜÏàÓ¦Êý¾Ý",
-	"408":"µÈ´ýÇëÇóÊ±·þÎñÆ÷³¬Ê±",
-	"409":"ÇëÇóÓëµ±Ç°×ÊÔ´µÄ×´Ì¬³åÍ»£¬µ¼ÖÂÇëÇóÎÞ·¨Íê³É",
-	"410":"ÇëÇóµÄ×ÊÔ´ÒÑ²»´æÔÚ£¬²¢ÇÒÃ»ÓÐ×ª½ÓµØÖ·",
-	"500":"·þÎñÆ÷³¢ÊÔÖ´ÐÐÇëÇóÊ±Óöµ½ÁËÒâÍâÇé¿ö",
-	"501":"·þÎñÆ÷²»¾ß±¸Ö´ÐÐ¸ÃÇëÇóËùÐèµÄ¹¦ÄÜ",
-	"502":"Íø¹Ø»ò´úÀí·þÎñÆ÷´ÓÉÏÓÎ·þÎñÆ÷ÊÕµ½µÄÏìÓ¦ÎÞÐ§",
-	"503":"·þÎñÆ÷ÔÝÊ±ÎÞ·¨´¦Àí¸ÃÇëÇó",
-	"504":"ÔÚµÈ´ýÉÏÓÎ·þÎñÆ÷ÏìÓ¦Ê±£¬Íø¹Ø»ò´úÀí·þÎñÆ÷³¬Ê±",
-	"505":"·þÎñÆ÷²»Ö§³ÖÇëÇóÖÐËùÓÃµÄ HTTP °æ±¾",
-	"1":"ÎÞ·¨½âÎö·þÎñÆ÷µÄ DNS µØÖ·",
-	"2":"Á¬½ÓÊ§°Ü",
-	"-7":"²Ù×÷³¬Ê±",
-	"-100":"·þÎñÆ÷ÒâÍâ¹Ø±ÕÁËÁ¬½Ó",
-	"-101":"Á¬½ÓÒÑÖØÖÃ",
-	"-102":"·þÎñÆ÷¾Ü¾øÁËÁ¬½Ó",
-	"-104":"ÎÞ·¨Á¬½Óµ½·þÎñÆ÷",
-	"-105":"ÎÞ·¨½âÎö·þÎñÆ÷µÄ DNS µØÖ·",
-	"-109":"ÎÞ·¨·ÃÎÊ¸Ã·þÎñÆ÷",
-	"-138":"ÎÞ·¨·ÃÎÊÍøÂç",
-	"-130":"´úÀí·þÎñÆ÷Á¬½ÓÊ§°Ü",
-	"-106":"»¥ÁªÍøÁ¬½ÓÒÑÖÐ¶Ï",
-	"-401":"´Ó»º´æÖÐ¶ÁÈ¡Êý¾ÝÊ±³öÏÖ´íÎó",
-	"-400":"»º´æÖÐÎ´ÕÒµ½ÇëÇóµÄÌõÄ¿",
-	"-331":"ÍøÂç IO ÒÑÔÝÍ£",
-	"-6":"ÎÞ·¨ÕÒµ½¸ÃÎÄ¼þ»òÄ¿Â¼",
-	"-310":"ÖØ¶¨Ïò¹ý¶à",
-	"-324":"·þÎñÆ÷ÒÑ¶Ï¿ªÁ¬½Ó£¬ÇÒÎ´·¢ËÍÈÎºÎÊý¾Ý",
-	"-346":"ÊÕµ½ÁËÀ´×Ô·þÎñÆ÷µÄÖØ¸´±êÍ·",
-	"-349":"ÊÕµ½ÁËÀ´×Ô·þÎñÆ÷µÄÖØ¸´±êÍ·",
-	"-350":"ÊÕµ½ÁËÀ´×Ô·þÎñÆ÷µÄÖØ¸´±êÍ·",
-	"-118":"Á¬½Ó³¬Ê±"
+	"400":"è¯·æ±‚å‡ºçŽ°è¯­æ³•é”™è¯¯",
+	"401":"æ²¡æœ‰è®¿é—®æƒé™",
+	"403":"æœåŠ¡å™¨æ‹’ç»æ‰§è¡Œè¯¥è¯·æ±‚",
+	"404":"æŒ‡å®šçš„é¡µé¢ä¸å­˜åœ¨",
+	"405":"è¯·æ±‚æ–¹æ³•å¯¹æŒ‡å®šçš„èµ„æºä¸é€‚ç”¨",
+	"406":"å®¢æˆ·ç«¯æ— æ³•æŽ¥å—ç›¸åº”æ•°æ®",
+	"408":"ç­‰å¾…è¯·æ±‚æ—¶æœåŠ¡å™¨è¶…æ—¶",
+	"409":"è¯·æ±‚ä¸Žå½“å‰èµ„æºçš„çŠ¶æ€å†²çªï¼Œå¯¼è‡´è¯·æ±‚æ— æ³•å®Œæˆ",
+	"410":"è¯·æ±‚çš„èµ„æºå·²ä¸å­˜åœ¨ï¼Œå¹¶ä¸”æ²¡æœ‰è½¬æŽ¥åœ°å€",
+	"500":"æœåŠ¡å™¨å°è¯•æ‰§è¡Œè¯·æ±‚æ—¶é‡åˆ°äº†æ„å¤–æƒ…å†µ",
+	"501":"æœåŠ¡å™¨ä¸å…·å¤‡æ‰§è¡Œè¯¥è¯·æ±‚æ‰€éœ€çš„åŠŸèƒ½",
+	"502":"ç½‘å…³æˆ–ä»£ç†æœåŠ¡å™¨ä»Žä¸Šæ¸¸æœåŠ¡å™¨æ”¶åˆ°çš„å“åº”æ— æ•ˆ",
+	"503":"æœåŠ¡å™¨æš‚æ—¶æ— æ³•å¤„ç†è¯¥è¯·æ±‚",
+	"504":"åœ¨ç­‰å¾…ä¸Šæ¸¸æœåŠ¡å™¨å“åº”æ—¶ï¼Œç½‘å…³æˆ–ä»£ç†æœåŠ¡å™¨è¶…æ—¶",
+	"505":"æœåŠ¡å™¨ä¸æ”¯æŒè¯·æ±‚ä¸­æ‰€ç”¨çš„ HTTP ç‰ˆæœ¬",
+	"1":"æ— æ³•è§£æžæœåŠ¡å™¨çš„ DNS åœ°å€",
+	"2":"è¿žæŽ¥å¤±è´¥",
+	"-7":"æ“ä½œè¶…æ—¶",
+	"-100":"æœåŠ¡å™¨æ„å¤–å…³é—­äº†è¿žæŽ¥",
+	"-101":"è¿žæŽ¥å·²é‡ç½®",
+	"-102":"æœåŠ¡å™¨æ‹’ç»äº†è¿žæŽ¥",
+	"-104":"æ— æ³•è¿žæŽ¥åˆ°æœåŠ¡å™¨",
+	"-105":"æ— æ³•è§£æžæœåŠ¡å™¨çš„ DNS åœ°å€",
+	"-109":"æ— æ³•è®¿é—®è¯¥æœåŠ¡å™¨",
+	"-138":"æ— æ³•è®¿é—®ç½‘ç»œ",
+	"-130":"ä»£ç†æœåŠ¡å™¨è¿žæŽ¥å¤±è´¥",
+	"-106":"äº’è”ç½‘è¿žæŽ¥å·²ä¸­æ–­",
+	"-401":"ä»Žç¼“å­˜ä¸­è¯»å–æ•°æ®æ—¶å‡ºçŽ°é”™è¯¯",
+	"-400":"ç¼“å­˜ä¸­æœªæ‰¾åˆ°è¯·æ±‚çš„æ¡ç›®",
+	"-331":"ç½‘ç»œ IO å·²æš‚åœ",
+	"-6":"æ— æ³•æ‰¾åˆ°è¯¥æ–‡ä»¶æˆ–ç›®å½•",
+	"-310":"é‡å®šå‘è¿‡å¤š",
+	"-324":"æœåŠ¡å™¨å·²æ–­å¼€è¿žæŽ¥ï¼Œä¸”æœªå‘é€ä»»ä½•æ•°æ®",
+	"-346":"æ”¶åˆ°äº†æ¥è‡ªæœåŠ¡å™¨çš„é‡å¤æ ‡å¤´",
+	"-349":"æ”¶åˆ°äº†æ¥è‡ªæœåŠ¡å™¨çš„é‡å¤æ ‡å¤´",
+	"-350":"æ”¶åˆ°äº†æ¥è‡ªæœåŠ¡å™¨çš„é‡å¤æ ‡å¤´",
+	"-118":"è¿žæŽ¥è¶…æ—¶"
 };
 
 var eCode = document.getElementById("eCode").innerHTML;
 var eMsg = errorMsgData[eCode];
 document.title = eMsg;
 document.getElementById("eMsg").innerHTML = eMsg;
-document.getElementById("eMsg_t").innerHTML = eCode + "´íÎó£¡";
+document.getElementById("eMsg_t").innerHTML = eCode + "é”™è¯¯ï¼";
 
 
 </script>

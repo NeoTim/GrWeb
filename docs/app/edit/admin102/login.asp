@@ -27,7 +27,7 @@ Case "LOGIN"
 		Response.Redirect "default.asp"
 		Response.End
 	End If
-	sErrMsg = "ÌáÊ¾£ºÓÃ»§Ãû»òÃÜÂë´íÎó£¡"
+	sErrMsg = "æç¤ºï¼šç”¨æˆ·åæˆ–å¯†ç é”™è¯¯ï¼"
 Case "OUT"
 	Session("eWebEditor_User") = ""
 End Select
@@ -36,7 +36,7 @@ End Select
 
 <HTML>
 <HEAD>
-<TITLE>eWebEditorÔÚÏß±à¼­Æ÷ - ºóÌ¨¹ÜÀí</TITLE>
+<TITLE>eWebEditoråœ¨çº¿ç¼–è¾‘å™¨ - åå°ç®¡ç†</TITLE>
 <META http-equiv=Content-Type content="text/html; charset=gb2312">
 <style>
 body,td,a,p,input{font-size:9pt}
@@ -51,12 +51,12 @@ A:link {COLOR: #003366}
 function checkForm(){
 	var frm = document.loginform
 	if(frm.usr.value == ""){
-		alert('ÓÃ»§Ãû²»ÔÊĞíÎª¿Õ');
+		alert('ç”¨æˆ·åä¸å…è®¸ä¸ºç©º');
 		frm.usr.focus();
 		return false;
 	}
 	if(frm.pwd.value == ""){
-		alert('ÓÃ»§ÃÜÂë²»ÔÊĞíÎª¿Õ');
+		alert('ç”¨æˆ·å¯†ç ä¸å…è®¸ä¸ºç©º');
 		frm.pwd.focus();
 		return false;
 	}
@@ -88,10 +88,10 @@ function checkForm(){
         <FORM onkeydown="if(event.keyCode==13) return checkForm()" name=loginform action="?action=login" method=post>
         <TBODY>
         <TR>
-          <TD class=c92 width="24%">ÓÃ»§Ãû</TD>
+          <TD class=c92 width="24%">ç”¨æˆ·å</TD>
           <TD width="76%"><INPUT class=input size=16 name=usr> </TD></TR>
         <TR>
-          <TD class=c92 width="24%">ÃÜ¡¡Âë</TD>
+          <TD class=c92 width="24%">å¯†ã€€ç </TD>
           <TD width="76%"><INPUT class=input type=password size=16 name=pwd> </TD></TR>
         <TR>
           <TD width="24%">&nbsp;</TD>

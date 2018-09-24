@@ -1,9 +1,9 @@
 <%if ((session("name")="") or (session("id")=""))  then
-	response.write "<font color=ff0000><h3>Äú»¹Ã»ÓĞÉÏ´«È¨ÏŞ¡£</h3></font>"
-else'ÒÑ¾­µÇÂ½%>
+	response.write "<font color=ff0000><h3>æ‚¨è¿˜æ²¡æœ‰ä¸Šä¼ æƒé™ã€‚</h3></font>"
+else'å·²ç»ç™»é™†%>
 
 <!--#include file=conn.TML-->
-<p align="center"><strong>Ìá½»ĞÂBUG
+<p align="center"><strong>æäº¤æ–°BUG
 
 <%fileDesc=request("Content")
 
@@ -14,10 +14,10 @@ if (fileDesc<>"") then
 conn.execute "insert into BugAdmin(cont,UpUser) values('"&fileDesc&"','"&session("name")&"')"
 
 %>
- ³É¹¦£¬Çë·µ»Ø<button onclick=history.back(1)>·µ»ØÀúÊ·</button>
+ æˆåŠŸï¼Œè¯·è¿”å›<button onclick=history.back(1)>è¿”å›å†å²</button>
 
 
-<button onclick="location.href='list.asp'">·µ»ØÁĞ±í</button>
+<button onclick="location.href='list.asp'">è¿”å›åˆ—è¡¨</button>
 
 
 <%response.end
@@ -27,7 +27,7 @@ end if
 
   </strong><br>
   
-  ĞÂBUGÔ­Àí
+  æ–°BUGåŸç†
 <form method=post name="form" onsubmit="return save_onclick()">
 <body onkeydown="if(event.keyCode==13 && event.ctrlKey) if(save_onclick())document.form.submit()">
 
@@ -41,12 +41,12 @@ function  save_onclick()
   var strTemp = document.form.Content.value;
   if (strTemp.length == 0 )
   {
-      alert("ÎŞÄÚÈİ");
+      alert("æ— å†…å®¹");
       return false;
   }
   else if (document.form.title.value.length == 0 )
   {
-      alert("ÎŞ±êÌâ");
+      alert("æ— æ ‡é¢˜");
       return false;
   }
  else{return true;}  
@@ -61,8 +61,8 @@ function  save_onclick()
  <iframe ID='eWebEditor1' src='edit/ewebeditor.htm?id=Content&style=tml650' frameborder=0 scrolling=no width='650' HEIGHT='400'></iframe>
 
     <br>
- <input type="submit" value="·¢²¼">¡¡
-<input type="reset"  value="Çå¿Õ">
+ <input type="submit" value="å‘å¸ƒ">ã€€
+<input type="reset"  value="æ¸…ç©º">
 </form>
 
  

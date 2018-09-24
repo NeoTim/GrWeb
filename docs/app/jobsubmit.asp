@@ -15,11 +15,11 @@ If userip = "" Then userip = Request.ServerVariables("REMOTE_ADDR")
 userip=Look_Ip(userip)&"("&userip&")"
 %>
 <%
-biographical=nickname&"À´×Ô"&userip&"Ó¦Æ¸"&job&chr(13)&chr(10)&"ÊÖ»ú£º"&mobile&chr(13)&chr(10)&"email£º"&email&chr(13)&chr(10)&"qq£º"&qq&chr(13)&chr(10)&biographical
+biographical=nickname&"æ¥è‡ª"&userip&"åº”è˜"&job&chr(13)&chr(10)&"æ‰‹æœºï¼š"&mobile&chr(13)&chr(10)&"emailï¼š"&email&chr(13)&chr(10)&"qqï¼š"&qq&chr(13)&chr(10)&biographical
 'biographical=replace(fileDesc,chr(13),"<br>")
 conn.execute "insert into job(biographical) values('"&biographical&"')"
 %>
-<script>alert("ÎÒÃÇÒÑÊÕµ½ÄúµÄ¼òÀú£¬¹¤×÷ÈËÔ±½«ÔÚ7¸ö¹¤×÷ÈÕÄÚÁªÏµÄú¡£µã»÷È·¶¨ºó·µ»Ø¹«Ë¾Ê×Ò³");location.href='/';</script>
+<script>alert("æˆ‘ä»¬å·²æ”¶åˆ°æ‚¨çš„ç®€åŽ†ï¼Œå·¥ä½œäººå‘˜å°†åœ¨7ä¸ªå·¥ä½œæ—¥å†…è”ç³»æ‚¨ã€‚ç‚¹å‡»ç¡®å®šåŽè¿”å›žå…¬å¸é¦–é¡µ");location.href='/';</script>
 <%conn.close
 end if%>
  

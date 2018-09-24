@@ -12,5 +12,5 @@ sta=request.form("sta")
 		
  
 TMLcn_footer%>
-<a href=list.ASP>·µ»Ø</a>
+<a href=list.ASP>è¿”å›ž</a>
 

@@ -1,2 +1,2 @@
 
-后台默认帐号：tml，后台默认密码：qisile，为了系统案例，请登录http://域名/ewebeditor目录/admin/login.asp进入后台修改密码
+鍚庡彴榛樿甯愬彿锛歵ml锛屽悗鍙伴粯璁ゅ瘑鐮侊細qisile锛屼负浜嗙郴缁熸渚嬶紝璇风櫥褰昲ttp://鍩熷悕/ewebeditor鐩綍/admin/login.asp杩涘叆鍚庡彴淇敼瀵嗙爜

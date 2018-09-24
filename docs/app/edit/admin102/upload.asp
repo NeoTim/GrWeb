@@ -10,13 +10,13 @@
 %>
 <%
 Dim sStyleID, sCurrDir, sDir, sCurrPath
-sPosition = sPosition & "ÉÏ´«ÎÄ¼ş¹ÜÀí"
+sPosition = sPosition & "ä¸Šä¼ æ–‡ä»¶ç®¡ç†"
 Call Header()
 Call Content()
 Call Footer()
 Sub Content()
 If IsObjInstalled("Scripting.FileSystemObject") = False Then
-Response.Write "´Ë¹¦ÄÜÒªÇó·şÎñÆ÷Ö§³ÖÎÄ¼şÏµÍ³¶ÔÏó£¨FSO£©£¬¶øÄãµ±Ç°µÄ·şÎñÆ÷²»Ö§³Ö£¡"
+Response.Write "æ­¤åŠŸèƒ½è¦æ±‚æœåŠ¡å™¨æ”¯æŒæ–‡ä»¶ç³»ç»Ÿå¯¹è±¡ï¼ˆFSOï¼‰ï¼Œè€Œä½ å½“å‰çš„æœåŠ¡å™¨ä¸æ”¯æŒï¼"
 Exit Sub
 End If
 Call InitParam()
@@ -35,22 +35,22 @@ Dim sCurrPage, nCurrPage, nFileNum, nPageNum, nPageSize
 sCurrPage = Trim(Request("page"))
 Dim s_ViewMode, s_FormViewMode
 s_ViewMode = Trim(Request("d_viewmode"))
-s_FormViewMode = InitSelect("d_viewmode", Split("Ô¤ÀÀÄ£Ê½|ÁĞ±íÄ£Ê½", "|"), Split("|list", "|"), s_ViewMode, "", "onchange=""location.href='?id=" & sStyleID & "&d_viewmode='+this.value+'&dir=" & sDir & "&page=" & sCurrPage & "'""")
+s_FormViewMode = InitSelect("d_viewmode", Split("é¢„è§ˆæ¨¡å¼|åˆ—è¡¨æ¨¡å¼", "|"), Split("|list", "|"), s_ViewMode, "", "onchange=""location.href='?id=" & sStyleID & "&d_viewmode='+this.value+'&dir=" & sDir & "&page=" & sCurrPage & "'""")
 Response.Write "<table border=0 cellspacing=1 align=center class=navi>" & _
 "<form action='?' method=post name=queryform>" & _
 "<tr><th>" & sPosition & "</th></tr>" & _
-"<tr><td align=right><b>ÏÔÊ¾Ä£Ê½£º</b>" & s_FormViewMode & " <b>Ñ¡ÔñÑùÊ½Ä¿Â¼£º</b><select name='id' size=1 onchange=""this.form.submit()"">" & InitSelectStyle(sStyleID, "Ñ¡Ôñ...") & "</select></td></tr>" & _
+"<tr><td align=right><b>æ˜¾ç¤ºæ¨¡å¼ï¼š</b>" & s_FormViewMode & " <b>é€‰æ‹©æ ·å¼ç›®å½•ï¼š</b><select name='id' size=1 onchange=""this.form.submit()"">" & InitSelectStyle(sStyleID, "é€‰æ‹©...") & "</select></td></tr>" & _
 "</form></table><br>"
 If sCurrDir = "" Then Exit Sub
 Response.Write "<table border=0 cellspacing=1 class=list align=center>" & _
 "<form action='?id=" & sStyleID & "&d_viewmode=" & s_ViewMode & "&dir=" & sDir & "&action=del' method=post name=myform>" & _
 "<tr align=center>" & _
-"<th width='10%'>ÀàĞÍ</th>" & _
-"<th width='40%'>ÎÄ¼şµØÖ·</th>" & _
-"<th width='10%'>´óĞ¡</th>" & _
-"<th width='15%'>×îºó·ÃÎÊ</th>" & _
-"<th width='15%'>ÉÏ´«ÈÕÆÚ</th>" & _
-"<th width='10%'>É¾³ı</th>" & _
+"<th width='10%'>ç±»å‹</th>" & _
+"<th width='40%'>æ–‡ä»¶åœ°å€</th>" & _
+"<th width='10%'>å¤§å°</th>" & _
+"<th width='15%'>æœ€åè®¿é—®</th>" & _
+"<th width='15%'>ä¸Šä¼ æ—¥æœŸ</th>" & _
+"<th width='10%'>åˆ é™¤</th>" & _
 "</tr>"
 nPageSize = 20
 If sCurrpage = "" Or Not IsNumeric(sCurrPage) Then
@@ -63,7 +63,7 @@ Set oFSO = Server.CreateObject("Scripting.FileSystemObject")
 On Error Resume Next
 Set oUploadFolder = oFSO.GetFolder(sCurrDir)
 If Err.Number>0 Then
-Response.Write "<tr><td colspan=6>ÎŞĞ§µÄÄ¿Â¼£¡</td></tr></table>"
+Response.Write "<tr><td colspan=6>æ— æ•ˆçš„ç›®å½•ï¼</td></tr></table>"
 Exit Sub
 End If
 If sDir <> "" Then
@@ -73,7 +73,7 @@ Response.Write "<tr align=center>" & _
 If InstrRev(sDir, "/") > 1 Then
 Response.Write Left(sDir, InstrRev(sDir, "/") - 1)
 End If
-Response.Write """>·µ»ØÉÏÒ»¼¶Ä¿Â¼</a></td></tr>"
+Response.Write """>è¿”å›ä¸Šä¸€çº§ç›®å½•</a></td></tr>"
 End If
 Dim oSubFolder
 For Each oSubFolder In oUploadFolder.SubFolders
@@ -84,7 +84,7 @@ If sDir <> "" Then
 Response.Write sDir & "/"
 End If
 Response.Write oSubFolder.Name & """>" & oSubFolder.Name & "</a></td>" & _
-"<td><a href='?id=" & sStyleID & "&d_viewmode=" & s_ViewMode & "&dir=" & sDir & "&action=delfolder&foldername=" & oSubFolder.Name & "'>É¾³ı</a></td></tr>"
+"<td><a href='?id=" & sStyleID & "&d_viewmode=" & s_ViewMode & "&dir=" & sDir & "&action=delfolder&foldername=" & oSubFolder.Name & "'>åˆ é™¤</a></td></tr>"
 Next
 Set oUploadFiles = oUploadFolder.Files
 nFileNum = oUploadFiles.Count
@@ -122,11 +122,11 @@ Response.Write "<tr>"
 End If
 Response.Write "<td width='25%' valign=top align=center><table border=0 cellspacing=1>" & _
 "<tr><td width=200 height=200 align=center>" & File2Preview(sCurrPath, sFileName) & "</td></tr>" & _
-"<tr><td>ÎÄ¼şÃû³Æ£º<a href=""" & sCurrPath & sFileName & """ target=_blank>" & sFileName & "</a></td></tr>" & _
-"<tr><td>ÎÄ¼ş´óĞ¡£º" & oUploadFile.size & " B</td></tr>" & _
-"<tr><td>×îºó·ÃÎÊ£º" & oUploadFile.datelastaccessed & "</td></tr>" & _
-"<tr><td>´´½¨ÈÕÆÚ£º" & oUploadFile.datecreated & "</td></tr>" & _
-"<tr><td>²Ù×÷Ñ¡Ôñ£º<input type=checkbox name=delfilename value=""" & sFileName & """></td></tr>" & _
+"<tr><td>æ–‡ä»¶åç§°ï¼š<a href=""" & sCurrPath & sFileName & """ target=_blank>" & sFileName & "</a></td></tr>" & _
+"<tr><td>æ–‡ä»¶å¤§å°ï¼š" & oUploadFile.size & " B</td></tr>" & _
+"<tr><td>æœ€åè®¿é—®ï¼š" & oUploadFile.datelastaccessed & "</td></tr>" & _
+"<tr><td>åˆ›å»ºæ—¥æœŸï¼š" & oUploadFile.datecreated & "</td></tr>" & _
+"<tr><td>æ“ä½œé€‰æ‹©ï¼š<input type=checkbox name=delfilename value=""" & sFileName & """></td></tr>" & _
 "</table></td>"
 If m = 0 Then
 Response.Write "</tr>"
@@ -151,22 +151,22 @@ Response.Write "</table></td></tr>"
 End If
 End If
 If nFileNum <= 0 Then
-Response.Write "<tr><td colspan=6>Ö¸¶¨Ä¿Â¼ÏÂÏÖÔÚ»¹Ã»ÓĞÎÄ¼ş£¡</td></tr>"
+Response.Write "<tr><td colspan=6>æŒ‡å®šç›®å½•ä¸‹ç°åœ¨è¿˜æ²¡æœ‰æ–‡ä»¶ï¼</td></tr>"
 End If
 If nFileNum > 0 Then
 Response.Write "<tr><td colspan=6><table border=0 cellpadding=3 cellspacing=0 width='100%'><tr><td>"
 If nCurrPage > 1 Then
-Response.Write "<a href='?id=" & sStyleID & "&dir=" & sDir & "&d_viewmode=" & s_ViewMode & "&page=1'>Ê×Ò³</a>&nbsp;&nbsp;<a href='?id=" & sStyleID & "&dir=" & sDir & "&d_viewmode=" & s_ViewMode & "&page="& nCurrPage - 1 & "'>ÉÏÒ»Ò³</a>&nbsp;&nbsp;"
+Response.Write "<a href='?id=" & sStyleID & "&dir=" & sDir & "&d_viewmode=" & s_ViewMode & "&page=1'>é¦–é¡µ</a>&nbsp;&nbsp;<a href='?id=" & sStyleID & "&dir=" & sDir & "&d_viewmode=" & s_ViewMode & "&page="& nCurrPage - 1 & "'>ä¸Šä¸€é¡µ</a>&nbsp;&nbsp;"
 Else
-Response.Write "Ê×Ò³&nbsp;&nbsp;ÉÏÒ»Ò³&nbsp;&nbsp;"
+Response.Write "é¦–é¡µ&nbsp;&nbsp;ä¸Šä¸€é¡µ&nbsp;&nbsp;"
 End If
 If nCurrPage < i / nPageSize Then
-Response.Write "<a href='?id=" & sStyleID & "&dir=" & sDir & "&d_viewmode=" & s_ViewMode & "&page=" & nCurrPage + 1 & "'>ÏÂÒ»Ò³</a>&nbsp;&nbsp;<a href='?id=" & sStyleID & "&dir=" & sDir & "&d_viewmode=" & s_ViewMode & "&page=" & nPageNum & "'>Î²Ò³</a>"
+Response.Write "<a href='?id=" & sStyleID & "&dir=" & sDir & "&d_viewmode=" & s_ViewMode & "&page=" & nCurrPage + 1 & "'>ä¸‹ä¸€é¡µ</a>&nbsp;&nbsp;<a href='?id=" & sStyleID & "&dir=" & sDir & "&d_viewmode=" & s_ViewMode & "&page=" & nPageNum & "'>å°¾é¡µ</a>"
 Else
-Response.Write "ÏÂÒ»Ò³&nbsp;&nbsp;Î²Ò³"
+Response.Write "ä¸‹ä¸€é¡µ&nbsp;&nbsp;å°¾é¡µ"
 End If
-Response.Write "&nbsp;&nbsp;&nbsp;&nbsp;¹²<b>" & nFileNum & "</b>¸ö&nbsp;&nbsp;Ò³´Î:<b><span class=highlight2>" & nCurrPage & "</span>/" & nPageNum & "</b>&nbsp;&nbsp;<b>" & nPageSize & "</b>¸öÎÄ¼ş/Ò³"
-Response.Write "</td><td align=right><input type=checkbox id=b_selectall onclick='doCheckAll(this)'><label for=b_selectall>È«Ñ¡</label>&nbsp; <input type=submit name=b value='É¾³ıÑ¡¶¨µÄÎÄ¼ş'> <input type=button name=b1 value='Çå¿Õ±¾Ä¿Â¼ËùÓĞÎÄ¼ş' onclick=""javascript:if (confirm('ÄãÈ·¶¨ÒªÇå¿ÕËùÓĞÎÄ¼şÂğ£¿')) {location.href='?id=" & sStyleID & "&d_viewmode=" & s_ViewMode & "&dir=" & sDir & "&action=delall';}""></td></tr></table></td></tr>"
+Response.Write "&nbsp;&nbsp;&nbsp;&nbsp;å…±<b>" & nFileNum & "</b>ä¸ª&nbsp;&nbsp;é¡µæ¬¡:<b><span class=highlight2>" & nCurrPage & "</span>/" & nPageNum & "</b>&nbsp;&nbsp;<b>" & nPageSize & "</b>ä¸ªæ–‡ä»¶/é¡µ"
+Response.Write "</td><td align=right><input type=checkbox id=b_selectall onclick='doCheckAll(this)'><label for=b_selectall>å…¨é€‰</label>&nbsp; <input type=submit name=b value='åˆ é™¤é€‰å®šçš„æ–‡ä»¶'> <input type=button name=b1 value='æ¸…ç©ºæœ¬ç›®å½•æ‰€æœ‰æ–‡ä»¶' onclick=""javascript:if (confirm('ä½ ç¡®å®šè¦æ¸…ç©ºæ‰€æœ‰æ–‡ä»¶å—ï¼Ÿ')) {location.href='?id=" & sStyleID & "&d_viewmode=" & s_ViewMode & "&dir=" & sDir & "&action=delall';}""></td></tr></table></td></tr>"
 End If
 Response.Write "</form></table>"
 End Sub
@@ -305,7 +305,7 @@ InitSelectStyle = InitSelectStyle & "<option value='" & i & "'"
 If CStr(i) = CStr(v_InitValue) Then
 InitSelectStyle = InitSelectStyle & " selected"
 End If
-InitSelectStyle = InitSelectStyle & ">ÑùÊ½£º" & inHTML(aTemp(0)) & "---Ä¿Â¼£º" & inHTML(aTemp(3)) & "</option>"
+InitSelectStyle = InitSelectStyle & ">æ ·å¼ï¼š" & inHTML(aTemp(0)) & "---ç›®å½•ï¼š" & inHTML(aTemp(3)) & "</option>"
 Next
 End Function
 Function InitParam()

@@ -1,5 +1,5 @@
 <!--#include file=../conn.TML-->
-<p align="center"><b>BUGÁÐ±í <body background="../bg.jpg" STYLE="background-repeat :repeat-x">
+<p align="center"><b>BUGåˆ—è¡¨ <body background="../bg.jpg" STYLE="background-repeat :repeat-x">
 </b></p>
 <% set rs=server.createobject("adodb.recordset")
 sql="select * from BugAdmin order by id desc"

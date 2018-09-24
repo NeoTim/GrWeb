@@ -40,7 +40,7 @@ egret_h5.startGame = function () {
     context.netContext = new egret.HTML5NetContext();
 
 
-    //设置屏幕适配策略
+    //璁剧疆灞忓箷閫傞厤绛栫暐
     var container = new egret.EqualToFrame();
     var content = egret.Browser.getInstance().isMobile ? new egret.FixedWidth() : new egret.NoScale();
     var policy = new egret.ResolutionPolicy(container, content);
@@ -61,11 +61,11 @@ egret_h5.startGame = function () {
             context.stage.addChild(rootContainer);
         }
         else{
-            throw new Error("文档类必须是egret.DisplayObjectContainer的子�?");
+            throw new Error("鏂囨。绫诲繀椤绘槸egret.DisplayObjectContainer鐨勫瓙绫?");
         }
     }
     else{
-        throw new Error("找不到文档类�?);
+        throw new Error("鎵句笉鍒版枃妗ｇ被锛?);
     }
 }
 

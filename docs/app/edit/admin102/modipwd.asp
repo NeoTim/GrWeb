@@ -12,7 +12,7 @@
 
 <%
 
-sPosition = sPosition & "ÐÞ¸ÄÓÃ»§Ãû¼°ÃÜÂë"
+sPosition = sPosition & "ä¿®æ”¹ç”¨æˆ·ååŠå¯†ç "
 
 Call Header()
 Call Content()
@@ -40,26 +40,26 @@ Sub ShowForm()
 	<table border=0 cellspacing=1 align=center class=form>
 	<form action='?action=modi' method=post name=myform onsubmit="return checkModipwdForm()">
 	<tr>
-		<th>ÉèÖÃÃû³Æ</th>
-		<th>»ù±¾²ÎÊýÉèÖÃ</th>
-		<th>ÉèÖÃËµÃ÷</th>
+		<th>è®¾ç½®åç§°</th>
+		<th>åŸºæœ¬å‚æ•°è®¾ç½®</th>
+		<th>è®¾ç½®è¯´æ˜Ž</th>
 	</tr>
 	<tr>
-		<td width="15%">ÐÂÓÃ»§Ãû£º</td>
+		<td width="15%">æ–°ç”¨æˆ·åï¼š</td>
 		<td width="55%"><input type=text class=input size=20 name=newusr value="<%=inHTML(Session("eWebEditor_User"))%>"></td>
-		<td width="30%"><span class=red>*</span>&nbsp;&nbsp;¾ÉÓÃ»§Ãû£º<span class=blue><%=outHTML(Session("eWebEditor_User"))%></span></td>
+		<td width="30%"><span class=red>*</span>&nbsp;&nbsp;æ—§ç”¨æˆ·åï¼š<span class=blue><%=outHTML(Session("eWebEditor_User"))%></span></td>
 	</tr>
 	<tr>
-		<td width="15%">ÐÂ ÃÜ Âë£º</td>
+		<td width="15%">æ–° å¯† ç ï¼š</td>
 		<td width="55%"><input type=password class=input size=20 name=newpwd1 maxlength=30></td>
 		<td width="30%"><span class=red>*</span></td>
 	</tr>
 	<tr>
-		<td width="15%">È·ÈÏÃÜÂë£º</td>
+		<td width="15%">ç¡®è®¤å¯†ç ï¼š</td>
 		<td width="55%"><input type=password class=input size=20 name=newpwd2 maxlength=30></td>
 		<td width="30%"><span class=red>*</span></td>
 	</tr>
-	<tr><td align=center colspan=3><input type=submit name=bSubmit value="  Ìá½»  "></a>&nbsp;<input type=reset name=bReset value="  ÖØÌî  "></td></tr>
+	<tr><td align=center colspan=3><input type=submit name=bSubmit value="  æäº¤  "></a>&nbsp;<input type=reset name=bReset value="  é‡å¡«  "></td></tr>
 	</form>
 	</table>
 
@@ -75,13 +75,13 @@ Sub DoModi()
 	sNewPwd2 = Trim(Request("newpwd2"))
 
 	If sNewUsr = "" Then
-		GoError "ÐÂÓÃ»§Ãû²»ÄÜÎª¿Õ£¡"
+		GoError "æ–°ç”¨æˆ·åä¸èƒ½ä¸ºç©ºï¼"
 	End If
 	If sNewPwd1 = "" then
-		GoError "ÐÂÃÜÂë²»ÄÜÎª¿Õ£¡"
+		GoError "æ–°å¯†ç ä¸èƒ½ä¸ºç©ºï¼"
 	End If
 	If sNewPwd1 <> sNewPwd2 Then
-		GoError "ÐÂÃÜÂëºÍÈ·ÈÏÃÜÂë²»ÏàÍ¬£¡"
+		GoError "æ–°å¯†ç å’Œç¡®è®¤å¯†ç ä¸ç›¸åŒï¼"
 	End If
 
 	sUsername = sNewUsr
@@ -98,7 +98,7 @@ Sub DoModi()
 
 	<table border=0 cellspacing=1 align=center class=list>
 	<tr>
-		<td>µÇÂ¼ÓÃ»§Ãû¼°ÃÜÂëÐÞ¸Ä³É¹¦£¡</td>
+		<td>ç™»å½•ç”¨æˆ·ååŠå¯†ç ä¿®æ”¹æˆåŠŸï¼</td>
 	</tr>
 	</table>
 	<%

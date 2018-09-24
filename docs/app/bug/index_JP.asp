@@ -13,7 +13,7 @@ If userip = "" Then userip = Request.ServerVariables("REMOTE_ADDR")
 userip=Look_Ip(userip)&"("&userip&")"
 %>
 <%
-fileDesc="ÓÎÏ·Ãû³Æ£º"&request("pname")&chr(13)&chr(10)&"Ìá½»ÕßÀ´×Ô£º"&userip&chr(13)&chr(10)&(fileDesc)
+fileDesc="æ¸¸æˆåç§°ï¼š"&request("pname")&chr(13)&chr(10)&"æäº¤è€…æ¥è‡ªï¼š"&userip&chr(13)&chr(10)&(fileDesc)
 fileDesc=replace(fileDesc,chr(13),"<br>")
 conn.execute "insert into BugAdmin(cont,UpUser) values('"&fileDesc&"','"&upuser&"')"
 %>

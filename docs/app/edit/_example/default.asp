@@ -1,39 +1,39 @@
 <HTML>
 <HEAD>
-<TITLE>eWebEditor £º ´úÂëÊµÀı</TITLE>
+<TITLE>eWebEditor ï¼š ä»£ç å®ä¾‹</TITLE>
 <META http-equiv=Content-Type content="text/html; charset=gb2312">
 <link rel='stylesheet' type='text/css' href='example.css'>
 </HEAD>
 <BODY>
 
 
-<p><b>µ¼º½ £º Ê¾ÀıÊ×Ò³</b></p>
+<p><b>å¯¼èˆª ï¼š ç¤ºä¾‹é¦–é¡µ</b></p>
 
-<p><b>Ê¾ÀıÄ¿Â¼ÖĞ£¬°üÀ¨µÄÊµÀı´úÂëÓĞ£º</b></p>
+<p><b>ç¤ºä¾‹ç›®å½•ä¸­ï¼ŒåŒ…æ‹¬çš„å®ä¾‹ä»£ç æœ‰ï¼š</b></p>
 <ol>
-<li><a href="standard.asp">±ê×¼µ÷ÓÃÊ¾Àı</a> (_example/standard.asp)
-<li><a href="popup.asp">µ¯´°µ÷ÓÃÊ¾Àı</a> (_example/popup.asp)
-<li><a href="remote.asp">Ô¶³ÌÎÄ¼ş×Ô¶¯ÉÏ´«Ê¾Àı</a> (_example/remote.asp)
-<li><a href="clientapi.asp">¿Í»§¶ËAPIÊ¾Àı</a> (_example/clientapi.asp)
-<li><a href="para_file.asp">ÉÏ´«ÎÄ¼ş½Ó¿ÚÊ¾Àı</a> (_example/para_file.asp)
-<li><a href="dlg_upload.asp">ÊäÈë¿òµ÷ÓÃÉÏ´«ÎÄ¼ş¶Ô»°¿òÊ¾Àı</a>(_example/dlg_upload.asp)
-<li><a href="para_extcss.asp">Íâ²¿ÑùÊ½ÒıÓÃ½Ó¿ÚÊ¾Àı</a> (_example/para_extcss.asp)
-<li>±íµ¥½ÓÊÕÊ¾Àı(ÉÏÃæÊ¾ÀıµãÌá½»ºó¼´Îª´ËÒ³) (_example/retrieve.asp)
+<li><a href="standard.asp">æ ‡å‡†è°ƒç”¨ç¤ºä¾‹</a> (_example/standard.asp)
+<li><a href="popup.asp">å¼¹çª—è°ƒç”¨ç¤ºä¾‹</a> (_example/popup.asp)
+<li><a href="remote.asp">è¿œç¨‹æ–‡ä»¶è‡ªåŠ¨ä¸Šä¼ ç¤ºä¾‹</a> (_example/remote.asp)
+<li><a href="clientapi.asp">å®¢æˆ·ç«¯APIç¤ºä¾‹</a> (_example/clientapi.asp)
+<li><a href="para_file.asp">ä¸Šä¼ æ–‡ä»¶æ¥å£ç¤ºä¾‹</a> (_example/para_file.asp)
+<li><a href="dlg_upload.asp">è¾“å…¥æ¡†è°ƒç”¨ä¸Šä¼ æ–‡ä»¶å¯¹è¯æ¡†ç¤ºä¾‹</a>(_example/dlg_upload.asp)
+<li><a href="para_extcss.asp">å¤–éƒ¨æ ·å¼å¼•ç”¨æ¥å£ç¤ºä¾‹</a> (_example/para_extcss.asp)
+<li>è¡¨å•æ¥æ”¶ç¤ºä¾‹(ä¸Šé¢ç¤ºä¾‹ç‚¹æäº¤åå³ä¸ºæ­¤é¡µ) (_example/retrieve.asp)
 </ol>
 
 
-<p><b>¸ü¶àÏà¹ØÔÚÏßÍøÖ·£º</b></p>
+<p><b>æ›´å¤šç›¸å…³åœ¨çº¿ç½‘å€ï¼š</b></p>
 <ul>
-<li>Ê×Ò³£º<br>
+<li>é¦–é¡µï¼š<br>
   <a href="http://www.ewebeditor.net" target="_blank">http://www.ewebeditor.net</a><br><br>
-<li>ÔÚÏßÑİÊ¾£º<br>
+<li>åœ¨çº¿æ¼”ç¤ºï¼š<br>
   <a href="http://www.ewebeditor.net/demo/" target="_blank">http://www.ewebeditor.net/demo/</a><br><br>
-<li>ÁªÏµÎÒÃÇ£º<br>
-  £Ñ£Ñ: 589808<br>
-  ÓÊÏä: <a href="mailto:service@ewebsoft.com">service@ewebsoft.com</a><br>
-  µç»°: 0591-83633592<br>
-  ´«Õæ: 0591-83633593<br>
-  ¹«Ë¾: ¸£Öİ¼«ÏŞÈí¼ş¿ª·¢ÓĞÏŞ¹«Ë¾
+<li>è”ç³»æˆ‘ä»¬ï¼š<br>
+  ï¼±ï¼±: 589808<br>
+  é‚®ç®±: <a href="mailto:service@ewebsoft.com">service@ewebsoft.com</a><br>
+  ç”µè¯: 0591-83633592<br>
+  ä¼ çœŸ: 0591-83633593<br>
+  å…¬å¸: ç¦å·æé™è½¯ä»¶å¼€å‘æœ‰é™å…¬å¸
 
 </ul>
 

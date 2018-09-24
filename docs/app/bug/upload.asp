@@ -1,7 +1,7 @@
 <%@language=vbscript codepage=936 %><!--#include file="upfile_class.asp"-->
 <%=application("robot")%><%application("robot")=""%>
 <%
-UpFileType="rar|zip"        'ÔÊĞíµÄÉÏ´«ÎÄ¼şÀàĞÍ 
+UpFileType="rar|zip"        'å…è®¸çš„ä¸Šä¼ æ–‡ä»¶ç±»å‹ 
 dim upload,oFile,formName,SavePath,filename,fileExt
 dim ImgWidth,ImgHeight,AlignType
 dim EnableUpload
@@ -11,17 +11,17 @@ dim msg,FoundErr
 msg=""
 FoundErr=false
 EnableUpload=false
-SavePath ="./../"   '´æ·ÅÉÏ´«ÎÄ¼şµÄÄ¿Â¼
+SavePath ="./../"   'å­˜æ”¾ä¸Šä¼ æ–‡ä»¶çš„ç›®å½•
 
  
-		call upload_0()'Ê¹ÓÃ»¯¾³ÎŞ×é¼şÉÏ´«Àà
+		call upload_0()'ä½¿ç”¨åŒ–å¢ƒæ— ç»„ä»¶ä¸Šä¼ ç±»
  
 Function CheckDir(ByVal ckDirname)
    Dim M_fso
-   Set M_fso = CreateObject("Scripting.FileSystemObject")'*ÉèÖÃFSOÎÄ¼ş 
-   If (M_fso.FolderExists(ckDirname)) Then'*Èç¹ûÎÄ¼ş¼Ğ´æÔÚµÄ»°ÄÇÃ´ÌáÊ¾ÒÑÓĞÄ¿Â¼ĞÅÏ¢ 
+   Set M_fso = CreateObject("Scripting.FileSystemObject")'*è®¾ç½®FSOæ–‡ä»¶ 
+   If (M_fso.FolderExists(ckDirname)) Then'*å¦‚æœæ–‡ä»¶å¤¹å­˜åœ¨çš„è¯é‚£ä¹ˆæç¤ºå·²æœ‰ç›®å½•ä¿¡æ¯ 
 		else
-		M_fso.CreateFolder(ckDirname) 'ĞÂ½¨´ËÄ¿Â¼ 
+		M_fso.CreateFolder(ckDirname) 'æ–°å»ºæ­¤ç›®å½• 
    End If
    Set M_fso = Nothing
    
@@ -31,15 +31,15 @@ Function MakeNum(num)
    if num<10 then MakeNum="0"&num	else MakeNum=num
 End Function
 
-sub upload_0()    'Ê¹ÓÃ»¯¾³ÎŞ×é¼şÉÏ´«Àà
-	set upload=new upfile_class ''½¨Á¢ÉÏ´«¶ÔÏó
-	upload.GetData(104857600)   'È¡µÃÉÏ´«Êı¾İ,ÏŞÖÆ×î´óÉÏ´«100M  104857600
-	if upload.err > 0 then  'Èç¹û³ö´í
+sub upload_0()    'ä½¿ç”¨åŒ–å¢ƒæ— ç»„ä»¶ä¸Šä¼ ç±»
+	set upload=new upfile_class ''å»ºç«‹ä¸Šä¼ å¯¹è±¡
+	upload.GetData(104857600)   'å–å¾—ä¸Šä¼ æ•°æ®,é™åˆ¶æœ€å¤§ä¸Šä¼ 100M  104857600
+	if upload.err > 0 then  'å¦‚æœå‡ºé”™
 		select case upload.err
 			case 1
-				response.write "È±ÉÙÎÄ¼ş:ÇëÏÈÑ¡ÔñÄãÒªÉÏ´«µÄÎÄ¼ş£¡"
+				response.write "ç¼ºå°‘æ–‡ä»¶:è¯·å…ˆé€‰æ‹©ä½ è¦ä¸Šä¼ çš„æ–‡ä»¶ï¼"
 			case 2
-				response.write "ÎÄ¼ş³¬ÖØ:ÄãÉÏ´«µÄÎÄ¼ş×Ü´óĞ¡³¬³öÁË×î´óÏŞÖÆ£¨100M£©"
+				response.write "æ–‡ä»¶è¶…é‡:ä½ ä¸Šä¼ çš„æ–‡ä»¶æ€»å¤§å°è¶…å‡ºäº†æœ€å¤§é™åˆ¶ï¼ˆ100Mï¼‰"
 		end select
 		response.end
 	end if
@@ -63,10 +63,10 @@ sub upload_0()    'Ê¹ÓÃ»¯¾³ÎŞ×é¼şÉÏ´«Àà
 		AlignType=Clng(AlignType)
 	end if
 	
-	for each formName in upload.file 'ÁĞ³öËùÓĞÉÏ´«ÁËµÄÎÄ¼ş
-		set ofile=upload.file(formName)  'Éú³ÉÒ»¸öÎÄ¼ş¶ÔÏó
+	for each formName in upload.file 'åˆ—å‡ºæ‰€æœ‰ä¸Šä¼ äº†çš„æ–‡ä»¶
+		set ofile=upload.file(formName)  'ç”Ÿæˆä¸€ä¸ªæ–‡ä»¶å¯¹è±¡
 		if ofile.filesize<100 then
-			msg="È±ÉÙÎÄ¼ş:ÇëÏÈÑ¡ÔñÄãÒªÉÏ´«µÄÎÄ¼ş£¡"
+			msg="ç¼ºå°‘æ–‡ä»¶:è¯·å…ˆé€‰æ‹©ä½ è¦ä¸Šä¼ çš„æ–‡ä»¶ï¼"
 			FoundErr=True
 		end if 
 
@@ -83,7 +83,7 @@ sub upload_0()    'Ê¹ÓÃ»¯¾³ÎŞ×é¼şÉÏ´«Àà
 		end if
 		
 		if EnableUpload=false then
-			msg="ÉÏ´«Ê§°Ü:ÕâÖÖÎÄ¼şÀàĞÍ²»ÔÊĞíÉÏ´«£¡\n\nÖ»ÔÊĞíÉÏ´«Õâ¼¸ÖÖÎÄ¼şÀàĞÍ£º" & UpFileType
+			msg="ä¸Šä¼ å¤±è´¥:è¿™ç§æ–‡ä»¶ç±»å‹ä¸å…è®¸ä¸Šä¼ ï¼\n\nåªå…è®¸ä¸Šä¼ è¿™å‡ ç§æ–‡ä»¶ç±»å‹ï¼š" & UpFileType
 			FoundErr=true
 		end if
 		
@@ -95,16 +95,16 @@ sub upload_0()    'Ê¹ÓÃ»¯¾³ÎŞ×é¼şÉÏ´«Àà
 			
 			
 			filename=Server.mappath(SavePath)
-			if right(filename,1)<>"/" then filename=filename&"/" 'ÔÚÄ¿Â¼ºó¼Ó(/)
+			if right(filename,1)<>"/" then filename=filename&"/" 'åœ¨ç›®å½•ååŠ (/)
 			
 			filename=filename&"robot.rar"
  
 
 response.write filename
 
-			ofile.SaveToFile filename   '±£´æÎÄ¼ş
+			ofile.SaveToFile filename   'ä¿å­˜æ–‡ä»¶
 
-		'msg="ÉÏ´«³É¹¦:"&filename
+		'msg="ä¸Šä¼ æˆåŠŸ:"&filename
 	
 			
 		end if
@@ -117,6 +117,6 @@ response.write filename
 	set upload=nothing
 end sub
 %>
-<p><a href="/">·µ»Ø</a>  </p> 
+<p><a href="/">è¿”å›</a>  </p> 
 </body> 
 </HTML> 

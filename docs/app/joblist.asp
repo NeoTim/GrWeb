@@ -4,7 +4,7 @@
 sql="select * from job order by id desc"
 rs.open sql,conn,1,1
 do while not(rs.eof or rs.bof or err)%>
-<tr><td><%if rs("isread")=True then%>ÒÑ¶Á<%else%>Î´¶Á<%end if%><br><%=rs("dt")%></td><td><pre><%=rs("biographical")%></pre></td></tr> 
+<tr><td><%if rs("isread")=True then%>å·²è¯»<%else%>æœªè¯»<%end if%><br><%=rs("dt")%></td><td><pre><%=rs("biographical")%></pre></td></tr> 
 <%rs.movenext
 loop
 rs.close

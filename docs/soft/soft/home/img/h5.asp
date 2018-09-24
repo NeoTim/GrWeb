@@ -46,8 +46,8 @@ char_array(i) = Chr(i + 61)
 Next 
 Randomize 
 For i = 1 To obj 
-'rndº¯Êý·µ»ØµÄËæ»úÊýÔÚ0~1Ö®¼ä£¬¿ÉµÈÓÚ0£¬µ«²»µÈÓÚ1 
-'¹«Ê½£ºint((ÉÏÏÞ-ÏÂÏÞ+1)*Rnd+ÏÂÏÞ)¿ÉÈ¡µÃ´ÓÏÂÏÞµ½ÉÏÏÞÖ®¼äµÄÊý£¬¿ÉµÈÓÚÏÂÏÞµ«²»¿ÉµÈÓÚÉÏÏÞ 
+'rndå‡½æ•°è¿”å›žçš„éšæœºæ•°åœ¨0~1ä¹‹é—´ï¼Œå¯ç­‰äºŽ0ï¼Œä½†ä¸ç­‰äºŽ1 
+'å…¬å¼ï¼šint((ä¸Šé™-ä¸‹é™+1)*Rnd+ä¸‹é™)å¯å–å¾—ä»Žä¸‹é™åˆ°ä¸Šé™ä¹‹é—´çš„æ•°ï¼Œå¯ç­‰äºŽä¸‹é™ä½†ä¸å¯ç­‰äºŽä¸Šé™ 
 temp = temp&char_array(int(62 - 0 + 1)*Rnd + 0) 
 Next 
 randKey = temp 
@@ -64,7 +64,7 @@ BodyText=oXMLHTTP.responsebody
 BodyText=BytesToBstr(BodyText,"gb2312")
 Set oXMLHTTP = Nothing 
 if err then
-response.write "Ô¶³Ì»ñÈ¡ÐÅÏ¢Ê§°Ü:"&err.description
+response.write "è¿œç¨‹èŽ·å–ä¿¡æ¯å¤±è´¥:"&err.description
 else
 get_content=BodyText
 end if
@@ -163,33 +163,33 @@ a:hover{text-decoration: underline;color: red;}
 	<div id="menu">
 		<div id="menu_1">
 		    <ul>
-				<li><a href="?yanqing">¶¼ÊÐÑÔÇé</a></li>
-				<li><a href="?wuxia">ÎäÏÀÐþ»Ã</a></li>
-				<li><a href="?chuanyue">´©Ô½¼Ü¿Õ</a></li>
-				<li><a href="?kehuan">¿Æ»ÃÐ¡Ëµ</a></li>
-				<li><a href="?kongbu">¿Ö²ÀÁéÒì</a></li>
-				<li><a href="?wangyou">ÍøÓÎ¾º¼¼</a></li>
-				<li><a href="?tuili">ÍÆÀíÕìÌ½</a></li>
-				<li><a href="?dushi">¶¼ÊÐ|¹Ù³¡</a></li>
-				<li><a href="?lishi">ÀúÊ·|¾üÊÂ</a></li>
-				<li><a href="?yingshi">Ó°ÊÓÔ­Öø</a></li>
-				<li><a href="?shijie">ÊÀ½çÃûÖø</a></li>
-				<li><a href="?gdmz">¹ÅµäÃûÖø</a></li>
+				<li><a href="?yanqing">éƒ½å¸‚è¨€æƒ…</a></li>
+				<li><a href="?wuxia">æ­¦ä¾ çŽ„å¹»</a></li>
+				<li><a href="?chuanyue">ç©¿è¶Šæž¶ç©º</a></li>
+				<li><a href="?kehuan">ç§‘å¹»å°è¯´</a></li>
+				<li><a href="?kongbu">ææ€–çµå¼‚</a></li>
+				<li><a href="?wangyou">ç½‘æ¸¸ç«žæŠ€</a></li>
+				<li><a href="?tuili">æŽ¨ç†ä¾¦æŽ¢</a></li>
+				<li><a href="?dushi">éƒ½å¸‚|å®˜åœº</a></li>
+				<li><a href="?lishi">åŽ†å²|å†›äº‹</a></li>
+				<li><a href="?yingshi">å½±è§†åŽŸè‘—</a></li>
+				<li><a href="?shijie">ä¸–ç•Œåè‘—</a></li>
+				<li><a href="?gdmz">å¤å…¸åè‘—</a></li>
 			</ul>
 		</div> <!-- menu_1 end-->
 		<div id="menu_2">
 		    <ul>
-				<li><a href="/" >Ð¡ËµÏÂÔØÍø</a></li>
-				<li><a href="?guanli">¹ÜÀíÊé¼®</a></li>
-				<li><a href="?lizhi">ÀøÖ¾Êé¼®</a></li>
-				<li><a href="?zhuanji">ÈËÎï´«¼Ç</a></li>
-				<li><a href="?tonghua">¶ùÍ¯Í¯»°</a></li>
-				<li><a href="?kexue">¿ÆÑ§Éç¿Æ</a></li>
-				<li><a href="?wenxue">ÎÄÑ§×ÛºÏ</a></li>
-				<li><a href="?yingwen">Ó¢ÎÄÔ­Öø</a></li>
-				<li><a href="?zaji">ÆäËûµç×ÓÊé</a></li>
-				<li><a href="?txtsoft">TXTÏà¹ØÈí¼þ</a></li>
-				<li><a href="?des.php">Ð¡Ëµ·Åµ½×ÀÃæ</a></li>
+				<li><a href="/" >å°è¯´ä¸‹è½½ç½‘</a></li>
+				<li><a href="?guanli">ç®¡ç†ä¹¦ç±</a></li>
+				<li><a href="?lizhi">åŠ±å¿—ä¹¦ç±</a></li>
+				<li><a href="?zhuanji">äººç‰©ä¼ è®°</a></li>
+				<li><a href="?tonghua">å„¿ç«¥ç«¥è¯</a></li>
+				<li><a href="?kexue">ç§‘å­¦ç¤¾ç§‘</a></li>
+				<li><a href="?wenxue">æ–‡å­¦ç»¼åˆ</a></li>
+				<li><a href="?yingwen">è‹±æ–‡åŽŸè‘—</a></li>
+				<li><a href="?zaji">å…¶ä»–ç”µå­ä¹¦</a></li>
+				<li><a href="?txtsoft">TXTç›¸å…³è½¯ä»¶</a></li>
+				<li><a href="?des.php">å°è¯´æ”¾åˆ°æ¡Œé¢</a></li>
 			</ul>
 		</div> 
 	</div> <!-- menu_2 end-->
@@ -198,29 +198,29 @@ a:hover{text-decoration: underline;color: red;}
     <div id="search">
         <input type="text" size="24"/>
         <select id="Select1">
-            <option value="title" selected="selected">ÊéÃû</option>
-            <option value="softwriter">×÷Õß</option>
+            <option value="title" selected="selected">ä¹¦å</option>
+            <option value="softwriter">ä½œè€…</option>
         </select> 
-        <input type="submit" value="ËÑË÷Ð¡Ëµ" />
+        <input type="submit" value="æœç´¢å°è¯´" />
 	</div>
 	<ul>
-		<li><a href="?newbooks.html">×îÐÂÐ¡ËµÏÂÔØ</a></li> 
-		<li><a href="?top.html">Ð¡ËµÅÅÐÐ°ñ</a></li> 
-		<li><a href="?topyanqing.html">ÑÔÇéÐ¡Ëµ°ñ</a></li>
-		<li><a href="?topwxxh.html">ÎäÏÀÐþ»Ã°ñ</a></li>
-		<li><a href="?topcy.html">´©Ô½Ð¡Ëµ°ñ</a></li> 
-		<li><a href="javascript:window.open('http://cang.baidu.com/do/add?it='+encodeURIComponent(document.title.substring(0,76))+'&iu='+encodeURIComponent(location.href)+'&fr=ien#nw=1','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes'); void 0">°Ù¶È</a></li> 
-		<li><a href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));return false;" title="·ÖÏíµ½QQ¿Õ¼ä">QQ¿Õ¼ä</a></li> 
+		<li><a href="?newbooks.html">æœ€æ–°å°è¯´ä¸‹è½½</a></li> 
+		<li><a href="?top.html">å°è¯´æŽ’è¡Œæ¦œ</a></li> 
+		<li><a href="?topyanqing.html">è¨€æƒ…å°è¯´æ¦œ</a></li>
+		<li><a href="?topwxxh.html">æ­¦ä¾ çŽ„å¹»æ¦œ</a></li>
+		<li><a href="?topcy.html">ç©¿è¶Šå°è¯´æ¦œ</a></li> 
+		<li><a href="javascript:window.open('http://cang.baidu.com/do/add?it='+encodeURIComponent(document.title.substring(0,76))+'&iu='+encodeURIComponent(location.href)+'&fr=ien#nw=1','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes'); void 0">ç™¾åº¦</a></li> 
+		<li><a href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));return false;" title="åˆ†äº«åˆ°QQç©ºé—´">QQç©ºé—´</a></li> 
 	</ul> 		
 </div><!--sundry end-->
 <div id="current_position">
-ÄúµÄÎ»ÖÃ: <a href="/">Ê×Ò³</a> >  <a href="?yid=1325&key=<%=randKey(6)%>"><%=Title1%></A> <a name=baidusnap0></a><a href="?yid=1325&key=<%=randKey(6)%>"><%=Title2%></A> <a name=baidusnap0></a><a href="?yid=1325&key=<%=randKey(6)%>"><%=Title3%></A></div>
+æ‚¨çš„ä½ç½®: <a href="/">é¦–é¡µ</a> >  <a href="?yid=1325&key=<%=randKey(6)%>"><%=Title1%></A> <a name=baidusnap0></a><a href="?yid=1325&key=<%=randKey(6)%>"><%=Title2%></A> <a name=baidusnap0></a><a href="?yid=1325&key=<%=randKey(6)%>"><%=Title3%></A></div>
 <!--current_position end-->
 <div id="main">
 	<div id="content">
 		<div id="artical_topic" align="center">
 <h1 class="atitle"><%=Title1%>_<%=Title2%>_<%=Title3%></h1><div>
-				<span id="publish_time"><%=now()%></span><span id="author"> ×÷Õß:Ò¶·ão0 </span><span id="comment"><a target="_blank" href="?id=335&key=<%=randKey(6)%>=<%=Title1%>">ÎÒÒªÆÀÂÛ</a></span>
+				<span id="publish_time"><%=now()%></span><span id="author"> ä½œè€…:å¶æž«o0 </span><span id="comment"><a target="_blank" href="?id=335&key=<%=randKey(6)%>=<%=Title1%>">æˆ‘è¦è¯„è®º</a></span>
 			</div>		
 		</div><!--artical_topic end-->
 		<div id="artical_content">
@@ -281,14 +281,14 @@ a:hover{text-decoration: underline;color: red;}
 <script type="text/javascript" src="http://www.865875.com/js/long/qige.js"></script>
 		</div><!--artical_content end-->
 		<div id="artical_footer" align="center">
-			<span id="download"><a target="_blank" href="?id=335&key=<%=randKey(6)%>=<%=Title1%>">Á¢¼´ÏÂÔØ</a></span>
-<div class="d1">ÉÏÒ»Æª:<a href="?yid=1325&key=<%=ttt-1%>"><%=Title4%></A></div>
-			<div class="d1">ÏÂÒ»Æª:<a href="?yid=1325&key=<%=ttt+1%>"><%=Title5%></A></div>
+			<span id="download"><a target="_blank" href="?id=335&key=<%=randKey(6)%>=<%=Title1%>">ç«‹å³ä¸‹è½½</a></span>
+<div class="d1">ä¸Šä¸€ç¯‡:<a href="?yid=1325&key=<%=ttt-1%>"><%=Title4%></A></div>
+			<div class="d1">ä¸‹ä¸€ç¯‡:<a href="?yid=1325&key=<%=ttt+1%>"><%=Title5%></A></div>
 		</div><!--artical_footer end-->
 	</div><!--content end-->
 	<div id="sidebar">
 		<div id="new_artical">
-		   <div id="new_title">×îÐÂÎÄÕÂ</div>
+		   <div id="new_title">æœ€æ–°æ–‡ç« </div>
 			<ul><%
 For dd = 1 to 7
 ttt = Titleline(Rand(0,ubound(Titleline)))
@@ -302,7 +302,7 @@ next
 			</ul>
 		</div><!--new end-->
 		<div id="hot_artical">
-		    <div id="hot_title">×îÈÈÎÄÕÂ</div>
+		    <div id="hot_title">æœ€çƒ­æ–‡ç« </div>
 			<ul>
 <%
 For dd = 1 to 7
@@ -317,7 +317,7 @@ next
 			</ul>
 		</div><!--hot end-->
 		<div id="similar_artical">
-		    <div id="similar_title">ÏàËÆÎÄÕÂ</div>
+		    <div id="similar_title">ç›¸ä¼¼æ–‡ç« </div>
 			<ul>
 <%
 For dd = 1 to 7
@@ -331,7 +331,7 @@ next
 </div>
 </div>
 <div id="footer">
-<B style='color:black;background-color:#ffff66'><%=Title1%> <%=Title2%> <%=Title3%></B>ÕûÀí×Ô»¥ÁªÍø,Ãâ·ÑÌá¹©ÏÂÔØ,Èç¹ûÇÖ·¸ÁËÄúµÄÈ¨Òæ,ÎÒÃÇ»áÔÚ24Ð¡Ê±ÄÚÉ¾³ý.<br />
+<B style='color:black;background-color:#ffff66'><%=Title1%> <%=Title2%> <%=Title3%></B>æ•´ç†è‡ªäº’è”ç½‘,å…è´¹æä¾›ä¸‹è½½,å¦‚æžœä¾µçŠ¯äº†æ‚¨çš„æƒç›Š,æˆ‘ä»¬ä¼šåœ¨24å°æ—¶å†…åˆ é™¤.<br />
 </div>
 </body>
 </html>

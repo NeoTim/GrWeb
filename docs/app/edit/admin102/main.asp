@@ -12,7 +12,7 @@
 
 <%
 
-sPosition = sPosition & "ºóÌ¨¹ÜÀíÊ×Ò³"
+sPosition = sPosition & "åŽå°ç®¡ç†é¦–é¡µ"
 
 Call Header()
 Call Content()
@@ -31,87 +31,87 @@ Sub Content()
 	<br>
 
 	<table border=0 cellspacing=1 align=center class=list>
-	<tr><th colspan=2>eWebEditor 5.5 °æÈ¨¡¢³£ÓÃÁªÏµ·½·¨¡¢¼¼ÊõÖ§³Ö</th></tr>
+	<tr><th colspan=2>eWebEditor 5.5 ç‰ˆæƒã€å¸¸ç”¨è”ç³»æ–¹æ³•ã€æŠ€æœ¯æ”¯æŒ</th></tr>
 	<tr>
-		<td width="15%">Èí¼þ°æ±¾£º</td>
-		<td width="85%">eWebEditor Version 5.5 for ASP ¼òÌåÖÐÎÄÉÌÒµ°æ</td>
+		<td width="15%">è½¯ä»¶ç‰ˆæœ¬ï¼š</td>
+		<td width="85%">eWebEditor Version 5.5 for ASP ç®€ä½“ä¸­æ–‡å•†ä¸šç‰ˆ</td>
 	</tr>
 	<tr>
-		<td width="15%">°æÈ¨ËùÓÐ£º</td>
-		<td width="85%"><a href="http://www.ewebsoft.com" target="_blank">eWebSoft.com</a>&nbsp;&nbsp;ÒÑ»ñµÃ¹ú¼Ò°æÈ¨¾Ö°ä·¢µÄ¡¶¼ÆËã»úÈí¼þÖø×÷È¨µÇ¼ÇÖ¤Êé¡·,µÇ¼ÇºÅ:2004SR06549</td>
+		<td width="15%">ç‰ˆæƒæ‰€æœ‰ï¼š</td>
+		<td width="85%"><a href="http://www.ewebsoft.com" target="_blank">eWebSoft.com</a>&nbsp;&nbsp;å·²èŽ·å¾—å›½å®¶ç‰ˆæƒå±€é¢å‘çš„ã€Šè®¡ç®—æœºè½¯ä»¶è‘—ä½œæƒç™»è®°è¯ä¹¦ã€‹,ç™»è®°å·:2004SR06549</td>
 	</tr>
 	<tr>
-		<td width="15%">Ö÷Ò³µØÖ·£º</td>
-		<td width="85%"><a href="http://www.ewebeditor.net/" target="_blank">eWebEditorÖÐÎÄÕ¾(www.eWebEditor.net)</a>&nbsp;&nbsp;&nbsp;<a href="http://service.ewebeditor.net/" target="_blank">¿Í·þÖÐÐÄ(service.eWebEditor.net)</a></td>
+		<td width="15%">ä¸»é¡µåœ°å€ï¼š</td>
+		<td width="85%"><a href="http://www.ewebeditor.net/" target="_blank">eWebEditorä¸­æ–‡ç«™(www.eWebEditor.net)</a>&nbsp;&nbsp;&nbsp;<a href="http://service.ewebeditor.net/" target="_blank">å®¢æœä¸­å¿ƒ(service.eWebEditor.net)</a></td>
 	</tr>
 	<tr>
-		<td width="15%">ÁªÏµ·½Ê½£º</td>
-		<td width="85%">µç»°£º0591-83633592&nbsp;&nbsp;&nbsp;&nbsp;´«Õæ£º0591-83633593&nbsp;&nbsp;&nbsp;&nbsp;QQ£º589808&nbsp;&nbsp;&nbsp;&nbsp;ÓÊÏä£º<a href="mailto:service@ewebsoft.com">service@ewebsoft.com</a></td>
+		<td width="15%">è”ç³»æ–¹å¼ï¼š</td>
+		<td width="85%">ç”µè¯ï¼š0591-83633592&nbsp;&nbsp;&nbsp;&nbsp;ä¼ çœŸï¼š0591-83633593&nbsp;&nbsp;&nbsp;&nbsp;QQï¼š589808&nbsp;&nbsp;&nbsp;&nbsp;é‚®ç®±ï¼š<a href="mailto:service@ewebsoft.com">service@ewebsoft.com</a></td>
 	</tr>
 	</table>
 
 	<br>
 
 	<table border=0 cellspacing=1 align=center class=list>
-	<tr><th colspan=2>·þÎñÆ÷µÄÓÐ¹Ø²ÎÊý</th><th colspan=2>×é¼þÖ§³ÖÓÐ¹Ø²ÎÊý</th></tr>
+	<tr><th colspan=2>æœåŠ¡å™¨çš„æœ‰å…³å‚æ•°</th><th colspan=2>ç»„ä»¶æ”¯æŒæœ‰å…³å‚æ•°</th></tr>
 	<tr>
-		<td width="15%">·þÎñÆ÷Ãû£º</td>
+		<td width="15%">æœåŠ¡å™¨åï¼š</td>
 		<td width="45%"><%=Request.ServerVariables("SERVER_NAME")%></td>
-		<td width="20%">ADO Êý¾Ý¶ÔÏó£º</td>
+		<td width="20%">ADO æ•°æ®å¯¹è±¡ï¼š</td>
 		<td width="20%"><%=Get_ObjInfo("adodb.connection", 1)%></td>
 	</tr>
 	<tr>
-		<td width="15%">·þÎñÆ÷IP£º</td>
+		<td width="15%">æœåŠ¡å™¨IPï¼š</td>
 		<td width="45%"><%=Request.ServerVariables("LOCAL_ADDR")%></td>
-		<td width="20%">FSO ÎÄ±¾ÎÄ¼þ¶ÁÐ´£º</td>
+		<td width="20%">FSO æ–‡æœ¬æ–‡ä»¶è¯»å†™ï¼š</td>
 		<td width="20%"><%=Get_ObjInfo("scripting.filesystemobject", 0)%></td>
 	</tr>
 	<tr>
-		<td width="15%">·þÎñÆ÷¶Ë¿Ú£º</td>
+		<td width="15%">æœåŠ¡å™¨ç«¯å£ï¼š</td>
 		<td width="45%"><%=Request.ServerVariables("SERVER_PORT")%></td>
-		<td width="20%">Stream ÎÄ¼þÁ÷£º</td>
+		<td width="20%">Stream æ–‡ä»¶æµï¼š</td>
 		<td width="20%"><%=Get_ObjInfo("Adodb."&"Stream", 0)%></td>
 	</tr>
 	<tr>
-		<td width="15%">·þÎñÆ÷Ê±¼ä£º</td>
+		<td width="15%">æœåŠ¡å™¨æ—¶é—´ï¼š</td>
 		<td width="45%"><%=Now()%></td>
-		<td width="20%">Microsoft.XMLHTTP£º</td>
+		<td width="20%">Microsoft.XMLHTTPï¼š</td>
 		<td width="20%"><%=Get_ObjInfo("Microsoft.XMLHTTP", 0)%></td>
 	</tr>
 	<tr>
-		<td width="15%">IIS°æ±¾£º</td>
+		<td width="15%">IISç‰ˆæœ¬ï¼š</td>
 		<td width="45%"><%=Request.ServerVariables("SERVER_SOFTWARE")%></td>
-		<td width="20%">Microsoft.XMLDOM£º</td>
+		<td width="20%">Microsoft.XMLDOMï¼š</td>
 		<td width="20%"><%=Get_ObjInfo("Microsoft.XMLDOM", 0)%></td>
 	</tr>
 	<tr>
-		<td width="15%">·þÎñÆ÷²Ù×÷ÏµÍ³£º</td>
+		<td width="15%">æœåŠ¡å™¨æ“ä½œç³»ç»Ÿï¼š</td>
 		<td width="45%"><%=Request.ServerVariables("OS")%></td>
-		<td width="20%">CDONTS ÐéÄâSMTP·¢ÐÅ£º</td>
+		<td width="20%">CDONTS è™šæ‹ŸSMTPå‘ä¿¡ï¼š</td>
 		<td width="20%"><%=Get_ObjInfo("CDONTS.NewMail", 1)%></td>
 	</tr>
 	<tr>
-		<td width="15%">½Å±¾³¬Ê±Ê±¼ä£º</td>
-		<td width="45%"><%=Server.ScriptTimeout%> Ãë</td>
-		<td width="20%">LyfUpload ÉÏ´«×é¼þ£º</td>
+		<td width="15%">è„šæœ¬è¶…æ—¶æ—¶é—´ï¼š</td>
+		<td width="45%"><%=Server.ScriptTimeout%> ç§’</td>
+		<td width="20%">LyfUpload ä¸Šä¼ ç»„ä»¶ï¼š</td>
 		<td width="20%"><%=Get_ObjInfo("LyfUpload.UploadFile", 1)%></td>
 	</tr>
 	<tr>
-		<td width="15%">Õ¾µãÎïÀíÂ·¾¶£º</td>
+		<td width="15%">ç«™ç‚¹ç‰©ç†è·¯å¾„ï¼š</td>
 		<td width="45%"><%=request.ServerVariables("APPL_PHYSICAL_PATH")%></td>
-		<td width="20%">AspUpload ÉÏ´«×é¼þ£º</td>
+		<td width="20%">AspUpload ä¸Šä¼ ç»„ä»¶ï¼š</td>
 		<td width="20%"><%=Get_ObjInfo("Persits.Upload.1", 1)%></td>
 	</tr>
 	<tr>
-		<td width="15%">·þÎñÆ÷CPUÊýÁ¿£º</td>
-		<td width="45%"><%=Request.ServerVariables("NUMBER_OF_PROCESSORS")%> ¸ö</td>
-		<td width="20%">SA-FileUp ÉÏ´«×é¼þ£º</td>
+		<td width="15%">æœåŠ¡å™¨CPUæ•°é‡ï¼š</td>
+		<td width="45%"><%=Request.ServerVariables("NUMBER_OF_PROCESSORS")%> ä¸ª</td>
+		<td width="20%">SA-FileUp ä¸Šä¼ ç»„ä»¶ï¼š</td>
 		<td width="20%"><%=Get_ObjInfo("SoftArtisans.FileUp", 1)%></td>
 	</tr>
 	<tr>
-		<td width="15%">·þÎñÆ÷½âÒëÒýÇæ£º</td>
+		<td width="15%">æœåŠ¡å™¨è§£è¯‘å¼•æ“Žï¼š</td>
 		<td width="45%"><%=ScriptEngine & "/" & ScriptEngineMajorVersion & "." & ScriptEngineMinorVersion & "." & ScriptEngineBuildVersion %></td>
-		<td width="20%">AspJpeg Í¼Ïñ´¦Àí×é¼þ£º</td>
+		<td width="20%">AspJpeg å›¾åƒå¤„ç†ç»„ä»¶ï¼š</td>
 		<td width="20%"><%=Get_ObjInfo("Persits.Jpeg",1)%></td>
 	</tr>
 	</table>
@@ -126,7 +126,7 @@ Function Get_ObjInfo(obj, ver)
 	Set objTest = Server.CreateObject(obj)
 	If Err.Number <> 0 Then
 		Err.Clear
-		Get_ObjInfo = "<font class=red><b>¡Á</b></font>&nbsp;<font class=gray>²»Ö§³Ö</font>"
+		Get_ObjInfo = "<font class=red><b>Ã—</b></font>&nbsp;<font class=gray>ä¸æ”¯æŒ</font>"
 	Else
 		sTemp = ""
 		If ver = 1 Then
@@ -135,7 +135,7 @@ Function Get_ObjInfo(obj, ver)
 			sTemp = Replace(sTemp, "Version", "")
 			sTemp = "&nbsp;<font class=tims><font class=blue>" & sTemp & "</font></font>"
 		End If
-		Get_ObjInfo = "<b>¡Ì</b>&nbsp;<font class=gray>Ö§³Ö</font>" & sTemp
+		Get_ObjInfo = "<b>âˆš</b>&nbsp;<font class=gray>æ”¯æŒ</font>" & sTemp
 	End If
 	Set objTest = Nothing
 	If Err.Number <> 0 Then Err.Clear

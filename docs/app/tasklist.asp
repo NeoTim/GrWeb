@@ -32,7 +32,7 @@ td{background:#FFFFFF}
   <SCRIPT   LANGUAGE="JavaScript">   
   <!--   
     
-  //��Ч��ʱ�䷶Χ     
+  //有效的时间范围     
   var   date_start,date_end,g_object   
   var   today   =   new   Date();   
   var   separator="-";   
@@ -173,7 +173,7 @@ rs.close
   }   
   
 
-  //s_object������Ķ���d_start-d_end��Ч��ʱ�����Σ���Ҫ���ֵ�Ŀؼ���   
+  //s_object：点击的对象；d_start-d_end有效的时间区段；需要存放值的控件；   
   function   show_cele_date(eP,d_start,d_end,t_object)   
   {   
   window.cele_date.style.display="";   
@@ -261,14 +261,14 @@ rs.close
  
 
 
-<a href="?">ȫ��</a>&nbsp;
+<a href="?">全部</a>&nbsp;
 
-<a href="?sta=0">�����</a>&nbsp;
+<a href="?sta=0">待解决</a>&nbsp;
 
-<a href="?sta=1">���ڽ��</a>&nbsp;
+<a href="?sta=1">正在解决</a>&nbsp;
 
-<a href="?sta=2">�ѽ��</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<button onclick="location.href='upBug.asp';">�ύ��BUG</button>
+<a href="?sta=2">已解决</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<button onclick="location.href='upBug.asp';">提交新BUG</button>
 <br><br>
 <%
 
@@ -300,23 +300,23 @@ if (cint(session("id"))=207) then admin=1
 do while not(rs.eof or rs.bof or err) 
 %><form action=modify.ASP?id=<%=rs("id")%> method=post>
 <table width="95%" border="0" cellpadding="12" cellspacing="1" class="tab1">
-<tr><td>�ύ�ߣ�<%=rs("UpUser")%><%if (cint(session("id"))<10) then%><a href="del.tml?id=<%=rs("id")%>&name=<%=rs("UpUser")%>">ɾ��</a>
-<a href="send.tml?id=<%=rs("id")%>&name=<%=rs("UpUser")%>">�ɷ�</a><%end if%>
+<tr><td>提交者：<%=rs("UpUser")%><%if (cint(session("id"))<10) then%><a href="del.tml?id=<%=rs("id")%>&name=<%=rs("UpUser")%>">删除</a>
+<a href="send.tml?id=<%=rs("id")%>&name=<%=rs("UpUser")%>">派发</a><%end if%>
 <%if (admin=1) then%>
-<a href="send.tml?id=<%=rs("id")%>&name=<%=rs("UpUser")%>">�ɷ�</a>
-<%end if%></td><td>�ύ���ڣ�<%=rs("Time")%></td><td>�ɷ����ڣ�<%=rs("DoTime")%></td><td>������ڣ�<%=rs("EndTime")%></td><td>�޸��ߣ�<%=rs("WorkUser")%>
+<a href="send.tml?id=<%=rs("id")%>&name=<%=rs("UpUser")%>">派发</a>
+<%end if%></td><td>提交日期：<%=rs("Time")%></td><td>派发日期：<%=rs("DoTime")%></td><td>完成日期：<%=rs("EndTime")%></td><td>修改者：<%=rs("WorkUser")%>
 <%if (admin=1) then%><input name=WorkUser value="<%=rs("WorkUser")%>" onclick="show_cele_date(this,'','',this)"/><%end if%>
-</td><td>��ǰ״̬��<b><%if rs("sta")=0 then%><font color=#ff000>�����
+</td><td>当前状态：<b><%if rs("sta")=0 then%><font color=#ff000>待解决
 <%elseif rs("sta")=1 then%>
-<font color=#0000ff>���ڽ��
+<font color=#0000ff>正在解决
 <%elseif rs("sta")=2 then%>
-<font color=#00ff00>�ѽ��<%end if%>
+<font color=#00ff00>已解决<%end if%>
 <%if (admin=1) then%><select name=sta>
-<option value=0>�����
-<option value=1>���ڽ��
-<option value=2>�ѽ��
-</select><input type=submit value="����">
-<%end if%></b></font></td></tr><tr><td colspan="6"><b>BUG����</b><br><%=rs("cont")%></td></tr></table>
+<option value=0>待解决
+<option value=1>正在解决
+<option value=2>已解决
+</select><input type=submit value="保存">
+<%end if%></b></font></td></tr><tr><td colspan="6"><b>BUG内容</b><br><%=rs("cont")%></td></tr></table>
 </form>
 <%rs.movenext
 loop

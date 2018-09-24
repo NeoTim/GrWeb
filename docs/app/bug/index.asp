@@ -3,7 +3,7 @@
 <!--#include file="../ip.inc" --> 
 <body background="../bg.jpg" STYLE="background-repeat :repeat-x" onkeydown="if(event.keyCode==13 && event.ctrlKey) if(save_onclick())document.form.submit()">
 
-<p align="center"><strong>�ύ��BUG��ȱ�ݣ�
+<p align="center"><strong>提交新BUG（缺陷）
 <%fileDesc=request("Cont")
 fileDesc=replace(fileDesc,"'","''")
 if (fileDesc<>"") then
@@ -15,13 +15,13 @@ If userip = "" Then userip = Request.ServerVariables("REMOTE_ADDR")
 userip=Look_Ip(userip)&"("&userip&")"
 %>
 <%
-fileDesc="��Ϸ���ƣ�"&request("pname")&chr(13)&chr(10)&"�ύ�����ԣ�"&userip&chr(13)&chr(10)&(fileDesc)
+fileDesc="游戏名称："&request("pname")&chr(13)&chr(10)&"提交者来自："&userip&chr(13)&chr(10)&(fileDesc)
 fileDesc=replace(fileDesc,chr(13),"<br>")
 conn.execute "insert into BugAdmin(cont,UpUser) values('"&fileDesc&"','"&upuser&"')"
 %>
-BUG�ύ�ɹ�����л���Ĳ��룬�뷵��<br></br><button onclick=window.close()>�رմ���</button>
- ����
-<button onclick="location.href='.'">�ύ����BUG</button>
+BUG提交成功，感谢您的参与，请返回<br></br><button onclick=window.close()>关闭窗口</button>
+ 　　
+<button onclick="location.href='.'">提交其他BUG</button>
 
 <%response.end
 end if%>
@@ -37,12 +37,12 @@ function  save_onclick()
   var strTemp = document.form.Cont.value;
   if (strTemp.length == 0 )
   {
-      alert("��BUG����");
+      alert("无BUG内容");
       return false;
   }
   else if (document.form.upuser.value.length == 0 )
   {
-      alert("δ��д���մ���");
+      alert("未填写尊姓大名");
       return false;
   }
  else{return true;}  
@@ -50,13 +50,13 @@ function  save_onclick()
 }
 </SCRIPT>
 <TABLE BORDER=0><TR><TD>
-���մ���:<input name=upuser><br>
-��Ʒ����:<select name=pname>
-<option value="��Ϸ">��Ϸ</option>
-<option value="��ʱͨѶ����">��ʱͨѶ����</option>
-<option value="���취ϵͳ">���취ϵͳ</option>
-<option value="��������ϵͳ">��������ϵͳ</option>
-<option value="FLASH����">FLASH����</option>
+尊姓大名:<input name=upuser><br>
+产品名称:<select name=pname>
+<option value="游戏">游戏</option>
+<option value="即时通讯软件">即时通讯软件</option>
+<option value="公检法系统">公检法系统</option>
+<option value="搜索引擎系统">搜索引擎系统</option>
+<option value="FLASH棋牌">FLASH棋牌</option>
 <% set rs=server.createobject("adodb.recordset")
 sql="select * from ComList order by ComID"
 rs.open sql,conn,1,1
@@ -67,14 +67,14 @@ loop
 rs.close
 set rs=nothing	 
 TMLcn_footer%>
-<option value="������Ʒ�ͷ���">������Ʒ�ͷ���</option>
+<option value="其他产品和服务">其他产品和服务</option>
 </select><BR>
-BUG(ȱ��)��ϸ������<br>
+BUG(缺陷)详细描述：<br>
 <textarea name="Cont"  cols="60" rows="8"></textarea> 
 
     <br>
- <input type="submit" value="�ύBUG">��
-<input type="reset"  value="���">
-</form><!--form method=post action="upload.asp" name="form" enctype="multipart/form-data">�ϴ�RAR��<input name=mefile type=file> <input type="submit" value="�ϴ�"></form-->֣�س�ŵ��������޸�BUG��
+ <input type="submit" value="提交BUG">　
+<input type="reset"  value="清空">
+</form><!--form method=post action="upload.asp" name="form" enctype="multipart/form-data">上传RAR：<input name=mefile type=file> <input type="submit" value="上传"></form-->郑重承诺永久免费修改BUG。
 </TD></TR></TABLE>
  
