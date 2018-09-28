@@ -1,0 +1,89 @@
+﻿.smallfont { font-size:12px; }
+.xsmallfont { font-size:14px; }
+.main { background:url(/images/index_new.jpg) no-repeat; position:relative; width:1215px; height:1439px; left:0; }
+.usercenterbg { background:url(/images/bg_usercenter.jpg) no-repeat; position:relative; width:1215px; height:1439px; left:0; }
+.chongzhibg{ background:url(/images/bg_reg.jpg) no-repeat; position:relative; width:1215px; height:1439px; left:0; }
+.abs { position:absolute; }
+.link { cursor:pointer; position:absolute; display:block; }
+.gohome { width:192px; height:198px; left:210px; top:0 }
+.download { width:179px; 
+height:152px; left:221px; top:206px; }
+.menu-home { width:72px; 
+left:421px; 
+top:313px;
+    height: 45px;
+}
+.menu-game { left:507px; 
+top:321px; 
+width:78px; 
+height:39px; }
+.menu-help { left:605px; 
+top:324px; 
+width:77px; 
+height:32px; }
+.menu-news { left:694px; 
+top:320px; width:72px; 
+height:37px; }
+.menu-pay { top:326px; 
+width:71px; 
+height:25px;
+    left: 786px;
+}
+.menu-prize { left:874px; 
+top:319px; 
+width:82px; 
+height:41px; }
+.menu-charity { left:964px; 
+top:323px; 
+width:83px; 
+height:36px
+}
+.menu-service { left:1055px; 
+top:323px; 
+width:84px; 
+height:40px; }
+.member-login { left:252px; top:451px; width:171px; height:151px; position:absolute;}
+.member-login ul li { padding:0 0 2px 20px; height:25px; border:0; vertical-align:bottom; }
+.member-login ul li span { border:0; }
+.member-login ul li.button { padding:16px 0 0 9px; }
+.member-login ul li.register { padding:3px 0 0 32px }
+.login-success { padding:10px 5px 5px 8px; width:150px; height:132px; background-color:#FFF; }
+.login-success p { line-height:25px; }
+.index-ads { left:470px; top:445px; width:493px; height:162px; }
+.demod { left:1010px; top:450px; width:169px; height:237px; overflow:hidden; }
+.demod ul li { list-style:none; height:25px; line-height:25px; overflow:hidden; }
+.ques { left:1017px; top:1095px; width:169px; height:180px; overflow:hidden; }
+.ques ul li { list-style:none; height:25px; line-height:25px; overflow:hidden; }
+.help { left:260px; top:1095px; width:160px; height:180px; overflow:hidden; }
+.headpic { left:470px; top:1055px; width:500px; height:105px; overflow:hidden; }
+.reg { left:320px; top:430px; width:816px; height:900px;overflow:hidden; }
+.chongzhi { left:320px; top:442px; width:816px; height:900px;overflow:hidden; }
+.left { left:230px; top:450px; width:170px; height:780px;overflow:hidden; }
+.right{ left:470px; top:450px; width:700px; height:780px;overflow:hidden; }
+
+.ad { left:470px; top:1190px; width:500px; height:75px; overflow:hidden; }
+.help ul li { list-style:none; height:25px; line-height:25px; overflow:hidden; }
+.menu { left:575px; top:603px; width:346px; height:35px; }
+.notice { left:471px; top:655px; width:495px; height:151px; overflow:hidden }
+.contact { left:299px; top:948px; width:164px; height:117px; }
+.contact li { height:30px; line-height:30px; padding-left:35px; }
+.jf { left:471px; 
+top:855px; width:495px; 
+height:145px;  }
+
+.hotgames { left:263px; top:647px; width:172px; height:179px; overflow:hidden }
+.hotgames p { padding-top:5px; }
+.footer { left:252px;top:1326px; width:945px; height:107px;
+}
+.footer-link { height:30px; 
+line-height:20px; text-align:center; padding-top:2px
+}
+.footer-title { height:20px; line-height:20px; text-align:center; padding-top:2px }
+.copyright { text-align:center; padding-top:2px; color:#000000; }
+.lunpan { left:994px; top:706px; width:201px; height:64px; }
+.getmoney { left:1006px; top:857px; width:178px; height:130px;}
+a.play, a.stop{ width:42px; height:42px; top:150px; right:0px; position: fixed; z-index:100000000; background:url(/images/music.png) no-repeat 0 0; }
+a.play{ background-position:-42px 0; }
+a.play:hover{ background-position:-42px -42px; }
+a.stop{ background-position:0 0; } 
+a.stop:hover{ background-position:0 -42px; }

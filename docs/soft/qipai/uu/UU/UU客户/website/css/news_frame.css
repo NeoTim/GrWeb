@@ -1,0 +1,83 @@
+﻿.smallfont { font-size:12px; }
+.main { background:url(/images/bg_news.jpg) no-repeat; position:relative; width:1215px; height:1439px; left:0;
+    top: 11px;
+}
+.main1 { background:url(/images/bg_news1.jpg) no-repeat; position:relative; width:1215px; height:1439px; left:0; }
+.main2 { background:url(/images/bg_news2.jpg) no-repeat; position:relative; width:1215px; height:1439px; left:0; }
+.abs { position:absolute; }
+.link { cursor:pointer; position:absolute; display:block; }
+.gohome { width:192px; height:198px; left:217px; top:-1px}
+.download { width:176px; 
+height:56px; 
+left:221px; top:309px; }
+.menu-home { width:77px; 
+height:38px; 
+left:417px; 
+top:319px; }
+.menu-game { left:516px; 
+top:328px; 
+width:69px; 
+height:24px; }
+.menu-help { top:325px; 
+width:70px; 
+height:29px;
+    right: 539px;
+}
+.menu-news { left:697px; 
+top:322px; 
+width:73px; height:30px; }
+.menu-pay { left:788px; 
+top:323px; 
+width:71px; 
+height:31px; }
+.menu-prize { left:878px; 
+top:324px; 
+width:74px; 
+height:25px; }
+.menu-charity { left:967px; 
+top:328px; 
+width:75px; height:23px
+}
+.menu-service { left:1052px; 
+top:329px; 
+width:86px; 
+height:27px;
+    margin-top: 0px;
+}
+.member-login { left:252px; top:451px; width:171px; height:151px; position:absolute;}
+.member-login ul li { padding:0 0 2px 20px; height:25px; border:0; vertical-align:bottom; }
+.member-login ul li span { border:0; }
+.member-login ul li.button { padding:16px 0 0 9px; }
+.member-login ul li.register { padding:3px 0 0 32px }
+.login-success { padding:10px 5px 5px 8px; width:150px; height:132px; background-color:#FFF; }
+.login-success p { line-height:25px; }
+.index-ads-up { left:470px; top:425px; width:710px; height:30px; }
+.index-ads { left:470px; top:460px; width:710px; height:780px; }
+.demod { left:1010px; top:450px; width:169px; height:237px; overflow:hidden; }
+.demod ul li { list-style:none; height:25px; line-height:25px; overflow:hidden; }
+.ques { left:1010px; top:1090px; width:169px; height:180px; overflow:hidden; }
+.ques ul li { list-style:none; height:25px; line-height:25px; overflow:hidden; }
+.help { left:253px; top:1090px; width:169px; height:180px; overflow:hidden; }
+.help ul li { list-style:none; height:25px; line-height:25px; overflow:hidden; }
+.menu { left:575px; top:603px; width:346px; height:35px; }
+.notice { left:471px; top:655px; width:495px; height:151px; overflow:hidden }
+.contact { left:297px; top:964px; width:166px; height:106px; }
+.contact li { height:30px; line-height:30px; padding-left:35px; }
+.jf { left:490px; top:865px; width:493px; height:142px;  }
+.jf tr td { height:23px; }
+.hotgames { left:1015px; top:842px; width:172px; height:179px; overflow:hidden }
+.hotgames p { padding-top:5px; }
+.footer { left:246px;top:1362px; width:945px; height:107px;
+}
+.footer-link { height:30px; 
+line-height:20px; text-align:center; padding-top:2px
+}
+.footer-title { height:20px; line-height:20px; text-align:center; padding-top:2px }
+.copyright { text-align:center; padding-top:2px; color:#000000; }
+.lunpan { left:994px; top:706px; width:201px; height:64px; }
+.getmoney { left:240px; top:644px; width:177px; height:134px;}
+a.play, a.stop{ width:42px; height:42px; top:150px; right:0px; position: fixed; z-index:100000000; background:url(/images/music.png) no-repeat 0 0; }
+a.play{ background-position:-42px 0; }
+a.play:hover{ background-position:-42px -42px; }
+a.stop{ background-position:0 0; } 
+a.stop:hover{ background-position:0 -42px; }

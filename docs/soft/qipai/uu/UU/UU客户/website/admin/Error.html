@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>系统错误</title>
+    <link href="../Style/Base.css" rel="stylesheet" type="text/css" />
+    <SCRIPT language=javascript>
+        function go()
+        {
+         window.history.go(-1);
+        }
+        setTimeout("go()",5000);
+</SCRIPT>
+</head>
+<body>
+    <fieldset class="Error">
+        <legend>系统提示：</legend>
+            <div class="ErrorNote">系统因不可抗拒的原因停止运行，请返回重试或直接联系程序技术人员，带来不便，敬请谅解。</div>
+            <hr />
+            <div style="float:left; margin-left:5px;"><a href="M_SysLogList.aspx">查看日志</a></div>
+            <div style="float:right; margin-right:5px;"><a href="javascript:window.history.go(-1)">5秒后自动返回,或点击返回...</a></div>
+        </fieldset>
+</body>
+</html>
