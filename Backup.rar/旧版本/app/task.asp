@@ -1,0 +1,1 @@
+<form action="tasklist.asp?sta=0">УмТыЃК<input name=u><input name=sta value=0 type="hidden"><br><input type=submit></input></br></form>
