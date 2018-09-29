@@ -1,0 +1,617 @@
+body { font: 12px/1.5em Helvetica, Verdana, sans-serif; color: #686868; } 		/* 12px/18px */
+h1, h2, h3, h4, h5, h6 { margin: 0; color: #815e13; }
+
+h1 { font-size: 2em; line-height: .75em; margin-bottom: .75em; color: #4c3400; } 					/* 24px/12px/18px */
+h2 { font-size: 1.666em; line-height: .9em; margin-bottom: 1em; font-weight: normal; } 		/* 20px/18px/18px */
+h3 { font-size: 1.333em; line-height: 1.125em; margin-bottom: 1.3333em; } 							/* 16px/18px/18px */
+h4 { font-size: 1.1666em; line-height: 1.5em; margin: 0; } 	
+h5 { font-size: 1em; line-height: 1.5em; margin: 0; }												/* 12px/18px/0px */
+
+p { font: 1em; line-height: 1.5em; margin: 0em 0em 1.5em; }									/* 12px/6px/18px */
+p a { font-weight: bold; }
+
+a { color: #ed8516; font-weight: bold; }
+a:hover { color: #28737b; }
+a img { border: none; }
+
+em { font-style: italic; }
+
+ul, ol { line-height: 1.5em; margin: 0 0 1.5em; padding: 0; list-style: none; } /* 12px/18px/18px */
+ul {  }
+ul li { background-position: 0px 5px; padding: 0; }
+
+dl { line-height: 1.5em; margin: 0 0 1.5em;  }
+dt { font-weight: bold; margin-bottom: .2em; color: #4B4545; }
+dd { margin-left: 2em; margin-bottom: 2em; }
+
+fieldset { border: none; padding: 0; }
+form { padding: 0; margin: 0; }
+
+
+
+.hide { display: none; }
+.clear { clear: both; }
+
+ol li.number1, ol li.number2, ol li.number3 { margin-bottom: .5em; font-size: 1.1em; }  
+ol li.number1 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_number1.gif") no-repeat left .1em; padding-left: 25px; }
+ol li.number2 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_number2.gif") no-repeat left .1em; padding-left: 25px; }
+ol li.number3 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_number3.gif") no-repeat left .1em; padding-left: 25px; }
+
+/* @end */
+
+/* @end */
+
+/* @group Shell */
+
+body { margin: 0; padding: 0; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_background.gif"); }
+body #www_TML_cn_bod { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_background2.gif") repeat-x; }
+#page { width: 968px; margin: 0 auto; }
+
+#header { min-height: 127px; margin: 0; position: relative; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_logo.gif") no-repeat left top; }
+#header h1 { position: absolute; left: 28px; top: 18px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_logo.gif") no-repeat; width: 215px; height: 90px; text-indent: -9999em; overflow: hidden; }
+#header h1 a { display: block; height: 90px; text-indent: -9999em; overflow: hidden; }
+#header #nav { position: absolute; top: 46px; right: 4px;  }
+#header #nav ul { width: 498px; height: 78px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_navigation.gif") no-repeat; }
+#header #nav li { position: absolute; top: 0; margin-right: 18px; text-indent: -9999em; overflow: hidden; }
+#header #nav li a { display: block; height: 78px; }
+#header #nav li a:hover, #header #nav li.active a { background-image: url(http://tml.cn/new/soft/game/euqq5/web/images/g_navigation.gif); background-repeat: no-repeat; }
+
+#header #nav #how 		{ width: 115px; left: 0px; }
+#header #nav #tour 		{ width: 90px;  left: 115px; }
+#header #nav #games 	{ width: 93px;  left: 205px; }
+#header #nav #faq 		{ width: 88px;  left: 298px; }
+#header #nav #signup 	{ width: 112px; left: 389px; }
+
+#header #nav #how a		{ background-position: 0px -78px; }
+#header #nav #tour a	{ background-position: -115px -78px; }
+#header #nav #games a 	{ background-position: -205px -78px; }
+#header #nav #faq a		{ background-position: -298px -78px; }
+#header #nav #signup a	{ background-position: -386px -78px; }
+
+#header #hlogin { position: absolute; top: 10px; right: 0; color: #28737b; font-weight: bold; }
+#header #hlogin a { color: #779022; }
+
+#content { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_pagebackground.gif") repeat-y left 3px; padding-top: 33px; border: 0px solid red; }
+#content #title { text-indent: -9999em; overflow: hidden; height: 20px; margin-bottom: 16px; background-repeat: no-repeat; }
+#content #sub { height: 20px; background-repeat: no-repeat; text-indent: -9999em; overflow: hidden; margin-bottom: 60px; }
+#content #www_TML_cn_content { padding: 0 30px 50px 30px; }
+
+#footer { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_footerback_blur.gif") repeat-x center 60px; }
+#footer .www_TML_cn_page { width: 998px; margin: 0 auto; position: relative; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_footer_blur.gif") no-repeat; height: 164px;left:15px; padding:  0;  }
+
+#footer #foot_nav { margin-top: 90px; }
+#footer #foot_nav a { color: #c89936; padding: 3px;}
+#footer #foot_nav a:hover { background: #ed8516; color: #fff }
+#footer #foot_nav ul { margin: 0 0 6px; }
+#footer #foot_nav li { display: inline; margin: 0 5px 0 0; background: #493101;  }
+#footer #foot_nav li a { text-decoration: none; text-transform: uppercase; font-size: .9em; }
+
+#footer #legal { /* position: absolute; bottom: 15px; right: 29px; */ text-align: center; color: #c89936; padding-top:2px; margin: 0; }
+
+#footer #utility ul { position: absolute; bottom: -2px; left: 29px; }
+#footer #utility ul li { display: inline; margin: 0 8px 0 0; font-size: .9em; }
+#footer #utility ul li a:hover { color: #fff; }
+
+#footer #www_TML_cn {
+	position: absolute;
+	bottom: 50px;
+	right: 23px;
+	border: 0px solid red;
+	;
+	width: 320px;
+	height: 22px;
+}
+#footer #www_TML_cn ul { width: 313px; height: 20px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_properties.gif") no-repeat; margin: 0; padding: 0; }
+#footer #www_TML_cn li { position: absolute; top: 0; left: 0; }
+#footer #www_TML_cn li a { display: block; text-indent: -9999em; overflow: hidden; height: 20px; }
+#footer #www_TML_cn li a:hover { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/g_properties.gif"); background-repeat: no-repeat; }
+
+#footer #www_TML_cn li#mm { left: 0; width: 108px; }
+#footer #www_TML_cn li#mb { left: 123px; width: 85px; }
+#footer #www_TML_cn li#ma { left: 223px; width: 90px; }
+
+#footer #www_TML_cn li#mm a { background-position: -0 -20px; }
+#footer #www_TML_cn li#mb a { background-position: -123px -20px; }
+#footer #www_TML_cn li#ma a { background-position: -223px -20px; }
+
+ 
+.jqmWindow {
+    display: none;    
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    
+ 
+    
+}
+
+.jqmWindow .content { 
+	background-color: #000;
+    color: #fff;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.jqmOverlay { background-color: #fff; }
+
+* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;
+	width: expression(this.parentNode.offsetWidth+'px');
+	height: expression(this.parentNode.offsetHeight+'px');
+}
+
+* html .jqmWindow {
+     position: absolute;
+     top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+
+
+.b-send { display: block; width: 59px; height: 26px; background: transparent url("http://tml.cn/new/soft/game/euqq5/web/images/b_send.gif") no-repeat center top; border: none; }
+input.b-send { display: block; border: none !important; padding: 50px 0 0 0; margin: 0; cursor: pointer; }
+
+.b-save { display: block; width: 59px; height: 26px; background: transparent url("http://tml.cn/new/soft/game/euqq5/web/images/b_save.gif") no-repeat center top; border: none; }
+input.b-save { display: block; border: none !important; padding: 50px 0 0 0; margin: 0; cursor: pointer; }
+
+.cancel, a.cancel { line-height: 25px; }
+.cancel a, a.cancel { color: #e63f1e; font-weight: bold; padding: 2px 3px; }
+.cancel a:hover, a.cancel:hover { background-color: #e63f1e; color: #fff; text-decoration: none; }
+
+
+.error-panel,
+.success-panel,
+.warning-panel { 
+	border-bottom: 2px solid; border-top: 2px solid;
+	margin: 1em 0; padding: 1em 20px; font-size: .9em; font-weight: bold;
+	min-height: 23px;
+}
+
+.error-panel,
+.success-panel,
+.warning-panel { 
+	padding-left: 55px;	
+	background-position: 8px 8px;
+	background-repeat: no-repeat;
+}
+
+.error-panel h2,
+.success-panel h2,
+.warning-panel h2 { font-size: 1.5em; font-weight: bold; margin-bottom: .2em; }
+
+.error-panel ul,
+.success-panel ul,
+.warning-panel ul { margin: 0; padding: 0; }
+
+.error-panel p,
+.success-panel p,
+.warning-panel p { margin: 0; padding: 0; }
+
+.error-panel ul li,
+.success-panel ul li,
+.message-panel ul li { background-image: none; padding: 0; margin-bottom: .2em; }
+
+
+
+.error-panel {
+	background-image: url(http://tml.cn/new/soft/game/euqq5/web/images/g_warning_symbol2.gif); 
+	background-color: #fdedeb;	
+	color: #eb5441;
+	border-color: #f4aea6;	
+}
+.error-panel h2 { color: #DF2020;  }
+.error-panel .message { display: block; color: #4B4545; }
+
+.success-panel {
+	background-image: url(http://tml.cn/new/soft/game/euqq5/web/images/g_success_symbol2.gif);
+	background-color: #f6fbea;
+	color: #6d8937;	
+	border-color: #bcce99;
+}
+.success-panel ul { margin: 0px; }
+.success-panel h2 { color: #779022; }
+.success-panel .title { display: block; font-size: 1.2em; font-weight: bold; color: #49812a; margin-bottom: .2em; }
+
+.warning-panel { background-color: #fffacd; border-color: #dcd382;  }
+.warning-panel p { color: #8e8532; }
+
+/* @end */
+
+label { font-weight: bold; }
+fieldset { border: none; margin: 0; padding: 0; position: relative; margin: 0 0 0px 0; border-bottom: none; }
+fieldset label { display: block; float: left; text-align: left; padding: 0 10px 0 0; width: 120px; font-weight: bold; font-size: 90%; color: #71451e; margin: 5px 0 0 0; }
+label em { color: #DF2020 !important; font-weight: bold; font-size: 1em; margin-right: 5px; background: none; }
+
+fieldset .field { margin: 0 0 5px; padding: .8em 0 0em; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x top left;  }
+fieldset.buttons { margin-top: 0em; padding: 10px 0 0 130px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x top left;  }
+fieldset.buttons p.required { margin: 10px 0 10px; color: #DF2020; display: block; }
+
+fieldset p { font-size: .9em; margin: 0 0 0 130px; }
+fieldset .contextual { font-size: .8em; }
+
+input.textbox, textarea { border: 2px solid #dbccb6; font-size: .95em; padding: .4em .4em; margin-top: .3em; font-weight: bold; color: #5c5d5f; width: 300px; }
+input.textbox:focus, textarea:focus, 
+input.textbox:active, textarea:active { background: #e7fafc url(http://tml.cn/new/soft/game/euqq5/web/images/g_input_peekaboo.gif) no-repeat right bottom; border: 2px solid #91eaf2; color: #323439; }
+textarea { font-size: 1.1em; font-family: sans-serif; }
+
+
+
+.shadow .wrap1, .shadow .wrap2, .shadow .wrap3 {
+  display:inline-table;
+  /* \*/display:block;/**/
+  }
+.shadow .wrap1 { float:left; background:url("http://tml.cn/new/soft/game/euqq5/web/images/g_shadow.gif") right bottom no-repeat; }
+.shadow .wrap2 { background:url("http://tml.cn/new/soft/game/euqq5/web/images/g_shadow_cbl.gif") left bottom no-repeat; }
+.shadow .wrap3 { padding:0 4px 4px 0; background:url(http://tml.cn/new/soft/game/euqq5/web/images/g_shadow_ctr.gif) right top no-repeat; }
+
+
+#home #www_TML_cn_content { padding-bottom: 0; }
+
+#home #banner { margin: 0 0 15px 0; }
+#home #content { padding-top: 10px !important }
+
+#home #tourdiv { width: 424px; margin-right: 20px; float: left; }
+#home #tourdiv h2 { width: 360px; height: 17px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_h_money.gif") no-repeat; text-indent: -9999em; overflow: hidden; margin: 0 0 15px 0; }
+#home #tourdiv a#b_signup { width: 182px; height: 42px; display: block; background: url("http://tml.cn/new/soft/game/euqq5/web/images/b_signup.gif") no-repeat; text-indent: -9999em; overflow: hidden; float: left; margin-right: 5px; }
+#home #tourdiv a#b_tour { width: 142px; height: 32px; display: block; background: url("http://tml.cn/new/soft/game/euqq5/web/images/b_tour.gif") no-repeat; text-indent: -9999em; overflow: hidden;  margin: 20px 0 0 0; }
+#home #tourdiv p.footnote { margin-top: 3px; font-size: .9em; }
+#home #tourdiv #network { margin-top: 25px; }
+#home #tourdiv #network h2 { width: 360px; height: 17px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_h_advertise.gif") no-repeat; text-indent: -9999em; overflow: hidden; margin: 0 0 10px 0; }
+
+#home #examples { width: 440px; padding: 25px 20px 0 0px; float: left; height: 225px; position: relative; margin-bottom: 18px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_464_b.gif") no-repeat left bottom;  }
+#home #examples h2 { width: 240px; height: 32px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_h_examplead.png") no-repeat; text-indent: -9999em; overflow: hidden; position: absolute; top: 0; left: 20px; }
+#home #examples ul { width: 440px;  padding: 20px 0 0 20px; margin: -3px 0 0 0; background: #edfac0 url("http://tml.cn/new/soft/game/euqq5/web/images/g_464_t.gif") no-repeat left top; min-height: 14.1em;}
+#home #examples li { width: 129px; float: left; margin-right: 16px;  }
+#home #examples li h4 { margin: 0 0 .3em; }
+#home #examples li a { text-decoration: none; color: #815e13; font-size: 1.1666em !important; }
+#home #examples li p { font-size: 1em; line-height: 1.3em; margin: 0 0 0; }
+#home #examples .advertisers { margin: 0px 0 0px 20px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x; font-size: .9em; padding-top: 7px;}
+#home #examples .advertisers strong { color: #815e13; }
+
+#home #credibility { margin: 0px 0 0; padding-top: 18px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x left top; }
+
+#home #testimonials { width: 444px; float: left; margin-right: 20px; }
+#home #testimonials h2 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_h_devs.gif") no-repeat; width: 235px; height: 17px; text-indent: -9999em; overflow: hidden; margin-bottom: 17px; }
+#home #testimonials li { clear: left; margin-bottom: 1em; padding-top: 1px; }
+#home #testimonials li h3 { color: #779022; margin: 6px 0 0px 75px; }
+#home #testimonials li h3 span { font-weight: normal; font-size: .9em; }
+#home #testimonials li img { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_thumbbubble2.gif") no-repeat; padding: 5px 17px 5px 9px; float: left; }
+#home #testimonials li p { margin: 5px 0 0 75px; }
+
+#home #studios { width: 444px; float: left; }
+#home #studios h2 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_h_studios.gif") no-repeat; width: 304px; height: 17px; text-indent: -9999em; overflow: hidden; margin-bottom: 17px; }
+#home #studios img { border: 0px; }
+
+#home #contest { margin: 24px 0 0; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x; padding-top: 9px;}
+#home #contest p { text-indent: -9999em; overflow: hidden; }
+#home #contest a { display: block; width: 337px; height: 50px; text-indent: -9999em; overflow: hidden; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_contest.gif") no-repeat; }
+
+
+#benefits #title { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_b_benefits.gif") no-repeat; margin-bottom: 4px; }
+#benefits #banner { height: 247px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/i_b_banner.jpg") no-repeat; text-indent: -9999em; overflow: hidden;  }
+
+#benefits #keypoints { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x left bottom; margin: 18px 0; padding-bottom: 18px; }
+#benefits #keypoints ul { margin: 0; }
+#benefits #keypoints ul li { float: left; width: 212px; margin-right: 20px; }
+#benefits #keypoints ul li p { margin: 0; }
+#benefits #keypoints ul li.last { margin-right: 0; }
+#benefits #keypoints h3 { text-indent: -9999em; overflow: hidden; margin: 0 0 10px 0; }
+
+#benefits #keypoints ul li#easy h3 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_b_easy.gif") no-repeat; }
+#benefits #keypoints ul li#control h3 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_b_control.gif") no-repeat; }
+#benefits #keypoints ul li#flash h3 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_b_plays.gif") no-repeat; }
+#benefits #keypoints ul li#contracts h3 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_b_contracts.gif") no-repeat; }
+
+#benefits #extras { float: left; width: 444px; margin: 0 20px 0 0; }
+#benefits #extras h2 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_b_extras.gif") no-repeat; height: 19px; margin-bottom: 17px; text-indent: -9999em; overflow: hidden; }
+#benefits #extras ul li { width: 212px; margin-right: 20px; float: left; }
+#benefits #extras ul li.alt { margin-right: 0 !important; }
+
+#benefits #signupdiv { float: left; width: 444px; }
+#benefits #signupdiv h2 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_b_started.gif") no-repeat; height: 19px; margin-bottom: 20px; text-indent: -9999em; overflow: hidden; }
+#benefits #signupdiv a.signup { display: block; width: 175px; height: 40px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/b_signup.gif") no-repeat; text-indent: -9999em; overflow: hidden;  float: left; }
+#benefits #signupdiv a.tour { display: block; width: 175px; height: 40px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/b_taketour2.gif") no-repeat; text-indent: -9999em; overflow: hidden;  float: left; margin-left: 20px; }
+#benefits #signupdiv p { clear: left; padding: 5px 0 0 0px !important; color: #838383; }
+
+#benefits #testimonials { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x top left; padding-top: 18px; }
+#benefits #testimonials li { width: 444px; float: left; margin-right: 20px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_thumbbubble.gif") no-repeat top left;}
+#benefits #testimonials li.last { margin-right: 0px !important; }
+#benefits #testimonials li img { float: left; margin: 8px 0 10px 12px; }
+#benefits #testimonials li h3 { margin-left: 125px; margin-bottom: .3em; color: #779022; }
+#benefits #testimonials li h3 span { font-weight: normal; font-size: .9em; }
+#benefits #testimonials li p { margin-left: 125px; font-size: 1em; padding-right: 10px; }
+
+
+
+#tourpage {  }
+#tourpage #title { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_t_tour.gif") no-repeat; width: 142px; height: 18px; margin-bottom: 50px; }
+
+#tourpage #tour_nav { position: relative; padding-top: 4px; }
+
+#tourpage #tour_nav h2 { text-indent: -9999em; overflow: hidden; }
+#tourpage #tour_nav h2.dash { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_t_dashboard.gif") no-repeat; width: 99px; height: 19px; }
+#tourpage #tour_nav h2.setup { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_t_setup.gif") no-repeat; width: 167px; height: 19px; }
+#tourpage #tour_nav h2.ad { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_t_ad.gif") no-repeat; width: 167px; height: 19px; }
+#tourpage #tour_nav h2.dist { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_t_dist.gif") no-repeat; width: 167px; height: 19px; }
+
+#tourpage #tour_nav li a#l_dash { display: block; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_tn_dash.gif") no-repeat; text-indent: -9999em; overflow: hidden; height: 12px; width: 73px; }
+#tourpage #tour_nav li a#l_setup { display: block; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_tn_setup.gif") no-repeat; text-indent: -9999em; overflow: hidden; height: 14px; width: 121px; }
+#tourpage #tour_nav li a#l_ad { display: block; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_tn_ad.gif") no-repeat; text-indent: -9999em; overflow: hidden; height: 14px; width: 75px; }
+#tourpage #tour_nav li a#l_dist { display: block; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_tn_dist.gif") no-repeat; text-indent: -9999em; overflow: hidden; height: 12px; width: 118px; }
+#tourpage #tour_nav ul li a:hover, #tourpage #tour_nav li.active a { background-position: left -14px !important; }
+#tourpage #tour_nav li a#l_dist:hover, #tourpage #tour_nav li a#l_dash:hover, #tourpage #tour_nav li.active a#l_dash, #tourpage #tour_nav li.active a#l_dist { background-position: left -12px !important; }
+
+#tourpage #tour_nav ul { position: absolute; right: 0; top: 0;  width: 538px; }
+#tourpage #tour_nav ul li { float: left; margin-right: 20px; padding-top: 6px }
+#tourpage #tour_nav .prev, #tourpage #tour_nav .next { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_lr_arrows.gif") no-repeat; width: 25px; height: 24px; padding-top: 0;}
+#tourpage #tour_nav .next { background-position: -25px 0; margin-right: 0; }
+
+#tourpage #tour_nav .prev a, #tourpage #tour_nav .next a { display: block; height: 24px; text-indent: -9999em; overflow: hidden; }
+#tourpage #tour_nav .prev a.inactive { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_lr_arrows.gif") no-repeat 0 -24px; }
+#tourpage #tour_nav .next a.inactive { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_lr_arrows.gif") no-repeat -25px -24px; }
+#tourpage #tour_nav .prev a.inactive:hover { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_lr_arrows.gif") no-repeat 0 -24px !important; }
+#tourpage #tour_nav .next a.inactive:hover { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_lr_arrows.gif") no-repeat -25px -24px !important; }
+
+
+#tourpage #tour_content { position: relative; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x; padding-top: 36px; }
+
+
+#faqpage #title { width: 174px; height: 22px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_faq.gif") no-repeat; text-indent: -9999em; overflow: hidden; margin-bottom: 6px; }
+#faqpage #sub { width: 194px; height: 20px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_faq_what.gif") no-repeat; text-indent: -9999em; overflow: hidden; margin-bottom: 60px; }
+
+#faqpage #main { width: 599px; margin-right: 20px; float: left; }
+
+#faqpage #main ul {  }
+#faqpage #main ul li h3 { margin-bottom: .5em; }
+#faqpage #main ul.col1 { width: 289px; float: left; margin-right: 20px; }
+#faqpage #main ul.col2 { margin-left: 309px; }
+
+#faqpage #main ul li li { float: none; width: auto; margin-right: 0; }
+#faqpage #main ul li li a { color: #686868; font-weight: normal; }
+
+
+#faqpage #side { width: 289px; float: left; }
+#faqpage #side #hot_topics { background: #e8faac url("http://tml.cn/new/soft/game/euqq5/web/images/g_289_boxt.gif") no-repeat left top; padding: 25px 0 0 0px; }
+#faqpage #side #hot_topics h3 { width: 81px; height: 15px; margin: 0 0 10px 20px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_f_hottopics.gif") no-repeat; text-indent: -9999em; overflow: hidden; }
+#faqpage #side #hot_topics h4 { margin-left: 20px; color: #686868; }
+#faqpage #side #hot_topics p { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_289_boxb.gif") no-repeat left bottom; padding-bottom: 25px; padding-left: 20px; margin: 0; }
+
+#faqpage #side #email { margin-left: 17px; }
+#faqpage #side #email h3 { width: 162px; height: 16px; margin-bottom: 10px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_h_quest.gif") no-repeat; text-indent: -9999em; overflow: hidden; }
+
+#faqpage #questions { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x; padding-top: 18px; }
+#faqpage #questions h2 { color: #779022; margin-bottom: .6em;}
+#faqpage #questions p, #faqpage #questions h4 { width: 599px; }
+#faqpage #questions .top { margin-left: 20px; font-size: .6em; font-weight: normal; }
+
+#faqpage #side #hot_topics {  }
+#faqpage #side #hot_topics h3 { width: 81px; height: 15px; margin: 0 0 10px 20px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_f_hottopics.gif") no-repeat; text-indent: -9999em; overflow: hidden; }
+#faqpage #side #hot_topics h4 { margin-left: 20px; color: #686868; }
+
+
+
+#signup .error-panel { margin: -30px 0 50px 0; }
+#signup #alias_taken, #signup #email_taken { color: #DF2020; margin-left: 130px; font-size: .9em; }
+#signup #alias_checking, #signup #email_checking { margin-left: 130px; font-size: .9em; color: #7cab17; font-weight: bold; }
+
+#signup #title { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_s_signup.gif"); height: 23px; margin-bottom: 7px; }
+#signup #sub { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_s_fast.gif"); }
+
+#signup #main { width: 570px; float: left; } /* were fudging the column width a bit here (599px) */
+#signup #main h4 { margin-bottom: 5px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_mochipass.gif") no-repeat; padding-left: 35px; height: 1.5em;}
+#signup #main .field { width: 464px; }
+#signup #main .textbox { width: 318px }
+
+#signup #main div#agree { border-top: 2px solid #fff; padding: 6px 10px 0 0; margin: 5px 0 20px 132px; font-size: 1em; line-height: 1.2em; background: #fff;  }
+#signup #main form { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_s_login.gif") no-repeat 474px 0em; }
+#signup #main .b-send { padding-top: 30px !important; }
+
+#signup #side { width: 271px; float: right; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_s_mochipassback.gif") no-repeat top right; padding: 20px 20px 0 24px; position: relative; min-height: 260px; }
+#signup #side h2 { margin-bottom: 5px; width: 165px; height: 15px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_whatmochipass.gif") no-repeat; text-indent: -9999em; overflow: hidden; }
+#signup #side #dude { width: 68px; height: 64px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_s_mochipasslogo.gif") no-repeat; position: absolute; top: -35px; right: -4px; }
+#signup #side img { position: relative; left: -10px; margin: 0 0 17px 0; }
+
+
+
+
+#login #title { background: url(http://tml.cn/new/soft/game/euqq5/web/images/h_l_login.gif) no-repeat; height: 23px; margin-bottom: 5px;  }
+#login #sub { background: url(http://tml.cn/new/soft/game/euqq5/web/images/h_l_howmuch.gif) no-repeat; height: 20px; margin-bottom: 41px; }
+
+#login form { background: url(../http://tml.cn/new/soft/game/euqq5/web/images/web/g_brown_texture.jpg); padding: 20px; position: relative; }
+
+#login #main { float: left; }
+#login #side { float: right; width: 392px; padding-top: 60px; }
+#login #side h3 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_l_two.gif") no-repeat; width: 186px; height: 16px; text-indent: -9999em; overflow: hidden; margin-bottom: 8px; }
+
+
+#login #mochipass { width: 385px; float: left;  background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_mochipasstop.gif") no-repeat top left; padding-top: 131px; margin-top: 0px; }
+#login #mochipass .www_TML_cn_page { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_mochipassbot.gif") no-repeat bottom left; padding-bottom: 20px; position: relative; }
+#login #mochipass form { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_mochipassmiddle.gif") repeat-y;  margin: 0 0 0 0; padding: 0 0 0 50px; }
+#login #mochipass form div.fieldset { position: relative; top: -15px; }
+#login #mochipass label { display: block; font-weight: normal; font-size: .9em; }
+#login #mochipass #email { margin-bottom: 5px; }
+#login #mochipass #password { float: left; margin-right: 5px; }
+#login #mochipass #b-login { width: 50px; background: url("http://tml.cn/new/soft/game/euqq5/web/images/b_login.gif") no-repeat; display: block; text-indent: -9999em; overflow: hidden; border: none; }
+#login #mochipass #rememberme { font-size: .8em; font-weight: normal; margin: 2px 0 0 0;}
+#login #mochipass input.textbox { display: block; width: 180px; margin-bottom: 4px; }
+#login #mochipass .actions { margin: 5px 0 0 52px; }
+#login #mochipass #password { position: relative; }
+
+
+
+#games #title { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_g_games.gif"); margin-bottom: 11px; }
+#games #sub { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_g_action.gif"); }
+
+#games #main { width: auto; float: left; margin-right: 20px; }
+#games #side { width: 289px; float: left; }
+
+#games #main h2 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/h_g_taste.gif") no-repeat; text-indent: -9999em; overflow: hidden; }
+
+#games #main ul { clear: left; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x; height: 1em; padding-top: 18px;}
+#games #main ul li { margin: 0 20px 10px 0; width: 269px; float: left; }
+#games #main ul li img { float: left; width: 50px; margin-right: 10px;}
+#games #main ul li h3 { margin: 0 0 .5em 60px; font-size: 1em; line-height: 1em; }
+#games #main ul li p { margin: 0 0 0 60px; font-size: 1em; line-height: 1.2em;}
+
+
+
+#forgot #title { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_fp_retrieve.gif"); margin-bottom: 9px; }
+#forgot #sub { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_fp_sticky.gif"); margin-bottom: 41px; }
+#forgot .buttons { margin-top: 10px; }
+#forgot .b-send { float: left;  margin-right: 10px;}
+#forgot p { width: 599px; }
+
+
+
+#tos ol { list-style: decimal; margin-left: 20px; }
+#tos ol li { margin-bottom: 18px; }
+#tos ol li ul li { list-style: disc; margin-left: 20px; }
+
+
+
+#advertisers #title { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_a_network.gif"); margin-bottom: 9px; }
+#advertisers #sub { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_a_worlds.gif"); margin-bottom: 9px; margin-bottom: 41px; }
+
+#advertisers #main { width: 599px; float: left; }
+#advertisers #side { float: left; margin-left: 40px; }
+#advertisers #main h3 { margin-bottom: .5em; }
+#advertisers .sources { font-size: .9em; }
+#advertisers ol { list-style: decimal; margin-left: 20px; }
+#advertisers ol li { margin-bottom: 18px; }
+#advertisers ol li ul li { list-style: disc; margin-left: 20px; }
+
+
+
+#contact #title { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_c_contact.gif"); margin-bottom: 9px; }
+#contact #sub { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_c_talk.gif"); margin-bottom: 9px; margin-bottom: 41px; }
+#contact #main { width: 599px; float: none; }
+#contact #main h3 { margin-bottom: .5em; }
+
+
+#demo { background: #fff; }
+#demo .header { background: #ffeccd; border: 1px solid #ffeccd; border-top: 3px solid #fff; height: 40px; padding-bottom: 20px; }
+
+#demo .b-small { margin: 10px 0 0 20px; font-weight: bold; line-height: 33px; padding-left: 11px; background: url(http://tml.cn/new/soft/game/euqq5/web/images/game/game_back.gif) no-repeat !important; height: 37px; width: 144px; font-size: 95%; }
+#demo .b-small a { color: #fff; text-decoration: none; padding: 10px; font-size: 1.1em; }
+#demo table { margin-top: 20px; }
+
+
+
+#contest #contest_nav { margin: 0 0 20px; }
+
+#content #main { min-height: 500px; }
+
+#contest #banner { background: url("http://tml.cn/new/soft/game/euqq5/web/images/i_contestbanner.jpg") no-repeat; height: 234px; margin: 0 0 18px;}
+
+#contest .section { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x; padding-top: 9px; margin-top: 27px; }
+#contest .section p { width: 600px;  }
+
+#contest #main ol li p { margin-bottom: 9px !important; }
+
+#contest #main ul { margin: 0 0 18px 18px; }
+#contest #main ul li { background: url("http://tml.cn/new/soft/game/euqq5/web/images/icon_smallarrow.gif") no-repeat left center; padding: 0 0 0 20px; margin: 0 !important; position: relative;}
+#content #main li a { font-size: 1.2em; }
+#content #main li p.short_desc { font-size: .9em; }
+#content #main li .more a { font-weight: normal; font-size: 1em; margin-left: 5px; }
+#contest #main h3 { margin: 0 0 9px; }
+
+
+
+#contest.jan #main h2 { text-indent: -9999em; overflow: hidden; height: 19px; background-repeat: no-repeat; margin: 0 0 10px; }
+
+#contest.jan #contest_nav .tabs { height: 75px; }
+#contest.jan #contest_nav li { height: 75px; display: block; float: left; margin-right: 0; background-position: 0 0; }
+#contest.jan #contest_nav li a { display: block; height: 75px; text-indent: -9999em; overflow: hidden; outline: none; }
+#contest.jan #contest_nav li.active,
+#contest.jan #contest_nav li a:hover { background-position: 0 -75px; }
+
+#contest.jan #contest_nav #nav_prizes, 
+#contest.jan #contest_nav #nav_prizes a:hover { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/nav_prizes.gif"); width: 152px; }
+#contest.jan #contest_nav #nav_enter, 
+#contest.jan #contest_nav #nav_enter a:hover { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/nav_enter.gif"); width: 192px; }
+#contest.jan #contest_nav #nav_judges, 
+#contest.jan #contest_nav #nav_judges a:hover { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/nav_judges.gif"); width: 152px; }
+#contest.jan #contest_nav #nav_sub,
+#contest.jan #contest_nav #nav_sub a:hover { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/nav_submission.gif"); width: 175px; }
+#contest.jan #contest_nav #nav_past,
+#contest.jan #contest_nav #nav_past a:hover { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/nav_past.gif"); width: 178px; }
+
+#contest.jan #h_win { background-image: url(http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/h_win.gif); }
+#contest.jan #h_guide { background-image: url(http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/h_guidelines.gif); }
+#contest.jan #h_enter { background-image: url(http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/h_enter.gif); }
+#contest.jan #h_sel { background-image: url(http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/h_selected.gif); }
+
+#contest.jan #h_sub { background-image: url(http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/h_submissions.gif); }
+#contest.jan #h_judges { background-image: url(http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/h_judges.gif); }
+#contest.jan #h_past { background-image: url(http://tml.cn/new/soft/game/euqq5/web/images/contest_jan08/h_past.gif); }
+
+#contest.jan #banner { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/i_contest_jan.jpg"); height: 344px; margin: -36px 0 36px;}
+
+#contest.jan .column_1 { float: left; width: 444px; margin-right: 20px;}
+#contest.jan .column_2 { float: left; width: 444px; }
+
+
+
+#contest.jan #talent { clear: left; }
+
+#contest.jan #judges ul { margin: 0; }
+#contest.jan #judges ul li { background: url(http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif) left bottom repeat-x; padding: 0 0 10px; position: relative; margin: 0 0 10px !important; }
+#contest.jan #judges ul li h3 { margin-bottom: 5px; }
+#contest.jan #judges ul li img { float: left; width: 143px; margin-right: 15px; }
+#contest.jan #judges ul li .bio { float: left; width: 600px; padding-top: 14px; }
+#contest.jan #judges ul li p { margin: 0; }
+
+/* @end */
+
+/* @group #contest.nov */
+
+#contest.nov #main { width: 589px; float: left; margin-right: 30px; }
+#contest.nov #side { width: 289px; float: left; }
+#contest.nov #banner { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/i_contest_nov.jpg"); }
+
+#contest.nov h2 { color: #28737b; margin-bottom: 9px; height: 19px; text-indent: -9999em; overflow: hidden; background-repeat: no-repeat; }
+
+#contest.nov #prizes h2 { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_ct_win.gif"); }
+#contest.nov #enter h2 { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_ct_how.gif"); }
+#contest.nov #winners h2 { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_ct_winners.gif"); }
+#contest.nov #additional h2 { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_ct_guide.gif"); }
+#contest.nov #rules h2 { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/h_ct_rules.gif"); }
+
+#contest.nov #additional, 
+#contest.nov #enter,
+#contest.nov #rules,
+#contest.nov #winners
+{ background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x; padding-top: 9px; margin-top: 27px; }
+
+#contest.nov #side #ds { background: url("http://tml.cn/new/soft/game/euqq5/web/images/i_ct_ds.jpg") no-repeat left top; padding: 25px 0 0 0px; margin-top: 2em; height: 271px; text-indent: -9999em; overflow: hidden;}
+#contest.nov #side #ds p { padding-bottom: 25px; padding-left: 20px; margin: 0; }
+
+#contest.nov #side #judges dl { font-size: 1em; }
+#contest.nov #side #judges dt a { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_selectarrow2_r.gif") no-repeat right center; padding-right: 10px;  }
+#contest.nov #side #judges dt a.active { background-image: url("http://tml.cn/new/soft/game/euqq5/web/images/g_selectarrow2_d.gif"); }
+#contest.nov #side #judges dt { margin: 0; }
+#contest.nov #side #judges dd { margin: 0; }
+
+
+#winners #main { width: auto; margin-top: 40px; }
+#winners #banner { background: url("http://tml.cn/new/soft/game/euqq5/web/images/i_contestbanner.jpg") no-repeat; height: 234px; margin: 0 0 18px;}
+
+#winners .game_list h2 { margin: 0 0 5px; }
+#winners .game_list ul { clear: left; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x; padding-top: 18px; }
+#winners .game_list ul li { margin: 0 20px 10px 0; width: 269px; float: left; }
+#winners .game_list ul li img { float: left; width: 50px; margin-right: 10px;}
+#winners .game_list ul li h3 { margin: 0 0 .5em 60px; font-size: 1em; line-height: 1em; }
+#winners .game_list ul li p { margin: 0 0 0 60px; font-size: 1em; line-height: 1.2em; }
+
+#winners #best h2,
+#winners #audience h2,
+#winners #referral h2 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_award.gif") no-repeat left center; padding-left: 25px; }
+
+#winners #best { width: 589px; }
+#winners #audience { width: 589px; }
+#winners #referral { width: 289px; float: right; }
+
+#winners #referral ul { margin-left: 25px !important; }
+#winners #referral ul li { background: url("http://tml.cn/new/soft/game/euqq5/web/images/icon_smallarrow.gif") no-repeat left center; padding: 0 0 0 20px; font-weight: bold; }
+
+
+
+#tos #content ul { margin-left: 20px; }
+#tos #content ul li { margin-bottom: 5px; }
