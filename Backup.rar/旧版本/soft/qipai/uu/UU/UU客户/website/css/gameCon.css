@@ -1,0 +1,1300 @@
+#left{
+	float:left;
+	width:230px;
+	}
+#login,#login_top{
+	width:228px;
+	}
+#login_top{
+	height:33px;
+	background:url(images/786index_13.gif);
+	border:solid #fff 1px;
+	border-bottom:none;
+	}
+#login_bg{
+	padding:0 5px;
+	width:218px;
+	height:180px;
+	background:url(images/786index_21.gif) repeat-x;
+	border:solid #fff 1px;
+	border-top:none;
+	}
+.login_white,.login_bottom{
+	width:217px;
+	}
+.login_white{
+	height:174px;
+	background:#fff;
+	}
+.login_white ul{
+	margin:0;
+	padding:10px 0 0 20px;
+	list-style:none;
+	}
+.login_white ul li{
+	clear:both;
+	padding:5px 0;
+	_padding:3px 0;
+	width:94%;
+	height:20px;
+	}
+.pwdForget
+{
+	padding:5px 0 5px 45px;
+	width:172px;
+	}
+.pwdForget a
+{
+	color:#1e62ab;
+	}
+.pwdForget a:hover
+{
+	color:Orange;
+	}
+#loginInfo{
+	padding:20px 0 0 18px;
+	line-height:1.8em;
+	}
+.login_word,.login_input,.checkCode{
+	float:left;
+	}
+.login_word{
+	padding-top:5px;
+	}
+.login_input input{
+	width:120px;
+	}
+.checkCode input{
+	width:50px;
+	}
+.checkPic {
+	float:left;
+	padding-left:5px;
+	}
+#login_btn{
+	clear:both;
+	padding-top:10px;
+	width:217px;
+	text-align:center;
+	}
+#login_btn a{
+	color:#39F;
+	}
+#login_btn a:hover{
+	color:#F90;
+	}
+.login_bottom{
+	padding-top:8px;
+	height:34px;
+	background:url(images/786index_30.gif) repeat-x;
+	text-align:center;
+	}
+.servImg
+{
+	margin-top:4px;
+	width:228px;
+	height:41px;
+	border:solid #fff 1px;
+	}
+#service_form{
+	width:206px;
+	height:272px;
+	background:url(images/service_bg.gif) repeat-y;
+	}
+#service_title{
+	width:206px;
+	height:188px;
+	background:url(images/service_top.jpg) no-repeat 0 0;
+	}
+#service_con
+{
+	width:206px;
+	height:84px;
+	background:url(images/service_btm.gif) no-repeat 100% 100%;
+	}
+#service_con ul
+{
+    margin:auto;padding-top:10px;
+    width:180px;
+    }
+#service_con ul li
+{
+    float:left;
+    width:90px;height:25px;
+    }
+#service_tImg
+{
+    margin:0 auto;
+    padding-top:6px;
+    width:156px;
+    }
+#serTelImg
+{
+    margin:0 auto;
+    padding-top:35px;
+    width:201px;
+}
+#qqBtn
+{
+    padding:10px 0 0 90px;
+}
+#service_con .service_word{
+	padding:0 8px 0 4px;
+	}
+#service_con .service_word a{
+	color:#069;
+	text-decoration:none;
+	}
+#service_con .service_word a:hover{
+	color:#F90;
+	text-decoration:underline;
+	}
+
+#right,#right_1,#right_2,#right_3,#right_4{
+	float:left;
+	margin:0 0 4px 4px;
+	width:766px;
+	}
+
+#right_pic{
+	height:260px;
+	width:764px;
+	border:solid #fff 1px;
+    }
+#main_pic{
+	float:left;
+	_margin-bottom:-4px;
+	width:517px;
+	height:260px;
+	}
+#notice_top,#notice_con{
+	width:247px;
+	}
+#notice_top{
+	float:left;
+	height:29px;
+	background:url(images/786index_17.gif) repeat-x;
+	}
+#notice_title,#right_recmdTitle{
+	float:left;
+	padding:6px 0 0 45px;	
+	width:100px;
+	height:23px;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	}
+#notice_title{
+	background:url(images/786index_18.gif) no-repeat 10px 0;
+	}
+.more_word,.titleBtn{
+	float:right;
+	padding:12px 0 0 17px;
+	width:61px;
+	height:17px;
+	background:url(images/786index_26.gif) no-repeat;
+	color:#2a89e1;
+	}
+.more_word a{
+	color:#2a89e1;
+	text-decoration:none;
+	}
+.more_word a:hover{
+	text-decoration:underline;
+	}
+#notice_con{
+	float:left;
+	height:231px;
+	background:#fff;
+	}
+#notice_con ul{
+	margin:0;
+	padding:10px 0 0 15px;
+	list-style:none;
+	}
+#notice_con ul li{
+	padding:2px 0;
+	width:94%;
+	height:16px;
+	border-bottom:dotted #666 1px;
+	}
+#notice_con .notice_cont{
+	float:left;
+	}
+#notice_con .notice_cond{
+	float:right;
+	}
+#notice_con a{
+	color:#333;
+	text-decoration:none;
+	}
+#notice_con a:hover{
+	color:#39F;
+	text-decoration:underline;
+	}
+#right_recmdTop,#right_gameRecommend{
+	width:764px;
+	}
+#right_recmdTop{
+	margin-top:4px;
+	height:29px;
+	background:url(images/786index_17.gif) repeat-x;
+	border:solid #fff 1px;
+	border-bottom:none;
+	}
+#right_recmdTitle{
+	background:url(images/786index_40.gif) no-repeat 10px 0;
+	}
+#right_gameRecommend{
+	padding-top:23px;
+	height:179px;
+	background:#fff;
+	border-left:solid #fff 1px;
+	border-right:solid #fff 1px;
+	}
+#RmdGameList{
+	float:left;
+	width:518px;
+	}
+.game_title{
+	padding-top:4px;
+	width:120px;
+	text-align:center;
+	}
+#RmdGameList ul{
+	margin:0;
+	margin-left:5px;
+	padding:0;
+	list-style:none;
+	}
+#RmdGameList ul li{
+	float:left;
+	margin:0 3px;
+	width:120px;
+	height:170px;
+	}
+#GameDlBtn{
+	float:left;
+	margin-left:10px;
+	width:222px;
+	line-height:5px;
+	}
+/*=====================download=====================*/
+#right_1{
+	padding:1px;
+	width:764px;
+	background:#fff;
+	}
+#download_pic{
+	width:762px;
+	height:257px;
+	}
+#dlListTitle
+{
+    margin-top:6px;
+	width:762px;
+	height:59px;
+	background:url(images/downTittle.gif) no-repeat;
+	}
+#dlListCon
+{
+    float:left;
+	margin:0 auto;padding:10px 0 0 35px;
+	width:550px;
+	
+	}
+#dlListCon .dlListBox
+{
+    float:left;
+	margin:5px 16px;
+	_margin:5px 12px;
+	width:200px;
+	height:180px;
+	overflow:hidden;
+	}
+#dlListCon .dlListTopBg{
+	padding:2px 0 0 40px;
+	width:273px;
+	height:23px;
+	background:url(../images/786Download_11.gif) no-repeat;
+	font-weight:bold;
+	}
+#dlListCon .dlListBox2
+{
+	width:200px;
+	height:180px;
+	border:solid #99ccff 1px;
+	background:#e3f0fd;
+	text-align:center;
+	}
+#dlListCon .dlListGamePic{
+	
+	
+	background:#cccc99;
+	}
+#dlListCon .dlListGamePic a
+{
+	display:block;
+	padding:4px;
+	width:171px;
+	height:98px;
+}
+#dlListCon .dlListGamePic a:hover
+{
+	background:#C93;
+	}
+#dlListCon .dlListIntro{
+	margin:0 auto;
+	width:80%;
+	height:100px;
+	overflow:hidden;
+	}
+#dlListCon .dlListIntro p{
+	margin:0;
+	padding:0;
+	text-indent:2em;
+	line-height:1.5em;
+	}
+#dlListCon .dlListBtn{
+    text-align:center;
+    }
+.dlListBox h3
+{
+    font-size:12px;
+    margin:0;padding:0;
+    }
+#dlListConBtm
+{
+    clear:both;
+    width:762px;height:11px;
+    background:url(images/download_09.gif) no-repeat;
+}
+
+/*=====================rank=====================*/
+#rankListFrame,#rankListBg,#chargeListFrame,#chargeListBg{
+	width:224px;
+	height:424px;
+	}
+#rankListFrame,#chargeListFrame{
+	padding:3px;
+	background:#ccc;
+	}
+#rankListBg,#chargeListBg{
+	width:222px;
+	height:422px;
+	background:#fff;
+	border:solid #999 1px;
+	}
+#rankTop,#chargeTop{
+	margin:1px;
+	width:220px;
+	height:32px;
+	background:url(images/786Rank_06.gif);
+	border-bottom:solid #999 1px;
+	}
+.rankType1,.rankType2
+{
+	padding:5px 0;
+	text-indent:2em;
+	border-bottom:solid 1px #ccc;
+	color:#366fa7;
+	}
+
+.rankType2
+{
+	background:#eee;
+	}
+.rankType1 a,.rankType2 a
+{
+	color:#366fa7;
+	text-decoration:none;
+	}
+.rankType1 a:hover,.rankType2 a:hover
+{
+	color:Orange;
+	}
+	
+
+
+
+#right_2{
+	margin:0 0 4px 0;
+	padding:3px;
+	width:760px;
+	background:#ccc;
+	}
+#right_bg
+{
+    padding-bottom:20px;
+	width:757px;
+	min-height:500px;
+	background:#fff;
+	border:solid #999 1px;
+	}
+#rankGameTitle{
+	padding:10px 0;
+	text-align:center;
+	}
+._16Green{
+	font-size:16px;
+	font-weight:bold;
+	color:#336699;
+	}
+._12Yellow{
+	font-size:12px;
+	color:#cc6600;
+	}
+	
+#row4 { height: 100px;  }
+
+#row4 .content { height: 100px; padding: 5px 0 0 15px; overflow: hidden; }
+#row4 .content li { float: left; width: 100px; padding: 2px; text-align: center; }
+#row4 .content .img { width: 74px; height: 74px; overflow: hidden; margin: 3px auto; padding:3px; border:1px solid #ccc; }
+#row4 .content .word { padding: 5px 0 0 0; width:110px; text-align:center; }
+#row4 . content {background:url(images/midListRight.gif) repeat-y 100% 0;}
+
+.marquee {overflow:hidden; width:502px; 
+height:106px;
+}
+.marquee div{width:1000%;}
+.marquee div ul{display:block; float:left; margin:0px;}
+#rankTable table{
+	margin:0 auto;
+	text-align:center;
+	border-left:solid #ccc 1px;
+	}
+#rankTable table td{
+	margin:0 auto;
+	text-align:center;
+	border-right:solid #ccc 1px;
+	border-bottom:solid #ccc 1px;
+	}
+#rankTable .rankHeader{
+	padding-top:6px;
+	height:22px;
+	background:url(images/786index_17.gif);
+	color:#fff;
+	}
+/*================service=======================*/
+#serviceMenu{
+	margin-top:5px;
+	padding:12px 4px;
+	width:220px;
+	height:119px;
+	background:url(images/786PassWord_14.gif) repeat-x;
+	border:solid 1px #fff;
+	}
+.imgMargin{
+	margin-bottom:10px;
+	}
+.dlLeft{
+	margin:10px 0;
+	}
+#right_3{
+	padding:1px;
+	padding-bottom:20px;
+	width:764px;
+	background:#fff;
+    }
+.titleBarBg,.RtopBg{
+	padding:5px 0 0 14px;
+	width:750px;
+	height:23px;
+	background:url(images/786index_17.gif) repeat-x;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+    }
+.psdTable{
+	margin:0 auto;
+	margin-top:20px;
+	width:530px;
+	/*border:solid #ccc 1px;*/
+	}
+.psdTable table{
+	width:530px;
+	}
+.tdName{
+	padding:8px 0;
+	width:120px;
+	text-align:right;
+	}
+.tdInput{
+	width:160px;
+	}
+.tdInput input{
+	width:150px;
+	}
+.Orange{
+	color:#F93;
+	}
+.bdOrg{
+	padding:5px;
+	border:solid #F93 1px;
+	line-height:1.5em;
+	}
+.bdOrgW_1{
+	width:300px;
+	}
+.bdOrgW_2{
+	width:230px;
+	}
+.subbtn input
+{
+	width:120px;
+	height:25px;
+	border:solid #006600 1px;
+	background:url(images/btnBg.gif) repeat-x;
+	text-align:center;
+	color:#fff;
+	cursor:pointer;
+	}
+#QstCon
+{
+	float:left;
+	width:764px;
+	/*height:250px;*/
+	background:#DEEFFE;
+	}
+#QstCon ul
+{
+	margin:0;
+	padding:20px;
+	width:724px;
+	/*height:260px;*/
+	list-style:none;
+	}
+#QstCon ul li
+{
+	float:left;
+	padding:8px 0 3px 0;
+	width:724px;
+	background:url(images/ls_03.gif) no-repeat 0 10px;
+	border-bottom:dotted #666 1px;
+	}
+#QstCon ul li .QstTitle{
+	float:left;
+	padding-bottom:5px;
+	padding-left:25px;
+	width:300px;
+	}
+#QstCon ul li .QstTitle a{
+	color:#069;
+	text-decoration:none;
+	}
+#QstCon ul li .QstTitle a:hover{
+	color:#F93;
+	text-decoration:underline;
+	}
+#QstCon ul li .QstDate{
+	float:right;
+	}
+#QstCon ul li .QstReply
+{
+	clear:both;
+	padding:5px;
+	padding-top:3px;
+	background:#fff;
+	display:none;
+	}
+#askCon table{
+	margin:20px auto;
+	}
+#askCon table td{
+	padding:5px 0;
+	}
+#msgListCon
+{
+	margin:0 auto;
+	padding:10px;
+	width:700px;
+	border-top:solid #ccc 1px;
+	}
+
+/*=====================charge=====================*/
+#chargeListFrame{
+	height:314px;
+	}
+#chargeListBg{
+	height:312px;
+	}
+#mline_2{
+	height:312px;
+	background:url(images/786Charge_03.gif) no-repeat;
+	}
+#chargeTop{
+	margin-bottom:0;
+	background:url(images/ChargTitle.gif);
+	}
+#chargeMenuBg{
+	margin-left:1px;
+	width:220px;
+	height:278px;
+	background:url(images/786Charge_08.jpg);
+	}
+#chargeMenuBg ul{
+	margin:0;
+	padding:0;
+	padding-top:10px;
+	list-style:none;
+	}
+#chargeMenuBg ul li{
+	font-size:14px;
+	color:#069;
+	}
+#chargeMenuBg ul li a{
+	display:block;
+	padding:6px 0 6px 25px;
+	height:14px;
+	text-decoration:none;
+	color:#069;
+	}
+#chargeMenuBg ul li a:hover{
+	display:block;
+	text-decoration:none;
+	background:#999;
+	color:#fff;
+	opacity:0.7;
+    filter: alpha(opacity=70)
+	}
+.chargeConTop{
+	margin:10px auto 0 auto;
+	padding:5px 0 0 10px;
+	width:578px;
+	height:21px;
+	background:url(images/786index_17.gif) repeat-x;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	}
+.chargeStep
+{
+    margin:10px 0 10px 5px;
+    height:30px;
+    }
+.chargeStep .onStep,.chargeStep .offStep
+{
+    float:left;
+    margin:0 5px;
+    padding:4px;
+    left:10px;top:0;
+    width:80px;height:20px;
+    border:solid Orange 1px;
+    font-weight:bold;font-family:Arial;
+    color:#977412;
+    text-align:center;
+    }
+.chargeStep .onStep
+{
+    background:Orange;
+    color:#fff;
+    }
+.chargeFrm
+{
+    width:750px;
+    margin:auto;
+}
+.chargeCon
+{
+	float:left;
+	width:500px;height:350px;
+	border-right:solid #ccc 1px;
+	}
+.friTip
+{
+    margin:auto;
+    padding-top:5px;
+    width:480px;
+    border-top:dotted #ccc 1px;
+    }
+.chargeHelp
+{
+    float:left;
+	width:245px;
+    }
+.payTypeBar
+{
+    margin:0 10px;
+    padding:4px 0 0 10px;
+    height:24px;
+    font-family:Œ¢»Ì—≈∫⁄;font-size:14px;font-weight:bold;
+    color:#66784d;
+    border:solid #88ad6c 1px;
+    background:#d6e2bf;
+    position:relative;
+    }
+.payTypeBar a
+{
+    color:#66784d;
+    text-decoration:none;
+}
+.payTypeBar a:hover
+{
+    color:#fff;
+}
+.bankChargeBtn,.cardChargeBtn
+{
+    position:absolute;
+    top:5px;
+    width:75px;
+    border:solid #88ad6c 1px;
+    text-align:center;
+    }
+.bankChargeBtn
+{
+    left:10px;
+    }
+.cardChargeBtn
+{
+    left:90px;
+    }
+.chargeOn
+{
+    background:#fff;
+    border-bottom:solid #fff 1px;
+    }
+.payTipCon
+{
+    margin:0 10px;
+    padding:10px;
+    color:#237bad;
+    border:solid #88ad6c 1px;
+    }
+.chargeCon .chargeForm{
+	margin:10px auto;
+	width:360px;
+	}
+.chargeBtn input{
+	width:127px;
+	height:30px;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	color:#669966;
+	background:url(images/786Charge_14.gif) no-repeat;
+	border:none;
+	cursor:pointer;
+	}
+#right_bg_charge{
+	width:757px;
+	height:400px;
+	background:#fff;
+	border:solid #999 1px;
+	}
+.charge_input input{
+	width:140px;
+	}
+.chargeConMg table
+{
+    margin:auto;
+    }
+.chargeConMg .transTable
+{
+    border-top:solid 1px #ccc;
+	border-left:solid 1px #ccc;
+	width:586px;
+	}
+.chargeConMg .transTable td{
+    border-right:solid 1px #ccc;
+	border-bottom:solid 1px #ccc;
+    width:586px;
+	}
+.chargeConMg .chargeHeader{
+	text-align:center;
+	}
+.gv_page
+{
+	letter-spacing: 12px;
+}
+/*=====================gameIntro=====================*/
+#right_4{
+	padding:10px;
+	padding-top:0;
+	width:746px;
+	background:#fff;
+	}
+#gameIntroTitle{
+	padding:10px 0;
+	padding-top:5px;
+	_padding-bottom:0px;
+	width:746px;
+	height:20px;
+	text-align:center;
+	background:url(images/titleLine.gif) repeat-x bottom;
+	}
+.blue24{
+	font-size:24px;
+	color:#369;
+	}
+.yellow12{
+	color:#c60;
+	}
+#gameIntroCon
+{
+	padding:10px;
+	line-height:1.6em;
+	}
+#gameIntroCon p
+{
+    padding:0;
+    margin:0;
+    }
+#gameTitle
+{
+	padding-left:20px;
+	padding-top:8px;
+	width:208px;
+	height:22px;
+	background:url(images/introlitop.gif) repeat-x;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	}
+
+
+.gamelistImg img, .ranklistImg img
+{
+	margin-top:-2px;
+	margin-bottom:-6px;
+	}
+.gamelistImg
+{
+	display:inline;
+	margin:0 10px 0 22px;
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	}
+.gamelistTitle
+{
+	display:inline;
+	width:150px;
+	cursor:pointer;
+	}
+
+.gameTitle
+{
+	float:left;
+}
+#btn_gameIntro
+{
+	float:right;
+	margin-top:2px;
+	width:158px;
+	height:28px;
+	}
+#btn_gameIntro ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+#btn_gameIntro ul li
+{
+	float:left;
+	margin-left:10px;
+	_margin-left:6px;
+	padding-top:8px;
+	width:69px;
+	height:20px;
+	cursor:pointer;
+	color:#336699;
+	font-weight:bold;
+	}
+#btn_gameIntro .btn_on
+{
+	background:url(images/IntroTab_hover.gif) no-repeat;
+	}
+#btn_gameIntro .btn_off
+{
+	background:url(images/IntroTab.gif) no-repeat;
+	}
+#gameIntro_2
+{
+	display:none;
+	}
+
+/*=====================register=====================*/
+
+.regWidth
+{
+	margin:0 auto;
+	margin-top:20px;
+	padding:5px;
+	width:550px;
+	height:500px;
+	
+	}
+.scrollbox
+{
+	overflow-y:scroll;
+	line-height:1.5em;
+	border:solid #999 1px;
+	}
+.regArgBtn
+{
+	margin:10px auto;
+	width:550px;
+	}
+.placeCenter
+{
+	text-align:center;
+	}
+.regInfoTitle
+{
+	padding:10px 0;
+	width:550px;
+	border-bottom:solid #069 2px;
+    font-weight:bold;
+    color:#069;
+	}
+.right_700
+{
+	height:700px;
+	}
+.regTable
+{
+	background:none;
+	}
+.regTable td
+{
+	height:20px;
+	}
+.regTable td .inuptborder
+{
+	border:solid #ccc 1px;
+	}
+.t1
+{
+	background:#fff;
+	}
+.t2
+{
+	background:#DAEDFE;
+	}
+.pageSelect
+{
+	padding:20px 0;
+	width:700px;
+	text-align:center;
+	}
+.pageSelect a
+{
+	color:#06C;
+	}
+.td_name
+{
+	padding-top:6px;
+	padding-bottom:4px;
+	}
+.td_height
+{
+	padding:5px;
+	}
+.blue12
+{
+	color:#116CC8;
+	}
+.ahover a
+{
+	color:Orange;
+	}
+
+
+/*=============”√ªßÕ∑œÒ============*/
+.faceImg
+{
+	position:absolute;
+	border:solid #fff 2px;
+	width:32px;height:32px;
+	z-index:100;
+	}
+.faceImg img
+{
+	width:32px;height:32px;
+	cursor:pointer;
+	_margin-bottom:-4px;
+	}
+#facebox_out
+{
+	position:absolute;
+	left:-2px;top:36px;
+	width:326px;
+	z-index:100;
+	}
+#facebox
+{
+	display:none;
+	width:326px;
+	height:114px;
+	border:solid #999 1px;
+	background:#fff;
+	overflow-y:scroll;
+	}
+#facebox img
+{
+	margin:2px;
+	border:solid #74b3d4 1px;
+	_margin-bottom:1px;
+	}
+	
+/*=============¡Ù—‘∞Â============*/
+
+.msgTitle a
+{
+	color:#2a89e1;
+ }
+.msgTitle a:hover
+{
+	color:Orange;
+}
+.msgAddTitleBox
+{
+    margin-left:1px;
+    padding:3px;
+    border:solid #999 1px;
+}
+.titleBarBg
+{
+	padding-top:0;
+	height:29px;
+	}
+.titleBar,.titleBar2
+{
+	float:left;
+	margin-top:8px;
+	}
+.titleBar2
+{
+    padding-left:40px;
+    font-weight:normal;
+    font-size:12px;
+}
+.titleBtn
+{
+	padding:12px 0 0 22px;
+	width:56px;
+	color:#2a89e1;
+	font-weight:normal;
+	}
+.titleBtn a
+{
+	color:#2a89e1;
+	text-decoration:none;
+	}
+.titleBtn a:hover
+{
+	color:Orange;
+	}
+.msg_OneTopic 
+{
+	margin-bottom:6px;
+	width:100% ; 
+	background-color:#e0f5ff; 
+	border-top:solid #ccc 1px;
+	border-bottom:solid #ccc 1px;
+	border-left:solid #fff 1px;
+	border-right:solid #fff 1px;
+	}
+.msg_OneTopic td,.msgAdd_OneTopic td
+{
+	/*border:solid 1px #66ccFF;*/
+	vertical-align:top;
+	}
+.msg_OneTopic .msg_left
+{
+	width:160px; 
+	text-align:center; 
+	padding:6px 0;
+	border:solid #fff 1px;
+	}
+.msg_OneTopic .msg_right
+{
+	text-align:left; 
+	border:solid #fff 1px;
+	}
+.msgAdd_OneTopic .msg_left
+{
+    width:60px;
+    text-align:right;
+    }
+.msg_right .msg_title, .msg_right .msg_replyAhref 
+{
+	height:25px;
+	line-height:200%; 
+	}
+.msg_replyAhref a
+{
+	color:#2a89e1;
+	text-decoration:none;
+	}
+.msg_replyAhref a:hover
+{
+	color:Orange;
+	text-decoration:underline;
+	}
+.msg_right .msg_title 
+{
+	float:left;width:70%;   
+	background:url(images/guestBook_bar.gif); 
+	font-weight:bold; 
+	text-indent:9px;
+	}
+.msg_right .msg_replyAhref 
+{
+	float:right; 
+	margin-right:20px; 
+	width:60px; 
+	text-align:right;
+	background:url(images/guestBook_icon_reply.gif) no-repeat 0 5px; 
+	}
+.msg_right .msg_content 
+{
+	clear:both; 
+	margin:5px;
+	padding:5px; 
+	background-color:#fff; 
+	border-bottom:1px solid #ccc ;
+	border-right:1px solid #ccc ;
+	}
+
+.msg_right .msg_reply
+{
+	border-bottom:1px solid #ccc ;
+    border-right:1px solid #ccc ; 
+    margin:5px; 
+    padding:5px;
+    background-color:#fff;
+    }
+.msg_reply .msg_replytitle
+{
+	padding:5px;
+	padding-top:3px;
+	border-bottom:1px dotted #ccc; 
+	padding-bottom:2px;
+	}
+
+.msg_reply .msg_replycon 
+{
+	padding:5px; 
+	}
+.msg_content,.msg_replycon 
+{
+    line-height:1.6em;
+    }
+.msg_AddCon
+{
+	padding:1px;width:998px;height:500px;background:#fff;
+	}
+.msg_titleBarBg
+{
+	padding-left:14px;
+	width:984;
+	height:29px;
+	background:url(images/786index_17.gif) repeat-x;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	}
+.msgAdd_OneTopic
+{
+	margin-left:50px;margin-top:20px;
+	width:450px; 
+	/*background-color:#e0f5ff;  */
+	border-collapse:collapse;
+	table-layout:fixed; 
+	}
+
+
+/*=======================================*/
+.aGreen a
+{
+	color:Green;
+	text-decoration:none;
+	}
+.aGreen a:hover
+{
+	text-decoration:underline;
+	} 
+	
+.newsTitle
+{
+    margin:0 auto;
+    padding-top:10px;
+    width:90%;
+    height:25px;
+    border-bottom:solid #3b9abd 1px;
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+}
+.newsCon
+{
+    margin:0 auto;
+    padding-top:10px;
+    width:90%;
+    line-height:1.8em;
+}
+.helpBox
+{
+    margin-top:4px;
+    width:228px;
+    text-align:center;
+    border:solid #fff 1px;
+}
+.helpBoxTitle
+{
+    width:228px;
+    height:32px;
+    background:#b4d9ed;
+}
+.helpBoxBg
+{
+    width:228px;
+    height:111px;
+    background:url(images/help_bg.gif) repeat-x;
+}
+.helpBoxBg ul
+{
+    margin:0;
+    padding-left:2px;
+    padding-top:12px;
+    list-style:none;
+}
+.helpBoxBg ul li
+{
+    margin-bottom:4px;
+    width:222px;
+    height:42px;
+    font-size:16px;
+    color:#fff;
+    font-weight:bold;
+}
+.helpBoxBg ul li a
+{
+    display:block;
+    padding-top:12px;
+    width:222px;
+    height:30px;
+    color:#3399cc;
+    text-decoration:none;
+}
+.helpBoxBg ul li a:hover
+{
+    color:#006699;
+}
+.helpBoxBg ul li.btn1
+{
+    background:url(images/help_btn1.gif) no-repeat;
+}
+.helpBoxBg ul li.btn2
+{
+    background:url(images/help_btn2.gif) no-repeat;
+}
+#mline_2
+{
+    float:left;
+	width:4px;
+	height:312px;
+	background:url(images/786Charge_03.gif) no-repeat;
+	}

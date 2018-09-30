@@ -1,0 +1,2297 @@
+<html>
+<head>
+<title>TML系统数据库结构文档 - www.TML.cn</title>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">  <link rel="stylesheet" href="this.css" type="text/css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+<style type="text/css">
+<!--
+.style6 {font-weight: bold}
+-->
+</style>
+</head>
+<body class="td_content" lang="ZH-CN"> 
+<h1 class="header">【数据库结构说明】</h1> 
+<p>说明；游戏数据库若有升级，会第一时间将数据库说明发布到这里。请收藏本页网址。<br> 
+  红色为游戏程序必用的数据表，蓝色为辅助参数表，黑色为Web扩展用的表 </p> 
+<p>根据本表建表时，字段类型可以根据选用的数据库的实际情况选择，但新选择的类型不能小于下表的类型类型（比如可以用浮点代替整数，可以用整数类型代替字节，可以用字节代替布尔，反之不可），并且字段长度不能小于下表中的字段长度。索引可以根据实际数据库策略进行优化.如遇问题可以咨询www.TML.cn上的技术支持。</p> 
+<h3 class="header">【（1):注册用户数据表-users数据库结构说明】</h3> 
+<table border="1" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333" height="813"
+width="933"> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="30"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px"><span class="style5">字段名</span></span></strong></td> 
+    <td width="435" valign="top" class="td_content" height="30"><p align="left"
+    style="text-align:left"><strong><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black"><span
+    class="style6">含义</span></span></strong></td> 
+    <td width="61" valign="top" class="td_content" height="30"><strong>是否必须</strong></td> 
+    <td width="176" valign="top" class="td_content" height="30"><strong>字段类型</strong></td> 
+    <td width="108" valign="top" class="td_content" height="30"><strong>默认值</strong></td> 
+    <td width="108" valign="top" class="td_content" height="30"><strong>字段长度</strong></td> 
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">Name</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">用户名</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">字符型，无重复，加索引</td>
+    <td valign="top" class="td_content" height="19">　</td>
+    <td valign="top" class="td_content" height="19">20位字符</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">UserID</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">用户</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">ID</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">整数型，不自动递增，无重复，加索引</td>
+    <td valign="top" class="td_content" height="19">0</td>
+    <td valign="top" class="td_content" height="19">10位正整数</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="38"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">WebPass</span></strong></td>
+    <td valign="top" class="td_content" height="38"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">预留密码，供开发</span><span
+    lang="EN-US" style="font-size:14px;color:black">WEB</span><span
+    style="font-size:14px;
+  font-family:宋体;&quot;Times New Roman&quot;;color:black">是作为二级密码留的接口。不是必要使用。</span></td>
+    <td valign="top" class="td_content" height="38">必须</td>
+    <td valign="top" class="td_content" height="19">字符型，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">　</td>
+    <td valign="top" class="td_content" height="19">50字符</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">Pass</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">密码</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">字符型，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">　</td>
+    <td valign="top" class="td_content" height="19">50字符</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">ScrName</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">呢称</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">字符型，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">　</td>
+    <td valign="top" class="td_content" height="19">20位字符</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="48"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">email</span></strong></td>
+    <td valign="top" class="td_content" height="48"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">邮件</span></td>
+    <td valign="top" class="td_content" height="48">不必须，被WEB使用</td>
+    <td valign="top" class="td_content" height="48">字符型，可重复，无索引</td>
+    <td valign="top" class="td_content" height="48">&quot;euqq.com@163.com&quot;</td>
+    <td valign="top" class="td_content" height="48">50长度字符</td>
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">RegTM</span></strong></td> 
+    <td width="435" valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">注册时间</span></td> 
+    <td width="61" valign="top" class="td_content" height="19">必须</td> 
+    <td width="176" valign="top" class="td_content" height="19">日期时间，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">系统时间</td> 
+    <td width="108" valign="top" class="td_content" height="19">　</td> 
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">RegIP</span></strong></td> 
+    <td width="435" valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">注册时</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">IP</span></td> 
+    <td width="61" valign="top" class="td_content" height="19">必须</td> 
+    <td width="176" valign="top" class="td_content" height="19">字符型，可重复，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">　</td> 
+    <td width="108" valign="top" class="td_content" height="19">15字符</td> 
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">LastLoginIP</span></strong></td> 
+    <td width="435" valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">最后登陆</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">IP</span></td> 
+    <td width="61" valign="top" class="td_content" height="19">必须</td> 
+    <td width="176" valign="top" class="td_content" height="19">字符型，可重复，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">　</td> 
+    <td width="108" valign="top" class="td_content" height="19">15字符</td> 
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">Boy</span></strong></td> 
+    <td width="435" valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">是否男性</span></td> 
+    <td width="61" valign="top" class="td_content" height="19">必须</td> 
+    <td width="176" valign="top" class="td_content" height="19">布尔型，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">　</td> 
+    <td width="108" valign="top" class="td_content" height="19">布尔长度</td> 
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">LogoID</span></strong></td> 
+    <td width="435" valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">头像</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">ID</span></td> 
+    <td width="61" valign="top" class="td_content" height="19">必须</td> 
+    <td width="176" valign="top" class="td_content" height="19">整数型，不自动递增，可重复，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">0</td> 
+    <td width="108" valign="top" class="td_content" height="19">10位正整数</td> 
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">DisAble</span></strong></td> 
+    <td width="435" valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left">用户是否停用</td> 
+    <td width="61" valign="top" class="td_content" height="19">必须</td> 
+    <td width="176" valign="top" class="td_content" height="19">布尔型，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">否</td> 
+    <td width="108" valign="top" class="td_content" height="19">布尔长度</td> 
+  </tr> 
+  <tr>
+     <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">Bank</span></strong></td> 
+    <td width="435" valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left">财富值银行存款，可与财富值转账</td> 
+    <td width="61" valign="top" class="td_content" height="19">不必须，被WEB使用</td> 
+    <td height="19" valign="top" class="td_content">整数型，不自动递增，可重复，无索引</td>
+    <td height="19" valign="top" class="td_content">0</td>
+    <td height="19" valign="top" class="td_content">10位正整数</td>
+  </tr> 
+  <tr>
+     <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong>MeiLi</strong></td> 
+    <td width="435" valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left">魅力值</td> 
+    <td width="61" valign="top" class="td_content" height="19">不必须，被WEB使用</td> 
+    <td height="19" valign="top" class="td_content">整数型，不自动递增，可重复，无索引</td>
+    <td height="19" valign="top" class="td_content">0</td>
+    <td height="19" valign="top" class="td_content">10位正整数</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">Experience</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">经验值</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">整数型，不自动递增，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">0</td>
+    <td valign="top" class="td_content" height="19">10位正整数</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">ClassName</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">门派</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">字符型，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">&quot;无门派&quot;</td>
+    <td valign="top" class="td_content" height="19">20长度字符</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">Member</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">会员级别</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">整数型，不自动递增，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">0</td>
+    <td valign="top" class="td_content" height="19">10位正整数</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">money</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">财富值</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">整数型，不自动递增，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">0</td>
+    <td valign="top" class="td_content" height="19">10位正整数</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">IEdata</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span style="font-size:
+  14px;font-family:宋体">系统内部参数，</span>32位COOKIE和16位IP和16位浏览器</td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">字符型，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">　</td>
+    <td valign="top" class="td_content" height="19">255长度的字符型</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">AllLoginTimes</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">总登陆次数</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">整数型，不自动递增，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">0</td>
+    <td valign="top" class="td_content" height="19">10位正整数</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="48"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">SN</span></strong></td>
+    <td valign="top" class="td_content" height="48"><p align="left"
+    style="text-align:left"><span style="font-size:
+  14px;font-family:宋体">系统内部参数，由程序自己填写的，实现网格系统识别</span></td>
+    <td valign="top" class="td_content" height="48">必须</td>
+    <td valign="top" class="td_content" height="48">字符型，可重复，无索引</td>
+    <td valign="top" class="td_content" height="48">　</td>
+    <td valign="top" class="td_content" height="48">127长度的字符型</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">OptionTime</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">最后操作时间</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">日期时间，无索引</td>
+    <td valign="top" class="td_content" height="19">系统时间</td>
+    <td valign="top" class="td_content" height="19">　</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">LastLoginTM</span></strong></td>
+    <td valign="top" class="td_content" height="19"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">最后登陆时间</span></td>
+    <td valign="top" class="td_content" height="19">必须</td>
+    <td valign="top" class="td_content" height="19">日期时间，无索引</td>
+    <td valign="top" class="td_content" height="19">系统时间</td>
+    <td valign="top" class="td_content" height="19">　</td>
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">TGmoney</span></strong></td> 
+    <td width="435" height="19" valign="top" class="td_content">游戏时间超过30小时后，给介绍人的金币</td>
+    <td width="61" valign="top" class="td_content" height="19">不必须，被WEB使用</td> 
+    <td height="19" valign="top" class="td_content">整数型，不自动递增，可重复，无索引</td>
+    <td height="19" valign="top" class="td_content">0</td>
+    <td height="19" valign="top" class="td_content">10位正整数</td>
+  </tr> 
+  
+  
+  
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong>TiYanDate</strong></td> 
+    <td width="435" height="19" valign="top" class="td_content">体验卡每天是否使用记录</td>
+    <td height="19" valign="top" class="td_content">不必须，被WEB使用</td>
+    <td height="19" valign="top" class="td_content">字符型，可重复，无索引</td>
+    <td height="19" valign="top" class="td_content">&nbsp;</td>
+    <td height="19" valign="top" class="td_content">20长度字符</td>
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong>TiYan</strong></td> 
+    <td width="435" height="19" valign="top" class="td_content">体验卡使用开始日期</td>
+    <td width="61" valign="top" class="td_content" height="19">不必须，被WEB使用</td> 
+    <td height="19" valign="top" class="td_content">日期时间，无索引</td>
+    <td height="19" valign="top" class="td_content">系统时间</td>
+    <td height="19" valign="top" class="td_content">　</td>
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong>SbjfCard</strong></td> 
+    <td width="435" height="19" valign="top" class="td_content">双倍积分卡的使用日期</td>
+    <td width="61" valign="top" class="td_content" height="19">不必须，被WEB使用</td> 
+    <td height="19" valign="top" class="td_content">日期时间，无索引</td>
+    <td height="19" valign="top" class="td_content">系统时间</td>
+    <td height="19" valign="top" class="td_content">　</td>
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong>MatchToPointDate</strong></td> 
+    <td width="435" height="19" valign="top" class="td_content">赛币转金币日期</td>
+    <td height="19" valign="top" class="td_content">不必须，被WEB使用</td>
+    <td height="19" valign="top" class="td_content">字符型，可重复，无索引</td>
+    <td height="19" valign="top" class="td_content">&nbsp;</td>
+    <td height="19" valign="top" class="td_content">20长度字符</td>
+  </tr> 
+  
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong>BankPoint</strong></td> 
+    <td width="435" height="19" valign="top" class="td_content">游戏币银行存款，可与游戏币转账</td>
+    <td height="19" valign="top" class="td_content">不必须，被WEB使用</td>
+    <td height="19" valign="top" class="td_content">字符型，可重复，无索引</td>
+    <td height="19" valign="top" class="td_content">&nbsp;</td>
+    <td height="19" valign="top" class="td_content">20长度字符</td>
+  </tr> 
+  
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong>ExpToPointDate</strong></td> 
+    <td width="435" height="19" valign="top" class="td_content">经验值转金币日期</td>
+    <td height="19" valign="top" class="td_content">不必须，被WEB使用</td>
+    <td height="19" valign="top" class="td_content">字符型，可重复，无索引</td>
+    <td height="19" valign="top" class="td_content">&nbsp;</td>
+    <td height="19" valign="top" class="td_content">20长度字符</td>
+  </tr> 
+    <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="48"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">hy</span></strong></td> 
+    <td width="435" valign="top" class="td_content" height="48"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">会员到期时间</span></td> 
+    <td width="61" valign="top" class="td_content" height="48">不必须，被WEB使用</td> 
+    <td width="176" valign="top" class="td_content" height="19">日期时间，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">系统时间</td> 
+    <td width="108" valign="top" class="td_content" height="48">　</td> 
+  </tr> 
+  <tr> 
+    <td width="143" valign="top" bgcolor="#CCCCCC" class="td_content" height="48"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">bumen</span></strong></td> 
+    <td width="435" valign="top" class="td_content" height="48"><p align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">职业</span></td> 
+    <td width="61" valign="top" class="td_content" height="48">不必须，被WEB使用</td> 
+    <td width="176" valign="top" class="td_content" height="48">字符型，可重复，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="48">　</td> 
+    <td width="108" valign="top" class="td_content" height="48">30长度字符</td> 
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">介绍人ID</span></strong></td>
+    <td valign="top" class="td_content" height="19"><span lang="EN-US"
+    style="font-size:
+  14px;color:black">介绍人ID</span></td>
+    <td valign="top" class="td_content" height="19">不必须，被WEB使用</td>
+    <td valign="top" class="td_content" height="19">字符型，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">&quot;1&quot;</td>
+    <td valign="top" class="td_content" height="19">10位字符</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#CCCCCC" class="td_content" height="19"><p
+    class="style4"><strong><span lang="EN-US" style="font-size:14px">下线提成</span></strong></td>
+    <td valign="top" class="td_content" height="19"><span lang="EN-US"
+    style="font-size:
+  14px;color:black">每局税收给介绍人上交的提成百分比</span></td>
+    <td valign="top" class="td_content" height="19">不必须，被WEB使用</td>
+    <td valign="top" class="td_content" height="19">字节型，也可为整数型，不自动递增，可重复，无索引</td>
+    <td valign="top" class="td_content" height="19">0</td>
+    <td valign="top" class="td_content" height="19">1字节或3位正整数</td>
+  </tr> 
+  
+  
+  
+</table> 
+<h3 class="header">【（2):用户在房间的数据表-user_1数据库结构说明】</h3> 
+<table border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333" width="923"> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><strong><span lang="EN-US"
+    style="font-size:14px;color:black">字段名</span></strong></td> 
+    <td width="506" valign="top"><strong><span
+    style="font-size:14px;font-family:宋体;
+  color:black">含义</span></strong></td> 
+    <td width="208" valign="top" class="td_content" height="30"><strong>字段类型</strong></td> 
+    <td width="14" valign="top" class="td_content" height="30"><strong>默认值</strong></td> 
+    <td width="27" valign="top" class="td_content" height="30"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"
+    style=" font-weight: bold;"><span lang="EN-US"
+    style="font-size:14px;color:black">GamePower</span></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">用户级别：</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">1</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">为可以踢人看</span><span
+    lang="EN-US" style="font-size:14px;
+  color:black">IP</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">，</span><span
+    lang="EN-US" style="font-size:14px;color:black">0</span><span
+    style="font-size:14px;font-family:宋体;
+  color:black">为否</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">MasterPower</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">管理级别。</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">0-9</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">共</span><span
+    lang="EN-US" style="font-size:14px;color:black">10</span><span
+    style="font-size:14px;font-family:宋体;
+  color:black">个级别，级别高的可以踢级别低的。</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">GameMaster</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">是否管理。</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">1</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">为是，</span><span
+    lang="EN-US" style="font-size:14px;color:black">0</span><span
+    style="font-size:14px;font-family:宋体;
+  color:black">为否，</span><span
+    lang="EN-US" style="font-size:14px;color:black">2</span><span
+    style="font-size:14px;font-family:宋体;
+  color:black">是超管</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">OnLineTimeCount</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">在线时长</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">PlayTimeCount</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏时长</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">Cut</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">逃跑</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">Mid</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">和局</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">Lost</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">输局</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">Win</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">赢局</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">PointAuto</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">泡分</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">Point</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏点数（游戏币）</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">ComID</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏组件</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">ID</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">UserID</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">用户</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">ID</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="156" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">ServerPort</span></strong></td> 
+    <td width="506" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">房间端口：房间将使用此端口登录，所有房间不能重复</span></td> 
+    <td width="208" valign="top">整数型，不自动递增，可重复，索引</td> 
+    <td width="14" valign="top">0</td> 
+    <td width="27" valign="top">10位整数</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（3):房间的数据表-TML_Server数据库结构说明】</h3> 
+<table border="1" cellpadding="5px" bordercolordark="#FFFFFF" bordercolorlight="#333333" cellspacing="0" width="997"> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><strong><span lang="EN-US"
+    style="font-size:14px;color:black">字段名</span></strong></td> 
+    <td width="423" valign="top"><strong><span
+    style="font-size:14px;font-family:宋体;
+  color:black">含义</span></strong></td> 
+    <td width="305" valign="top" class="td_content" height="30"><strong>字段类型</strong></td> 
+    <td width="1" valign="top" class="td_content" height="30"><strong>默认值</strong></td> 
+    <td width="163" valign="top" class="td_content" height="30"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">Sort</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left"
+    style="text-align:left"><span
+    style="font-size:14px;font-family:宋体;
+  color:black">排序</span></td> 
+    <td width="369" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="1" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">Enable</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">是否启用：</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">0</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">则该房间无效</span><span
+    lang="EN-US" style="font-size:14px;
+  color:black">,1</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">有效</span></td> 
+    <td width="176" valign="top" class="td_content" height="19">布尔型，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">是</td> 
+    <td width="108" valign="top" class="td_content" height="19">布尔长度</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">UpdateTime</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">更新时间（系统自动填写）</span></td> 
+    <td width="176" valign="top" class="td_content" height="19">日期时间，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">系统时间</td> 
+    <td width="163" valign="top">　</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">TeamUser</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">单桌椅子数：不同房间可以设置桌子旁的椅子数，如梭哈可设</span><span
+    lang="EN-US" style="font-size:14px;color:black">4</span><span
+    style="font-size:14px;font-family:宋体;
+  color:black">人玩，也可</span><span
+    lang="EN-US" style="font-size:14px;color:black">5</span><span
+    style="font-size:14px;font-family:宋体;
+  color:black">人玩</span></td> 
+    <td width="176" valign="top" class="td_content" height="19">字节型，也可为整数型，不自动递增，可重复，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">0</td> 
+    <td width="108" valign="top" class="td_content" height="19">1字节或2位正整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">Tax</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">自定义税率：扣取赢家所赢金额的百分比，</span><span
+    lang="EN-US" style="font-size:14px;color:black">0</span><span
+    style="font-size:14px;
+  font-family:宋体;&quot;Times New Roman&quot;;color:black">到</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">100</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">之间</span></td> 
+    <td width="176" valign="top" class="td_content" height="19">字节型，也可为整数型，不自动递增，可重复，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">0</td> 
+    <td width="108" valign="top" class="td_content" height="19">1字节或3位正整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">SvrTable</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">用户数据表：存放房间内用户的各种数据，若想给用户加分，则操作这个表</span></td> 
+    <td width="305" valign="top">字符型，可重复，无索引</td> 
+    <td width="1" valign="top">　</td> 
+    <td width="163" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">10位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">IPTable</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    lang="EN-US" style="font-size:14px;color:black">IP</span><span
+    style="font-size:14px;
+  font-family:宋体;&quot;Times New Roman&quot;;color:black">规则表：存放房间</span><span
+    lang="EN-US" style="font-size:14px;color:black">IP</span><span
+    style="font-size:14px;
+  font-family:宋体;&quot;Times New Roman&quot;;color:black">规则数据</span></td> 
+    <td width="305" valign="top">字符型，可重复，无索引</td> 
+    <td width="1" valign="top">　</td> 
+    <td width="163" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">10位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">LockTable</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">锁定数据表：存放房间登录数据</span></td> 
+    <td width="305" valign="top">字符型，可重复，无索引</td> 
+    <td width="1" valign="top">　</td> 
+    <td width="163" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">10位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">SvrPower</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">房间权限：允许进入的权限编号，具体编号参看各游戏帮助</span></td> 
+    <td width="292" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">SvrRule</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">房间规则编号：自定义房间规则编号，具体编号参看各游戏帮助</span></td> 
+    <td width="292" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">On_Line</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">当前在线人数（系统自动填写）</span></td> 
+    <td width="292" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">Pao</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">泡分增量：房间泡分单位时间增量</span></td> 
+    <td width="292" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr>     <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">Max</span></b></td> 
+    <td width="423" valign="top"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">最多金币：允许进入房间的最多金币，多于这个数量无法进入房间</span></td> 
+    <td width="292" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">Min</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">最少金币：允许进入房间的最小金币，少于这个数量无法进入房间</span></td> 
+    <td width="292" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">Bei</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">房间倍数：房间实际输赢</span><span
+    lang="EN-US" style="font-size:14px;color:black">=</span><span
+    style="font-size:14px;
+  font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏默认输赢</span><span
+    lang="EN-US" style="font-size:14px;color:black">*</span><span
+    style="font-size:14px;
+  font-family:宋体;&quot;Times New Roman&quot;;color:black">倍数，</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">0</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">和</span><span
+    lang="EN-US" style="font-size:14px;color:black">1</span><span
+    style="font-size:14px;font-family:宋体;
+  color:black">代表不翻倍</span></td> 
+    <td width="292" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">MaxUser</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">房间最大人数：该房间的最大人数</span></td> 
+    <td width="292" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">UnitCount</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">桌子总数：该房间的游戏桌子总数</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">MatchID</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">比赛</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">ID</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">：用于构建分布式比赛系统，不使用填写</span><span
+    lang="EN-US" style="font-size:14px;
+  color:black">0</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ComID</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏组件编号</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ServerType</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">房间类型：该房间类型</span><span
+    lang="EN-US" style="font-size:14px;color:black">(1:</span><span
+    style="font-size:14px;
+  font-family:宋体;&quot;Times New Roman&quot;;color:black">普通房间</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">,2.</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">比赛房间</span><span
+    lang="EN-US" style="font-size:14px;color:black">,3: </span><span
+    style="font-size:14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">金币房间</span><span
+    lang="EN-US" style="font-size:14px;color:black">,4;:</span><span
+    style="font-size:14px;font-family:宋体;
+  color:black">隐身房间</span><span
+    lang="EN-US" style="font-size:14px;color:black">)</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">Grid</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">网格编号：必须选择存在的网格，用于构建分布服务器，此项必须在</span><span
+    lang="EN-US" style="font-size:14px;color:black">TML</span><span
+    style="font-size:14px;font-family:宋体;
+  color:black">服务器窗口更改。</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">SvrName</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">房间名称：如</span><span
+    lang="EN-US" style="font-size:14px;color:black">XX</span><span
+    style="font-size:14px;
+  font-family:宋体;&quot;Times New Roman&quot;;color:black">网通，</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">XX</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">电信</span></td> 
+    <td width="305" valign="top">字符型，可重复，无索引</td> 
+    <td width="1" valign="top">　</td> 
+    <td width="163" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">30位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ListWidth</span></b></td> 
+    <td width="423" valign="top"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">右侧列表宽度，也就是聊天区域宽度</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">150</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">MinWin</span></b></td> 
+    <td width="423" valign="top"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">最小赢，擂台赛</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">MaxWin</span></b></td> 
+    <td width="379" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="97" valign="top">0</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="130" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ServerPort</span></b></td> 
+    <td width="423" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">房间端口：房间将使用此端口登录，所有房间不能重复</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（4):游戏记录表-TML_Record结构说明】</h3> 
+<p>一条记录为一局，自动记录类型</p> 
+<table width="706" height="517" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC"><strong><span lang="EN-US"
+    style="font-size:14px;color:black">字段名</span></strong></td> 
+    <td width="283" valign="top"><strong><span
+    style="font-size:14px;font-family:宋体;
+  color:black">含义</span></strong></td> 
+    <td width="116" valign="top" class="td_content" height="30"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" class="td_content" height="30"><strong>默认值</strong></td> 
+    <td width="98" valign="top" class="td_content" height="30"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b>ID</b></td> 
+    <td width="283" valign="top"><p class="Msowww.TML.cn" align="left"
+    style="text-align:left"><span
+    style="font-size:14px;font-family:宋体;
+  color:black">编号</span></td> 
+    <td width="305" valign="top">整数型，自动递增，无重复，索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ServerPort</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">房间端口：房间将使用此端口登录，所有房间不能重复</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">DeskIndex</span></b></td> 
+    <td width="283" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black"><span
+    class="style6">桌号</span></span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">Tax</span></b></td> 
+    <td width="283" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size: 14px;font-family:&quot;宋体&quot;;&quot;Times New Roman&quot;;color:black">税率<span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">，可自定义税率：扣取赢家所赢金额的百分比，</span><span
+    lang="EN-US" style="font-size:14px;color:black">0</span><span
+    style="font-size:14px;
+  font-family:宋体;&quot;Times New Roman&quot;;color:black">到</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">100</span><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">之间</span></span></td> 
+    <td width="176" valign="top" class="td_content" height="19">字节型，也可为整数型，不自动递增，可重复，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">0</td> 
+    <td width="108" valign="top" class="td_content" height="19">1字节或3位正整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">UserID1</span></b></td> 
+    <td width="283" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left">1号座用户的ID号</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ScrPoint1</span></b></td> 
+    <td width="283" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">1号座用户的游戏币数</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ChangePoint1</span></b></td> 
+    <td width="283" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    lang="EN-US" style="font-size:14px;color:black"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">1号座</span>用户的输赢数量</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">UserID2</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left">2号座用户的ID号</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ScrPoint2</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black"><span
+    class="style6">2<span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">号座用户的游戏币数</span></span></span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ChangePoint2</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    lang="EN-US" style="font-size:14px;color:black">2<span lang="EN-US"
+    style="font-size:14px;color:black"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">号座</span>用户的输赢数量</span></span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">UserID3</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left">3号座用户的ID号</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ScrPoint3</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">3号座用户的游戏币数</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ChangePoint3</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    lang="EN-US" style="font-size:14px;color:black"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">3号座</span>用户的输赢数量</span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">UserID4</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left">4号座用户的ID号</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ScrPoint4</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black"><span
+    class="style6"><span class="style6">4</span><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">号座用户的游戏币数</span></span></span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ChangePoint4</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    lang="EN-US" style="font-size:14px;color:black">4<span lang="EN-US"
+    style="font-size:14px;color:black"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">号座</span>用户的输赢数量</span></span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">UserID5</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left">5号座用户的ID号</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ScrPoint5</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black"><span
+    class="style6"><span class="style6">5</span><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">号座用户的游戏币数</span></span></span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ChangePoint5</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    lang="EN-US" style="font-size:14px;color:black">5<span lang="EN-US"
+    style="font-size:14px;color:black"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">号座</span>用户的输赢数量</span></span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">UserID6</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left">6号座用户的ID号</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ScrPoint6</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black"><span
+    class="style6"><span class="style6">6</span><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">号座用户的游戏币数</span></span></span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="133"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">ChangePoint6</span></b></td> 
+    <td valign="top" width="283"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    lang="EN-US" style="font-size:14px;color:black">6<span lang="EN-US"
+    style="font-size:14px;color:black"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">号座</span>用户的输赢数量</span></span></td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC"><p class="Msowww.TML.cn"><b><span
+    lang="EN-US" style="font-size:14px;color:black">tm</span></b></td> 
+    <td width="283" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏时间</span></td> 
+    <td width="176" valign="top" class="td_content" height="19">日期时间，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">系统时间</td> 
+    <td width="98" valign="top">　</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（</font><font color="#FF0000">5):TML_log结构说明】</h3> 
+<table width="779" height="20" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="206" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="96" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="55" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ID</strong></td> 
+    <td width="283" valign="top" height="7">日志ID号，自动生成</td> 
+    <td width="395" valign="top">整数型，自动递增，无重复，有索引</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="116" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ServerPort</strong></td> 
+    <td width="283" valign="top" height="7">服务器端口</td> 
+    <td width="395" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="116" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>UserID</strong></td> 
+    <td width="283" valign="top" height="7">用户ID</td> 
+    <td width="395" valign="top">整数型，不自动递增，可重复，有索引</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="116" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ScrPoint</strong></td> 
+    <td width="283" valign="top" height="7">显示游戏币</td> 
+    <td width="395" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="116" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ChangePoint</strong></td> 
+    <td width="283" valign="top" height="7">输赢的游戏币</td> 
+    <td width="395" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="116" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ResultPoint</strong></td> 
+    <td width="283" valign="top" height="7">结束时的游戏币</td> 
+    <td width="395" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="116" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>AutoPoint</strong></td> 
+    <td width="283" valign="top" height="7">泡分得到的点数</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ChangeWin</strong></td> 
+    <td width="283" valign="top" height="7">赢局数</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ChangeLost</strong></td> 
+    <td width="283" valign="top" height="7">输局数</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ChangeMid</strong></td> 
+    <td width="283" valign="top" height="7">和局数</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ChangeCut</strong></td> 
+    <td width="283" valign="top" height="7">断线次数</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>OnLineTime</strong></td> 
+    <td width="283" valign="top" height="7">在线时间，单位：秒</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>tm</strong></td> 
+    <td width="283" valign="top" height="7">日志生成时间</td> 
+    <td width="176" valign="top" class="td_content" height="19">日期时间，无索引</td> 
+    <td width="108" valign="top" class="td_content" height="19">系统时间</td> 
+    <td width="98" valign="top">　</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（5) URL统一导航数据表结构说明】</h3> 
+<table width="706" height="20" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ID</strong></td> 
+    <td width="283" valign="top" height="7">日志ID号，自动生成</td> 
+    <td width="395" valign="top">整数型，自动递增，无重复，有索引</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="116" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>cap</strong></td> 
+    <td width="283" valign="top" height="7">网址标题</td> 
+    <td width="305" valign="top">字符型，可重复，无索引</td> 
+    <td width="1" valign="top">　</td> 
+    <td width="163" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">30位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>url</strong></td> 
+    <td width="283" valign="top" height="7">网址</td> 
+    <td width="305" valign="top">字符型，可重复，无索引</td> 
+    <td width="1" valign="top">　</td> 
+    <td width="163" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>userid</strong></td> 
+    <td width="283" valign="top" height="7">用户ID</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（6) BufferExperience经验缓冲表结构说明】</h3> 
+<table width="706" height="20" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ID</strong></td> 
+    <td width="283" valign="top" height="7">ID号，自动生成</td> 
+    <td width="395" valign="top">整数型，自动递增，无重复，有索引</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="116" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>UserID</strong></td> 
+    <td width="283" valign="top" height="7">用户ID</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>Experience</strong></td> 
+    <td width="283" valign="top" height="7">经验值</td> 
+    <td width="305" valign="top">整数型，不自动递增，可重复，索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="163" valign="top">10位整数</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（7) BufferPoint游戏币缓冲表结构说明】</h3> 
+<table width="716" height="261" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="32"><strong>字段名 </strong></td> 
+    <td width="393" valign="top" height="32"><strong>含义 </strong></td> 
+    <td width="472" valign="top" height="32"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="32"><strong>默认值</strong></td> 
+    <td width="108" valign="top" height="32"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="32"><strong>UserID</strong></td> 
+    <td width="393" valign="top" height="32">用户ID</td> 
+    <td width="661" valign="top" height="32">整数型，不自动递增，可重复，索引</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="173" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="32"><strong>ServerPort</strong></td> 
+    <td width="393" valign="top" height="32">服务器端口</td> 
+    <td width="751" valign="top" height="32">整数型，不自动递增，可重复，无索引</td> 
+    <td width="67" valign="top" height="32">0</td> 
+    <td width="126" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="32"><strong>ComID</strong></td> 
+    <td width="393" valign="top" height="32"><p class="Msowww.TML.cn" align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏组件</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">ID</span></td> 
+    <td width="725" valign="top" height="32">整数型，不自动递增，可重复，索引</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="11" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="15"><strong>Point</strong></td> 
+    <td width="479" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏点数（游戏币）</span></td> 
+    <td width="639" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="11" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>Win</strong></td> 
+    <td width="479" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">赢局</span></td> 
+    <td width="639" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="11" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>Lost</strong></td> 
+    <td width="479" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">输局</span></td> 
+    <td width="639" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="11" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>Mid</strong></td> 
+    <td width="479" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">和局</span></td> 
+    <td width="639" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="11" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>Cut</strong></td> 
+    <td width="479" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">逃跑</span></td> 
+    <td width="639" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="11" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>PlayTimeCount</strong></td> 
+    <td width="479" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏时长</span></td> 
+    <td width="639" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="11" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>OnLineTimeCount</strong></td> 
+    <td width="479" valign="top"><p class="Msowww.TML.cn" align="left" style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">在线时长</span></td> 
+    <td width="639" valign="top">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top">0</td> 
+    <td width="11" valign="top">10位整数</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（8): Card点卡资料表结构说明】</h3> 
+<table width="706" height="208" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="16"><strong>含义 </strong></td> 
+    <td width="68" valign="top" height="16"><strong>字段类型</strong></td> 
+    <td width="122" valign="top" height="16"><strong>默认值</strong></td> 
+    <td width="90" valign="top" height="16"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>ID</strong></td> 
+    <td width="283" valign="top" height="16">ID号，自动生成</td> 
+    <td width="347" valign="top" height="16">整数型，自动递增，无重复，有索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38"><strong>num</strong></td> 
+    <td width="283" valign="top" height="38">卡号</td> 
+    <td width="257" valign="top" height="38">字符型，可重复，有索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="163" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">50位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38"><strong>pwd</strong></td> 
+    <td width="283" valign="top" height="38">卡密码</td> 
+    <td width="257" valign="top" height="38">字符型，可重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="163" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">50位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="18"><strong>jine</strong></td> 
+    <td width="283" valign="top" height="18">卡金额</td> 
+    <td width="591" valign="top" height="18">整数型，不自动递增，可重复，无索引</td> 
+    <td width="49" valign="top" height="18">0</td> 
+    <td width="11" valign="top" height="18">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>player</strong></td> 
+    <td width="283" valign="top" height="16">充值玩家</td> 
+    <td width="257" valign="top">字符型，可重复，无索引</td> 
+    <td width="49" valign="top">　</td> 
+    <td width="163" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">50位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>tm</strong></td> 
+    <td width="283" valign="top" height="16">充值时间</td> 
+    <td width="257" valign="top" height="16">时间日期型</td> 
+    <td width="57" valign="top" height="16">系统时间</td> 
+    <td width="155" valign="top" height="16">　</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>ip</strong></td> 
+    <td width="283" valign="top" height="16">充值IP</td> 
+    <td width="257" valign="top">字符型，可重复，无索引</td> 
+    <td width="49" valign="top">　</td> 
+    <td width="163" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">15位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>pay</strong></td> 
+    <td width="283" valign="top" height="16">是否被充值</td> 
+    <td width="257" valign="top" height="16">布尔型</td> 
+    <td width="57" valign="top" height="16">否</td> 
+    <td width="155" valign="top" height="16">布尔长度</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（9) ComList游戏组件列表结构说明】</h3> 
+<table width="706" height="20" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ComID</strong></td> 
+    <td width="393" valign="top" height="32"><p class="Msowww.TML.cn" align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏组件</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">ID</span></td> 
+    <td width="725" valign="top" height="32">整数型，不自动递增，可重复，索引，主键</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="11" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>TypeID</strong></td> 
+    <td width="393" valign="top" height="32"><p class="Msowww.TML.cn" align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏组件类型</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">ID</span></td> 
+    <td width="725" valign="top" height="32">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="11" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ComName</strong></td> 
+    <td width="283" valign="top" height="16"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏组件名称</span></td> 
+    <td width="257" valign="top">字符型，可重复，无索引</td> 
+    <td width="49" valign="top">　</td> 
+    <td width="163" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">14位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>Sort</strong></td> 
+    <td width="283" valign="top" height="7">排序</td> 
+    <td width="725" valign="top" height="32">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="11" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>Enable</strong></td> 
+    <td width="283" valign="top" height="7">是否启用</td> 
+    <td width="257" valign="top" height="16">布尔型</td> 
+    <td width="57" valign="top" height="16">是</td> 
+    <td width="155" valign="top" height="16">布尔长度</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>Ver</strong></td> 
+    <td width="283" valign="top" height="7">组件版本（备注）</td> 
+    <td width="725" valign="top" height="32">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="11" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>RegCode</strong></td> 
+    <td width="283" valign="top" height="7">组件注册码</td> 
+    <td width="725" valign="top" height="32">字符型，30位</td> 
+    <td width="1" valign="top" height="32">"AAAAA-BBBBB-CCCCC-DDDDD-EEEEE"</td> 
+    <td width="11" valign="top" height="32">30位</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（10) ComType组件类型表结构说明】</h3> 
+<table width="703" height="24" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="95" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="5"><strong>TypeID</strong></td> 
+    <td width="393" valign="top" height="32"><p class="Msowww.TML.cn" align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏组件类型</span><span
+    lang="EN-US" style="font-size:
+  14px;color:black">ID</span></td> 
+    <td width="725" valign="top" height="32">整数型，不自动递增，不重复，无索引</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="8" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>TypeName</strong></td> 
+    <td width="283" valign="top" height="16"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">游戏类型名称</span></td> 
+    <td width="257" valign="top">字符型，可重复，无索引</td> 
+    <td width="49" valign="top">　</td> 
+    <td width="160" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">14位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>Sort</strong></td> 
+    <td width="283" valign="top" height="7">排序</td> 
+    <td width="725" valign="top" height="32">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="8" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="13"><strong>Enable</strong></td> 
+    <td width="283" valign="top" height="7">是否启用</td> 
+    <td width="257" valign="top" height="16">布尔型</td> 
+    <td width="57" valign="top" height="16">是</td> 
+    <td width="152" valign="top" height="16">布尔长度</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>PID</strong></td> 
+    <td width="283" valign="top" height="7">父类型树的类型ID</td> 
+    <td width="305" valign="top" height="7">整数型，不自动递增，可重复，无索引</td> 
+    <td width="1" valign="top" height="7">-1</td> 
+    <td width="160" valign="top" height="7">10位整数</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（11): face自定义头像上传表结构说明】</h3> 
+<table width="706" height="20" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ID</strong></td> 
+    <td width="1" valign="top" height="32">用户ID</td> 
+    <td width="661" valign="top" height="32">整数型，不自动递增，不重复，索引</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="173" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>img</strong></td> 
+    <td width="283" valign="top" height="7">图片内容</td> 
+    <td width="305" valign="top" height="7">OLE对象，ORACLE中为二进制大数据字段</td> 
+    <td width="1" valign="top" height="7">　</td> 
+    <td width="163" valign="top" height="7">　</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>UploadTime</strong></td> 
+    <td width="283" valign="top" height="7">上传时间</td> 
+    <td width="257" valign="top" height="16">时间日期型</td> 
+    <td width="57" valign="top" height="16">系统时间</td> 
+    <td width="155" valign="top" height="16">　</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（12) Grid网格信息表结构说明】</h3> 
+<table width="706" height="16" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="364" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="35" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ID</strong></td> 
+    <td width="1" valign="top" height="32">网格ID</td> 
+    <td width="661" valign="top" height="32">整数型，不自动递增，不可重复，索引</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="173" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="3"><strong>Name</strong></td> 
+    <td width="364" valign="top" height="3">网格别名，名称</td> 
+    <td width="257" valign="top">字符型，无重复，无索引</td> 
+    <td width="49" valign="top">　</td> 
+    <td width="160" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">50位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>IP</strong></td> 
+    <td width="364" valign="top" height="7">网格服务器IP或域名</td> 
+    <td width="224" valign="top" height="7">字符型，无重复，无索引</td> 
+    <td width="1" valign="top" height="7">　</td> 
+    <td width="163" valign="top" height="7"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">30位长度字符</span></td> 
+  </tr> 
+</table> 
+<h3 class="header">【（13) IPRule_1游戏房间IP规则表结构说明】</h3> 
+<table width="706" height="20" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ID</strong></td> 
+    <td width="283" valign="top" height="16">ID号，自动生成</td> 
+    <td width="347" valign="top" height="16">整数型，自动递增，无重复，有索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>AccessIPChar</strong></td> 
+    <td width="283" valign="top" height="7">访问的IP</td> 
+    <td width="257" valign="top">字符型，无重复，无索引</td> 
+    <td width="49" valign="top">　</td> 
+    <td width="160" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">20位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>OverTime</strong></td> 
+    <td width="283" valign="top" height="7">时间</td> 
+    <td width="257" valign="top" height="16">时间日期型</td> 
+    <td width="57" valign="top" height="16">系统时间</td> 
+    <td width="155" valign="top" height="16">　</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（14) Lock_1在线锁定信息表结构说明】</h3> 
+<table width="706" height="182" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="32"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="32"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="32"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="32"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="32"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="32"><strong>UserID</strong></td> 
+    <td width="1" valign="top" height="32">用户ID</td> 
+    <td width="661" valign="top" height="32">整数型，不自动递增，无重复，索引</td> 
+    <td width="1" valign="top" height="32">0</td> 
+    <td width="173" valign="top" height="32">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="166" valign="top" bgcolor="#CCCCCC" height="38"><p class="Msowww.TML.cn"><strong><span
+    lang="EN-US" style="font-size:14px;color:black">ServerPort</span></strong></td> 
+    <td width="749" valign="top" height="38"><p class="Msowww.TML.cn" align="left"
+    style="text-align:left"><span
+    style="font-size:
+  14px;font-family:宋体;&quot;Times New Roman&quot;;color:black">房间端口：房间将使用此端口登录，所有房间不能重复</span></td> 
+    <td width="615" valign="top" height="38">整数型，不自动递增，可重复，索引</td> 
+    <td width="123" valign="top" height="38">0</td> 
+    <td width="275" valign="top" height="38">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38"><strong>AccessIP</strong></td> 
+    <td width="283" valign="top" height="38">房间登录IP</td> 
+    <td width="257" valign="top" height="38">字符型，无重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="160" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">15位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="14"><strong>SvrName</strong></td> 
+    <td width="283" valign="top" height="14">房间名称</td> 
+    <td width="257" valign="top">字符型，无重复，无索引</td> 
+    <td width="49" valign="top">　</td> 
+    <td width="160" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">30位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>LogonData</strong></td> 
+    <td width="283" valign="top" height="16">登录房间的时间</td> 
+    <td width="257" valign="top" height="16">时间日期型</td> 
+    <td width="57" valign="top" height="16">系统时间</td> 
+    <td width="155" valign="top" height="16">　</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（15): MatchUserInfo比赛用户信息表结构说明】</h3> 
+<table width="706" height="20" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="79" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="85" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ID</strong></td> 
+    <td width="283" valign="top" height="16">ID号，自动生成</td> 
+    <td width="347" valign="top" height="16">整数型，自动递增，无重复，有索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>DeskIndex</strong></td> 
+    <td width="283" valign="top" height="7">桌号</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>DeskStation</strong></td> 
+    <td width="283" valign="top" height="7">座号</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>MatchInfoID</strong></td> 
+    <td width="283" valign="top" height="7">比赛ID</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>EnableUser</strong></td> 
+    <td width="283" valign="top" height="7">启用用户</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>UserID</strong></td> 
+    <td width="283" valign="top" height="7">用户ID</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>PlayCount</strong></td> 
+    <td width="283" valign="top" height="7">玩局数</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>PlayPoint</strong></td> 
+    <td width="283" valign="top" height="7">输赢分数</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>Name</strong></td> 
+    <td width="283" valign="top" height="7">比赛名</td> 
+    <td width="305" valign="top" height="7">字符型，无重复，无索引</td> 
+    <td width="14" valign="top" height="7">　</td> 
+    <td width="150" valign="top" height="7">50长度</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（16): News新闻信息表结构说明】</h3> 
+<table width="706" height="16" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ID</strong></td> 
+    <td width="283" valign="top" height="16">ID号，自动生成</td> 
+    <td width="347" valign="top" height="16">整数型，自动递增，无重复，有索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>tit</strong></td> 
+    <td width="283" valign="top" height="7">新闻标题</td> 
+    <td width="305" valign="top" height="7">字符型</td> 
+    <td width="1" valign="top" height="7">　</td> 
+    <td width="163" valign="top" height="7">255</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>tm</strong></td> 
+    <td width="283" valign="top" height="7">发布时间</td> 
+    <td width="305" valign="top" height="7">时间型</td> 
+    <td width="1" valign="top" height="7">系统时间</td> 
+    <td width="163" valign="top" height="7">　</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>hit</strong></td> 
+    <td width="283" valign="top" height="7">点击次数</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>author</strong></td> 
+    <td width="283" valign="top" height="7">新闻作者</td> 
+    <td width="305" valign="top" height="7">字符型</td> 
+    <td width="1" valign="top" height="7">　</td> 
+    <td width="163" valign="top" height="7">15</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ip</strong></td> 
+    <td width="283" valign="top" height="7">发布IP</td> 
+    <td width="305" valign="top" height="7">字符型</td> 
+    <td width="1" valign="top" height="7">　</td> 
+    <td width="163" valign="top" height="7">50</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>hide</strong></td> 
+    <td width="283" valign="top" height="7">是否隐藏新闻</td> 
+    <td width="305" valign="top" height="7">字符型</td> 
+    <td width="1" valign="top" height="7">&quot;隐藏&quot;</td> 
+    <td width="163" valign="top" height="7">4</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>win</strong></td> 
+    <td width="283" valign="top" height="7">是否弹出新闻</td> 
+    <td width="305" valign="top" height="7">字符型</td> 
+    <td width="1" valign="top" height="7">&quot;弹出&quot;</td> 
+    <td width="163" valign="top" height="7">4</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>del</strong></td> 
+    <td width="283" valign="top" height="7">是否删除</td> 
+    <td width="305" valign="top" height="7">布尔型</td> 
+    <td width="1" valign="top" height="7">否</td> 
+    <td width="163" valign="top" height="7">　</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>l</strong></td> 
+    <td width="283" valign="top" height="7">弹出窗口左边距</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">100</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>t</strong></td> 
+    <td width="283" valign="top" height="7">弹出窗口上边距</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">100</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="3"><strong>w</strong></td> 
+    <td width="283" valign="top" height="3">弹出窗口宽度</td> 
+    <td width="347" valign="top" height="12">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="12">200</td> 
+    <td width="116" valign="top" height="12">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>h</strong></td> 
+    <td width="283" valign="top" height="7">弹出窗口高度</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">100</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（17): SYSset保存WEB系统参数设置的信息表结构说明】</h3> 
+<p><font color="#000000">每条记录是一个网站</font></p> 
+<table width="706" height="430" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="16"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="16"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="16"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="16"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38">ID</td> 
+    <td width="283" valign="top" height="38">自动编号</td> 
+    <td width="257" valign="top" height="38">字符型，无重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="160" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38">客户名</td> 
+    <td width="283" valign="top" height="38">客户名</td> 
+    <td width="257" valign="top" height="38">字符型，可重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="160" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38">客户信箱</td> 
+    <td width="283" valign="top" height="38">客户信箱</td> 
+    <td width="257" valign="top" height="38">字符型，可重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="160" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38">客户电话</td> 
+    <td width="283" valign="top" height="38">客户电话</td> 
+    <td width="257" valign="top" height="38">字符型，可重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="160" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38">客户主机</td> 
+    <td width="283" valign="top" height="38">客户主机</td> 
+    <td width="257" valign="top" height="38">字符型，无重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="160" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38">0</td> 
+    <td width="283" valign="top" height="38">参数数量</td> 
+    <td width="257" valign="top" height="38">字符型，可重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="160" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38">1</td> 
+    <td width="283" valign="top" height="38">网站所属者</td> 
+    <td width="257" valign="top" height="38">字符型，可重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="160" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38">2</td> 
+    <td width="283" valign="top" height="38">网站标题</td> 
+    <td width="257" valign="top" height="38">字符型，可重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="160" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="38">3</td> 
+    <td width="283" valign="top" height="38">搜索引擎关键词</td> 
+    <td width="257" valign="top" height="38">字符型，可重复，无索引</td> 
+    <td width="49" valign="top" height="38">　</td> 
+    <td width="160" valign="top" height="38"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="32">4</td> 
+    <td width="283" valign="top" height="32">首页公告</td> 
+    <td width="257" valign="top" height="32">字符型，可重复，无索引</td> 
+    <td width="49" valign="top" height="32">　</td> 
+    <td width="160" valign="top" height="32"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="16">5</td> 
+    <td width="283" valign="top" height="16">客户端下载地址</td> 
+    <td width="257" valign="top">字符型，可重复，无索引</td> 
+    <td width="49" valign="top">　</td> 
+    <td width="160" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">255位长度字符</span></td> 
+  </tr> 
+</table> 
+<h3 class="header">【（18): SystemInfo系统常用字符信息表结构说明】</h3> 
+<table width="706" height="20" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>ID</strong></td> 
+    <td width="283" valign="top" height="7">ID号，自动生成</td> 
+    <td width="395" valign="top">整数型，自动递增，无重复，有索引</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="116" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>VisitName</strong></td> 
+    <td width="283" valign="top" height="7">查询名</td> 
+    <td width="257" valign="top">字符型，无重复，无索引</td> 
+    <td width="49" valign="top">　</td> 
+    <td width="160" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">50位长度字符</span></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7"><strong>FieldVarChar</strong></td> 
+    <td width="283" valign="top" height="7">字段字符内容</td> 
+    <td width="257" valign="top">字符型，可重复，无索引</td> 
+    <td width="49" valign="top">　</td> 
+    <td width="160" valign="top"><span
+    style="font-size:14px;font-family:宋体;
+  
+  color:black">50位长度字符</span></td> 
+  </tr> 
+</table> 
+<h3 class="header">【（19): TMtreeCom树状代理营销系统专用 结构说明】</h3> 
+<table width="706" height="20" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333"> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td> 
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td> 
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td> 
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td> 
+    <td width="98" valign="top" height="9"><strong>字段长度</strong></td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7">ID</td> 
+    <td width="283" valign="top" height="7">ID号，自动生成</td> 
+    <td width="395" valign="top">整数型，自动递增，无重复，有索引</td> 
+    <td width="67" valign="top">0</td> 
+    <td width="116" valign="top">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7">UserID</td> 
+    <td width="283" valign="top" height="7">用户ID</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7">taxGet</td> 
+    <td width="283" valign="top" height="7">个人抽水（税收）所得</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7">allCount</td> 
+    <td width="283" valign="top" height="7">总局数</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7">allGet</td> 
+    <td width="283" valign="top" height="7">所有收益，包括下线</td> 
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td> 
+    <td width="115" valign="top" height="16">0</td> 
+    <td width="116" valign="top" height="16">10位整数</td> 
+  </tr> 
+  <tr> 
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7">tm</td> 
+    <td width="283" valign="top" height="7">日期</td> 
+    <td width="305" valign="top" height="7">日期时间型</td> 
+    <td width="1" valign="top" height="7">系统时间</td> 
+    <td width="163" valign="top" height="7">　</td> 
+  </tr> 
+</table> 
+<h3 class="header">【（20): TMLcnTool网站上的道具表 结构说明】</h3>
+<table width="706" height="20" border="1" cellpadding="5px" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#333333">
+  <tr>
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="9"><strong>字段名 </strong></td>
+    <td width="283" valign="top" height="9"><strong>含义 </strong></td>
+    <td width="116" valign="top" height="9"><strong>字段类型</strong></td>
+    <td width="66" valign="top" height="9"><strong>默认值</strong></td>
+    <td width="98" valign="top" height="9"><strong>字段长度</strong></td>
+  </tr>
+
+  <tr>
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7">UserID</td>
+    <td width="283" valign="top" height="7">用户ID</td>
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td>
+    <td width="115" valign="top" height="16">0</td>
+    <td width="116" valign="top" height="16">10位整数</td>
+  </tr>
+  <tr>
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7">ToolType</td>
+    <td width="283" valign="top" height="7">道具类型</td>
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td>
+    <td width="115" valign="top" height="16">0</td>
+    <td width="116" valign="top" height="16">10位整数</td>
+  </tr>
+  <tr>
+    <td width="133" valign="top" bgcolor="#CCCCCC" height="7">ToolCount</td>
+    <td width="283" valign="top" height="7">道具数量，用于批量购买</td>
+    <td width="347" valign="top" height="16">整数型，不自动递增，有重复，无索引</td>
+    <td width="115" valign="top" height="16">0</td>
+    <td width="116" valign="top" height="16">10位整数</td>
+  </tr>
+</table>
+</body>
+</html>

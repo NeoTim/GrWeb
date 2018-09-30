@@ -1,0 +1,1 @@
+TMLsvr.exe /uninstall

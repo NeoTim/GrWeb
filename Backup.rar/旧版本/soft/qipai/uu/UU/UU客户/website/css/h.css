@@ -1,0 +1,17 @@
+
+
+#row4 { height: 100px;  }
+
+#row4 .content { height: 100px; padding: 5px 0 0 15px; overflow: hidden; }
+#row4 .content li { float: left; width: 100px; padding: 2px; text-align: center; }
+#row4 .content .img { width: 74px; height: 74px; overflow: hidden; margin: 3px auto; padding:3px; border:1px solid #ccc; }
+#row4 .content .word { padding: 5px 0 0 0; width:110px; text-align:center; }
+#row4 . content {background:url(images/midListRight.gif) repeat-y 100% 0;}
+
+.marquee {overflow:hidden; width:502px; 
+height:106px;
+}
+.marquee div{width:1000%;}
+.marquee div ul{display:block; float:left; margin:0px;}
+
+
