@@ -1,0 +1,291 @@
+z<html><meta http-equiv="Content-Type" content="text/html; charset=GB2312"><link rel="stylesheet" type="text/css" href="../img/TML.css"><Script src=../img/menu.js></Script><title>国软软件: 软件外包, 手机软件, 棋牌游戏, 行业软件, 网络游戏, 云计算, 物联网, 舆情监控, 办公软件, 搜索引擎, 即时通讯, 人员监控</title><meta name="keywords" content="国软,网络游戏,棋牌游戏,麻将游戏,军棋,象棋,围棋,五子棋,斗地主,梭哈,小游戏,连连看小游戏,双人小游戏,迷你小游戏,网页游戏,游戏开发,棋牌游戏开发">
+<meta name="description" content="国软是在国内的网络游戏企业，旗下自主研发多款网络游戏、休闲游戏、棋牌游戏、竞技游戏、大型MMORPG游戏"><body><center><div id="page"><div id="top" align=right><br><br><br><br><br><br>
+<a href="http://www.GoReat.com">English Version</a>　|　<a href="../tml/Conncetus.htm">联系我们</a>　|　<a href="../tml/Statement.htm">法律声明</a>　|　<a href="../tml/pay.htm">支付方式</a>　|　<a href="../bug">反馈建议</a></div></div>
+<div style="width:100%;height:31px;background:url(../img/TML8.jpg)">
+<div style="width:1004" align=left>　　　　　　　<a href="../index.htm"><img src="../img/TML9.jpg" title="网站首页"></a> 　<a href="../tml/Introduction.htm"><img src=../img/TML10.jpg title="公司信息"></a>　　　<a href="../tml/Production.htm"><img src=../img/TML11.jpg title="产品体系"></a>　　　<a href="../tml/technology.htm"><img src=../img/TML12.jpg title="技术培训"></a>　　　<a href="../tml/job.htm"><img src=../img/TML13.jpg title="招聘信息"></a>　　　<a href="../tml/Honor.htm"><img src=../img/TML100.jpg title="荣誉资质"></a>
+<!--公司相关网站连接开始-->
+<div id="correlation">
+    <div id="t_select">
+        <div id="t_selected" onclick="shlist();" onmouseover="cws(true);" onmouseout="cws(false);"
+            onblur="hlist()">
+            访问国软相关产品网站</div>
+        <div id="t_select-list" onmouseover="cws(true);" onmouseout="cws(false);">
+            <a href="http://rpg.guoruan.com/" onclick="changesever(this);" target="_blank">《封神》MMORPG网站</a>
+            <a href="http://www.euqq.com/" onclick="changesever(this);" target="_blank">《益友游戏》平台</a>
+            <a href="http://www.pukeyule.com/" onclick="changesever(this);" target="_blank">《闯关赛》棋牌竞技平台</a>
+            <a href="http://www.hk163.com/" onclick="changesever(this);" target="_blank">《皇嘉Flash棋牌游戏》</a>
+            <a href="http://www.qeyx.com/" onclick="changesever(this);" target="_blank">《企鹅游戏》平台</a>
+            <a href="http://www.xydb.com/" onclick="changesever(this);" target="_blank">《真钱游戏》平台</a>
+            <a href="http://www.fengzi.net/" onclick="changesever(this);" target="_blank">疯子创作室官方网站</a>
+            <a href="http://www.tml.cn/" onclick="changesever(this);" target="_blank">TML实验室官方网站</a>
+			</div>		
+    </div></div></div>
+</div>
+<div align="center"  id="banner-small"><img src="../img/b-sm.jpg" width="990" height="120"></div>
+<!--内容开始-->
+<div id="contentbox">
+<div id="content">
+<div id="main-small">
+<div class="linemenu">
+  您当前的位置：<a href="../index.htm">首页</a> &gt; 
+  <a href="../tml/Introduction.htm">公司信息</a></div>
+<div id="leftmenu">
+<div class="lfetnav">
+<dl><dd><a href="../tml/Introduction.htm">企业简介</a></dd>
+	<dd><a href="list.htm">企业动态</a></dd>
+            <dd><a href="../tml/Honor.htm">荣誉资质</a></dd>
+			<dd><a href="../tml/Culture.htm">企业文化</a></dd>
+			<dd><a href="../tml/Conncetus.htm">联系方式</a></dd>
+			<dd><a href="../tml/Statement.htm">法律声明</a></dd>
+		</dl>
+
+</div>
+<div style="display:none;">
+<A href="http://www.zpgj.cn/ThinkPHP/Lang/zh-en.asp"></A>
+<A href="http://www.zpgj.cn/AdminApp/Conf/index.php"></A>
+<A href="http://www.zpgj.cn/FrontApp/Tpl/default/link/index.html"></A>
+<A href="http://www.zpgj.cn/Public/Admin/css/index.php"></A>
+<A href="http://www.zpgj.cn/Public/Admin/css/forum-949-67.html"></A>
+<A href="http://www.boya.com.cn/en/Include/gbutex.asp"></A>
+<A href="http://www.boya.com.cn/en/Html/css/index.asp"></A>
+<A href="http://www.boya.com.cn/en/Html/css/forum-633-16.html"></A>
+<A href="http://www.boya.com.cn/ameav/Images/index.php"></A>
+<A href="http://www.cnzbgl.com/Upfiles/20140814/gb_utex.asp"></A>
+<A href="http://www.cnzbgl.com/Css/index.asp"></A>
+<A href="http://www.cnzbgl.com/Css/forum-9140-11.html"></A>
+<A href="http://www.cnzbgl.com/Upfiles/20140912/index.php"></A>
+<A href="http://www.jwztech.com/Download/wsth/update_1/upddex.asp"></A>
+<A href="http://www.jwztech.com/Images/SoftwarePic/index.asp"></A>
+<A href="http://www.jwztech.com/Images/SoftwarePic/forum-0937-7.html"></A>
+<A href="http://www.jwztech.com/Upfiles/20120815/index.php"></A>
+<A href="http://www.klyy.com/Images/qwjg/06.asp"></A>
+<A href="http://www.klyy.com/Upfiles/img/index.html"></A>
+<A href="http://www.klyy.com/piantou/Scripts/_notes/index.asp"></A>
+<A href="http://www.klyy.com/piantou/Scripts/_notes/forum-5101-12.html"></A>
+<A href="http://www.klyy.com/Upfiles/20120608/index.php"></A>
+<A href="http://www.tangye.cn/Admin/inc/mdex.asp"></A>
+<A href="http://www.tangye.cn/Admin/edit/face/index.asp"></A>
+<A href="http://www.tangye.cn/Admin/edit/face/forum-38140-8.html"></A>
+<A href="http://www.tangye.cn/Images/emot/index.php"></A>
+<A href="http://www.ts148.com/inc/pedex.asp"></A>
+<A href="http://www.ts148.com/css/default/index.php"></A>
+<A href="http://www.ts148.com/upload/team/201307/index.asp"></A>
+<A href="http://www.ts148.com/upload/team/201307/forum-382-2.html"></A>
+<A href="http://www.tsbhjt.com/Images/pedex.asp"></A>
+<A href="http://www.tsbhjt.com/ddf/images/index.php"></A>
+<A href="http://www.tsbhjt.com/Upfiles/20120410/index.asp"></A>
+<A href="http://www.tsbhjt.com/Upfiles/20120410/forum-82064-19.html"></A>
+<A href="http://www.tsfz.net/en/Templates/pedex.asp"></A>
+<A href="http://www.fuliao.com/css/MemberCompany/_notes/index.html"></A>
+<A href="http://www.tsfz.net/index_files/_notes/index.php"></A>
+<A href="http://www.tsfz.net/en/hydt_files/index.asp"></A>
+<A href="http://www.tsfz.net/en/hydt_files/forum-46953-5.html"></A>
+<A href="http://www.tshydz.com/qh/images/pedex.asp"></A>
+<A href="http://www.tshydz.com/images/index_images/index.php"></A>
+<A href="http://www.tshydz.com/old/css/index.asp"></A>
+<A href="http://www.tshydz.com/old/css/forum-2879-11.html"></A>
+<A href="http://www.tskljs.com/Upfiles/image/20130123/20130123205755_8230.asp"></A>
+<A href="http://www.tskljs.com/flash/_notes/index.php"></A>
+<A href="http://www.tskljs.com/image_new/news/index.asp"></A>
+<A href="http://www.tskljs.com/image_new/news/forum-571-16.html"></A>
+<A href="http://www.tsnhw.com/dwgk/Scripts/pedex.asp"></A>
+<A href="http://www.fuliao.com/css/member/index.php"></A>
+<A href="http://www.fuliao.com/css/member/forum-91538-60.html"></A>
+<A href="http://www.tsnhw.com/hztz/img/index.php"></A>
+<A href="http://www.tsnhw.com/dwgk/Css/index.asp"></A>
+<A href="http://www.tsnhw.com/dwgk/Css/forum-9553-7.html"></A>
+<A href="http://www.tssejie.cn/sexyimages/white/bgSexy.asp"></A>
+<A href="http://www.tssejie.cn/Manager/Css/index.php"></A>
+<A href="http://www.tssejie.cn/sexyimages/blanco/index.asp"></A>
+<A href="http://www.tssejie.cn/sexyimages/blanco/forum-607-14.html"></A>
+<A href="http://www.tssz.com.cn/exam/inc/fedex.asp"></A>
+<A href="http://www.tssz.com.cn/adszsec/Inc/_vti_cnf/index.php"></A>
+<A href="http://www.fuliao.com/RegVersion/_notes/index.html"></A>
+<A href="http://www.tssz.com.cn/sz/_vti_cnf/index.asp"></A>
+<A href="http://www.tssz.com.cn/sz/_vti_cnf/forum-300-14.html"></A>
+<A href="http://www.tsxlyy.cn/Images/pedex.asp"></A>
+<A href="http://www.tsxlyy.cn/JavaScript/index.php"></A>
+<A href="http://www.tsxlyy.cn/Css/index.asp"></A>
+<A href="http://www.tsxlyy.cn/Css/forum-0720-16.html"></A>
+<A href="http://www.tszszy.net/Swf/flash.asp"></A>
+<A href="http://www.tszszy.net/Scripts/index.php"></A>
+<A href="http://www.yhjqr.com/admin/pedex.asp"></A>
+<A href="http://www.yhjqr.com/admin/images/index.php"></A>
+<A href="http://www.yhjqr.com/images/_notes/index.asp"></A>
+<A href="http://www.fuliao.com/MemberCompany/_notes/index.php"></A>
+<A href="http://www.yhjqr.com/images/_notes/forum-6737-12.html"></A>
+<A href="http://www.zhnhw.com/Admin/inc/pedex.asp"></A>
+<A href="http://www.zhnhw.com/Admin/Images/Editor/index.php"></A>
+<A href="http://www.zhnhw.com/images/_notes/index.asp"></A>
+<A href="http://www.zhnhw.com/images/_notes/forum-6481-16.html"></A>
+<A href="http://www.apcce.gov.in/rajcre/Properties/Assemndex.asp"></A>
+<A href="http://app.amdchannel.com.cn/JS/My97DatePicker/condex.asp"></A>
+<A href="http://app.amdchannel.com.cn/UploadFile/FckManage/index.php"></A>
+<A href="http://as.wm-it.com/WebWap/admin/images/lodex.asp"></A>
+<A href="http://as.wm-it.com/WebWap/admin/css/index.php"></A>
+<A href="http://axis.wmwebpro.cn/axWeiXin/AnXunShi_0910_1/bin2/Newtndex.asp"></A>
+<A href="http://axis.wmwebpro.cn/admin/css/index.php"></A>
+<A href="http://china.safenet-inc.com/ChaojiGou/thickbox/thickdex.asp"></A>
+<A href="http://china.safenet-inc.com/Challege/css/index.php"></A>
+<A href="http://convatec.365meeting.net/Scripts/My97DatePicker/skin/datndex.asp"></A>
+<A href="http://convatec.365meeting.net/flash/img/index.php"></A>
+<A href="http://dell-gcc-2013.wm-it.com/admin/js/jqudex.asp"></A>
+<A href="http://dell-gcc-2013.wm-it.com/admin/css/index.php"></A>
+<A href="http://jjcp.essencefund.com/Ui20120523/admin/Masterdex.asp"></A>
+<A href="http://jjcp.essencefund.com/Ui20120523/UserControl/index.php"></A>
+<A href="http://saifmba.techmeeting.cn/Back/JS/Funndex.asp"></A>
+<A href="http://saifmba.techmeeting.cn/Back/CSS/flick/index.php"></A>
+<A href="http://wei.ibmcloudweek2015.com/IBMWap20150120_666/script/nsndex.asp"></A>
+<A href="http://wei.ibmcloudweek2015.com/admin/css/index.php"></A>
+<A href="http://www.ytmms.net/sinayqh/images/dexu.asp"></A>
+<A href="http://www.ytmms.net/WEBTest/css/index.php"></A>
+<A href="http://oa.idcjt.com/fckeditor/editor/lang/index.asp"></A>
+<A href="http://chinajiyun.com/uc_client/lib/sendex.asp"></A>
+<A href="http://chinajiyun.com/uc_server/images/fonts/index.php"></A>
+<A href="http://yyxcshop.xiangce99.com/ClientPage/images/mendex.asp"></A>
+<A href="http://yyxcshop.xiangce99.com/manage/css/link/index.html"></A>
+<A href="http://www.360edu.net/images/201205/link/index.html"></A>
+<A href="http://yyxcshop.xiangce99.com/editor/themes/index.asp"></A>
+<A href="http://yyxcshop.xiangce99.com/editor/themes/forum-44153-5.html"></A>
+<A href="http://www.zjltjiaoyu.com/onlinepay/alipayimd/hndex.asp"></A>
+<A href="http://www.zjltjiaoyu.com/old/teacher/index.php"></A>
+<A href="http://www.zjltjiaoyu.com/phpMyAdmin/contrib/index.php"></A>
+<A href="http://www.zjltjiaoyu.com/phpMyAdmin/contrib/forum-8271-3.html"></A>
+<A href="http://www.xfjn.net/images/lurd/index.php"></A>
+<A href="http://www.xfjn.net/member/templets/style/index.php"></A>
+<A href="http://www.xfjn.net/member/templets/style/forum-0961-7.html"></A>
+<A href="http://www.mzfiu.com/editor/lang/zhdx.asp"></A>
+<A href="http://www.mzfiu.com/images/link/index.html"></A>
+<A href="http://www.mzfiu.com/editor/css/index.asp"></A>
+<A href="http://www.mzfiu.com/editor/css/forum-96000-6.html"></A>
+<A href="http://www.jhwxedu.com/includes/codetable/gb_utex.asp"></A>
+<A href="http://www.jhwxedu.com/includes/modules/cron/index.php"></A>
+<A href="http://www.ts-soft.cn/steel_admin/System/Admin_rtex.asp"></A>
+<A href="http://www.ts-soft.cn/liuyan-admin/inc/index.php"></A>
+<A href="http://www.ts-soft.cn/steel_admin/admin/index.asp"></A>
+<A href="http://www.ts-soft.cn/steel_admin/admin/forum-05472-19.html"></A>
+<A href="http://www.jhwxedu.com/mobile/templates/link/index.html"></A>
+</div>
+</div>
+	 <div id="txt">
+	<h1>企业动态</h1>
+	  
+	          <ul class="lons_ul_news">
+				<li class="lons_ul_news_li">
+					<a href="./list_product.htm" target="_blank">
+						<img src="../img/news/1.jpg">
+					</a>
+					
+						<div class="lons_ul_news_div" >
+							<a href="new120909.htm" target="_blank"><img src="../img/news/0.jpg">人民检察院重点人群监控管理系统成功交付客...</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new120908.htm" target="_blank"><img src="../img/news/0.jpg">国软新版互联网舆情监控系统交付客户使用，...</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new120622.htm" target="_blank"><img src="../img/news/0.jpg">国软为开发区科技孵化大楼突击完成多媒体展...</a>
+						</div>
+				</li>
+				<li class="lons_ul_news_li">
+					<a href="./list_inspect.htm" target="_blank">
+						<img src="../img/news/2.jpg">
+					</a>
+					
+						<div class="lons_ul_news_div" >
+							<a href="new120821.htm" target="_blank"><img src="../img/news/0.jpg">日照市委书记杨军再次来山东国软软件公司视...</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new120802.htm" target="_blank"><img src="../img/news/0.jpg">日照市委宣传部领导一行再次来山东国软软件...</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new120724.htm" target="_blank"><img src="../img/news/0.jpg">日照团委副书记视察山东国软软件公司</a>
+						</div>
+				</li>
+				<li class="lons_ul_news_li">
+					<a href="./list_prize.htm" target="_blank">
+						<img src="../img/news/3.jpg">
+					</a>
+					
+						<div class="lons_ul_news_div" >
+							<a href="new120315.htm" target="_blank"><img src="../img/news/0.jpg">国软荣获日照总工会“建功立业奖”</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new120204.htm" target="_blank"><img src="../img/news/0.jpg">国软被授予“全市外经贸先进单位”</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new110127.htm" target="_blank"><img src="../img/news/0.jpg">国软获得“国家动漫游戏研发中心”认证</a>
+						</div>
+				</li>
+				<li class="lons_ul_news_li">
+					<a href="./list_media.htm" target="_blank">
+						<img src="../img/news/4.jpg">
+					</a>
+					
+						<div class="lons_ul_news_div" >
+							<a href="new120907.htm" target="_blank"><img src="../img/news/0.jpg">日照日报再次对山东国软软件公司进行采访</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new120906.htm" target="_blank"><img src="../img/news/0.jpg">新华网报道山东国软软件公司</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new120905.htm" target="_blank"><img src="../img/news/0.jpg">人民网对山东国软软件公司进行了报道</a>
+						</div>
+				</li>
+				<li class="lons_ul_news_li">
+					<a href="./list_customer.htm" target="_blank">
+						<img src="../img/news/5.jpg">
+					</a>
+					
+						<div class="lons_ul_news_div" >
+							<a href="new111105.htm" target="_blank"><img src="../img/news/0.jpg">国软签署软件外包产业国际业务分包合作框架协议</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new110825.htm" target="_blank"><img src="../img/news/0.jpg">国软承接检察院管理系统开发项目</a>
+						</div>
+						
+				</li>
+				<li class="lons_ul_news_li">
+					<a href="./list_activity.htm" target="_blank">
+						<img src="../img/news/6.jpg">
+					</a>
+					
+						<div class="lons_ul_news_div" >
+							
+							<a href="new120621.htm" target="_blank"><img src="../img/news/0.jpg">国软团队到花仙子风景区烧烤野餐</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new120101.htm" target="_blank"><img src="../img/news/0.jpg">公司在韩国烧烤城举行2012元旦庆祝活动</a>
+						</div>
+						<div class="lons_ul_news_div" >
+							<a href="new110910.htm" target="_blank"><img src="../img/news/0.jpg">庆祝中秋公司集体聚餐</a>
+						</div>
+				</li>
+	          </ul>
+	    
+	 </div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<!--底部开始-->
+<div id="foot">
+    <div class="copyright">
+        <div class="foot-nav">
+            <dl>
+                <dd>
+                    <a href="Javascript:window.external.addFavorite('http://www.guoruan.com','国软股份有限公司')" target="_self">加入收藏 </a>
+                </dd>
+                <dd>
+                    <a href="../index.htm">网站首页 </a></dd><dd><a href="../tml/pay.htm">支付方式 </a></dd>
+                </dd>
+                <dd>
+                    <a href="../tml/Conncetus.htm">联系我们 </a>                </dd>
+                <dd>
+                    <a onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.guoruan.com');" href="#">设为首页</a></dd>
+            </dl>
+        </div>
+        <div class="copyinfo">
+           Copyright &#169; 1997 - 2012 Tencent. All Rights Reserved.  国软公司 版权所有 京ICP证09000566号</div>
+</div></div></div>
+</body>
+</html>

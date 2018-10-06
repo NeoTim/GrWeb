@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+
+	<settings>
+		<setting name="gameFinderSwf">gameOne.swf</setting>
+		<setting name="subConfig">application.xml</setting>
+	</settings>
+	<assets>
+	</assets>
+</application>

@@ -1,0 +1,44 @@
+<%'###########开发者信息###########
+'开发者：李天盟 www.tml.cn 
+'###########版权所有###########
+dim conn   
+set conn=server.createobject("ADODB.CONNECTION")
+'response.write application("conn")
+conn.open "DBQ="+server.mappath("/../data/TML.mdb")+";DRIVER={Microsoft Access Driver (*.mdb)};"
+%><%
+ if not Err="" and Err<>0 then
+     set conn=nothing
+     response.redirect "/"
+  end if
+'###########下面的函数过滤request注入
+function newget(tml)
+newget=request(tml)
+if newget="" then newget=request.form(tml)
+newget=replace(newget,"""","'")
+newget=replace(newget,"'","''")
+newget=Server.HTMLEncode(trim(newget))
+end function
+'############
+'###########下面的函数 放在页面最下面运行，用于写页脚，同时关闭数据库
+function TMLcn_footer
+conn.close
+set conn=nothing
+end function
+'############ 
+function TMLcn_back
+response.write "<button onclick=location.href='"&Request.ServerVariables("HTTP_REFERER")&"'>返回上一页</button> 　　 "
+response.write "<button onclick=history.back(1)>返回历史</button>"
+end function 
+'############ 
+function TMLcn_reload
+response.write "<button onclick=window.location.reload()>刷新</button>"
+end function 
+'############ 
+function TMLcn_end
+response.end
+end function 
+'############ 
+function TMLcn_exesql(tml)
+conn.execute tml
+end function 
+%>

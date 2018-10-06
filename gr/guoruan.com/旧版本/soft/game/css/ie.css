@@ -1,0 +1,98 @@
+
+.clear { height: 1px; }
+
+/* home page */
+#home #credibility { padding-top: 9px; } /* ie7 was doubling this padding */
+#home #testimonials li h3 { margin-top: -14px; }
+
+
+/* benefits */
+#benefits {  }
+#benefits #testimonials { padding-top: 9px; }
+
+/* games */
+#games #main ul { clear: left; padding-top: 9px; clear:left; height: 6em;}
+#games #main ul li { margin: 0px 20px 0px 0;  }
+
+
+/* faq */
+#faq #side #hot_topics { zoom:1; padding-bottom: 0; margin-bottom: 30px;}
+#faq #questions h2 { margin: 0px 0 0 0; }
+#faq #questions p { margin-bottom: 0; }
+
+
+/* sign up */
+#signup #main .textbox { width: 320px;  } /* prolly a 3px jog */
+#signup #main form { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_s_login.gif") no-repeat 474px 1em; } /* pushing it down a little */
+
+
+/* forgot */
+
+/* contest */
+
+#winners .game_list h2 { margin: 0 0 5px; }
+#winners .game_list ul { clear: left; background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_divider_hor.gif") repeat-x; padding-top: 18px; }
+#winners .game_list ul li { margin: 0 20px 0px 0; width: 269px; float: left; border: 0px solid red; }
+#winners .game_list ul li img { float: left; width: 50px; margin-right: 10px;}
+#winners .game_list ul li h3 { margin: 0 0 .5em 60px; font-size: 1em; line-height: 1em; }
+#winners .game_list ul li p { margin: 0 0 0 60px; font-size: 1em; line-height: 1.2em; }
+
+
+/* ------- IE6 -------- */
+
+/* shell */
+ #header { height: 127px; position: relative; }
+ #header { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_pagetop.gif") no-repeat; }
+ html #header h1 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_logo.gif") no-repeat; }
+* #page { position: relative; }
+* #content { position: relative; }
+* #www_TML_cn_content { position: relative; height: 1%; }
+* #content #main { position: relative; }
+* #content #side { position: relative; }
+* #footer { position: relative; }
+
+/* benefits */
+* html #benefits #testimonials { position: relative; padding-top: 18px; }
+
+/* home page */
+* html #home #examples { position: relative; height: 1%; overflow: hidden; margin-bottom: 10px; }
+* html #home #examples h2 { background: url("http://tml.cn/new/soft/game/euqq5/web/images/g_h_examplead.gif") no-repeat left 5px; height: 36px; }
+* html #home #examples ul { height: 14.1em;   }
+* html #home #examples li { height: 1%; display: inline; padding: 0; margin-bottom: 2px; }
+* html #home #credibility { padding-top: 18px; }
+* html #home #examples .advertisers { padding-bottom: 15px; margin-top: 1px; height: 1%;  }
+
+* html #home #examples, * html #home #examples ul {  }
+
+/* signup */
+* html #signup #main .textbox { width: 317px;  }
+* html fieldset p { margin: 0 0 0 133px; }
+* html form { height: 1%; position: relative; }
+* html .buttons { height: 1%; position: relative; }
+
+#signup #alias_checking, #signup #email_checking, #signup #alias_taken, #signup #email_taken { margin-left: 133px; }
+
+/* tour */
+* html #tourpage #tour_content { height: 1%; zoom:1; }
+* html #tourpage #www_TML_cn_content { height: 1%; }
+* html #tourpage #tour_nav { height: 1%;  }
+* html #tourpage #tour_nav ul { height: 1%; }
+
+/* games */
+* html #games #main { float: none; }
+
+/* advertiser */
+
+
+/* contest */
+#contest #main { zoom: 1; position: relative; }
+#contest #judges { zoom: 1; position: relative; }
+#contest #judges ul, #contest #judges ul li, #contest #judges .bio { zoom:1; position: relative; }
+
+* html #contest #contest_nav { margin-bottom: 0;}
+* html #contest #contest_nav ul { position: relative; height: 1%; margin-bottom: 0 !important; }
+* html #contest #contest_nav ul li { position: relative; height: 1%; }
+
+* html #contest #main { position: relative; height: 1%; }
+* html #contest #prizes { position: relative; height: 1%; }
+* html #contest #main #guidelines { position: relative; height: 1%; }

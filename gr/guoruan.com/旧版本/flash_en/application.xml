@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+
+	<settings>
+		<setting name="nonGamePromoUrl">TML.xml</setting>
+		<setting name="searchUrl">Search_alt.js</setting>
+		
+		<!-- carousel settings -->
+		<setting name="imageLoadInInterval">100</setting>
+		<setting name="frameRateLimit">20</setting>
+		<setting name="frameRateDropTime">5</setting>
+		<setting name="defaultScreenshots">TML.xml</setting>
+		<setting name="defaultVideo">TML.xml</setting>
+		<setting name="videoplayerUrl">gameOne.swf</setting>
+		<setting name="videoAgeGateUrl">TML.xml</setting>
+		
+		<setting name="gameOverlayUrl">gameOverlay.swf</setting>
+		<setting name="screenshotUrl">screenshots.swf</setting>
+		<setting name="debug">0</setting>
+		
+		<setting name="ageGateGetFunction">GoReat.getValue</setting>
+		<setting name="ageGateSetFunction">GoReat.setValue</setting>
+		
+	</settings>
+	<assets>
+		
+		<!-- swf assets -->
+		<asset name="configurationUrl">Search_metrics.js</asset>
+
+		
+		
+	</assets>
+</application>

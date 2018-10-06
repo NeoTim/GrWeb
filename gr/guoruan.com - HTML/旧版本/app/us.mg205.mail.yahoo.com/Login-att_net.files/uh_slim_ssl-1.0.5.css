@@ -1,0 +1,168 @@
+#ygma {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: small/1.231 arial,sans-serif; COLOR: #000; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#ygmaheader {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#ygma DIV {
+	CLEAR: none
+}
+#ygma UL.menu LI {
+	BORDER-RIGHT: #cacaca 1px solid; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-LEFT: #cacaca 1px solid
+}
+#ygma UL.menu {
+	COLOR: #000; BACKGROUND-COLOR: #f6f6f6
+}
+#ygmauseroptions LI.first-child {
+	BORDER-TOP: #cacaca 1px solid
+}
+#ygmauseroptions LI.last-child {
+	BORDER-TOP: #c3c3c3 1px solid; BACKGROUND: #fcfcfc; WIDTH: 100%; COLOR: #000; BORDER-BOTTOM: #cacaca 1px solid
+}
+#ygmabot {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.7em; OVERFLOW: hidden; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+#ygmalogo {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0.6em; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 12px
+}
+#ygmalogo IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+#ygmauserinfo EM {
+	FONT-WEIGHT: bold; FONT-STYLE: normal
+}
+#ygma #ygmausername {
+	COLOR: #666
+}
+#ygma .yid {
+	DISPLAY: block; FONT-WEIGHT: bold; COLOR: #000
+}
+#ygma .sp {
+	BACKGROUND-IMAGE: url(https://s.yimg.com/lq/lib/uh/15/uh_sprites_1.5-1.0.3.png)
+}
+#ygma .bd {
+	BACKGROUND-POSITION: 0px 0px; PADDING-BOTTOM: 10px; WIDTH: 100%; BACKGROUND-REPEAT: repeat-x
+}
+#ygma #yahoo {
+	WIDTH: 100%
+}
+#ygma #ymenu {
+	WIDTH: 100%
+}
+#ygma #yahoo {
+	CLEAR: left
+}
+#ygma #mepanel {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#ygma #mepanel {
+	MARGIN-RIGHT: 5px
+}
+#ygmabt #mepanel {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#mepanel-nav {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: none; PADDING-BOTTOM: 0px; MARGIN: 7px 0px 0px; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+#mepanel-nav LI {
+	FLOAT: left; BACKGROUND-REPEAT: no-repeat; LIST-STYLE-TYPE: none
+}
+#ygma .lst {
+	PADDING-RIGHT: 0.8em; BACKGROUND-POSITION: 100% -393px; MARGIN-RIGHT: 6px; BACKGROUND-REPEAT: no-repeat
+}
+#mepanel-nav LI A {
+	DISPLAY: block; TEXT-INDENT: -9999px; POSITION: relative
+}
+#mepanel-nav LI.me1 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #545454
+}
+#mepanel-nav LI.me1 EM {
+	FONT-WEIGHT: bold; FONT-STYLE: normal
+}
+#mepanel-nav LI.me1 .ygmasignup {
+	FONT-WEIGHT: normal
+}
+#mepanel-nav LI.me2 {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#mepanel-nav LI.me3 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-RIGHT: 2px
+}
+#mepanel-nav LI.me1 A {
+	DISPLAY: inline; COLOR: #545454; TEXT-INDENT: 0px; TEXT-DECORATION: none
+}
+#mepanel-nav LI.me2 A {
+	DISPLAY: inline; COLOR: #545454; TEXT-INDENT: 0px; TEXT-DECORATION: none
+}
+#mepanel-nav LI.me3 A {
+	DISPLAY: inline; COLOR: #545454; TEXT-INDENT: 0px; TEXT-DECORATION: none
+}
+#mepanel-nav LI.me1 A {
+	MARGIN-RIGHT: 7px
+}
+#mepanel-nav LI.me2 A {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 6px; DISPLAY: inline; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 0px
+}
+#mepanel-nav LI.me2 #ygmahelp {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 6px; DISPLAY: inline; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 0px
+}
+#mepanel-nav LI.me4 A {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 6px; DISPLAY: inline; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#mepanel-nav LI.me3 A {
+	MARGIN-LEFT: 6px
+}
+#mepanel-nav LI.me1 A:hover {
+	COLOR: #545454; TEXT-DECORATION: underline
+}
+#mepanel-nav LI.me2 A:hover {
+	COLOR: #545454; TEXT-DECORATION: underline
+}
+#mepanel-nav LI.me3 A:hover {
+	COLOR: #545454; TEXT-DECORATION: underline
+}
+#ygma #mepanel-nav UL.menu LI A:hover {
+	TEXT-DECORATION: underline
+}
+#ygmauserinfo A {
+	COLOR: #666
+}
+#ygma #ygmabot {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left
+}
+BODY {
+	MARGIN: 0px
+}
+#ygma #ygmaheader UL.menu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 1em; Z-INDEX: 99999; BACKGROUND: #f5f5f5; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: absolute
+}
+#ygma #mepanel-nav UL.menu LI {
+	PADDING-RIGHT: 0.7em; PADDING-LEFT: 0.7em; FLOAT: none; PADDING-BOTTOM: 0.17em; MARGIN: 0px; COLOR: #707070; PADDING-TOP: 0.17em; WHITE-SPACE: nowrap; TEXT-ALIGN: left
+}
+#ygma #mepanel-nav UL.menu LI.first-child {
+	PADDING-TOP: 0.2em
+}
+#ygma #mepanel-nav UL.menu LI A {
+	WIDTH: auto; COLOR: #545454; TEXT-INDENT: 0px; HEIGHT: auto; TEXT-DECORATION: none
+}
+#ygma #mepanel-nav UL.menu LI.last-child {
+	BACKGROUND: #fff; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.3em; BORDER-BOTTOM: #c3c3c3 1px solid
+}
+#ygma .ygmaclr:unknown {
+	CLEAR: both; DISPLAY: block; content: ""
+}
+.clr:unknown {
+	CLEAR: both; DISPLAY: block; content: ""
+}
+#ygma .ygmaclr {
+	CLEAR: both; ZOOM: 1
+}
+.clr {
+	CLEAR: both; ZOOM: 1
+}
+#ygma .hidden {
+	DISPLAY: none
+}
+#ygma .visible {
+	DISPLAY: block
+}
