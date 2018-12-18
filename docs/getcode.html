@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+    var url = location.search; //获取url中"?"符后的字串
+
+    var theRequest = new Object();
+    if (url.indexOf("?") != -1) {
+        var str = url.substr(1);
+        alert(str);
+        window.location.href = "http://kdhb.guoruan.com/getopenid.aspx?"+str;
+    }
+    </script>
+</head>
+<body>
+<!--这个放在国软网站根目录下-->
+</body>
+</html>
