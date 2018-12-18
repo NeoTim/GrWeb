@@ -1,4 +1,3 @@
-
 {
 "gamefinder":{
 	"searchbar":{
